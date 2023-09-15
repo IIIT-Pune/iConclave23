@@ -8,7 +8,7 @@ export default function BackgroundText()
             fontSize={ 1 }
             rotation-x={ - Math.PI * 0.5 }
             position={ [ 0, 0.02, 3 ] }
-            text={'coming soon'}
+            text={'Coming soon'}
             textAlign="center"
         >
             <meshBasicMaterial color={ [ 1.25, 1.25, 1.25 ] } toneMapped={ false } transparent opacity={ 1 } />
