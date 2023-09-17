@@ -1,83 +1,103 @@
-import { OrbitControls } from '@react-three/drei'
-import { Perf } from 'r3f-perf'
-import { Debug, Physics } from '@react-three/rapier'
-import { useEffect } from 'react'
-import Floor from './Floor.jsx'
-import MainText from './MainText.jsx'
-import BackgroundText from './BackgroundText.jsx'
-import { useThree } from '@react-three/fiber'
-import Effects from './Effects.jsx'
-import Fog from './Fog.jsx'
-import Logo from './Logo.jsx'
-import Boundings from './Boundings.jsx'
-import Cylinder from './Cylinder.jsx'
-import { useControls } from 'leva'
-import Button from './Button.jsx'
+import React, { useEffect } from 'react';
+import { OrbitControls } from '@react-three/drei';
+import { Perf } from 'r3f-perf';
+import { Debug, Physics } from '@react-three/rapier';
+import { useControls } from 'leva'; // Import useControls
+import { useThree } from '@react-three/fiber';
+import Floor from './Floor.jsx';
+import MainText from './MainText.jsx';
+import BackgroundText from './BackgroundText.jsx';
+import Effects from './Effects.jsx';
+import Fog from './Fog.jsx';
+// import Logo from './Logo.jsx';
+import Boundings from './Boundings.jsx';
+import Cylinder from './Cylinder.jsx';
+import Button from './Button.jsx';
 
-export default function Experience()
-{
-    const { controls, gl, camera } = useThree()
+export default function Experience() {
+  const { controls, gl, camera } = useThree();
 
-    useEffect(() =>
-    {
-        if(controls)
-        {
-            controls.target.x = 1
-            controls.target.z = 3
-        }
-    }, [ controls ])
+  useEffect(() => {
+    if (controls) {
+      controls.target.x = 1;
+      controls.target.z = 3;
+    }
+  }, [controls]);
 
-    const options = useControls({
-        debug: { value: false }
-    })
+  const options = useControls({
+    debug: { value: false },
+    // Add a camera perspective control
+    cameraPerspective: { value: 'default', options: ['default', 'top', 'side'] },
+  });
 
-    return <>
+  // Function to change camera perspective
+  const changeCameraPerspective = (perspective) => {
+    switch (perspective) {
+      case 'top':
+        camera.position.set(0, 10, 0); // Set top view camera position
+        camera.lookAt(0, 0, 0);
+        break;
+      case 'side':
+        camera.position.set(10, 0, 0); // Set side view camera position
+        camera.lookAt(0, 0, 0);
+        break;
+      default:
+        camera.position.set(10, 6, 20); // Set default camera position
+        camera.lookAt(1, 2, 0);
 
-        { options.debug && <Perf position="top-left" /> }
+    }
+  };
 
-        <OrbitControls
-            makeDefault
-            maxPolarAngle={ Math.PI * 0.49 }
-            enablePan={ false }
-            minDistance={ 1 }
-            maxDistance={ 30 }
-        />
+  // Watch for changes in camera perspective option and update the camera accordingly
+  useEffect(() => {
+    changeCameraPerspective(options.cameraPerspective);
+  }, [options.cameraPerspective]);
 
-        <Effects />
+  return (
+    <>
+      {options.debug && <Perf position="top-left" />}
+
+      <OrbitControls
+        makeDefault
+        maxPolarAngle={Math.PI * 0.49}
+        enablePan={false}
+        minDistance={1}
+        maxDistance={30}
         
-        {/* Fog */}
-        <Fog />
+      />
 
-        <Physics gravity={ [ 0, - 9.08, 0 ] }>
+      <Effects />
 
-            {/* Debug */}
-            {/* <Debug /> */}
+      {/* Fog */}
+      <Fog />
 
-            {/* Floor */}
-            <Floor />
+      <Physics gravity={[0, -9.08, 0]}>
+        {/* Debug */}
+        {/* <Debug /> */}
 
-            {/* Main Text */}
-            <MainText />
+        {/* Floor */}
+        <Floor />
 
-            {/* Background Text */}
-            <BackgroundText y={ 0.02 } />
+        {/* Main Text */}
+        <MainText />
 
-            {/* Buttons */}
-            <Button />
+        {/* Background Text */}
+        <BackgroundText y={0.02} />
 
-            {/* Logo */}
-            <Logo />
+        {/* Buttons */}
+        <Button />
 
-            {/* Cylinders */}
-            <Cylinder name="cylinder1" color="#ff5959" radius={ 0.5 } position={ [ -6.4, 5 ] } intensity={ 3.5 } />
-            <Cylinder name="cylinder2" color="#708fff" radius={ 0.5 } position={ [ -4.9, -12.9 ] } intensity={ 3.5 } />
-            <Cylinder name="cylinder3" color="#ff8753" radius={ 0.5 } position={ [ 4.3, -4.8 ] } intensity={ 4 } />
+        {/* Logo */}
+        {/* <Logo /> */}
 
-            {/* Boundings */}
-            <Boundings width={ 30 } height={ 10 } depth={ 30 } position={ [ 0, 0, - 5] } />
+        {/* Cylinders */}
+        <Cylinder name="cylinder1" color="#ff5959" radius={0.5} position={[-12, 5]} intensity={4.5} />
+        <Cylinder name="cylinder2" color="#3f85fc" radius={0.5} position={[12, 5]} intensity={4.5} />
 
-
-        </Physics>
-
+        {/* Boundings */}
+        <Boundings width={30} height={10} depth={30} position={[0, 0, -5]} />
+      
+      </Physics>
     </>
+  );
 }
