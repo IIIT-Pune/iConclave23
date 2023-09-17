@@ -6,7 +6,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Logo()
 {
-    const model = useGLTF('models/pumpkin.glb')
+    const model = useGLTF('models/logo.glb')
     const body = useRef()
 
     const options = useControls(

@@ -6,10 +6,10 @@ export default function Button() {
   const line = useRef();
   const halfExtent = { x: 6.5, y: 0.8, z: 0 };
 
-  // const onEnter = () => {
-  //   document.body.style.cursor = 'pointer';
-  //   gsap.to(line.current.position, { duration: 0.3, ease: 'back.out(2.5)', z: 0.2 });
-  // };
+  const onEnter = () => {
+    document.body.style.cursor = 'pointer';
+    gsap.to(line.current.position, { duration: 0.3, ease: 'back.out(2.5)', z: 0.2 });
+  };
 
   const onLeave = () => {
     document.body.style.cursor = 'default';
@@ -17,7 +17,7 @@ export default function Button() {
   };
 
   // Define the target date
-  const targetDate = new Date("Oct 20, 2023 00:00:00").getTime();
+  const targetDate = new Date("Oct 27, 2023 00:00:00").getTime();
 
   // Initialize the remaining time state
   const [remainingTime, setRemainingTime] = useState(calculateRemainingTime());
@@ -53,7 +53,7 @@ export default function Button() {
 
   return (
     <group position={[0, 0.01, 5.5]} rotation-x={-Math.PI * 0.5}>
-      <mesh visible={false} >
+      <mesh visible={false} onPointerEnter={onEnter} onPointerLeave={onLeave}>
         <planeGeometry args={[halfExtent.x * 2, halfExtent.y * 2]} />
       </mesh>
 

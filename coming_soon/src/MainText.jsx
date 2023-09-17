@@ -7,21 +7,19 @@ export default function MainText()
         <RigidBody type="fixed" colliders="cuboid">
             <Center top>
                 <Text3D
-                    font="./fonts/Nightcore.json"
-                    size={ 2 }
+                    font="./fonts/Greycliff CF Bold_Regular.json"
+                    size={ 1.25 }
                     height={ 0.4 }
-                    curveSegments={ 2 }
-                    // bevelEnabled
-                    // bevelThickness={ 0 }
-                    // bevelSize={ 0.02 }
-                    // bevelOffset={ 0 }
-                    // bevelSegments={ 5 }
+                    curveSegments={ 6 }
+                    bevelEnabled
+                    bevelThickness={ 0.02 }
+                    bevelSize={ 0.02 }
+                    bevelOffset={ 0 }
+                    bevelSegments={ 5 }
                 >
-
                     iConclave' 23
-  
                     <meshStandardMaterial
-                        color="#fff"
+                        color="#999999"
                         metalness={ 1 }
                         roughness={ 0.5 }
                     />
