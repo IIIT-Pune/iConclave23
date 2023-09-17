@@ -18,7 +18,7 @@ export default function MainText()
                     // bevelSegments={ 5 }
                 >
 
-                    iConclave' 23
+                    [ i Conclave )
   
                     <meshStandardMaterial
                         color="#fff"
