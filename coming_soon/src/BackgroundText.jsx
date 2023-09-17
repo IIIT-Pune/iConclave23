@@ -51,12 +51,12 @@ export default function BackgroundText() {
       </Text>
       {cursorVisible && (
         <Text
-          font="./fonts/miso.woff"
-          fontSize={2}
-          rotation-x={-Math.PI * 0.5}
-          position={cursorPosition}
-          text={'_'} // Cursor (you can customize this)
-          textAlign="right"
+            font="./fonts/GreycliffCF-Heavy.woff"
+            fontSize={ 1 }
+            rotation-x={ - Math.PI * 0.5 }
+            position={ [ 0, 0.02, 3 ] }
+            text={'Coming soon'}
+            textAlign="center"
         >
           <meshBasicMaterial color={[1.25, 1.25, 1.25]} toneMapped={false} transparent opacity={1} />
         </Text>
