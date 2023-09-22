@@ -10,3 +10,11 @@ body,
     background: ivory;
 }
 
+/* style.css */
+.leva-container {
+    /* Move the container off-screen to the left */
+    transform: translateX(-100%);
+    /* Optionally, you can hide it completely */
+    /* display: none; */
+  }
+  

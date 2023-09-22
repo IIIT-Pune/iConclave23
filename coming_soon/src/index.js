@@ -22,6 +22,9 @@ root.render(
         >
             <Experience />
         </Canvas>
-        <Leva collapsed />
+        <div className="leva-container">
+            <Leva collapsed />
+        </div>
+
     </>
 )
