@@ -42,8 +42,8 @@ export default function Experience() {
         camera.lookAt(0, 0, 0);
         break;
       default:
-        camera.position.set(10, 6, 20); // Set default camera position
-        camera.lookAt(1, 2, 0);
+        camera.position.set(0, 10,30); // Set default camera position
+        camera.lookAt(0,0 , 0);
 
     }
   };
@@ -85,14 +85,26 @@ export default function Experience() {
         <BackgroundText y={0.02} />
 
         {/* Buttons */}
-        <Button />
+        
+        <>
+          <Button buttonText="Technical Events" buttonSize={6} xPos = {-4.5} zPos = {12} />
+          <Button buttonText="Cultural Events" buttonSize={6} xPos = {4.5} zPos = {12}/>
+          <Button buttonText="About" buttonSize={4} xPos = {-6.1} zPos = {14.6} />
+          <Button buttonText="Sponsors" buttonSize={4} xPos = {0} zPos = {14.6}/>
+          <Button buttonText="Contact us" buttonSize={4} xPos = {6.1} zPos = {14.6}/>
+          {/*
+          */}
+         </>
+       
 
         {/* Logo */}
         {/* <Logo /> */}
 
         {/* Cylinders */}
-        <Cylinder name="cylinder1" color="#ff5959" radius={0.5} position={[-12, 5]} intensity={4.5} />
-        <Cylinder name="cylinder2" color="#3f85fc" radius={0.5} position={[12, 5]} intensity={4.5} />
+        <Cylinder name="cylinder1" color="#ff5959" radius={0} position={[-12, 5]} intensity={4.5} />
+        <Cylinder name="cylinder2" color="#3f85fc" radius={0} position={[12, 5]} intensity={4.5} />
+        <Cylinder name="cylinder3" color="#3f85fc" radius={0} position={[12, 5]} intensity={4.5} />
+
 
         {/* Boundings */}
         <Boundings width={30} height={10} depth={30} position={[0, 0, -5]} />
