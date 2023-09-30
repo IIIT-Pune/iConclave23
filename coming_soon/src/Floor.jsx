@@ -22,7 +22,7 @@ export default function Floor()
             minDepthThreshold: { value: 0.4, min: 0, max: 1 },
             maxDepthThreshold: { value: 1.4, min: 0, max: 2 },
             metalness: { value: 0.5, min: 0, max: 1 },
-            color: { value: '#050505' },
+            color: { value: '#fff' },
         }
     )
 
@@ -37,9 +37,9 @@ export default function Floor()
                 roughnessMap={roughnessTexture}
                 roughness={1}
                 depthScale={1.2}
-                minDepthThreshold={0.4}
+                minDepthThreshold={2}
                 maxDepthThreshold={1.4}
-                color="#050505"
+                color="#fff"
                 metalness={0.5}
                 {...blurOptions}
             />

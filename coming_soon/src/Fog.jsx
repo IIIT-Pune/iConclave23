@@ -5,7 +5,7 @@ export default function Fog()
     const { backgroundColor, range } = useControls(
         'fog',
         {
-            backgroundColor: { value: '#12111a' },
+            backgroundColor: { value: '#e7e7e7' },
             range: { value: [ 30, 100 ], min: 0, max: 100 }
         }
     )

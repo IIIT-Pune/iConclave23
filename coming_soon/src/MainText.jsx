@@ -8,8 +8,8 @@ export default function MainText()
             <Center top>
                 <Text3D
                     font="./fonts/Nightcore.json"
-                    size={ 2 }
-                    height={ 0.4 }
+                    size={ 3 }
+                    height={ 1 }
                     curveSegments={ 2 }
                     // bevelEnabled
                     // bevelThickness={ 0 }
@@ -21,8 +21,8 @@ export default function MainText()
                     [ i Conclave )
   
                     <meshStandardMaterial
-                        color="#fff"
-                        metalness={ 1 }
+                        color="#888"
+                        metalness={ 1}
                         roughness={ 0.5 }
                     />
                 </Text3D>
