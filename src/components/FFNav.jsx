@@ -1,5 +1,5 @@
 
-const OffRoadNav = () => {
+const FFNav = () => {
   return (
     <div>
       <nav className="flex  justify-between">
@@ -16,6 +16,9 @@ const OffRoadNav = () => {
               <a href="#">ABOUT</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+              <a href="#">HORIZON</a>
+            </li>
+            <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
               <a href="#">GUIDELINES</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
@@ -26,10 +29,10 @@ const OffRoadNav = () => {
         <a href="/rofies1">
           {/* <img src="/images/lockout_logo.png" className="h-24 p-4" alt="LOCKOUTLOGO" /> */}
           <h1
-            className=" font-silkroad text-4xl m-0 p-6 text-center text-white font-normal"
+            className=" font-grandstander text-4xl m-0 p-6 text-center text-white font-normal"
             id="OFFRoadBandit"
           >
-            OFF-Road Bandit
+            HORIZON
           </h1>
         </a>
       </nav>
@@ -37,4 +40,4 @@ const OffRoadNav = () => {
   );
 }
 
-export default OffRoadNav
+export default FFNav

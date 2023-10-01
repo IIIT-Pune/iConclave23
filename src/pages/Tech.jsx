@@ -16,7 +16,7 @@ const Tech = () => {
           activeIndex === swiper.slides.length - 1 ? 0 : activeIndex + 1;
         swiper.slideTo(nextIndex);
       }
-    }, 1500); // Change slide every 1.5 seconds
+    }, 2000); // Change slide every 1.5 seconds
 
     return () => {
       clearInterval(interval);

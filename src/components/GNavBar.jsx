@@ -13,17 +13,19 @@ const GNavBar = ({club, color, hcolor}) => {
             </li>
           </a>
           <a href="#club">
-          <li
-            className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
-          >
-            {club}
-          </li>
+            <li
+              className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+            >
+              {club}
+            </li>
           </a>
-          <li
-            className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
-          >
-            GUIDELINE
-          </li>
+          <a href="#guidelines">
+            <li
+              className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+            >
+              GUIDELINE
+            </li>
+          </a>
           <li
             className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
           >
