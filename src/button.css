@@ -1,0 +1,7 @@
+/* Add a subtle glow effect on hover */
+.mesh-button:hover {
+    /* You can customize the glow effect as needed */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  

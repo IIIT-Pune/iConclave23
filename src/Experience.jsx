@@ -87,11 +87,11 @@ export default function Experience() {
         {/* Buttons */}
         
         <>
-          <Button buttonText="Technical Events" buttonSize={6} xPos = {-4.5} zPos = {12} />
-          <Button buttonText="Cultural Events" buttonSize={6} xPos = {4.5} zPos = {12}/>
-          <Button buttonText="About" buttonSize={4} xPos = {-6.1} zPos = {14.6} />
-          <Button buttonText="Sponsors" buttonSize={4} xPos = {0} zPos = {14.6}/>
-          <Button buttonText="Contact us" buttonSize={4} xPos = {6.1} zPos = {14.6}/>
+          <Button buttonText="Technical Events" buttonSize={6} xPos = {-4.5} zPos = {12} link='/events' />
+          <Button buttonText="Cultural Events" buttonSize={6} xPos = {4.5} zPos = {12} link='/events'/>
+          <Button buttonText="About" buttonSize={4} xPos = {-6.1} zPos = {14.6} link='/about' />
+          <Button buttonText="Sponsors" buttonSize={4} xPos = {0} zPos = {14.6} link='/sponsors'/>
+          <Button buttonText="Contact us" buttonSize={4} xPos = {6.1} zPos = {14.6} link='/getintouch'/>
           {/*
           */}
          </>
