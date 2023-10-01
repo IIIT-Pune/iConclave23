@@ -49,7 +49,7 @@ const Tech = () => {
         Technical Events
       </h1> */}
       <img src="/images/tech_head.png" alt="Technical Events" className="mx-auto sm:px-4 md:px-20 lg:px-20" />
-      <div className="-mt-28 lg:-mt-44 px-10 py-24">
+      <div className="-mt-28 lg:-mt-52 px-10 py-24">
         {/* Conditionally render Swiper based on screen size */}
         {window.innerWidth <= 768 ? ( // Mobile view
           <div className="mobile-slides" style={{ maxHeight: "75vh", overflowY: "auto" }}>
