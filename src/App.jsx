@@ -10,7 +10,7 @@ import Tech from "./pages/Tech";
 import Cult from "./pages/Cult";
 import Nexus from "./pages/Nexus";
 import Lockout from "./pages/Lockout";
-import LockoutAbout from "./components/LockoutAbout";
+import Anurag from "./pages/Anurag";
 import Rofies1 from "./pages/Rofies1";
 import Infinityteam from "./components/Infinityteam";
 import Infinitypastevent from "./components/Infinitypastevent";
@@ -63,29 +63,26 @@ const App = () => {
       element: <Infinity />,
     },
     {
-      path: "infinity/team",
+      path: "/infinity/team",
       element: <Infinityteam />,
     },
     {
-      path: "infinity/pastevents",
+      path: "/infinity/pastevents",
       element: <Infinitypastevent />,
     },
     {
-      path: "infinity/bitlegion",
+      path: "/infinity/bitlegion",
       element: <Bitlegion />,
     },
     {
-      path: "infinity/halloffame",
+      path: "/infinity/halloffame",
       element: <InfinityHalloffame />,
     },
     {
       path: "/lockout",
       element: <Lockout />,
     },
-    {
-      path: "/lockout/about",
-      element: <LockoutAbout />,
-    },
+  
     {
       path: "/rofies1",
       element: <Rofies1 />,
@@ -101,6 +98,10 @@ const App = () => {
     {
       path: "/frameflick",
       element: <FrameFlick />,
+    },
+    {
+      path: "/anurag",
+      element: <Anurag />,
     },
   ]);
   return (

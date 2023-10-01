@@ -16,6 +16,7 @@ export default {
         punktypewriter: ["punktypewriter", "sans"],
         liquidism: ["liquidism", "sans"],
         monoton: ["Monoton", "cursive"],
+        smarkan:["Samarkan", "cursive"],
       },
       colors: {
         lockoutred: "#571d20",
