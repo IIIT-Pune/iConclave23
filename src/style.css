@@ -23,7 +23,11 @@ html{
     background: ivory;
 }
 
-
+#NEXUS{
+    text-shadow: 0px 0px 10.267213821411133px #fff,
+    0px 0px 143.74099731445312px #fff, 0px 0px 246.4131317138672px #fff,
+    0px 0px 431.22296142578125px #fff;
+}
 /* style.css */
 .leva-container {
     /* Move the container off-screen to the left */
