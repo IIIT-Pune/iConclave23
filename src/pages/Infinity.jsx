@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Formik, Form } from "formik";
-import { TextInput } from "../components/TextInput";
 
-import * as Yup from "yup";
 import InfinityNav from "../components/InfinityNav";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
 /* eslint-disable react/jsx-no-target-blank */
 // eslint-disable-next-line no-shadow-restricted-names
@@ -90,100 +90,25 @@ const Infinity = () => {
             experience at <span className="text-red-600">InfInITy 2k23!</span>
           </p>
         </div>
-        <div>
-          <h2 className="flex justify-center font-nightcore text-4xl lg:text-8xl tracking-wider p-5 lg:p-10">
-            Register
-          </h2>
-          <p className="flex justify-center font-miso text-xl px-10 lg:text-2xl">
-            Embark on the code cooking journey off in the far lands of
-            CodeChef's turf
-          </p>
-
-          <Formik
-            initialValues={{
-              firstName: "",
-              lastName: "",
-              codechefuserID: "",
-              email: "",
-              country: "",
-              organisation: "",
-            }}
-            onSubmit={(values) => {
-              console.log(values);
-            }}
-            validationSchema={Yup.object({
-              firstName: Yup.string().required("Required"),
-              lastName: Yup.string().required("Required"),
-              codechefuserID: Yup.string().required("Required"),
-              email: Yup.string().email("Invalid email").required("Required"),
-              country: Yup.string().required("Required"),
-              organisation: Yup.string().required("Required"),
-            })}
-          >
-            {(isSubmitting) => (
-              <Form
-                className="flex flex-col justify-center items-center gap-6 p-5 lg:w-full"
-                id="register"
-              >
-                <TextInput
-                  name="firstName"
-                  type="text"
-                  placeholder="FIRST NAME"
-                />
-                <TextInput
-                  name="lastName"
-                  type="text"
-                  placeholder="Last Name"
-                />
-                <TextInput
-                  name="codechefuserID"
-                  type="text"
-                  placeholder="CODECHEF USERNAME"
-                />
-                <TextInput name="email" type="email" placeholder="EMAIL" />
-                <TextInput name="country" type="text" placeholder="COUNTRY" />
-                <TextInput
-                  name="organisation"
-                  type="text"
-                  placeholder="ORGANISATION / UNIVERSITY"
-                />
-                <div>
-                  {isSubmitting && (
-                    <button
-                      type="submit"
-                      className="bg-red-600 py-3 px-10 mt-2 font-nightcore text-3xl tracking-wider rounded-2xl"
-                    >
-                      Submit
-                    </button>
-                  )}
-                </div>
-              </Form>
-            )}
-          </Formik>
-        </div>
       </div>
 
       <footer>
         <div className="flex justify-center items-center bg-black h-20 gap-5">
           <a href="#">
-            <img
-              src="images/github.png"
-              alt="Github"
+            <AiFillGithub className="cursor-pointer" size={50} color="white" />
+          </a>
+          <a href="#">
+            <AiFillInstagram
               className="cursor-pointer"
+              size={50}
+              color="white"
             />
           </a>
           <a href="#">
-            <img
-              src="images/instagram.png"
-              alt="Github"
+            <AiFillLinkedin
               className="cursor-pointer"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="images/linkedin.png"
-              alt="Github"
-              className="cursor-pointer"
+              size={50}
+              color="white"
             />
           </a>
         </div>
