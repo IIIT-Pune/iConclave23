@@ -1,3 +1,4 @@
+import NexusNav from "../components/NexusNav";
 const Nexus = () => {
   return (
     <div
@@ -6,12 +7,13 @@ const Nexus = () => {
         backgroundPosition: "top center",
         backgroundSize: "cover",
       }}
-      className="h-screen"
+      className="min-h-screen"
     >
+      <NexusNav/>
       <div className="flex justify-center">
         <div className="text-white pt-20 flex-col items-center">
           <h1 className="font-miso text-5xl -mb-20">36 hour hackathon</h1>
-          <h1 className=" font-majormono text-12xl m-0 p-0 text-center">
+          <h1 className=" font-majormono text-12xl m-0 p-0 text-center text-white font-normal" id="NEXUS">
             neXus
           </h1>
           <p className=" font-miso text-7xl -m-16 text-center ">
