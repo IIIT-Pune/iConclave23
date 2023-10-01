@@ -18,7 +18,8 @@ export default {
         monoton: ["Monoton", "cursive"],
         grandstander: ["Grandstander", "cursive"],
         kodchasan: ["Kodchasan", "cursive"],
-        smarkan:["Samarkan", "cursive"],
+        smarkan: ["Samarkan", "cursive"],
+        fuzzybubbles: ["FuzzyBubbles", "cursive"],
       },
       colors: {
         lockoutred: "#571d20",

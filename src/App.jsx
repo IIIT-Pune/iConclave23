@@ -20,6 +20,7 @@ import Cognition from "./pages/Cognition";
 import AawazEAawam from "./pages/AawazEAawam";
 import FrameFlick from "./pages/FrameFlick";
 import Home from "./index";
+import NrityaNova from "./pages/NrityaNova";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -82,7 +83,7 @@ const App = () => {
       path: "/lockout",
       element: <Lockout />,
     },
-  
+
     {
       path: "/rofies1",
       element: <Rofies1 />,
@@ -102,6 +103,10 @@ const App = () => {
     {
       path: "/anurag",
       element: <Anurag />,
+    },
+    {
+      path: "/nrityanova",
+      element: <NrityaNova />,
     },
   ]);
   return (

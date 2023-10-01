@@ -1,32 +1,34 @@
 /* eslint-disable react/no-unescaped-entities */
 import { ffguidelines } from "../assets/ffguidelines";
-import FFNav from "../components/FFNav";
+import NNNAv from "../components/NNNAV";
 
-const FrameFlick = () => {
+const NrityaNova = () => {
   return (
     <div className="">
       <div
         style={{
-          background: "url(/images/frameflick_bg.png)",
+          background: "url(/images/nritya_bg.png)",
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="min-h-screen"
+        className="h-screen"
       >
-        <FFNav />
+        <NNNAv />
 
         <div className="flex justify-center">
           <div className="text-white pt-20 flex-col">
-            <h1 className=" font-grandstander text-10xl text-center pt-20">
-              FRAME FLICKS
-            </h1>
-            <p className=" font-kodchasan text-4xl -m-16 text-right ">
-              your fest your frame
-            </p>
+            <div className="flex flex-col">
+              <h1 className=" font-fuzzybubbles text-10xl text-center pt-20">
+                NRITYA NOVA
+              </h1>
+              <p className=" font-miso text-4xl -mt-16 text-right ">
+                EVERY STEP TELLS A STORY!
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-40 p-10">
+        <div className="flex justify-center items-center mt-24 p-10">
           <h1 className="text-white font-majormono border-2 px-5 py-3 text-4xl rounded-2xl tracking-wider ">
             register
           </h1>
@@ -130,4 +132,4 @@ const FrameFlick = () => {
   );
 };
 
-export default FrameFlick;
+export default NrityaNova;
