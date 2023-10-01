@@ -3,7 +3,7 @@ import GNavBar from "../components/GNavBar";
 
 const Cognition = () => {
   return (
-    <div className="bg-cognitionbg h-full">
+    <div className="bg-cognitionbg h-full overflow-auto">
       <GNavBar
         club="Q-RIOCITY"
         color="black"
@@ -34,7 +34,7 @@ const Cognition = () => {
         </div>
       </div>
 
-      <div className="font-veterantypewriter h-screen" id="about">
+      <div className="font-veterantypewriter" id="about">
         <h1 className="text-9xl  ml-10">ABOUT</h1>
         <div className="text-4xl flex flex-col mx-20 gap-10 text-justify">
           <p>
@@ -59,8 +59,9 @@ const Cognition = () => {
           </p>
         </div>
       </div>
+     
       <div className="font-veterantypewriter h-screen" id="club">
-        <h1 className="text-9xl  ml-10">Q-RIOCITY</h1>
+        <h1 className="text-9xl  ml-10 my-2">Q-RIOCITY</h1>
         <div className="text-3xl flex flex-col mx-20 gap-10 text-justify">
           <p>
             Q-riocity is IIIT Pune's quizzing society, like the{" "}
@@ -94,7 +95,7 @@ const Cognition = () => {
             to form our very own PLA, but those that we do have are surely worth
             more than a pineapple in the 17th century.
           </p>
-          <p>
+          <p className="pb-20">
             We may be geeky, nerdy, introverted, uptight, not funny, or grumpy
             when our quiz time slot is usurped, but we shall never be boring.
           </p>
