@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { cognitionguidelines } from "../assets/cognitionguidelines";
 import GNavBar from "../components/GNavBar";
 
 const Cognition = () => {
@@ -34,7 +35,7 @@ const Cognition = () => {
         </div>
       </div>
 
-      <div className="font-veterantypewriter h-screen" id="about">
+      <div className="font-veterantypewriter min-h-screen" id="about">
         <h1 className="text-9xl  ml-10">ABOUT</h1>
         <div className="text-4xl flex flex-col mx-20 gap-10 text-justify">
           <p>
@@ -59,7 +60,7 @@ const Cognition = () => {
           </p>
         </div>
       </div>
-      <div className="font-veterantypewriter h-screen" id="club">
+      <div className="font-veterantypewriter min-h-screen" id="club">
         <h1 className="text-9xl  ml-10">Q-RIOCITY</h1>
         <div className="text-3xl flex flex-col mx-20 gap-10 text-justify">
           <p>
@@ -98,6 +99,20 @@ const Cognition = () => {
             We may be geeky, nerdy, introverted, uptight, not funny, or grumpy
             when our quiz time slot is usurped, but we shall never be boring.
           </p>
+        </div>
+      </div>
+      <div className="font-veterantypewriter min-h-screen" id="guidelines">
+        <h1 className="text-9xl  ml-10">GUIDELINES</h1>
+
+        <div className="text-3xl flex flex-col gap-5 mx-20 text-justify text-">
+          {cognitionguidelines.map((rule, index) => {
+            return (
+              <div key={index} className="flex gap-5">
+                <h1>{index + 1}.</h1>
+                <p>{rule}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
