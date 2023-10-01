@@ -4,7 +4,7 @@ const LockoutNav = () => {
       <nav className="flex  justify-between">
         <a href="/">
         <img src="/images/IConclave.png" 
-        className="h-24 p-4"
+        className="h-24"
         alt="Iconclavebg" />
         </a>
         <div className="flex justify-center">

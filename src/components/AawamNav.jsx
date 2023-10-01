@@ -1,26 +1,26 @@
-const NexusNav = () => {
+const AawamNav = () => {
     return (
-      <div >
+      <div className="">
         <nav className="flex  justify-between">
           <a href="/">
           <img src="/images/IConclave.png" 
           className="h-24"
           alt="Iconclavebg" />
           </a>
-          <div className="flex justify-center">
+          <div className="flex justify-center mr-3">
           <ul className="flex gap-24 text-white font-miso text-3xl  items-center">
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-              <a href="#">
+              <a href="#about">
               ABOUT
               </a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
               <a href="#">
-              LOCALHOST
+                ABHINAY
               </a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-              <a href="#">
+              <a href="#guide">
               GUIDELINES
               </a>
             </li>
@@ -31,15 +31,14 @@ const NexusNav = () => {
             </li>
           </ul>
           </div>
-          <a href="/nexus">
-          <h1 className=" font-majormono text-5xl m-0 p-6 text-center text-white font-normal" id="NEXUS">
-            neXus
-          </h1>
+          <a href="/aawazeaawam">
+        <h1 className="text-white font-monoton text-2xl p-6">Aawaz-E-Aawam</h1>
+        {/* <img src="./images/aawazeaawam.png" alt="aawazeaawam" className="h-28 -mt-4 p-2" /> */}
           </a>
         </nav>
       </div>
     );
   };
   
-  export default NexusNav;
+  export default AawamNav;
   
