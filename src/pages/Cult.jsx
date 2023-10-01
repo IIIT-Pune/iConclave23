@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation"; // Import Swiper navigation styles
+import "swiper/css/navigation";
 import { useState, useEffect } from "react";
 import '../App.css'
+
 const Cult = () => {
   const [swiper, setSwiper] = useState(null);
 
@@ -38,32 +39,58 @@ const Cult = () => {
     <div
       style={{
         background: "url(/images/cult_back.png)",
-        backgroundPosition: "top center",
+        backgroundPosition: "center",
         backgroundSize: "cover",
         overflow: "hidden",
       }}
-      className="tech-container h-screen"
+      className="tech-container min-h-screen"
     >
       {/* <h1 className="text-white text-9xl p-14 font-octobercrow tracking-wider">
         Technical Events
       </h1> */}
-      <img src="/images/cult_head.png" alt="Technical Events" className="mx-auto px-20" />
-      <div className="-mt-52 px-10 py-24">
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          centeredSlides={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={{   // Enable navigation
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
-          }}
-          className="mySwiper"
-          onSwiper={(swiper) => setSwiper(swiper)}
-        >
-          <SwiperSlide className="rounded-3xl">
+      <img src="/images/cult_head.png" alt="Technical Events" className="mx-auto sm:px-4 md:px-20 lg:px-20" />
+      <div className="-mt-28 lg:-mt-44 px-10 py-24">
+        {/* Conditionally render Swiper based on screen size */}
+        {window.innerWidth <= 768 ? ( // Mobile view
+          <div className="mobile-slides" style={{ maxHeight: "75vh", overflowY: "auto" }}>
+            <SwiperSlide className="rounded-3xl">
+              <a href="/nexus">
+                <img src="./images/nexus_cau.png" alt="" className="rounded-3xl" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide className="rounded-3xl">
+              <a href="/infinity">
+                <img src="./images/infinity_cau.png" alt="" className="rounded-3xl" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide className="rounded-3xl">
+              <a href="/rofies1">
+                <img src="./images/offrd_cau.png" alt="" className="rounded-3xl" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide className="rounded-3xl">
+              <a href="/lockout">
+                <img src="./images/lockout_cau.png" alt="" className="rounded-3xl" />
+              </a>
+            </SwiperSlide>
+          </div>
+        ) : ( // Larger screens (iPad and laptop)
+          <div className="desktop-swiper">
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              centeredSlides={true}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={{
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next",
+              }}
+              className="mySwiper"
+              onSwiper={(swiper) => setSwiper(swiper)}
+            >
+               <SwiperSlide className="rounded-3xl">
             <a href="/frameflick">
               <img src="./images/frame_cau.png" alt="" className="rounded-3xl" />
             </a>
@@ -78,16 +105,15 @@ const Cult = () => {
               <img src="./images/aawaaz_cau.png" alt="" className="rounded-3xl" />
             </a>
           </SwiperSlide>
-          <SwiperSlide className="rounded-3xl">
-            <a href="/lockout">
-              <img src="./images/lockout_cau.png" alt="" className="rounded-3xl" />
-            </a>
-          </SwiperSlide>
-        </Swiper>
-        {/* Previous Button */}
-        <div className="swiper-button-prev" onClick={goPrev}></div>
-        {/* Next Button */}
-        <div className="swiper-button-next" onClick={goNext}></div>
+         
+        
+            </Swiper>
+            {/* Previous Button */}
+            <div className="swiper-button-prev" onClick={goPrev}></div>
+            {/* Next Button */}
+            <div className="swiper-button-next" onClick={goNext}></div>
+          </div>
+        )}
       </div>
     </div>
   );

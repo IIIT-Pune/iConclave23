@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const InfinityNav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex items-center justify-between border-b border-black py-4 px-20 text-white">
+    <div className="flex items-center justify-between border-b border-black py-4 px-14 text-white">
       <a href="/infinity">
         <img src="/images/Infinity_logo.png" alt="logo" width={200} />
       </a>
