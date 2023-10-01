@@ -38,11 +38,11 @@ const Tech = () => {
     <div
       style={{
         background: "url(/images/tech_2.png)",
-        backgroundPosition: "top center",
+        backgroundPosition: "center",
         backgroundSize: "cover",
         overflow: "hidden",
       }}
-      className="tech-container h-screen"
+      className="tech-container min-h-screen"
     >
       {/* <h1 className="text-white text-9xl p-14 font-octobercrow tracking-wider">
         Technical Events

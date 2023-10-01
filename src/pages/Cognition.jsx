@@ -34,7 +34,7 @@ const Cognition = () => {
         </div>
       </div>
 
-      <div className="font-veterantypewriter h-screen" id="about">
+      <div className="font-veterantypewriter min-h-screen" id="about">
         <h1 className="text-9xl  ml-10">ABOUT</h1>
         <div className="text-4xl flex flex-col mx-20 gap-10 text-justify">
           <p>
@@ -59,7 +59,7 @@ const Cognition = () => {
           </p>
         </div>
       </div>
-      <div className="font-veterantypewriter h-screen" id="club">
+      <div className="font-veterantypewriter min-h-screen" id="club">
         <h1 className="text-9xl  ml-10">Q-RIOCITY</h1>
         <div className="text-3xl flex flex-col mx-20 gap-10 text-justify">
           <p>
