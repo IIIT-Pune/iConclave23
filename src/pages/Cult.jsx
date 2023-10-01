@@ -53,26 +53,21 @@ const Cult = () => {
         {/* Conditionally render Swiper based on screen size */}
         {window.innerWidth <= 768 ? ( // Mobile view
           <div className="mobile-slides" style={{ maxHeight: "75vh", overflowY: "auto" }}>
-            <SwiperSlide className="rounded-3xl">
-              <a href="/nexus">
-                <img src="./images/nexus_cau.png" alt="" className="rounded-3xl" />
-              </a>
-            </SwiperSlide>
-            <SwiperSlide className="rounded-3xl">
-              <a href="/infinity">
-                <img src="./images/infinity_cau.png" alt="" className="rounded-3xl" />
-              </a>
-            </SwiperSlide>
-            <SwiperSlide className="rounded-3xl">
-              <a href="/rofies1">
-                <img src="./images/offrd_cau.png" alt="" className="rounded-3xl" />
-              </a>
-            </SwiperSlide>
-            <SwiperSlide className="rounded-3xl">
-              <a href="/lockout">
-                <img src="./images/lockout_cau.png" alt="" className="rounded-3xl" />
-              </a>
-            </SwiperSlide>
+             <SwiperSlide className="rounded-3xl">
+            <a href="/frameflick">
+              <img src="./images/frame_cau.png" alt="" className="rounded-3xl" />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide className="rounded-3xl">
+            <a href="/cognition">
+              <img src="./images/cognition_cau.png" alt="" className="rounded-3xl" />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide className="rounded-3xl">
+            <a href="/aawazeaawam">
+              <img src="./images/aawaaz_cau.png" alt="" className="rounded-3xl" />
+            </a>
+          </SwiperSlide>
           </div>
         ) : ( // Larger screens (iPad and laptop)
           <div className="desktop-swiper">
