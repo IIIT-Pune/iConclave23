@@ -49,6 +49,14 @@
   font-family: liquidism;
   src: url("/fonts/liquidism.ttf");
 }
+@font-face {
+  font-family: Grandstander;
+  src: url("/fonts/Grandstander.ttf");
+}
+@font-face {
+  font-family: Kodchasan;
+  src: url("/fonts/Kodchasan.ttf");
+}
 ::-webkit-scrollbar {
   display: none;
 }

@@ -104,7 +104,7 @@ const Cognition = () => {
       <div className="font-veterantypewriter min-h-screen" id="guidelines">
         <h1 className="text-9xl  ml-10">GUIDELINES</h1>
 
-        <div className="text-3xl flex flex-col gap-5 mx-20 text-justify text-">
+        <div className="text-3xl flex flex-col gap-5 mx-20 my-5 text-justify ">
           {cognitionguidelines.map((rule, index) => {
             return (
               <div key={index} className="flex gap-5">
@@ -114,6 +114,11 @@ const Cognition = () => {
             );
           })}
         </div>
+      </div>
+      <div className="flex justify-center items-center p-10">
+        <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
+          RULEBOOK
+        </h1>
       </div>
     </div>
   );
