@@ -44,7 +44,7 @@ const LockoutNav = () => {
               <a href="/infinity/bitlegion">BIT LEGION</a>
             </li>
             <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-              <a href="/lockout/guide">GUIDELINES</a>
+              <a href="/lockout/guidelines">GUIDELINES</a>
             </li>
             <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
               <a href="/lockout/team">TEAM</a>
@@ -69,7 +69,7 @@ const LockoutNav = () => {
               <a href="/infinity/bitlegion">BIT LEGION</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-              <a href="/lockout/guide">GUIDELINES</a>
+              <a href="/lockout/guidelines">GUIDELINES</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
               <a href="/lockout/team">TEAM</a>
@@ -90,12 +90,13 @@ const LockoutNav = () => {
       }
       .showMenuNav {
         display: block;
+        color: white;
         position: absolute;
         width: 100%;
         height: 100vh;
         top: 0;
         left: 0;
-        background: url('/images/lockout_bg.png');
+        background: url('/images/lockoutbg.png');
         background-position: top top;
         z-index: 10;
         display: flex;
