@@ -21,7 +21,7 @@ export default function MainText()
                     [ i Conclave )
   
                     <meshStandardMaterial
-                        color="#888"
+                        color="#999"
                         metalness={ 1}
                         roughness={ 0.5 }
                     />
