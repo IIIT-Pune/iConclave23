@@ -17,17 +17,17 @@ const FrameFlick = () => {
 
         <div className="flex justify-center">
           <div className="text-white pt-20 flex-col">
-            <h1 className=" font-grandstander text-10xl text-center pt-20">
+            <h1 className="text-7xl font-grandstander lg:text-10xl text-center pt-20">
               FRAME FLICKS
             </h1>
-            <p className=" font-kodchasan text-4xl -m-16 text-right ">
+            <p className=" text-center font-kodchasan lg:text-5xl lg:-mt-12 lg:text-right ">
               your fest your frame
             </p>
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-40 p-10">
-          <h1 className="text-white font-majormono border-2 px-5 py-3 text-4xl rounded-2xl tracking-wider ">
+        <div className="flex justify-center items-center mt-32 lg:mt-40 p-10">
+          <h1 className="text-white font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider ">
             register
           </h1>
         </div>
@@ -40,10 +40,10 @@ const FrameFlick = () => {
           background: "linear-gradient(180deg, #141119 0%, #000 100%)",
         }}
       >
-        <h1 className="font-grandstander text-10xl text-white m-0 p-0 ml-10">
+        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
           ABOUT
         </h1>
-        <div className=" font-miso text-4xl flex flex-col gap-5 text-white mx-20 text-justify">
+        <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
           <p>
             At the beginning of the fest, a single word will be revealed for
             each team, through the chit system. This word will serve as the
@@ -70,15 +70,15 @@ const FrameFlick = () => {
       </div>
       <div
         className="min-h-screen"
-        id="about"
+        id="horizon"
         style={{
           background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
         }}
       >
-        <h1 className="font-grandstander text-10xl text-white m-0 p-0 ml-10">
+        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
           HORIZON
         </h1>
-        <div className=" font-miso text-4xl flex flex-col gap-5 text-white mx-20 text-justify">
+        <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
           <p>
             Horizon, established in January 2022 with the ideology of "capture
             imagination," continues to steadfastly pursue and expand upon this
@@ -102,15 +102,15 @@ const FrameFlick = () => {
       </div>
       <div
         className="min-h-screen"
-        id="about"
+        id="guidelines"
         style={{
           background: "linear-gradient(180deg, #000001 0%, #0C0C0C 100%)",
         }}
       >
-        <h1 className="font-grandstander text-10xl text-white m-0 p-0 ml-10">
+        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
           GUIDELINES
         </h1>
-        <div className="text-3xl text-white flex flex-col gap-5 mx-20 text-justify font-miso">
+        <div className="text-2xl lg:text-3xl text-white flex flex-col gap-5 mx-5 lg:mx-20 text-justify font-miso">
           {ffguidelines.map((rule, index) => {
             return (
               <div key={index} className="flex gap-5">
@@ -121,7 +121,7 @@ const FrameFlick = () => {
           })}
         </div>
         <div className="flex justify-center items-center p-10">
-          <h1 className="text-white font-grandstander border-2 px-5 py-3 text-4xl rounded-2xl tracking-wider">
+          <h1 className="text-white font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider">
             RULEBOOK
           </h1>
         </div>
