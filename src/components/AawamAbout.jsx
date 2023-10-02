@@ -1,6 +1,6 @@
 const AawamAbout = () =>{
     return(
-        <div className="bg-black text-white font-monoton flex flex-col mt-[9%] p-14" id="about">
+        <div className="bg-black text-white font-monoton flex flex-col mt-32 p-14" id="about">
             <h1 className="text-10xl">ABOUT</h1>
             <div className="p-10 text-justify grid grid-cols-1 gap-12 text-5xl font-miso"> <p>Immerse yourself in the compelling world of street theatre, where the art of performance becomes a dynamic force for change. </p>
 <p>
