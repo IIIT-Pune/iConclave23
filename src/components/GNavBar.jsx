@@ -8,7 +8,7 @@ const GNavBar = ({club, color, hcolor}) => {
   <a href="/">
     <img
       src="/images/IConclave.png"
-      className="lg:h-32 h-20 -px-4 -mx-4 invert"
+      className="lg:h-32 h-20 -px-4 -mx-4 invert "
       alt="Iconclavebg"
     />
   </a>
