@@ -1,17 +1,13 @@
 import LockoutNav from "./LockoutNav";
 const LockoutAbout = () => {
   return (
-    // <div
-    //   className=" lg:bg-black bg-transparent lg:bg-[url('/images/lockoutbg.png')] lg:bg-cover lg:bg-no-repeat text-white lg:h-screen lg:grid grid-cols-2"
-    //   id="about"
-    // >
     <div
       style={{
         background: "url(/images/lockoutbg.png)",
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-      className="h-screen w-full bg-cover bg-no-repeat bg-center"
+      className="h-screen w-full overflow-y-auto"
     >
       <LockoutNav />
       <div
@@ -25,7 +21,7 @@ const LockoutAbout = () => {
         />
       </div>
 
-      <div className="text-white text-xs sm:text-xl md:text-2xl lg:text-3xl space-y-6  text-justify leading-relaxed px-10 sm:px-20 pt-10 lg:pt-12 font-miso">
+      <div className="text-white text-xs sm:text-xl md:text-2xl lg:text-3xl space-y-6  text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
         <p>
           Are you ready for the most thrilling intellectual showdown? Join us
           for the Lockout Tournament, where participants go head-to-head in a

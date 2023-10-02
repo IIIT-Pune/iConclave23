@@ -22,6 +22,7 @@ import FrameFlick from "./pages/FrameFlick";
 import Home from "./index";
 import NrityaNova from "./pages/NrityaNova";
 import LockoutAbout from "./components/LockoutAbout";
+import LockoutGuidelines from "./components/LockoutGuidelines";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -88,10 +89,10 @@ const App = () => {
       path: "/lockout/about",
       element: <LockoutAbout />,
     },
-    // {
-    //   path: "/lockout/guidelines",
-    //   element: <LockoutGuidelines />,
-    // },
+    {
+      path: "/lockout/guidelines",
+      element: <LockoutGuidelines />,
+    },
     {
       path: "/rofies1",
       element: <Rofies1 />,
