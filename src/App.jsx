@@ -1,4 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React, { useState,useEffect } from "react";
+import Loader from "/images/loader.webp";
 import Infinity from "./pages/Infinity";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
@@ -23,10 +25,28 @@ import Home from "./index";
 import NrityaNova from "./pages/NrityaNova";
 import LockoutAbout from "./components/LockoutAbout";
 const App = () => {
+  const [showLoader, SetShowLoader] = useState(true);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      SetShowLoader(false);
+    }, 5000);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element:
+      
+      <> {showLoader && (
+        <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+          <img src={Loader} className="w-[60%]" />
+        </div>
+      )}
+       <Home />
+      </>
+      ,
     },
     {
       path: "/about",
@@ -114,7 +134,11 @@ const App = () => {
     },
   ]);
   return (
+      
       <RouterProvider router={router} />
+      
+      
+      
   );
 };
 
