@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React, { useState,useEffect } from "react";
-import Loader from "/images/loader.webp";
+import Loader from "/images/loader.gif";
 import Infinity from "./pages/Infinity";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
