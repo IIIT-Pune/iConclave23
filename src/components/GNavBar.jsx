@@ -4,7 +4,14 @@ import { Link } from "react-router-dom";
 
 const GNavBar = ({club, color, hcolor}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  return ( <div className="flex ml-auto right-0 py-4 px-20 text-white">
+  return ( <div className="flex items-center justify-between py-4 px-10 text-white">
+  <a href="/">
+    <img
+      src="/images/IConclave.png"
+      className="lg:h-32 h-20 -px-4 -mx-4 invert"
+      alt="Iconclavebg"
+    />
+  </a>
   <nav>
     <section className="MOBILE-MENU flex lg:hidden mb-3 ">
       <div
@@ -67,10 +74,7 @@ const GNavBar = ({club, color, hcolor}) => {
       >
         GET IN TOUCH
       </li>
-   
-    </ul>
-    <ul>
-    <a href="#">
+      <a href="#">
         <li
           onClick={() => setIsNavOpen(false)}
           className={`hover:text-${hcolor} invert font-veterantypewriter text-l border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
@@ -78,8 +82,8 @@ const GNavBar = ({club, color, hcolor}) => {
           COGNITION
         </li>
       </a>
-          
-        </ul>
+    </ul>
+    
       </div>
     </section>
     <div className="DESKTOP-MENU hidden lg:flex justify-between ">
@@ -87,9 +91,9 @@ const GNavBar = ({club, color, hcolor}) => {
   <nav className="flex justify-between h-16 items-center">
     {/* <ul>     </ul> */}
     <a href="/">
-        <img src="/images/IConclave.png" 
+        <img src="" 
         className="h-24 invert justify-between"
-        alt="Iconclavebg" />
+        alt="" />
       </a>
     <ul className={`p-20 flex gap-24 text-${color} font-miso text-3xl`}>
 
