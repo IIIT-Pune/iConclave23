@@ -51,7 +51,7 @@ const FrameFlick = () => {
           background: "linear-gradient(180deg, #141119 0%, #000 100%)",
         }}
       >
-        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
+        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
           ABOUT
         </h1>
         <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
@@ -79,14 +79,43 @@ const FrameFlick = () => {
           </p>
         </div>
       </div>
+      
       <div
+        className="min-h-screen"
+        id="guidelines"
+        style={{
+          background: "linear-gradient(180deg, #000001 0%, #0C0C0C 100%)",
+        }}
+      >
+         <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
+          GUIDELINES
+        </h1>
+        <div className="text-2xl lg:text-3xl text-white flex flex-col gap-5 mx-7 lg:mx-20 text-justify font-miso">
+          {ffguidelines.map((rule, index) => {
+            return (
+              <div key={index} className="flex gap-5">
+                <h1>{index + 1}.</h1>
+                <p>{rule}</p>
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex justify-center items-center p-10">
+  <a href="https://example.com" className="text-white">
+    <h1 className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
+      hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all">
+      RULEBOOK
+    </h1>
+  </a>
+</div>
+<div
         className="min-h-screen"
         id="horizon"
         style={{
           background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
         }}
       >
-        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
+         <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
           HORIZON
         </h1>
         <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
@@ -111,38 +140,9 @@ const FrameFlick = () => {
           </p>
         </div>
       </div>
-      <div
-        className="min-h-screen"
-        id="guidelines"
-        style={{
-          background: "linear-gradient(180deg, #000001 0%, #0C0C0C 100%)",
-        }}
-      >
-        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
-          GUIDELINES
-        </h1>
-        <div className="text-2xl lg:text-3xl text-white flex flex-col gap-5 mx-7 lg:mx-20 text-justify font-miso">
-          {ffguidelines.map((rule, index) => {
-            return (
-              <div key={index} className="flex gap-5">
-                <h1>{index + 1}.</h1>
-                <p>{rule}</p>
-              </div>
-            );
-          })}
-        </div>
-        <div className="flex justify-center items-center p-10">
-  <a href="https://example.com" className="text-white">
-    <h1 className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
-      hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all">
-      RULEBOOK
-    </h1>
-  </a>
-</div>
-
       </div>
       <div style={{
-          background: "#0C0C0C",
+          background: "#000000",
         }}>
       <Footer textColor="white"></Footer>
       </div>
