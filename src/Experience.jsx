@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { OrbitControls } from '@react-three/drei';
+import { Html, OrbitControls } from '@react-three/drei';
 import { Perf } from 'r3f-perf';
 import { Debug, Physics } from '@react-three/rapier';
 import { useControls } from 'leva'; // Import useControls
@@ -76,6 +76,7 @@ export default function Experience() {
         {/* <Debug /> */}
 
         {/* Floor */}
+        
         <Floor />
 
         {/* Main Text */}
