@@ -67,7 +67,7 @@ const FFNav = () => {
           {/* Show the second logo only in the desktop version */}
           <a href="/rofies1">
             <h1
-              className="font-grandstander text-4xl m-0 p-6 text-center text-white font-normal"
+              className="font-grandstander text-xl m-0 p-6 text-center text-white font-normal"
               id="OFFRoadBandit"
             >
               HORIZON
