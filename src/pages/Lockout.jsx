@@ -5,10 +5,10 @@ const Lockout = () => {
     <div
       style={{
         background: "url(/images/lockout_bg.png)",
-        backgroundPosition: "center center",
+        backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-      className="h-screen"
+      className="h-screen fixed top-0 left-0 w-full bg-cover bg-no-repeat"
     >
       <LockoutNav />
 

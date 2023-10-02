@@ -7,7 +7,7 @@ const LockoutNav = () => {
     <div>
       <section className="MOBILE-MENU flex md:hidden items-center justify-between">
         <a href="/">
-          <img src="/whitelogotrans.png" className="h-16" alt="Iconclavebg" />
+          <img src="/images/IConclave.png" className="h-16" alt="Iconclavebg" />
         </a>
         <div
           className="HAMBURGER-ICON space-y-2 mr-8"
@@ -55,7 +55,7 @@ const LockoutNav = () => {
       <nav className="DESKTOP-MENU hidden flex justify-between md:flex">
         <a href="/">
           <img
-            src="/whitelogotrans.png"
+            src="/images/IConclave.png"
             className="p-4 h-16 sm:h-20 md:h-24 lg:h-28"
             alt="Iconclavebg"
           />
