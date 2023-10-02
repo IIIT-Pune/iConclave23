@@ -20,7 +20,7 @@ const Footer = ({ textColor, invert }) => {
           <a href="mailto:iconclave@iiitp.ac.in"> {/* Updated link */}
             <AiFillMail className={`cursor-pointer ${iconSize}`} color={textColor} />
           </a>
-          <a href="https://www.instagram.com/iconclaveiiitp/"> {/* Updated link */}
+          <a href="https://www.instagram.com/iconclave_iiitp/"> {/* Updated link */}
             <AiFillInstagram className={`cursor-pointer ${iconSize}`} color={textColor} />
           </a>
           <a href="https://www.linkedin.com/company/iconclave/"> {/* Updated link */}

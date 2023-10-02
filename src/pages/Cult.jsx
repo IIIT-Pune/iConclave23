@@ -69,18 +69,18 @@ const Cult = () => {
           />
         </a>
       </div>
-      <div className="flex-grow">
+      <div className="flex-grow lg:-mt-40 mb-4">
         <img
           src="/images/cult_head.png"
-          alt="Technical Events"
-          className="mx-auto sm:px-4 md:px-20 lg:px-20"
+          alt="Cultural Events"
+          className="mx-auto sm:px-4 md:px-20 lg:px-32"
         />
-        <div className="-mt-28 lg:-mt-44 px-10 py-24">
+        <div className="-mt-28 lg:-mt-48 px-10 py-24 -mb-32">
           {/* Conditionally render Swiper based on screen size */}
           {window.innerWidth <= 1000 ? ( // Mobile view
             <div
               className="mobile-slides"
-              style={{ maxHeight: "75vh", overflowY: "auto" }}
+              style={{ maxHeight: "47vh", overflowY: "auto" }}
             >
               <SwiperSlide className="rounded-3xl">
                 <a href="/nrityanova">
@@ -129,7 +129,7 @@ const Cult = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/story">
+                <a href="/storyquest">
                   <img
                     src="./images/story.png"
                     alt=""
@@ -149,7 +149,7 @@ const Cult = () => {
             </div>
           ) : (
             // Larger screens (iPad and laptop)
-            <div className="desktop-swiper">
+            <div className="desktop-swiper lg:-mb-32">
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -216,7 +216,7 @@ const Cult = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/story">
+                  <a href="/storyquest">
                     <img
                       src="./images/story.png"
                       alt=""

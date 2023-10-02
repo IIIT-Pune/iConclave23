@@ -37,6 +37,7 @@ const App = () => {
       clearInterval(timer);
     };
   }, []);
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -52,99 +53,99 @@ const App = () => {
       ,
     },
     {
-      path: "/about",
+      path: "about",
       element: <About />,
     },
     {
-      path: "/cultnight",
+      path: "cultnight",
       element: <CultNight />,
     },
     {
-      path: "/sponsors",
+      path: "sponsors",
       element: <Sponsor />,
     },
     {
-      path: "/getintouch",
+      path: "getintouch",
       element: <GetinTouch />,
     },
     {
-      path: "/tech",
+      path: "tech",
       element: <Tech />,
     },
     {
-      path: "/cult",
+      path: "cult",
       element: <Cult />,
     },
     {
-      path: "/nexus",
+      path: "nexus",
       element: <Nexus />,
     },
     {
-      path: "/infinity",
+      path: "infinity",
       element: <Infinity />,
     },
     {
-      path: "/infinity/team",
+      path: "infinity/team",
       element: <Infinityteam />,
     },
     {
-      path: "/infinity/pastevents",
+      path: "infinity/pastevents",
       element: <Infinitypastevent />,
     },
     {
-      path: "/infinity/bitlegion",
+      path: "infinity/bitlegion",
       element: <Bitlegion />,
     },
     {
-      path: "/infinity/halloffame",
+      path: "infinity/halloffame",
       element: <InfinityHalloffame />,
     },
     {
-      path: "/lockout",
+      path: "lockout",
       element: <Lockout />,
     },
     {
-      path: "/lockout/about",
+      path: "lockout/about",
       element: <LockoutAbout />,
     },
     {
-      path: "/lockout/guidelines",
+      path: "lockout/guidelines",
       element: <LockoutGuidelines />,
     },
     {
-      path: "/lockout/team",
+      path: "lockout/team",
       element: <Infinityteam />,
     },
     {
-      path: "/rofies1",
+      path: "rofies1",
       element: <Rofies1 />,
     },
     {
-      path: "/cognition",
+      path: "cognition",
       element: <Cognition />,
     },
     {
-      path: "/aawazeaawam",
+      path: "aawazeaawam",
       element: <AawazEAawam />,
     },
     {
-      path: "/frameflick",
+      path: "frameflick",
       element: <FrameFlick />,
     },
     {
-      path: "/anurag",
+      path: "anurag",
       element: <Anurag />,
     },
     {
-      path: "/nrityanova",
+      path: "nrityanova",
       element: <NrityaNova />,
     },
     {
-      path: "/shipwreck",
+      path: "shipwreck",
       element: <ShipWreck />,
     },
     {
-      path: "/storyquest",
+      path: "storyquest",
       element: <StoryQuest />,
     },
   ]);
