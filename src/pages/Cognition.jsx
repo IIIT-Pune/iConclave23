@@ -1,19 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-import { cognitionguidelines } from "../assets/cognitionguidelines";
-import GNavBar from "../components/GNavBar";
+// import { cognitionguidelines } from "../assets/cognitionguidelines";
 import Footer from "../components/Footer";
+import CogNav from "../components/CogNav";
 const Cognition = () => {
   return (
-    <div className="bg-cognitionbg h-full overflow-auto">
-      <GNavBar
-        club="Q-RIOCITY"
-        color="black"
-        hcolor="black"
-        className="fixed"
-      />
-      <div className="hero mb-4 ">
-        <div className="flex flex-col items-center">
-          <div className=" -mt-5 flex flex-col z-10">
+    <div className="bg-cognitionbg min-h-screen flex flex-col">
+      <CogNav />
+      <div className="hero mt-36 lg:m-0 flex-grow">
+        <div className="flex flex-col items-center ">
+          <div className=" -mt-5 flex flex-col z-10 ">
             <h1 className="font-veterantypewriter text-center text-6xl lg:text-10xl">
               COGNITION
             </h1>
@@ -28,14 +23,16 @@ const Cognition = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center">
+        {/* <div className="flex justify-center items-center">
           <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
             REGISTER
           </h1>
-        </div>
+        </div> */}
       </div>
 
-      <div className="font-veterantypewriter " id="about">
+      <Footer invert="true"></Footer>
+
+      {/* <div className="font-veterantypewriter" id="about">
         <h1 className="text-5xl lg:text-9xl  ml-10 pt-10 pb-4">ABOUT</h1>
         <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
@@ -60,6 +57,27 @@ const Cognition = () => {
           </p>
         </div>
       </div>
+
+      <div className="font-veterantypewriter " id="guidelines">
+        <h1 className="text-5xl lg:text-9xl  ml-10 pb-4">GUIDELINES</h1>
+
+        <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20  text-justify ">
+          {cognitionguidelines.map((rule, index) => {
+            return (
+              <div key={index} className="flex gap-5">
+                <h1>{index + 1}.</h1>
+                <p>{rule}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="flex justify-center items-center p-10">
+        <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
+          RULEBOOK
+        </h1>
+      </div>
+
       <div className="font-veterantypewriter min-h-screen" id="club">
         <h1 className="text-5xl lg:text-9xl  ml-10 pb-4">Q-RIOCITY</h1>
         <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
@@ -100,29 +118,7 @@ const Cognition = () => {
             when our quiz time slot is usurped, but we shall never be boring.
           </p>
         </div>
-      </div>
-      <div className="font-veterantypewriter " id="guidelines">
-        <h1 className="text-5xl lg:text-9xl  ml-10 pb-4">GUIDELINES</h1>
-
-        <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20  text-justify ">
-          {cognitionguidelines.map((rule, index) => {
-            return (
-              <div key={index} className="flex gap-5">
-                <h1>{index + 1}.</h1>
-                <p>{rule}</p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <div className="flex justify-center items-center p-10">
-        <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
-          RULEBOOK
-        </h1>
-      </div>
-      <div className="">
-      <Footer invert="true"></Footer>
-      </div>
+      </div> */}
     </div>
   );
 };
