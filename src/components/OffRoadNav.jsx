@@ -14,8 +14,8 @@ const OffRoadNav = () => {
   };
 
   return (
-    <div>
-      <nav className="flex justify-between relative">
+    <div className="">
+      <nav className="flex justify-between">
         <a href="/">
           {/* Show the first logo in both desktop and mobile versions */}
           <img
