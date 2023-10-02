@@ -2,7 +2,7 @@
 import InfinityNav from "./InfinityNav";
 import Card from "./InfinityCards";
 import { team,headteam } from "../assets/team";
-
+import Footer from "./Footer";
 const Infinityteam = () => {
   return (
     <div className="bg-black h-full">
@@ -43,6 +43,9 @@ const Infinityteam = () => {
             );
           })}
         </div>
+      </div>
+      <div className="bg-black">
+      <Footer textColor="white"></Footer>
       </div>
     </div>
   );

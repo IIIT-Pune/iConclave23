@@ -4,6 +4,7 @@ import InfinityNav from "../components/InfinityNav";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
+import Footer from "../components/Footer";
 
 /* eslint-disable react/jsx-no-target-blank */
 // eslint-disable-next-line no-shadow-restricted-names
@@ -92,27 +93,11 @@ const Infinity = () => {
         </div>
       </div>
 
-      <footer>
-        <div className="flex justify-center items-center bg-black h-20 gap-5">
-          <a href="#">
-            <AiFillGithub className="cursor-pointer" size={50} color="white" />
-          </a>
-          <a href="#">
-            <AiFillInstagram
-              className="cursor-pointer"
-              size={50}
-              color="white"
-            />
-          </a>
-          <a href="#">
-            <AiFillLinkedin
-              className="cursor-pointer"
-              size={50}
-              color="white"
-            />
-          </a>
-        </div>
-      </footer>
+      
+        <div className="bg-black">
+      <Footer textColor="white"></Footer>
+      </div>
+     
     </div>
   );
 };

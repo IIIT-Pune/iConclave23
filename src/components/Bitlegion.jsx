@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import InfinityNav from "./InfinityNav";
-
+import Footer from "./Footer";
 const Bitlegion = () => {
   return (
     <div>
@@ -51,7 +51,11 @@ const Bitlegion = () => {
           </p>
         </div>
       </div>
+      <div className="bg-black">
+      <Footer textColor="white"></Footer>
+      </div>
     </div>
+    
   );
 };
 
