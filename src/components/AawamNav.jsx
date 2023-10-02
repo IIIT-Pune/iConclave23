@@ -7,7 +7,7 @@ const AawamNav = () => {
           className="h-24"
           alt="Iconclavebg" />
           </a>
-          <div className="flex justify-center mr-3">
+          <div className="flex justify-center ml-[9%]">
           <ul className="flex gap-24 text-white font-miso text-3xl  items-center">
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
               <a href="#about">
