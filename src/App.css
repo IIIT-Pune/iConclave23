@@ -1,0 +1,17 @@
+/* Add this CSS to your stylesheet */
+/* Change the background color of the arrow buttons */
+
+/* Change the arrow color */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #ffffff; /* Change to your desired color */
+  font-size: 1.8rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  
+}
+
+/* Add hover effect to the buttons */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #9b9b9b; 
+}

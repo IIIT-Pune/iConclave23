@@ -1,4 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React, { useState,useEffect } from "react";
+import Loader from "/images/loader.webp";
 import Infinity from "./pages/Infinity";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
@@ -21,13 +23,33 @@ import FrameFlick from "./pages/FrameFlick";
 import Home from "./index";
 import NrityaNova from "./pages/NrityaNova";
 import LockoutAbout from "./components/LockoutAbout";
+import LockoutGuidelines from "./components/LockoutGuidelines";
 import ShipWreck from "./pages/ShipWreck";
 import StoryQuest from "./pages/StoryQuest";
+
 const App = () => {
+  const [showLoader, SetShowLoader] = useState(true);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      SetShowLoader(false);
+    }, 5000);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element:
+      
+      <> {showLoader && (
+        <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+          <img src={Loader} className="w-[60%]" />
+        </div>
+      )}
+       <Home />
+      </>
+      ,
     },
     {
       path: "/about",
@@ -86,6 +108,10 @@ const App = () => {
       element: <LockoutAbout />,
     },
     {
+      path: "/lockout/guidelines",
+      element: <LockoutGuidelines />,
+    },
+    {
       path: "/rofies1",
       element: <Rofies1 />,
     },
@@ -118,9 +144,7 @@ const App = () => {
       element: <StoryQuest />,
     },
   ]);
-  return (
-      <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
