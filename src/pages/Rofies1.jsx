@@ -14,25 +14,22 @@ const Rofies1 = () => {
     >
       <OffRoadNav />
       <div className="flex justify-center">
-        <div className="text-white pt-1 lg:pt-5 flex flex-col gap-1">
-          <img
-            src="/images/logo.png"
-            alt="offroad"
-            className="w-36 lg:w-52 lg:-mb-12"
-          />
-          <h1 className=" font-silkroad text-7xl lg:block lg:text-10xl  text-center">
+        <div className="text-white pt-1 lg:pt-16 flex flex-col gap-1">
+          <h1 className=" font-silkroad text-7xl lg:block sm:text-8xl lg:text-10xl  text-center">
             OFF - ROAD BANDIT
           </h1>
-          <p className=" font-miso text-4xl lg:text-8xl text-center lg:-mt-10">
+          <p className=" font-miso text-4xl lg:text-8xl text-center lg:-mt-6">
             NAVIGATE, RELAY, TRIUMPH
           </p>
+
+          <div className="flex justify-center items-center mt-36 m-10">
+            <h1 className="text-white font-newshape border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider ">
+              REGISTER
+            </h1>
+          </div>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-40 m-10">
-        <h1 className="text-white font-newshape border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider ">
-          REGISTER
-        </h1>
-      </div>
+
       <section
         className="min-h-screen bg-yellow-600"
         id="about"
@@ -43,7 +40,7 @@ const Rofies1 = () => {
         }}
       >
         <h1
-          className="font-silkroad text-5xl pt-5 lg:p-0 lg:text-10xl text-white ml-10 lgmt-12"
+          className="font-silkroad text-5xl pt-5 lg:p-0 lg:text-10xl text-white ml-10 lg:mt-12"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
         >
           ABOUT
