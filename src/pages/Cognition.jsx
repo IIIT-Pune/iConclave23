@@ -36,7 +36,7 @@ const Cognition = () => {
       </div>
 
       <div className="font-veterantypewriter " id="about">
-        <h1 className="text-5xl lg:text-9xl  ml-10">ABOUT</h1>
+        <h1 className="text-5xl lg:text-9xl  ml-10 pt-10 pb-4">ABOUT</h1>
         <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
             Prepare to push the boundaries of your knowledge and embark on an
@@ -61,7 +61,7 @@ const Cognition = () => {
         </div>
       </div>
       <div className="font-veterantypewriter min-h-screen" id="club">
-        <h1 className="text-5xl lg:text-9xl  ml-10">Q-RIOCITY</h1>
+        <h1 className="text-5xl lg:text-9xl  ml-10 pb-4">Q-RIOCITY</h1>
         <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
             Q-riocity is IIIT Pune's quizzing society, like the{" "}
@@ -102,7 +102,7 @@ const Cognition = () => {
         </div>
       </div>
       <div className="font-veterantypewriter " id="guidelines">
-        <h1 className="text-5xl lg:text-9xl  ml-10">GUIDELINES</h1>
+        <h1 className="text-5xl lg:text-9xl  ml-10 pb-4">GUIDELINES</h1>
 
         <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20  text-justify ">
           {cognitionguidelines.map((rule, index) => {
