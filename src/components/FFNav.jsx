@@ -15,7 +15,7 @@ const FFNav = () => {
 
   return (
     <div>
-      <nav className="flex justify-between relative">
+      <nav className="flex justify-between backdrop-blur-4">
         <a href="/">
           {/* Show the first logo in both desktop and mobile versions */}
           <img
@@ -65,7 +65,7 @@ const FFNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/rofies1">
+          <a href="https://instagram.com/horizon_iiitp">
             <h1
               className="font-grandstander text-xl m-0 p-6 text-center text-white font-normal"
               id="OFFRoadBandit"
