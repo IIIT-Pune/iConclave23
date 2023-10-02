@@ -53,7 +53,18 @@ const Cult = () => {
         {/* Conditionally render Swiper based on screen size */}
         {window.innerWidth <= 768 ? ( // Mobile view
           <div className="mobile-slides" style={{ maxHeight: "75vh", overflowY: "auto" }}>
-             <SwiperSlide className="rounded-3xl">
+            <SwiperSlide className="rounded-3xl">
+            <a href="/nrityanova">
+              <img src="./images/nritya_cau.png" alt="" className="rounded-3xl" />
+            </a>
+          </SwiperSlide>
+           <SwiperSlide className="rounded-3xl">
+            <a href="/anurag">
+              <img src="./images/anurag_cau.png" alt="" className="rounded-3xl" />
+            </a>
+          </SwiperSlide>
+          
+          <SwiperSlide className="rounded-3xl">
             <a href="/frameflick">
               <img src="./images/frame_cau.png" alt="" className="rounded-3xl" />
             </a>
@@ -85,7 +96,18 @@ const Cult = () => {
               className="mySwiper"
               onSwiper={(swiper) => setSwiper(swiper)}
             >
-               <SwiperSlide className="rounded-3xl">
+              <SwiperSlide className="rounded-3xl">
+            <a href="/nrityanova">
+              <img src="./images/nritya_cau.png" alt="" className="rounded-3xl" />
+            </a>
+          </SwiperSlide>
+              <SwiperSlide className="rounded-3xl">
+            <a href="/anurag">
+              <img src="./images/anurag_cau.png" alt="" className="rounded-3xl" />
+            </a>
+          </SwiperSlide>
+          
+          <SwiperSlide className="rounded-3xl">
             <a href="/frameflick">
               <img src="./images/frame_cau.png" alt="" className="rounded-3xl" />
             </a>

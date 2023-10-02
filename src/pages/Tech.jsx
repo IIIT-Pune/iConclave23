@@ -59,6 +59,11 @@ const Tech = () => {
               </a>
             </SwiperSlide>
             <SwiperSlide className="rounded-3xl">
+              <a href="/lockout">
+                <img src="./images/lockout_cau.png" alt="" className="rounded-3xl" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide className="rounded-3xl">
               <a href="/infinity">
                 <img src="./images/infinity_cau.png" alt="" className="rounded-3xl" />
               </a>
@@ -68,11 +73,7 @@ const Tech = () => {
                 <img src="./images/offrd_cau.png" alt="" className="rounded-3xl" />
               </a>
             </SwiperSlide>
-            <SwiperSlide className="rounded-3xl">
-              <a href="/lockout">
-                <img src="./images/lockout_cau.png" alt="" className="rounded-3xl" />
-              </a>
-            </SwiperSlide>
+           
           </div>
         ) : ( // Larger screens (iPad and laptop)
           <div className="desktop-swiper">
@@ -110,6 +111,7 @@ const Tech = () => {
                   <img src="./images/lockout_cau.png" alt="" className="rounded-3xl" />
                 </a>
               </SwiperSlide>
+              
             </Swiper>
             {/* Previous Button */}
             <div className="swiper-button-prev" onClick={goPrev}></div>
