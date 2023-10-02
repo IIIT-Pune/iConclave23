@@ -6,7 +6,7 @@ export default function Floor()
 {
     const y = 0
 
-    const roughnessTexture = useTexture('textures/Texturelabs_InkPaint_327L.jpg')
+    const roughnessTexture = useTexture('/textures/Texturelabs_InkPaint_327L.jpg')
     roughnessTexture.repeat.x = 30
     roughnessTexture.repeat.y = 30
     roughnessTexture.wrapS = THREE.RepeatWrapping
