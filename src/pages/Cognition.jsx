@@ -11,20 +11,20 @@ const Cognition = () => {
         hcolor="black"
         className="fixed"
       />
-      <div className="hero h-screen">
+      <div className="hero mb-4 ">
         <div className="flex flex-col items-center">
           <div className=" -mt-5 flex flex-col z-10">
-            <h1 className="text-10xl font-veterantypewriter text-center ">
+            <h1 className="font-veterantypewriter text-center text-6xl lg:text-10xl">
               COGNITION
             </h1>
-            <h2 className="text-4xl font-1942 text-right -mt-16">
+            <h2 className="text-l lg:text-4xl font-1942 text-right -mt-2">
               decode dazzle dominate
             </h2>
           </div>
           <img
             src="./images/cognition_bg.png"
             alt="bg"
-            className="w-[54rem] -mt-10"
+            // className="w-[54rem]"
           />
         </div>
 
@@ -35,9 +35,9 @@ const Cognition = () => {
         </div>
       </div>
 
-      <div className="font-veterantypewriter min-h-screen" id="about">
-        <h1 className="text-9xl  ml-10">ABOUT</h1>
-        <div className="text-4xl flex flex-col mx-20 gap-10 text-justify">
+      <div className="font-veterantypewriter " id="about">
+        <h1 className="text-5xl lg:text-9xl  ml-10">ABOUT</h1>
+        <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
             Prepare to push the boundaries of your knowledge and embark on an
             exhilarating journey through the world of trivia with the Quiz Club
@@ -50,7 +50,7 @@ const Cognition = () => {
             hailing from diverse colleges, urging them to unveil their wit and
             wisdom in an extraordinary battle of brains.
           </p>
-          <p>
+          <p className="pb-5 lg:pb-10">
             Cognition stands apart by not merely testing what you know, but how
             much you can effortlessly recall across a myriad of domains. As you
             journey through Cognition, the stakes soar high, and the rewards
@@ -61,8 +61,8 @@ const Cognition = () => {
         </div>
       </div>
       <div className="font-veterantypewriter min-h-screen" id="club">
-        <h1 className="text-9xl  ml-10">Q-RIOCITY</h1>
-        <div className="text-3xl flex flex-col mx-20 gap-10 text-justify">
+        <h1 className="text-5xl lg:text-9xl  ml-10">Q-RIOCITY</h1>
+        <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
             Q-riocity is IIIT Pune's quizzing society, like the{" "}
             <span className="font-bold">
@@ -95,16 +95,16 @@ const Cognition = () => {
             to form our very own PLA, but those that we do have are surely worth
             more than a pineapple in the 17th century.
           </p>
-          <p className="pb-20">
+          <p className="pb-5 lg:pb-10">
             We may be geeky, nerdy, introverted, uptight, not funny, or grumpy
             when our quiz time slot is usurped, but we shall never be boring.
           </p>
         </div>
       </div>
-      <div className="font-veterantypewriter min-h-screen" id="guidelines">
-        <h1 className="text-9xl  ml-10">GUIDELINES</h1>
+      <div className="font-veterantypewriter " id="guidelines">
+        <h1 className="text-5xl lg:text-9xl  ml-10">GUIDELINES</h1>
 
-        <div className="text-3xl flex flex-col gap-5 mx-20 my-5 text-justify ">
+        <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20  text-justify ">
           {cognitionguidelines.map((rule, index) => {
             return (
               <div key={index} className="flex gap-5">
