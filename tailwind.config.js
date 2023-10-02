@@ -20,6 +20,8 @@ export default {
         kodchasan: ["Kodchasan", "cursive"],
         smarkan: ["Samarkan", "cursive"],
         fuzzybubbles: ["FuzzyBubbles", "cursive"],
+        punishment: ["Punishment", "cursive"],
+        harryp: ["HARRYP", "cursive"],
       },
       colors: {
         lockoutred: "#571d20",

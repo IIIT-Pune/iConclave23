@@ -4,7 +4,6 @@ import Loader from "/images/loader.webp";
 import Infinity from "./pages/Infinity";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
-import Events from "./pages/Events";
 import CultNight from "./pages/CultNight";
 import Sponsor from "./pages/Sponsor";
 import GetinTouch from "./pages/GetinTouch";
@@ -25,6 +24,9 @@ import Home from "./index";
 import NrityaNova from "./pages/NrityaNova";
 import LockoutAbout from "./components/LockoutAbout";
 import LockoutGuidelines from "./components/LockoutGuidelines";
+import ShipWreck from "./pages/ShipWreck";
+import StoryQuest from "./pages/StoryQuest";
+
 const App = () => {
   const [showLoader, SetShowLoader] = useState(true);
   useEffect(() => {
@@ -52,10 +54,6 @@ const App = () => {
     {
       path: "/about",
       element: <About />,
-    },
-    {
-      path: "/events",
-      element: <Events />,
     },
     {
       path: "/cultnight",
@@ -136,6 +134,14 @@ const App = () => {
     {
       path: "/nrityanova",
       element: <NrityaNova />,
+    },
+    {
+      path: "/shipwreck",
+      element: <ShipWreck />,
+    },
+    {
+      path: "/storyquest",
+      element: <StoryQuest />,
     },
   ]);
   return <RouterProvider router={router} />;

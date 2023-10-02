@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const NexusNav = () => {
+const StoryQuestNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Function to toggle the mobile menu
@@ -17,29 +17,39 @@ const NexusNav = () => {
     <div>
       <nav className="flex justify-between relative">
         <a href="/">
-          <img src="/images/IConclave.png" className="h-24" alt="Iconclavebg" />
+          {/* Show the first logo in both desktop and mobile versions */}
+          <img
+            src="/images/IConclave.png"
+            className="h-24 p-4"
+            alt="Iconclavebg"
+          />
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="flex">
-            <nav className="flex  justify-between items-center">
-              <div className="flex justify-center items-center">
-                <ul className="flex gap-24 text-white font-miso text-3xl justify-center items-center">
-                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#">ABOUT</a>
-                  </li>
-                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#">LOCALHOST</a>
-                  </li>
-                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#">GUIDELINES</a>
-                  </li>
-                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#">TEAM</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+          <div className="text-white text-2xl flex items-center">
+            <ul className="flex gap-24 ">
+              <a href="#about" className="hover:border-b-2 pb-1 cursor-pointer">
+                <li>ABOUT</li>
+              </a>
+              <a
+                href="#horizon"
+                className="hover:border-b-2 pb-1 cursor-pointer"
+              >
+                <li>ECLECTIC</li>
+              </a>
+              <a
+                href="#guidelines"
+                className="hover:border-b-2 pb-1 cursor-pointer"
+              >
+                <li>GUIDELINES</li>
+              </a>
+              <a
+                href="#getintouch"
+                className="hover:border-b-2 pb-1 cursor-pointer"
+              >
+                <li>GET IN TOUCH</li>
+              </a>
+            </ul>
           </div>
         </div>
         <div className="lg:hidden">
@@ -67,12 +77,12 @@ const NexusNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/nexus">
+          <a href="#eclectic">
             <h1
-              className=" font-majormono text-5xl m-0 p-6 text-center text-white font-normal"
-              id="NEXUS"
+              className="font-harryp text-4xl m-0 p-6 text-center text-white font-normal"
+              id="OFFRoadBandit"
             >
-              neXus
+              STORY QUEST
             </h1>
           </a>
         </div>
@@ -106,8 +116,8 @@ const NexusNav = () => {
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
-              <a href="#horizon" onClick={closeMobileMenu}>
-                <li>ANURAG</li>
+              <a href="#eclectic" onClick={closeMobileMenu}>
+                <li>ECLECTIC</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
@@ -123,4 +133,4 @@ const NexusNav = () => {
   );
 };
 
-export default NexusNav;
+export default StoryQuestNav;

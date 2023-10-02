@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ffguidelines } from "../assets/ffguidelines";
 import NNNAv from "../components/NNNAV";
+import Footer from "../components/Footer";
 
 const NrityaNova = () => {
   return (
@@ -11,12 +11,12 @@ const NrityaNova = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="h-screen"
+        className="h-screen flex flex-col"
       >
         <NNNAv />
 
-        <div className="flex justify-center">
-          <div className="text-white pt-20 flex-col">
+        <div className="flex justify-center flex-grow">
+          <div className="text-white pt-32 flex-col">
             <div className="flex flex-col">
               <h1 className=" font-fuzzybubbles text-5xl lg:text-10xl text-center pt-20">
                 NRITYA NOVA
@@ -28,14 +28,16 @@ const NrityaNova = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-24 p-10">
+        {/* <div className="flex justify-center items-center mt-24 p-10">
           <h1 className="text-white font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider ">
             register
           </h1>
-        </div>
+        </div> */}
+
+        <Footer textColor="white" />
       </div>
 
-      <div
+      {/* <div
         className="min-h-screen"
         id="about"
         style={{
@@ -127,7 +129,7 @@ const NrityaNova = () => {
             RULEBOOK
           </h1>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

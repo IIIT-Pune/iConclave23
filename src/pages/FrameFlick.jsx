@@ -1,8 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ffguidelines } from "../assets/ffguidelines";
 import FFNav from "../components/FFNav";
 import Footer from "../components/Footer";
-
 
 const FrameFlick = () => {
   return (
@@ -13,39 +11,37 @@ const FrameFlick = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="min-h-screen"
+        className="min-h-screen flex flex-col"
       >
         <FFNav />
 
-        <div className="flex justify-center">
-          <div className="text-white pt-20 flex-col">
-            <h1 className="text-7xl font-grandstander lg:text-10xl text-center pt-20">
+        <div className="flex justify-center flex-grow">
+          <div className="text-white pt-20 flex-col ">
+            <h1 className="text-8xl font-grandstander lg:text-10xl text-center pt-20 ">
               FRAME FLICKS
             </h1>
-            <p className=" text-center font-kodchasan lg:text-5xl lg:-mt-12 lg:text-right ">
+            <p className=" text-center font-kodchasan text-3xl lg:text-5xl lg:-mt-12 lg:text-right ">
               your fest your frame
             </p>
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-32 lg:mt-40 p-10">
-  <a href="https://example.com" className="text-white">
-    <h1 className="font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
-      transition-transform transform hover:scale-105 hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out">
-      register
-    </h1>
-  </a>
-</div>
+        <Footer textColor="white" />
 
-
-
-
-
-
+        {/* <div className="flex justify-center items-center mt-32 lg:mt-40 p-10">
+          <a href="https://example.com" className="text-white">
+            <h1
+              className="font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
+      transition-transform transform hover:scale-105 hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out"
+            >
+              register
+            </h1>
+          </a>
+        </div> */}
       </div>
 
-      <div
-        className="min-h-screen"
+      {/* <div
+        className="min-h-screen py-10"
         id="about"
         style={{
           background: "linear-gradient(180deg, #141119 0%, #000 100%)",
@@ -79,15 +75,15 @@ const FrameFlick = () => {
           </p>
         </div>
       </div>
-      
+
       <div
-        className="min-h-screen"
+        className="min-h-screen py-10"
         id="guidelines"
         style={{
-          background: "linear-gradient(180deg, #000001 0%, #0C0C0C 100%)",
+          background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
         }}
       >
-         <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
+        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
           GUIDELINES
         </h1>
         <div className="text-2xl lg:text-3xl text-white flex flex-col gap-5 mx-7 lg:mx-20 text-justify font-miso">
@@ -101,51 +97,49 @@ const FrameFlick = () => {
           })}
         </div>
         <div className="flex justify-center items-center p-10">
-  <a href="https://example.com" className="text-white">
-    <h1 className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
-      hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all">
-      RULEBOOK
-    </h1>
-  </a>
-</div>
-<div
-        className="min-h-screen"
-        id="horizon"
-        style={{
-          background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
-        }}
-      >
-         <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
-          HORIZON
-        </h1>
-        <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
-          <p>
-            Horizon, established in January 2022 with the ideology of "capture
-            imagination," continues to steadfastly pursue and expand upon this
-            captivating concept. As the photography and videography club of IIIT
-            Pune, Horizon has swiftly emerged as one of the institute's most
-            dynamic and youthful clubs. Its ubiquitous presence is felt
-            throughout campus events, where it skillfully encapsulates cherished
-            memories. This proactive involvement has rightfully earned Horizon
-            the designation of being IIIT Pune's dedicated media house.
-          </p>
-          <p>
-            The scope of Horizon extends beyond mere media coverage. The club
-            fervently fosters an environment of creativity and engagement. Among
-            its diverse initiatives, Horizon hosts contests tailored for
-            newcomers, fostering an inclusive atmosphere. With an ambitious
-            vision in mind, the club is actively targeting and working towards
-            organizing its flagship annual photography competition, an event
-            eagerly anticipated by the IIIT Pune community.
-          </p>
+          <a href="https://example.com" className="text-white">
+            <h1
+              className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
+      hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
+            >
+              RULEBOOK
+            </h1>
+          </a>
         </div>
-      </div>
-      </div>
-      <div style={{
-          background: "#000000",
-        }}>
-      <Footer textColor="white"></Footer>
-      </div>
+        <div
+          className="min-h-screen "
+          id="horizon"
+          style={{
+            background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
+          }}
+        >
+          <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
+            HORIZON
+          </h1>
+          <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
+            <p>
+              Horizon, established in January 2022 with the ideology of "capture
+              imagination," continues to steadfastly pursue and expand upon this
+              captivating concept. As the photography and videography club of
+              IIIT Pune, Horizon has swiftly emerged as one of the institute's
+              most dynamic and youthful clubs. Its ubiquitous presence is felt
+              throughout campus events, where it skillfully encapsulates
+              cherished memories. This proactive involvement has rightfully
+              earned Horizon the designation of being IIIT Pune's dedicated
+              media house.
+            </p>
+            <p>
+              The scope of Horizon extends beyond mere media coverage. The club
+              fervently fosters an environment of creativity and engagement.
+              Among its diverse initiatives, Horizon hosts contests tailored for
+              newcomers, fostering an inclusive atmosphere. With an ambitious
+              vision in mind, the club is actively targeting and working towards
+              organizing its flagship annual photography competition, an event
+              eagerly anticipated by the IIIT Pune community.
+            </p>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };
