@@ -2,6 +2,8 @@
 import { ffguidelines } from "../assets/ffguidelines";
 import FFNav from "../components/FFNav";
 import Footer from "../components/Footer";
+
+
 const FrameFlick = () => {
   return (
     <div className="">
@@ -27,10 +29,19 @@ const FrameFlick = () => {
         </div>
 
         <div className="flex justify-center items-center mt-32 lg:mt-40 p-10">
-          <h1 className="text-white font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider ">
-            register
-          </h1>
-        </div>
+  <a href="https://example.com" className="text-white">
+    <h1 className="font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
+      transition-transform transform hover:scale-105 hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out">
+      register
+    </h1>
+  </a>
+</div>
+
+
+
+
+
+
       </div>
 
       <div
@@ -43,7 +54,7 @@ const FrameFlick = () => {
         <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
           ABOUT
         </h1>
-        <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
+        <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
           <p>
             At the beginning of the fest, a single word will be revealed for
             each team, through the chit system. This word will serve as the
@@ -78,7 +89,7 @@ const FrameFlick = () => {
         <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
           HORIZON
         </h1>
-        <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
+        <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
           <p>
             Horizon, established in January 2022 with the ideology of "capture
             imagination," continues to steadfastly pursue and expand upon this
@@ -110,7 +121,7 @@ const FrameFlick = () => {
         <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10">
           GUIDELINES
         </h1>
-        <div className="text-2xl lg:text-3xl text-white flex flex-col gap-5 mx-5 lg:mx-20 text-justify font-miso">
+        <div className="text-2xl lg:text-3xl text-white flex flex-col gap-5 mx-7 lg:mx-20 text-justify font-miso">
           {ffguidelines.map((rule, index) => {
             return (
               <div key={index} className="flex gap-5">
@@ -121,10 +132,14 @@ const FrameFlick = () => {
           })}
         </div>
         <div className="flex justify-center items-center p-10">
-          <h1 className="text-white font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider">
-            RULEBOOK
-          </h1>
-        </div>
+  <a href="https://example.com" className="text-white">
+    <h1 className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
+      hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all">
+      RULEBOOK
+    </h1>
+  </a>
+</div>
+
       </div>
       <div style={{
           background: "#0C0C0C",
