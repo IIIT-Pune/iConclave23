@@ -1,4 +1,5 @@
 import LockoutNav from "../components/LockoutNav";
+import Footer from "../components/Footer";
 
 const Lockout = () => {
   return (
@@ -8,7 +9,7 @@ const Lockout = () => {
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-      className="h-screen fixed top-0 left-0 w-full bg-cover bg-no-repeat"
+      className="h-screen w-full overflow-y-auto"
     >
       <LockoutNav />
 
@@ -21,12 +22,13 @@ const Lockout = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center">
+        {/* <div className="flex justify-center items-center">
           <h1 className="text-white font-captainamerica tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl border-4 md:border-6 lg:border-8 px-2 sm:px-4 md:px-10 lg:px-10 py-1 md:py-2 lg:py-3">
             REGISTER
           </h1>
-        </div>
+        </div> */}
       </div>
+      <Footer textColor={"white"} />
     </div>
   );
 };
