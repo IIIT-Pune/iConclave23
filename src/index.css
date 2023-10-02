@@ -57,6 +57,10 @@
   font-family: Kodchasan;
   src: url("/fonts/Kodchasan.ttf");
 }
+@font-face {
+  font-family: FuzzyBubbles;
+  src: url("/fonts/FuzzyBubbles.ttf");
+}
 ::-webkit-scrollbar {
   display: none;
 }

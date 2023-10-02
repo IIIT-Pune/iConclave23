@@ -1,7 +1,7 @@
 const AawamNav = () => {
     return (
       <div className="">
-        <nav className="flex  justify-between">
+        <nav className="flex  justify-evenly">
           <a href="/">
           <img src="/images/IConclave.png" 
           className="h-24"
