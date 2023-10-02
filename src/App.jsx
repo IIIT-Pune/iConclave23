@@ -112,6 +112,10 @@ const App = () => {
       element: <LockoutGuidelines />,
     },
     {
+      path: "/lockout/team",
+      element: <Infinityteam />,
+    },
+    {
       path: "/rofies1",
       element: <Rofies1 />,
     },
