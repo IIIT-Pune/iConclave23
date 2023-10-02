@@ -1,4 +1,3 @@
-
 const Sponsor = () => {
   return (
     <div
@@ -9,7 +8,7 @@ const Sponsor = () => {
       }}
       className="h-screen w-screen"
     >
-      <h1 className="text-9xl text-white mt-10 ml-10 font-liquidism">
+      <h1 className="text-9xl text-white font-liquidism text-center pt-10 lg:text-left mx-20">
         SPONSORS
       </h1>
       <p className="text-7xl font-liquidism flex justify-center items-center h-96 text-red-700">
@@ -17,6 +16,6 @@ const Sponsor = () => {
       </p>
     </div>
   );
-}
+};
 
-export default Sponsor
+export default Sponsor;
