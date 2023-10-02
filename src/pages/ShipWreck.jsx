@@ -6,7 +6,7 @@ const ShipWreck = () => {
     <div
       style={{
         background:
-          "url(/images/ShipWreck.png), black 50%",
+          "url(/images/ShipWreck_bg.png), black 50%",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat"

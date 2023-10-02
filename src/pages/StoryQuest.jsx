@@ -5,7 +5,7 @@ const StoryQuest = () => {
   return (
     <div
       style={{
-        background: "url(/images/StoryQuest.png), black 50%",
+        background: "url(/images/StoryQuest_bg.png), black 50%",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
