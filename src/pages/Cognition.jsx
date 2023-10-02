@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { cognitionguidelines } from "../assets/cognitionguidelines";
 import GNavBar from "../components/GNavBar";
-
+import Footer from "../components/Footer";
 const Cognition = () => {
   return (
     <div className="bg-cognitionbg h-full overflow-auto">
@@ -119,6 +119,9 @@ const Cognition = () => {
         <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
           RULEBOOK
         </h1>
+      </div>
+      <div className="">
+      <Footer invert="true"></Footer>
       </div>
     </div>
   );

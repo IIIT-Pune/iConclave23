@@ -1,7 +1,7 @@
 import { iiitp, india, world } from "../assets/Halloffame";
 import HOFCard from "./HOFCard";
 import InfinityNav from "./InfinityNav";
-
+import Footer from "./Footer";
 const InfinityHalloffame = () => {
   return (
     <div>
@@ -20,6 +20,9 @@ const InfinityHalloffame = () => {
             <HOFCard title="IIIT Pune #1" bgcolor="white" ccolor="black" data={iiitp}/>
           </div>
         </div>
+      </div>
+      <div className="bg-black">
+      <Footer textColor="white"></Footer>
       </div>
     </div>
   );

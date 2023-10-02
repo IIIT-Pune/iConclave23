@@ -99,7 +99,7 @@ const InfinityNav = () => {
       }
     `}</style>
 
-      <a href="/infinity">
+      <a href="/infinity" className="hidden lg:block">
         <img
           src="/images/Infinity_logo.png"
           className="h-20 p-4"

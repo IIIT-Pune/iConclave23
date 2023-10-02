@@ -1,6 +1,6 @@
 import InfinityNav from "./InfinityNav";
 import { BiLinkExternal } from "react-icons/bi";
-
+import Footer from "./Footer";
 const Infinitypastevent = () => {
   return (
     <div className="bg-black h-full">
@@ -58,6 +58,9 @@ const Infinitypastevent = () => {
             </h1>
           </div>
         </div>
+      </div>
+      <div className="bg-black">
+      <Footer textColor="white"></Footer>
       </div>
     </div>
   );
