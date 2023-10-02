@@ -1,12 +1,15 @@
-import { MeshReflectorMaterial, useTexture } from '@react-three/drei'
+import { extend } from '@react-three/fiber'
+import { MeshReflectorMaterial, useTexture } from '@react-three/drei';
+extend ({ MeshReflectorMaterial })
 import { useControls } from 'leva'
 import * as THREE from 'three'
+import { Suspense } from 'react'
 
 export default function Floor()
 {
     const y = 0
 
-    const roughnessTexture = useTexture('/textures/Texturelabs_InkPaint_327L.jpg')
+    const roughnessTexture = useTexture('textures/Texturelabs_InkPaint_327L.jpg')
     roughnessTexture.repeat.x = 30
     roughnessTexture.repeat.y = 30
     roughnessTexture.wrapS = THREE.RepeatWrapping
@@ -26,9 +29,14 @@ export default function Floor()
         }
     )
 
-    return <>
+    return (
+    <>
         <mesh rotation-x={ - Math.PI * 0.5 }>
+            {/* <Html
+            as='div'
+            > */}
             <planeGeometry args={ [ 200, 200 ] } />
+            <Suspense fallback={null}/>
             <MeshReflectorMaterial
                 blur={[300, 100]}
                 resolution={2048}
@@ -43,6 +51,8 @@ export default function Floor()
                 metalness={0.5}
                 {...blurOptions}
             />
+            {/* </Html> */}
         </mesh>
     </>
+    )
 }
