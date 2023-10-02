@@ -33,7 +33,7 @@ const Footer = ({ textColor, invert }) => {
 
         <footer
           style={footerStyle}
-          className="font-miso flex justify-center items-center h-2 pb-6 text-2xl"
+          className="font-miso flex justify-center items-center h-2 pb-10 text-2xl"
         >
           {invert ? (
             <img src="/images/footerwhite.png" alt="localhost x blueprint" className="h-8" />
