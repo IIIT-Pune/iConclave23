@@ -8,8 +8,12 @@ const Events = () => {
       }}
       className="h-screen w-screen"
     >
-      <h1 className="text-9xl text-white mt-10 ml-10 font-liquidism">EVENTS</h1>
-      <p className="text-7xl font-liquidism flex justify-center items-center h-96 text-red-700">Coming Soon</p>
+      <h1 className="text-9xl text-white font-liquidism text-center pt-10 lg:text-left mx-20">
+        EVENTS
+      </h1>
+      <p className="text-7xl font-liquidism flex justify-center items-center h-96 text-red-700">
+        Coming Soon
+      </p>
     </div>
   );
 };
