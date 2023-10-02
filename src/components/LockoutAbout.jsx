@@ -1,4 +1,6 @@
 import LockoutNav from "./LockoutNav";
+import Footer from "./Footer";
+
 const LockoutAbout = () => {
   return (
     <div
@@ -39,6 +41,7 @@ const LockoutAbout = () => {
           prove your intellectual prowess.
         </p>
       </div>
+      <Footer textColor={"white"} />
     </div>
   );
 };

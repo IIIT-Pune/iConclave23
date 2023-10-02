@@ -1,4 +1,5 @@
 import LockoutNav from "./LockoutNav";
+import Footer from "./Footer";
 
 const LockoutGuidelines = () => {
   return (
@@ -111,6 +112,7 @@ const LockoutGuidelines = () => {
           unforgettable tournament experience!
         </p>
       </div>
+      <Footer textColor={"white"} />
     </div>
   );
 };
