@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { ffguidelines } from "../assets/ffguidelines";
 import FFNav from "../components/FFNav";
-
+import Footer from "../components/Footer";
 const FrameFlick = () => {
   return (
     <div className="">
@@ -125,6 +125,11 @@ const FrameFlick = () => {
             RULEBOOK
           </h1>
         </div>
+      </div>
+      <div style={{
+          background: "#0C0C0C",
+        }}>
+      <Footer textColor="white"></Footer>
       </div>
     </div>
   );

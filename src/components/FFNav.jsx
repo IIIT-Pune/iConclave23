@@ -15,7 +15,7 @@ const FFNav = () => {
 
   return (
     <div>
-      <nav className="flex justify-between relative">
+      <nav className="flex justify-between backdrop-blur-4">
         <a href="/">
           {/* Show the first logo in both desktop and mobile versions */}
           <img
