@@ -24,6 +24,7 @@ import FrameFlick from "./pages/FrameFlick";
 import Home from "./index";
 import NrityaNova from "./pages/NrityaNova";
 import LockoutAbout from "./components/LockoutAbout";
+import LockoutGuidelines from "./components/LockoutGuidelines";
 const App = () => {
   const [showLoader, SetShowLoader] = useState(true);
   useEffect(() => {
@@ -109,6 +110,10 @@ const App = () => {
       element: <LockoutAbout />,
     },
     {
+      path: "/lockout/guidelines",
+      element: <LockoutGuidelines />,
+    },
+    {
       path: "/rofies1",
       element: <Rofies1 />,
     },
@@ -133,13 +138,7 @@ const App = () => {
       element: <NrityaNova />,
     },
   ]);
-  return (
-      
-      <RouterProvider router={router} />
-      
-      
-      
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
