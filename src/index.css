@@ -61,6 +61,14 @@
   font-family: FuzzyBubbles;
   src: url("/fonts/FuzzyBubbles.ttf");
 }
+@font-face {
+  font-family: Punishment;
+  src: url("/fonts/Punishment.otf");
+}
+@font-face {
+  font-family: HARRYP;
+  src: url("/fonts/HARRYP.ttf");
+}
 ::-webkit-scrollbar {
   display: none;
 }

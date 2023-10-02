@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const InfinityNav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex items-center justify-between border-b border-black py-4 px-20 text-white">
+    <div className="flex items-center justify-between border-b border-black py-4 px-10 text-white">
       <a href="/">
         <img
           src="/images/IConclave.png"

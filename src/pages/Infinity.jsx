@@ -1,64 +1,76 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import InfinityNav from "../components/InfinityNav";
-import { AiFillGithub } from "react-icons/ai";
-import { AiFillInstagram } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
 import Footer from "../components/Footer";
 
 /* eslint-disable react/jsx-no-target-blank */
 // eslint-disable-next-line no-shadow-restricted-names
 const Infinity = () => {
   return (
-    <div className="relative">
+    <div className="">
       <div className="bg-black h-screen">
         <InfinityNav />
-        <div className="flex justify-center p-8 items-center ">
+        <div className="flex justify-center pt-24 pb-14 lg:p-8 items-center ">
           <img
             src="./images/Infinity_logo.png"
             alt="Infinity Logo"
             width={832}
           />
         </div>
-        <div className="text-white flex justify-center text-2xl lg:text-3xl font-miso">
-          HOSTED ON &nbsp;
-          <span className="font-nightcore">
-            <a target="_blank" href="https://www.codechef.com/" rel="noopener">
-              CODE <span className="text-red-600">CHEF</span>
+        <div className="text-white flex flex-col items-center -p-10 lg:flex-row justify-center text-2xl lg:text-3xl font-miso">
+          <span className="-m-3">HOSTED ON</span> &nbsp; 
+          <span className="-m-5">
+            <span className="font-nightcore">
+              <a
+                target="_blank"
+                href="https://www.codechef.com/"
+                rel="noopener"
+              >
+                CODE <span className="text-red-600">CHEF</span>
+              </a>
+            </span>{" "}
+            &nbsp;
+            <a
+              target="_blank"
+              href="https://www.codechef.com/START105"
+              rel="noopener"
+            >
+              ( AS STARTERS 105 )
             </a>
-          </span>{" "}
-          &nbsp;
-          <a
-            target="_blank"
-            href="https://www.codechef.com/START105"
-            rel="noopener"
-          >
-            ( AS STARTERS 105 )
-          </a>
-        </div>
-        <div className="text-white flex justify-center text-2xl lg:text-3xl font-miso m-3">
-          <div className="flex items-center justify-center h-10 ">
-            <img src="./images/Calendar25.png" alt="25 Oct" width={50} />
-          </div>
-          OCT 25’ 2023 &nbsp;
-          <img src="./images/Alarm.png" alt="25 Oct" width={50} />
-          20:00 - 22:00
+          </span>
         </div>
 
-        <div className="text-white flex justify-center pt-16">
+        <div className="text-white flex justify-center text-2xl lg:text-3xl font-miso m-3">
+          <div className="flex flex-col lg:flex-row m-5">
+            <div className="flex items-center -mb-3">
+              <div className="flex items-center justify-center h-10 ">
+                <img src="./images/Calendar25.png" alt="25 Oct" width={50} />
+              </div>
+              OCT 25’ 2023
+            </div>
+            &nbsp;
+            <div className="flex items-center -mt-3">
+              <img src="./images/Alarm.png" alt="25 Oct" width={50} />
+              20:00 - 22:00
+            </div>
+          </div>
+        </div>
+
+        <div className="text-white flex justify-center pt-5 lg:pt-16">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScAr32xvlkGK7EZxsp3RU0Ix-r2RgiDjX8sWcrX4JoWJ5VYlw/viewform"
             target="_blank"
             rel="noopener"
           >
-            <h1 className="border border-1 border-white px-5 lg:px-14 py-2 lg:py-5 rounded-2xl text-2xl lg:text-4xl font-nightcore">
+            <h1 className="border border-1 border-white px-5 lg:px-14 py-2 lg:py-5 rounded-2xl text-4xl lg:text-4xl font-nightcore">
               Register &nbsp; <span className="text-red-600">Now</span>
             </h1>
           </a>
         </div>
       </div>
-      <div className="bg-black h-full text-white" id="about">
-        <h1 className="flex justify-center font-nightcore text-4xl lg:text-8xl tracking-widest pt-20 pb-8">
+
+      {/* <div className="bg-black h-full text-white" id="about">
+        <h1 className="flex justify-center font-nightcore text-4xl lg:text-8xl tracking-widest py-10 pb-8">
           ABOUT THE CO<span className="text-red-600">N</span>TEST
         </h1>
         <div className="flex flex-col gap-6">
@@ -91,13 +103,11 @@ const Infinity = () => {
             experience at <span className="text-red-600">InfInITy 2k23!</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
-      
-        <div className="bg-black">
-      <Footer textColor="white"></Footer>
+      <div className="bg-black">
+        <Footer textColor="white"></Footer>
       </div>
-     
     </div>
   );
 };

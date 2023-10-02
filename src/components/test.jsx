@@ -17,14 +17,26 @@ const NexusNav = () => {
     <div>
       <nav className="flex justify-between relative">
         <a href="/">
-          <img src="/images/IConclave.png" className="h-24" alt="Iconclavebg" />
+          {/* Show the first logo in both desktop and mobile versions */}
+          <img
+            src="/images/IConclave.png"
+            className="h-24 p-4"
+            alt="Iconclavebg"
+          />
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="flex">
-            <nav className="flex  justify-between items-center">
-              <div className="flex justify-center items-center">
-                <ul className="flex gap-24 text-white font-miso text-3xl justify-center items-center">
+          <div>
+            <nav className="flex  justify-between">
+              <a href="/">
+                <img
+                  src="/images/IConclave.png"
+                  className="h-24"
+                  alt="Iconclavebg"
+                />
+              </a>
+              <div className="flex justify-center">
+                <ul className="flex gap-24 text-white font-miso text-3xl  items-center">
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <a href="#">ABOUT</a>
                   </li>
@@ -39,6 +51,14 @@ const NexusNav = () => {
                   </li>
                 </ul>
               </div>
+              <a href="/nexus">
+                <h1
+                  className=" font-majormono text-5xl m-0 p-6 text-center text-white font-normal"
+                  id="NEXUS"
+                >
+                  neXus
+                </h1>
+              </a>
             </nav>
           </div>
         </div>
@@ -67,12 +87,12 @@ const NexusNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/nexus">
+          <a href="/rofies1">
             <h1
-              className=" font-majormono text-5xl m-0 p-6 text-center text-white font-normal"
-              id="NEXUS"
+              className="font-veterantypewriter text-4xl m-0 p-6 text-center text-black font-normal"
+              id="OFFRoadBandit"
             >
-              neXus
+              COGNITION
             </h1>
           </a>
         </div>
