@@ -22,7 +22,7 @@ const LockoutGuidelines = () => {
           alt=""
         />
       </div>
-      <div className="text-white text-xs sm:text-base md:text-2xl lg:text-3xl space-y-6  text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+      <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6  text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
         <p>
           At our 1v1 Elimination Matches Tournament, we want to ensure a smooth
           and enjoyable experience for all participants. Here are some important
