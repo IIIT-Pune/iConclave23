@@ -30,7 +30,9 @@ const ShipWreck = () => {
           </h1>
         </div> */}
       </div>
-      <Footer textColor="white" />
+      <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:eclectic@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/eclecticiiitp/',
+   }} />
 
       {/* <div className="bg-[url('/images/ShipWreckbg.png')] text-white min-h-screen flex flex-col bg-cover bg-center"></div> */}
     </div>

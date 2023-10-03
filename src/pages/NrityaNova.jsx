@@ -34,7 +34,9 @@ const NrityaNova = () => {
           </h1>
         </div> */}
 
-        <Footer textColor="white" />
+        <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:vanitycrew@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/_vanity_crew/',
+   }}  />
       </div>
 
       {/* <div

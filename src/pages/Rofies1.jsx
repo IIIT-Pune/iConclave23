@@ -24,7 +24,9 @@ const Rofies1 = () => {
           </p>
         </div>
       </div>
-      <Footer textColor="white" />
+      <Footer textColor="white" socialMediaLinks={{ 
+    instagram: 'https://www.instagram.com/rofies_iiitp/',
+  }}  />
     </div>
   );
 };

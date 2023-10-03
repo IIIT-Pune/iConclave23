@@ -26,16 +26,16 @@ const NexusNav = () => {
               <div className="flex justify-center items-center">
                 <ul className="flex gap-24 text-white font-miso text-3xl justify-center items-center">
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#">ABOUT</a>
+                    <a href="#about">ABOUT</a>
+                  </li>
+                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                    <a href="#guidelines">GUIDELINES</a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <a href="https://www.instagram.com/localhost_iiitp/">LOCALHOST</a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#">GUIDELINES</a>
-                  </li>
-                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#">TEAM</a>
+                    <a href="#team">GET IN TOUCH</a>
                   </li>
                 </ul>
               </div>
@@ -112,7 +112,7 @@ const NexusNav = () => {
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
               </a>
-              <a href="getintouch" onClick={closeMobileMenu}>
+              <a href="team" onClick={closeMobileMenu}>
                 <li>GET IN TOUCH</li>
               </a>
             </ul>

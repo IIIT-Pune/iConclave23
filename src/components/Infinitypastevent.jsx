@@ -29,7 +29,7 @@ const Infinitypastevent = () => {
                 <BiLinkExternal />
               </div>
             </a>
-            <h1 className="text-white text-3xl lg:text-7xl font-miso tracking-wider">
+            <h1 className="text-white text-3xl lg:text-7xl font-miso tracking-wider text-right">
               INFINITY 2k2<span className="text-red-600">1</span>
             </h1>
           </div>
@@ -53,7 +53,7 @@ const Infinitypastevent = () => {
                 <BiLinkExternal />
               </div>
             </a>
-            <h1 className="text-white text-3xl lg:text-7xl font-miso tracking-wider">
+            <h1 className="text-white text-3xl lg:text-7xl font-miso tracking-wider text-right">
               INFINITY 2k1<span className="text-red-600">9</span>
             </h1>
           </div>
