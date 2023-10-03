@@ -18,8 +18,8 @@ const Infinity = () => {
           />
         </div>
         <div className="text-white flex flex-col items-center -p-10 lg:flex-row justify-center text-2xl lg:text-3xl font-miso">
-          <span className="-m-3">HOSTED ON</span> &nbsp; 
-          <span className="-m-5">
+          <span className="-m-3 lg:m-0">HOSTED ON</span> &nbsp; 
+          <span className="-m-5 lg:m-0">
             <span className="font-nightcore">
               <a
                 target="_blank"
