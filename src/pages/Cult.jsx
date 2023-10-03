@@ -122,7 +122,7 @@ const Cult = () => {
               <SwiperSlide className="rounded-3xl">
                 <a href="/shipwreck">
                   <img
-                    src="./images/shipwreck.png"
+                    src="./images/shipwreck_cau.png"
                     alt=""
                     className="rounded-3xl"
                   />
@@ -209,7 +209,7 @@ const Cult = () => {
                 <SwiperSlide className="rounded-3xl">
                   <a href="/shipwreck">
                     <img
-                      src="./images/shipwreck.png"
+                      src="./images/shipwreck_cau.png"
                       alt=""
                       className="rounded-3xl"
                     />

@@ -28,18 +28,18 @@ const FFNav = () => {
         <div className="hidden lg:flex">
           <div className="text-white text-2xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 cursor-pointer">
+              <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
               <a
                 href="#abhinay"
-                className="hover:border-b-2 pb-1 cursor-pointer"
+                className="hover:border-b-2 pb-1 "
               >
                 <li>ABHINAY</li>
               </a>
               <a
                 href="#guidelines"
-                className="hover:border-b-2 pb-1 cursor-pointer"
+                className="hover:border-b-2 pb-1 "
               >
                 <li>GUIDELINES</li>
               </a>
