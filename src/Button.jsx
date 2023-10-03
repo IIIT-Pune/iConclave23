@@ -33,7 +33,7 @@ export default function Button({ buttonText, buttonSize, xPos, zPos, link }) {
 
   return (
     <group
-      position={[xPos, 0.1, zPos]}
+      position={[xPos, 0, zPos]}
       rotation-x={-Math.PI * 0.5}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
