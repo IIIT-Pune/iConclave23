@@ -7,10 +7,12 @@ import Footer from "../components/Footer";
 // eslint-disable-next-line no-shadow-restricted-names
 const Infinity = () => {
   return (
+
     <div className="">
-      <div className="bg-black h-screen">
+      <div className="bg-black h-screen flex flex-col">
         <InfinityNav />
         <div className="flex justify-center pt-24 pb-14 mx-3 lg:mx-0 lg:p-8 items-center ">
+
           <img
             src="./images/Infinity_logo.png"
             alt="Infinity Logo"
@@ -18,8 +20,10 @@ const Infinity = () => {
           />
         </div>
         <div className="text-white flex flex-col items-center -p-10 lg:flex-row justify-center text-2xl lg:text-3xl font-miso">
+
           <span className="-m-3 lg:m-0 lg:-mt-4">HOSTED ON</span> &nbsp; 
           <span className="-m-5 lg:m-0 lg:-mt-4">
+
             <span className="font-nightcore">
               <a
                 target="_blank"
@@ -57,6 +61,7 @@ const Infinity = () => {
         </div>
 
         <div className="text-white flex justify-center pt-5 lg:pt-0 lg:-mt-4">
+
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScAr32xvlkGK7EZxsp3RU0Ix-r2RgiDjX8sWcrX4JoWJ5VYlw/viewform"
             target="_blank"
@@ -105,12 +110,14 @@ const Infinity = () => {
         </div>
       </div> */}
 
+
       <div className="bg-black">
         <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:bitlegion@iiitp.ac.in',
     instagram: 'https://www.instagram.com/bit.iiitp/',
     linkedin: 'https://www.linkedin.com/company/bitlegion/',
     twitter: 'https://twitter.com/bit_iiitp'}} ></Footer>
       </div>
+
     </div>
   );
 };
