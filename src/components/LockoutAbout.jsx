@@ -14,7 +14,7 @@ const LockoutAbout = () => {
       <LockoutNav />
       <div className="flex-grow">
         <div
-          className="font-newshape flex justify-center sm:justify-center md:justify-start pt-12 md:pt-16 md:px-20"
+          className="font-newshape flex justify-center lg:justify-start pt-12 md:pt-16 md:px-20"
           style={{ fontSize: "7rem" }}
         >
           <img

@@ -1,11 +1,12 @@
 import { useState } from "react";
+import Footer from "./Footer";
 // import { Link } from "react-router-dom";
 
 const LockoutNav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <div>
-      <section className="MOBILE-MENU flex md:hidden items-center justify-between">
+      <section className="MOBILE-MENU flex lg:hidden items-center justify-between">
         <a href="/">
           <img src="/images/IConclave.png" className="h-16" alt="Iconclavebg" />
         </a>
@@ -24,7 +25,7 @@ const LockoutNav = () => {
             onClick={() => setIsNavOpen(false)}
           >
             <svg
-              className="h-8 w-8 text-gray-600"
+              className="h-8 w-8 text-white"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -36,23 +37,28 @@ const LockoutNav = () => {
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </div>
-          <ul className="flex flex-col items-center justify-between min-h-[250px] text-white-600">
-            <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-              <a href="/lockout/about">ABOUT</a>
-            </li>
-            <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-              <a href="/infinity/bitlegion">BIT LEGION</a>
-            </li>
-            <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-              <a href="/lockout/guidelines">GUIDELINES</a>
-            </li>
-            <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-              <a href="/lockout/team">TEAM</a>
-            </li>
-          </ul>
+          <div className="flex-grow flex items-center justify-center">
+            <ul className="flex flex-col items-center justify-between min-h-[250px] text-white-600">
+              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                <a href="/lockout/about">ABOUT</a>
+              </li>
+              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                <a href="/infinity/bitlegion">BIT LEGION</a>
+              </li>
+              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                <a href="/lockout/guidelines">GUIDELINES</a>
+              </li>
+              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                <a href="/lockout/team">TEAM</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
+          </div>
         </div>
       </section>
-      <nav className="DESKTOP-MENU hidden lg:flex justify-between md:flex">
+      <nav className="DESKTOP-MENU hidden justify-between lg:flex">
         <a href="/">
           <img
             src="/images/IConclave.png"
@@ -98,6 +104,8 @@ const LockoutNav = () => {
         left: 0;
         background: url('/images/lockoutbg.png');
         background-position: top top;
+        background-repeat: no-repeat; 
+        background-size: cover;
         z-index: 10;
         display: flex;
         flex-direction: column;
