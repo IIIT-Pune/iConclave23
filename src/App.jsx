@@ -66,10 +66,10 @@ const App = () => {
       path: "sponsors",
       element: <Sponsor />,
     },
-    {
-      path: "getintouch",
-      element: <GetinTouch />,
-    },
+    // {
+    //   path: "getintouch",
+    //   ,
+    // },
     {
       path: "tech",
       element: <Tech />,

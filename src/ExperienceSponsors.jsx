@@ -85,7 +85,7 @@ export default function Experience() {
         <MainText />
 
         {/* Background Text */}
-        <BackgroundText y={0.02} text={'ABOUT'}/>
+        <BackgroundText y={0.02} text={'SPONSORS'}/>
 
         {/* Buttons */}
 
@@ -98,16 +98,7 @@ export default function Experience() {
             link="/tech"
           />
         </> */}
-        <>
-          <BackgroundTextAbout text = 'As the spirit of Halloween descends upon us, we at the Indian Institute of Information' zpos = '12' />
-          <BackgroundTextAbout text = 'Technology Pune are filled with eerie enthusiasm. With its humble beginnings in 2018, ' zpos = '12.5'/>
-          <BackgroundTextAbout text = 'we are back with yet another sensational edition of our Marquee event, iConclave ‘23!' zpos = '13' />
-
-          <BackgroundTextAbout text = 'iConclave ‘23 is the epitome of an inter-college techno-cultural extravaganza, proudly , ' zpos = '14.5'/>
-          <BackgroundTextAbout text = 'hosted by IIIT Pune. The multi-day carnival strives to establish a shared forum for  , ' zpos = '15'/>
-          <BackgroundTextAbout text = ' tech enthusiasts, creative minds, emerging artists, and students from diverse backgrounds' zpos = '15.5'/>
-          <BackgroundTextAbout text = 'for a celebration of knowledge, collaboration, and unforgettable entertainment.' zpos = '16'/>
-        </>
+ 
 
         {/* Logo */}
         {/* <Logo /> */}
