@@ -34,7 +34,9 @@ const Nexus = () => {
           REGISTER
         </h1>
       </div> */}
-      <Footer textColor="white" />
+      <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:localhost@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/localhost_iiitp/',
+    twitter: 'https://twitter.com/localhost_iiitp'}} />
     </div>
   );
 };

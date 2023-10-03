@@ -106,7 +106,10 @@ const Infinity = () => {
       </div> */}
 
       <div className="bg-black">
-        <Footer textColor="white"></Footer>
+        <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:bitlegion@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/bit.iiitp/',
+    linkedin: 'https://www.linkedin.com/company/bitlegion/',
+    twitter: 'https://twitter.com/bit_iiitp'}} ></Footer>
       </div>
     </div>
   );
