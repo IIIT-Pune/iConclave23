@@ -38,7 +38,7 @@ const CogNav = () => {
                 <li>GUIDELINES</li>
               </a>
               <a
-                href="#qrc"
+                href="https://www.instagram.com/q_riocity_/"
                 className="hover:border-b-2 pb-1 "
               >
                 <li>Q-RIOCITY</li>

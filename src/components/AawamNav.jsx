@@ -32,7 +32,7 @@ const FFNav = () => {
                 <li>ABOUT</li>
               </a>
               <a
-                href="#abhinay"
+                href="https://www.instagram.com/abhinay.iiitp/"
                 className="hover:border-b-2 pb-1 "
               >
                 <li>ABHINAY</li>
@@ -71,7 +71,7 @@ const FFNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="https://instagram.com/horizon_iiitp">
+          <a href="#abhinay">
             <h1
               className="font-monoton text-xl m-0 p-6 text-center text-white font-normal"
               id="OFFRoadBandit"

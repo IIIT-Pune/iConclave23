@@ -29,7 +29,7 @@ const NexusNav = () => {
                     <a href="#">ABOUT</a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#">LOCALHOST</a>
+                    <a href="https://www.instagram.com/localhost_iiitp/">LOCALHOST</a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <a href="#">GUIDELINES</a>
@@ -106,7 +106,7 @@ const NexusNav = () => {
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
-              <a href="#localhost" onClick={closeMobileMenu}>
+              <a href="https://www.instagram.com/localhost_iiitp/" onClick={closeMobileMenu}>
                 <li>LOCALHOST</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
