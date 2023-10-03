@@ -106,13 +106,13 @@ const NexusNav = () => {
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
-              <a href="#horizon" onClick={closeMobileMenu}>
-                <li>ANURAG</li>
+              <a href="#localhost" onClick={closeMobileMenu}>
+                <li>LOCALHOST</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
               </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
+              <a href="getintouch" onClick={closeMobileMenu}>
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
