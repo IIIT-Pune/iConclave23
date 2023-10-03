@@ -1,15 +1,14 @@
 import React from 'react';
 import { Text } from '@react-three/drei';
 
-export default function BackgroundText({text , zpos , fontName, size} ) {
+export default function BackgroundText({text , zpos}) {
   const fullText = text;
-  const fname = fontName;
 
   return (
     <>
       <Text
-        font= {fname}
-        fontSize={size}
+        font="./fonts/Horrors.ttf"
+        fontSize={0.5}
         rotation-x={-Math.PI * 0.5}
         position={[0, 0.02, zpos]}
         text={fullText} // Display the static text

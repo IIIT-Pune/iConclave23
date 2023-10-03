@@ -69,7 +69,7 @@ const Cult = () => {
           />
         </a>
       </div>
-      <div className="flex-grow lg:-mt-40 mb-4">
+      <div className="flex-grow lg:-mt-48 mb-4">
         <img
           src="/images/cult_head.png"
           alt="Cultural Events"
@@ -122,7 +122,7 @@ const Cult = () => {
               <SwiperSlide className="rounded-3xl">
                 <a href="/shipwreck">
                   <img
-                    src="./images/shipwreck.png"
+                    src="./images/shipwreck_cau.png"
                     alt=""
                     className="rounded-3xl"
                   />
@@ -149,7 +149,7 @@ const Cult = () => {
             </div>
           ) : (
             // Larger screens (iPad and laptop)
-            <div className="desktop-swiper lg:-mb-32">
+            <div className="desktop-swiper lg:-mb-28">
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -209,7 +209,7 @@ const Cult = () => {
                 <SwiperSlide className="rounded-3xl">
                   <a href="/shipwreck">
                     <img
-                      src="./images/shipwreck.png"
+                      src="./images/shipwreck_cau.png"
                       alt=""
                       className="rounded-3xl"
                     />

@@ -20,7 +20,7 @@ const CogNav = () => {
           {/* Show the first logo in both desktop and mobile versions */}
           <img
             src="/images/IConclave.png"
-            className="h-24 p-4"
+            className="h-24 p-4 invert"
             alt="Iconclavebg"
           />
         </a>
@@ -28,24 +28,24 @@ const CogNav = () => {
         <div className="hidden lg:flex">
           <div className="text-black text-2xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 cursor-pointer">
+              <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
               <a
                 href="#guidelines"
-                className="hover:border-b-2 pb-1 cursor-pointer"
+                className="hover:border-b-2 pb-1 "
               >
                 <li>GUIDELINES</li>
               </a>
               <a
-                href="#qrc"
-                className="hover:border-b-2 pb-1 cursor-pointer"
+                href="https://www.instagram.com/q_riocity_/"
+                className="hover:border-b-2 pb-1 "
               >
                 <li>Q-RIOCITY</li>
               </a>
               <a
                 href="#getintouch"
-                className="hover:border-b-2 pb-1 cursor-pointer"
+                className="hover:border-b-2 pb-1 "
               >
                 <li>GET IN TOUCH</li>
               </a>
@@ -77,10 +77,10 @@ const CogNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/rofies1">
+          <a href="#about">
             <h1
               className="font-veterantypewriter text-4xl m-0 p-6 text-center text-black font-normal"
-              id="OFFRoadBandit"
+              id="Cognition"
             >
               COGNITION
             </h1>

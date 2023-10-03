@@ -13,9 +13,9 @@ const LockoutNav = () => {
           className="HAMBURGER-ICON space-y-2 mr-8"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
-          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+          <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+          <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+          <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
         </div>
 
         <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
@@ -36,7 +36,7 @@ const LockoutNav = () => {
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </div>
-          <ul className="flex flex-col items-center justify-between min-h-[250px] text-red-600">
+          <ul className="flex flex-col items-center justify-between min-h-[250px] text-white-600">
             <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
               <a href="/lockout/about">ABOUT</a>
             </li>

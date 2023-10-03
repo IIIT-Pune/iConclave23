@@ -28,24 +28,24 @@ const NNNav = () => {
         <div className="hidden lg:flex">
           <div className="text-white text-2xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 cursor-pointer">
+              <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
               <a
-                href="#horizon"
-                className="hover:border-b-2 pb-1 cursor-pointer"
+                href="https://www.instagram.com/_vanity_crew/"
+                className="hover:border-b-2 pb-1 "
               >
                 <li>VANITY CREW</li>
               </a>
               <a
                 href="#guidelines"
-                className="hover:border-b-2 pb-1 cursor-pointer"
+                className="hover:border-b-2 pb-1 "
               >
                 <li>GUIDELINES</li>
               </a>
               <a
                 href="#getintouch"
-                className="hover:border-b-2 pb-1 cursor-pointer"
+                className="hover:border-b-2 pb-1 "
               >
                 <li>GET IN TOUCH</li>
               </a>
@@ -77,10 +77,10 @@ const NNNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/rofies1">
+          <a href="#about">
             <h1
               className="font-fuzzybubbles text-xl m-0 p-6 text-center text-white font-normal"
-              id="OFFRoadBandit"
+              id="NrityaNova"
             >
               NRITYA NOVA
             </h1>
@@ -122,8 +122,8 @@ const NNNav = () => {
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
               </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
+              <a href="#get in touch" onClick={closeMobileMenu}>
+                <li>GET IN TOUCH</li>
               </a>
             </ul>
           </div>
