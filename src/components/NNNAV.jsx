@@ -122,8 +122,8 @@ const NNNav = () => {
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
               </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
+              <a href="#get in touch" onClick={closeMobileMenu}>
+                <li>GET IN TOUCH</li>
               </a>
             </ul>
           </div>
