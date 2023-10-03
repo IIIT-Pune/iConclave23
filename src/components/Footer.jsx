@@ -14,7 +14,7 @@ const Footer = ({ textColor, invert }) => {
   const iconSize = 'h-6 w-6'; // Adjust the size as needed
 
   return (
-    <footer>
+    <footer className='relative bottom-0'>
        <div className="flex flex-col">
         <div className="flex justify-center items-center h-20 gap-5">
           <a href="mailto:iconclave@iiitp.ac.in"> {/* Updated link */}

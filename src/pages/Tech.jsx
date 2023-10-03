@@ -66,7 +66,7 @@ const Tech = () => {
           />
         </a>
       </div>
-      <div className="flex-grow lg:-mt-48 mb-4">
+      <div className="flex-grow lg:-mt-48 mb-4 -mt-8">
         <img
           src="/images/tech_head.png"
           alt="Technical Events"
@@ -76,8 +76,8 @@ const Tech = () => {
           {/* Conditionally render Swiper based on screen size */}
           {window.innerWidth <= 1000 ? ( // Mobile view
             <div
-              className="mobile-slides"
-              style={{ maxHeight: "47vh", overflowY: "auto" }}
+              className="mobile-slides -mb-8"
+              style={{ maxHeight: "52vh", overflowY: "auto" }}
             >
               <SwiperSlide className="rounded-3xl">
                 <a href="/nexus">
