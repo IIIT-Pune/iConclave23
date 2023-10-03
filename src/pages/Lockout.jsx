@@ -29,9 +29,12 @@ const Lockout = () => {
         </div>
         </div> */}
       </div>
-      <div>
-        <Footer textColor={"white"} />
-      </div>
+
+      <Footer textColor={"white"} socialMediaLinks={{  mail: 'mailto:bitlegion@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/bit.iiitp/',
+    linkedin: 'https://www.linkedin.com/company/bitlegion/',
+    twitter: 'https://twitter.com/bit_iiitp'}} />
+
     </div>
   );
 };

@@ -69,7 +69,7 @@ const Cult = () => {
           />
         </a>
       </div>
-      <div className="flex-grow lg:-mt-48 mb-4">
+      <div className="flex-grow lg:-mt-48 mb-4 -mt-8">
         <img
           src="/images/cult_head.png"
           alt="Cultural Events"
@@ -80,7 +80,7 @@ const Cult = () => {
           {window.innerWidth <= 1000 ? ( // Mobile view
             <div
               className="mobile-slides"
-              style={{ maxHeight: "47vh", overflowY: "auto" }}
+              style={{ maxHeight: "50vh", overflowY: "auto" }}
             >
               <SwiperSlide className="rounded-3xl">
                 <a href="/nrityanova">
