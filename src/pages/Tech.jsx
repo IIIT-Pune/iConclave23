@@ -66,11 +66,11 @@ const Tech = () => {
           />
         </a>
       </div>
-      <div className="flex-grow lg:-mt-40 mb-4">
+      <div className="flex-grow lg:-mt-48 mb-4">
         <img
           src="/images/tech_head.png"
           alt="Technical Events"
-          className="mx-auto sm:px-4 md:px-20 lg:px-24"
+          className="mx-auto sm:px-4 md:px-20 lg:px-32"
         />
         <div className="-mt-28 lg:-mt-60 px-10 py-24 -mb-32">
           {/* Conditionally render Swiper based on screen size */}
