@@ -29,7 +29,9 @@ const Lockout = () => {
         </div>
         </div> */}
       </div>
-      <Footer textColor={"white"} />
+      <div>
+        <Footer textColor={"white"} />
+      </div>
     </div>
   );
 };
