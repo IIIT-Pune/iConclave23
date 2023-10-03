@@ -1,47 +1,51 @@
-/* eslint-disable react/no-unescaped-entities */
+import "../style.css";
+import ReactDOM from "react-dom/client";
+import { Canvas } from "@react-three/fiber";
+import ExperienceAbout from "../ExperienceAbout";
+import { Leva } from "leva";
+import { useLocation } from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+
+const portrait = window.innerHeight > window.innerWidth;
+const portraitMultiplier = portrait ? 2 : 1;
 
 const About = () => {
+  const location = useLocation();
+  const isSpecificRoute = location.pathname === "/about";
+  console.log(isSpecificRoute);
+  if (isSpecificRoute) {
+    // Get the root div and add CSS classes or styles
+    const rootDiv = document.getElementById("root");
+    if (rootDiv) {
+      // Add your CSS classes or styles here
+      rootDiv.classList.add("homeroot");
+    }
+  }
   return (
-    <div
-      style={{
-        background: "url(/images/test2.png)",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        height: "100vh",
-      }}
-      className="h-screen w-screen"
-    >
-      <h1 className="text-white pt-10 font-liquidism text-center mx-20 text-3xl md:text-6xl lg:text-9xl md:text-left lg:text-left ">
-        About
-      </h1>
-      <div className="text-white px-20 py-10 sm:text-2xl lg:text-3xl font-miso flex flex-col gap-5 text-justify">
-        <p>
-          As the spirit of Halloween descends upon us, we at the Indian
-          Institute of Information Technology Pune are filled with eerie
-          enthusiasm. With its humble beginnings in 2018, we are back with yet
-          another sensational edition of our Marquee event, iConclave ‘23!
-        </p>
-
-        <p>
-          iConclave ‘23 is the epitome of an inter-college techno-cultural
-          extravaganza, proudly hosted by IIIT Pune. The multi-day carnival held
-          between the 20th and 22nd of October strives to establish a shared
-          forum for tech enthusiasts, creative minds, emerging artists, and
-          students from diverse backgrounds for a celebration of knowledge,
-          collaboration, and unforgettable entertainment.
-        </p>
-        <p>
-          With 14 exhilarating events, a dazzling cultural night, and an
-          assortment of delightful side attractions, this year's iConclave
-          promises to be an unparalleled spectacle. Prepare to embark on a
-          journey of epic proportions, as we've curated an astounding prize pool
-          of 3 lakhs, ensuring that the stakes are higher than ever before! This
-          grand occasion beckons you to unleash your inner technophile, partake
-          in enriching cross-cultural encounters, and culminate the experience
-          with an unforgettable cultural soirée known as 'Khwaab'.
-        </p>
+    <>
+      <Canvas
+        shadows
+        camera={{
+          fov: 45,
+          near: 0.1,
+          far: 1000,
+          position: [
+            6 * portraitMultiplier,
+            8 * portraitMultiplier,
+            12 * portraitMultiplier,
+          ],
+        
+        }
+          }
+      >
+        <ExperienceAbout />
+      </Canvas>
+      
+      <div className="leva-container">
+        <Leva collapsed />
       </div>
-    </div>
+    </>
   );
 };
 

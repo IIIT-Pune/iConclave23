@@ -7,10 +7,10 @@ export default function BackgroundText() {
   return (
     <>
       <Text
-        font="./fonts/miso.woff"
+        font="./fonts/Horrors.ttf"
         fontSize={2.5}
         rotation-x={-Math.PI * 0.5}
-        position={[0, 0.02, ]}
+        position={[0, 0.02, 10]}
         text={fullText} // Display the static text
         textAlign="center"
       >

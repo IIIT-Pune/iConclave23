@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import Experience from './Experience.jsx'
 import { Leva } from 'leva'
 import { useLocation } from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
 const portrait = window.innerHeight > window.innerWidth
@@ -28,12 +29,13 @@ const Home = () => {
             camera={ {
                 fov: 45,
                 near: 0.1,
-                far: 200,
+                far: 1000,
                 position: [ 6 * portraitMultiplier, 8 * portraitMultiplier, 12 * portraitMultiplier ]
             } }
         >
             <Experience />
         </Canvas>
+        
         <div className="leva-container">
             <Leva collapsed />
         </div>
