@@ -38,6 +38,15 @@ const App = () => {
       clearInterval(timer);
     };
   }, []);
+  const [showLoader2, SetShowLoader2] = useState(true);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      SetShowLoader2(false);
+    }, 2800);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
 
   const router = createBrowserRouter([
     {
@@ -72,11 +81,21 @@ const App = () => {
     // },
     {
       path: "tech",
-      element: <Tech />,
+      element: <> {" "}
+      {showLoader2 && (
+        <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+          <img src={Loader} className="w-[60%]" />
+        </div>
+      )}<Tech /></>,
     },
     {
       path: "cult",
-      element: <Cult />,
+      element: <> {" "}
+      {showLoader2 && (
+        <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+          <img src={Loader} className="w-[60%]" />
+        </div>
+      )}<Cult /></>,
     },
     {
       path: "nexus",
