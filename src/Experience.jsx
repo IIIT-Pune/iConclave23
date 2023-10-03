@@ -84,19 +84,23 @@ export default function Experience() {
         <MainText />
 
         {/* Background Text */}
-        <BackgroundText y={0.02} text={'26-28 OCT 2023'}/>
+        <BackgroundText y={0.02} text={''} zpos = '10' fontName={"./fonts/Horrors.ttf"} size = {2.5}/>
 
         {/* Buttons */}
         
         <>
-          <Button buttonText="Technical Events" buttonSize={6} xPos = {-4.5} zPos = {12} link='/tech' />
-          <Button buttonText="Cultural Events" buttonSize={6} xPos = {4.5} zPos = {12} link='/cult'/>
-          <Button buttonText="About" buttonSize={4} xPos = {-6.1} zPos = {14.6} link='/about' />
-          <Button buttonText="Sponsors" buttonSize={4} xPos = {0} zPos = {14.6} link='/sponsors'/>
-          <Button buttonText="Contact us" buttonSize={4} xPos = {6.1} zPos = {14.6} link="mailto:iconclave@iiitp.ac.in"/>
+          <Button buttonText="Technical Events" buttonSize={6} xPos = {-4.5} zPos = {11.5} link='/tech' />
+          <Button buttonText="Cultural Events" buttonSize={6} xPos = {4.5} zPos = {11.5} link='/cult'/>
+          <Button buttonText="About" buttonSize={4} xPos = {-6.1} zPos = {14.1} link='/about' />
+          <Button buttonText="Sponsors" buttonSize={4} xPos = {0} zPos = {14.1} link='/sponsors'/>
+          <Button buttonText="Contact us" buttonSize={4} xPos = {6.1} zPos = {14.1} link="mailto:iconclave@iiitp.ac.in"/>
           {/*
           */}
          </>
+         
+         <BackgroundText y={0.02} text={'26-28 OCTOBER'} zpos = '16.3' fontName={"./fonts/Horrors.ttf"} size = {2}/>
+
+         <BackgroundText y={0.02} text={'INDIAN INSTITUTE OF INFORMATION TECHNOLOGY PUNE'} zpos = '17.7' fontName={"./fonts/miso.woff"} size = {0.7}/>
 {/* 
          <>
             <BackgroundIcon />
