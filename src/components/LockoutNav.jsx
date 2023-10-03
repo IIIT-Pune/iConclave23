@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const LockoutNav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -52,7 +52,7 @@ const LockoutNav = () => {
           </ul>
         </div>
       </section>
-      <nav className="DESKTOP-MENU hidden flex justify-between md:flex">
+      <nav className="DESKTOP-MENU hidden lg:flex justify-between md:flex">
         <a href="/">
           <img
             src="/images/IConclave.png"
