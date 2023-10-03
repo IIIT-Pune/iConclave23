@@ -7,19 +7,23 @@ import Footer from "../components/Footer";
 // eslint-disable-next-line no-shadow-restricted-names
 const Infinity = () => {
   return (
+
     <div className="">
-      <div className="bg-black h-screen">
+      <div className="bg-black h-screen flex flex-col">
         <InfinityNav />
-        <div className="flex justify-center pt-24 pb-14 lg:p-8 items-center ">
+        <div className="flex justify-center pt-24 pb-14 mx-3 lg:mx-0 lg:p-8 items-center ">
+
           <img
             src="./images/Infinity_logo.png"
             alt="Infinity Logo"
-            width={832}
+            width={800}
           />
         </div>
         <div className="text-white flex flex-col items-center -p-10 lg:flex-row justify-center text-2xl lg:text-3xl font-miso">
-          <span className="-m-3 lg:m-0">HOSTED ON</span> &nbsp; 
-          <span className="-m-5 lg:m-0">
+
+          <span className="-m-3 lg:m-0 lg:-mt-4">HOSTED ON</span> &nbsp; 
+          <span className="-m-5 lg:m-0 lg:-mt-4">
+
             <span className="font-nightcore">
               <a
                 target="_blank"
@@ -42,21 +46,22 @@ const Infinity = () => {
 
         <div className="text-white flex justify-center text-2xl lg:text-3xl font-miso m-3">
           <div className="flex flex-col lg:flex-row m-5">
-            <div className="flex items-center -mb-3">
+            <div className="flex items-center -mb-3 lg:-mt-8">
               <div className="flex items-center justify-center h-10 ">
                 <img src="./images/Calendar25.png" alt="25 Oct" width={50} />
               </div>
               OCT 25’ 2023
             </div>
             &nbsp;
-            <div className="flex items-center -mt-3">
+            <div className="flex items-center -mt-3 lg:-mt-5">
               <img src="./images/Alarm.png" alt="25 Oct" width={50} />
               20:00 - 22:00
             </div>
           </div>
         </div>
 
-        <div className="text-white flex justify-center pt-5 lg:pt-16">
+        <div className="text-white flex justify-center pt-5 lg:pt-0 lg:-mt-4">
+
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScAr32xvlkGK7EZxsp3RU0Ix-r2RgiDjX8sWcrX4JoWJ5VYlw/viewform"
             target="_blank"
@@ -105,9 +110,14 @@ const Infinity = () => {
         </div>
       </div> */}
 
+
       <div className="bg-black">
-        <Footer textColor="white"></Footer>
+        <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:bitlegion@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/bit.iiitp/',
+    linkedin: 'https://www.linkedin.com/company/bitlegion/',
+    twitter: 'https://twitter.com/bit_iiitp'}} ></Footer>
       </div>
+
     </div>
   );
 };

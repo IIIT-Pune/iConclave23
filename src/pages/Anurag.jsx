@@ -21,7 +21,9 @@ const Anurag = () => {
           </h1>
         </div> */}
       </div>
-      <Footer textColor="white"/>
+      <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:saaz_iiitp@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/saaz_iiitp/',
+    }} />
 
       {/* <div className="bg-[url('/images/anuragbg.png')] text-white min-h-screen flex flex-col bg-cover bg-center"></div> */}
     </div>

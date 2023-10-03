@@ -20,8 +20,9 @@ export default function Button({ buttonText, buttonSize, xPos, zPos, link }) {
   };
 
   const onClick = () => {
-    window.open(link, '_blank');
+    window.location.href = link;
   };
+  
 
   const onPointerDown = () => {
     gsap.to(line.current.scale, { duration: 0.1, x: 0.9, y: 0.9, z: 0.9 });

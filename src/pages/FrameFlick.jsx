@@ -26,7 +26,9 @@ const FrameFlick = () => {
           </div>
         </div>
 
-        <Footer textColor="white" />
+        <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:horizon@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/horizon_iiitp/',
+    }} />
 
         {/* <div className="flex justify-center items-center mt-32 lg:mt-40 p-10">
           <a href="https://example.com" className="text-white">

@@ -5,7 +5,7 @@ const Infinitypastevent = () => {
   return (
     <div className="bg-black h-full">
       <InfinityNav />
-      <h1 className="text-white text-5xl lg:text-8xl pt-24 tracking-wide font-nightcore flex justify-center">
+      <h1 className="text-white text-5xl lg:text-8xl pt-8 tracking-wide font-nightcore flex justify-center">
         PAST &nbsp; E<span className="text-red-600">V</span>ENTS
       </h1>
       <div className="flex justify-center">
@@ -22,14 +22,14 @@ const Infinitypastevent = () => {
             </a>
           </div>
 
-          <div className="border border-1 h-28 m-4 flex items-center justify-between px-5 lg:px-10 rounded-lg">
+          <div className="border border-1 h-28 m-4 gap-10 flex items-center justify-between px-5 lg:px-10 rounded-lg">
             <a href="https://www.codechef.com/INFI2021" target="_blank" rel="noopener noreferrer">
               <div className="text-red-600 text-xl py-1 px-2 lg:text-3xl font-miso tracking-wider lg:px-8 lg:py-3 flex lg:gap-2 items-center bg-white rounded-xl">
                 <h2>CONTEST LINK</h2>
                 <BiLinkExternal />
               </div>
             </a>
-            <h1 className="text-white text-3xl lg:text-7xl font-miso tracking-wider">
+            <h1 className="text-white text-3xl lg:text-7xl font-miso tracking-wider text-right">
               INFINITY 2k2<span className="text-red-600">1</span>
             </h1>
           </div>
@@ -46,14 +46,14 @@ const Infinitypastevent = () => {
             </a>
           </div>
 
-          <div className="border border-1 h-28 m-4 flex items-center justify-between  px-5 lg:px-10 rounded-lg">
+          <div className="border border-1 h-28 m-4 flex gap-10 items-center justify-between  px-5 lg:px-10 rounded-lg">
             <a href="https://www.codechef.com/INFY2019" target="_blank" rel="noopener noreferrer">
               <div className="text-red-600 text-xl py-1 px-2  lg:text-3xl font-miso tracking-wider lg:px-8 lg:py-3 flex gap-2 items-center bg-white rounded-xl">
                 <h2>CONTEST LINK</h2>
                 <BiLinkExternal />
               </div>
             </a>
-            <h1 className="text-white text-3xl lg:text-7xl font-miso tracking-wider">
+            <h1 className="text-white text-3xl lg:text-7xl font-miso tracking-wider text-right">
               INFINITY 2k1<span className="text-red-600">9</span>
             </h1>
           </div>

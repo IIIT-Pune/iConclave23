@@ -30,7 +30,9 @@ const Cognition = () => {
         </div> */}
       </div>
 
-      <Footer invert="true"></Footer>
+      <Footer invert="true" socialMediaLinks={{  mail: 'mailto:q_riocity@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/q_riocity_/'
+   }} ></Footer>
 
       {/* <div className="font-veterantypewriter" id="about">
         <h1 className="text-5xl lg:text-9xl  ml-10 pt-10 pb-4">ABOUT</h1>
