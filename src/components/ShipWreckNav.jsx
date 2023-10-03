@@ -32,7 +32,7 @@ const AnuragNav = () => {
                 <li>ABOUT</li>
               </a>
               <a
-                href="#horizon"
+                href="https://www.instagram.com/eclecticiiitp/"
                 className="hover:border-b-2 pb-1 "
               >
                 <li>ECLECTIC</li>

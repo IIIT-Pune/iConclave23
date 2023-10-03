@@ -32,7 +32,7 @@ const NNNav = () => {
                 <li>ABOUT</li>
               </a>
               <a
-                href="#horizon"
+                href="https://www.instagram.com/_vanity_crew/"
                 className="hover:border-b-2 pb-1 "
               >
                 <li>VANITY CREW</li>

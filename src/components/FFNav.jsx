@@ -31,7 +31,7 @@ const FFNav = () => {
               <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
-              <a href="#horizon" className="hover:border-b-2 pb-1 ">
+              <a href="https://www.instagram.com/horizon_iiitp/" className="hover:border-b-2 pb-1 ">
                 <li>HORIZON</li>
               </a>
               <a href="#guidelines" className="hover:border-b-2 pb-1 ">

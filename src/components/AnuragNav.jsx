@@ -32,7 +32,7 @@ const AnuragNav = () => {
                 <li>ABOUT</li>
               </a>
               <a
-                href="#horizon"
+                href="https://www.instagram.com/saaz_iiitp/"
                 className="hover:border-b-2 pb-1 "
               >
                 <li>SAAZ</li>
