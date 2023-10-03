@@ -42,7 +42,7 @@ const App = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       SetShowLoader2(false);
-    }, 2800);
+    }, 1200);
     return () => {
       clearInterval(timer);
     };
