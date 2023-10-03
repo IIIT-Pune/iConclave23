@@ -74,7 +74,7 @@ const FFNav = () => {
           <a href="#abhinay">
             <h1
               className="font-monoton text-xl m-0 p-6 text-center text-white font-normal"
-              id="OFFRoadBandit"
+              id="Aawazeaawam"
             >
               AAWAZ-E-AAWAM
             </h1>

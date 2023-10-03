@@ -77,10 +77,10 @@ const AnuragNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/rofies1">
+          <a href="#about">
             <h1
               className="font-smarkan text-4xl m-0 p-6 text-center text-white font-normal"
-              id="OFFRoadBandit"
+              id="anurag"
             >
               ANURAG
             </h1>
@@ -122,7 +122,7 @@ const AnuragNav = () => {
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
               </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
+              <a href="#getintouch" onClick={closeMobileMenu}>
                 <li>GET IN TOUCH</li>
               </a>
             </ul>

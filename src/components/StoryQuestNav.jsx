@@ -77,7 +77,7 @@ const StoryQuestNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#eclectic">
+          <a href="#about">
             <h1
               className="font-harryp text-4xl m-0 p-6 text-center text-white font-normal"
               id="OFFRoadBandit"
