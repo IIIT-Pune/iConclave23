@@ -84,7 +84,7 @@ export default function Experience() {
         <MainText />
 
         {/* Background Text */}
-        <BackgroundText y={0.02} text={''}/>
+        <BackgroundText y={0.02} text={'26-28 OCT 2023'}/>
 
         {/* Buttons */}
         
@@ -97,10 +97,10 @@ export default function Experience() {
           {/*
           */}
          </>
-
+{/* 
          <>
             <BackgroundIcon />
-         </>
+         </> */}
        
 
         {/* Logo */}
