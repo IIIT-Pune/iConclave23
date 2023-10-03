@@ -46,10 +46,6 @@ const Tech = () => {
       }}
       className="tech-container min-h-screen flex flex-col"
     >
-      {/* <h1 className="text-white text-9xl p-14 font-octobercrow tracking-wider">
-        Technical Events
-      </h1> */}
-      <div className="absolute"></div>
       <div className="flex justify-between space-x">
         <a href="/">
           <img
