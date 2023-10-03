@@ -13,6 +13,7 @@ import Fog from './Fog.jsx';
 import Boundings from './Boundings.jsx';
 import Cylinder from './Cylinder.jsx';
 import Button from './Button.jsx';
+import BackgroundIcon from './BackgroundIcon.jsx';
 
 export default function Experience() {
   const { controls, gl, camera } = useThree();
@@ -83,7 +84,7 @@ export default function Experience() {
         <MainText />
 
         {/* Background Text */}
-        <BackgroundText y={0.02} />
+        <BackgroundText y={0.02} text={'26-28 OCT 2023'}/>
 
         {/* Buttons */}
         
@@ -92,10 +93,14 @@ export default function Experience() {
           <Button buttonText="Cultural Events" buttonSize={6} xPos = {4.5} zPos = {12} link='/cult'/>
           <Button buttonText="About" buttonSize={4} xPos = {-6.1} zPos = {14.6} link='/about' />
           <Button buttonText="Sponsors" buttonSize={4} xPos = {0} zPos = {14.6} link='/sponsors'/>
-          <Button buttonText="Contact us" buttonSize={4} xPos = {6.1} zPos = {14.6} link='/getintouch'/>
+          <Button buttonText="Contact us" buttonSize={4} xPos = {6.1} zPos = {14.6} link="mailto:iconclave@iiitp.ac.in"/>
           {/*
           */}
          </>
+{/* 
+         <>
+            <BackgroundIcon />
+         </> */}
        
 
         {/* Logo */}
