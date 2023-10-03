@@ -45,7 +45,7 @@ const GNavBar = ({ club, color, hcolor }) => {
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <a href="#about">
                 <li
-                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
                   onClick={() => setIsNavOpen(false)}
                 >
                   ABOUT
@@ -54,7 +54,7 @@ const GNavBar = ({ club, color, hcolor }) => {
               <a href="#club">
                 <li
                   onClick={() => setIsNavOpen(false)}
-                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
                 >
                   {club}
                 </li>
@@ -62,21 +62,21 @@ const GNavBar = ({ club, color, hcolor }) => {
               <a href="#guidelines">
                 <li
                   onClick={() => setIsNavOpen(false)}
-                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
                 >
                   GUIDELINE
                 </li>
               </a>
               <li
                 onClick={() => setIsNavOpen(false)}
-                className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
               >
                 GET IN TOUCH
               </li>
               <a href="#">
                 <li
                   onClick={() => setIsNavOpen(false)}
-                  className={`hover:text-${hcolor} invert font-veterantypewriter text-l border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                  className={`hover:text-${hcolor} invert font-veterantypewriter text-l border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
                 >
                   COGNITION
                 </li>
@@ -93,27 +93,27 @@ const GNavBar = ({ club, color, hcolor }) => {
             <ul className={`p-20 flex gap-24 text-${color} font-miso text-3xl`}>
               <a href="#about">
                 <li
-                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
                 >
                   ABOUT
                 </li>
               </a>
               <a href="#club">
                 <li
-                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
                 >
                   {club}
                 </li>
               </a>
               <a href="#guidelines">
                 <li
-                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                  className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
                 >
                   GUIDELINE
                 </li>
               </a>
               <li
-                className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                className={`hover:text-${hcolor} border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
               >
                 GET IN TOUCH
               </li>
@@ -121,7 +121,7 @@ const GNavBar = ({ club, color, hcolor }) => {
             <ul>
               <a href="#">
                 <li
-                  className={`hover:text-${hcolor} invert font-veterantypewriter text-2xl border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} cursor-pointer`}
+                  className={`hover:text-${hcolor} invert font-veterantypewriter text-2xl border-b-2 border-transparent hover:border-b-2 hover:border-${hcolor} `}
                 >
                   COGNITION
                 </li>
