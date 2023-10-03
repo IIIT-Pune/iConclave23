@@ -7,9 +7,9 @@ import Footer from "../components/Footer";
 // eslint-disable-next-line no-shadow-restricted-names
 const Infinity = () => {
   return (
-    <div className="">
-      <div className="bg-black h-screen">
-        <InfinityNav />
+    <div className="bg-black h-screen flex flex-col">
+      <InfinityNav />
+      <div className="flex-grow">
         <div className="flex justify-center pt-24 pb-14 lg:p-8 items-center ">
           <img
             src="./images/Infinity_logo.png"
@@ -18,7 +18,7 @@ const Infinity = () => {
           />
         </div>
         <div className="text-white flex flex-col items-center -p-10 lg:flex-row justify-center text-2xl lg:text-3xl font-miso">
-          <span className="-m-3 lg:m-0">HOSTED ON</span> &nbsp; 
+          <span className="-m-3 lg:m-0">HOSTED ON</span> &nbsp;
           <span className="-m-5 lg:m-0">
             <span className="font-nightcore">
               <a
@@ -56,7 +56,7 @@ const Infinity = () => {
           </div>
         </div>
 
-        <div className="text-white flex justify-center pt-5 lg:pt-16">
+        <div className="text-white flex justify-center pt-5">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScAr32xvlkGK7EZxsp3RU0Ix-r2RgiDjX8sWcrX4JoWJ5VYlw/viewform"
             target="_blank"
@@ -68,6 +68,7 @@ const Infinity = () => {
           </a>
         </div>
       </div>
+      <Footer textColor="white"></Footer>
 
       {/* <div className="bg-black h-full text-white" id="about">
         <h1 className="flex justify-center font-nightcore text-4xl lg:text-8xl tracking-widest py-10 pb-8">
@@ -104,10 +105,6 @@ const Infinity = () => {
           </p>
         </div>
       </div> */}
-
-      <div className="bg-black">
-        <Footer textColor="white"></Footer>
-      </div>
     </div>
   );
 };
