@@ -20,7 +20,7 @@ const CogNav = () => {
           {/* Show the first logo in both desktop and mobile versions */}
           <img
             src="/images/IConclave.png"
-            className="h-24 p-4"
+            className="h-24 p-4 invert"
             alt="Iconclavebg"
           />
         </a>
