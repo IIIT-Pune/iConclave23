@@ -15,7 +15,7 @@ const NexusTimeline = () => {
 
       <div className="flex items-center justify-center">
         <div class="w-10/12 md:w-9/12 px-4 sm:px-0">
-          <div class="relative text-black text-2xl sm:text-3xl lg:text-4xl font-medium font-miso">
+          <div class="relative text-black text-2xl md:text-3xl lg:text-4xl font-medium font-miso">
             <div class="hidden sm:block w-2 bg-white absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
             <div class="mt-6 sm:mt-0 sm:mb-12">
@@ -115,7 +115,7 @@ const NexusTimeline = () => {
 
       <div className="flex items-center justify-center">
         <div class="w-10/12 md:w-9/12 px-4 sm:px-0">
-          <div class="relative text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium font-miso">
+          <div class="relative text-black text-2xl md:text-3xl lg:text-4xl font-medium font-miso">
             <div class="hidden sm:block w-2 bg-white absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
             <div class="mt-6 sm:mt-0 sm:mb-12">
