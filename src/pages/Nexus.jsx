@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import NexusNav from "../components/NexusNav";
+import RegisterButton from "../components/RegsiterButton";
 const Nexus = () => {
   return (
     <div
@@ -33,6 +34,7 @@ const Nexus = () => {
           REGISTER
         </h1>
       </div> */}
+      <RegisterButton/>
       <Footer textColor="white" />
     </div>
   );
