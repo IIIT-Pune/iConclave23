@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
+import Footer from "./Footer";
 
 const AnuragNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,7 +53,7 @@ const AnuragNav = () => {
             </ul>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden flex items-center px-4">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -92,7 +93,7 @@ const AnuragNav = () => {
         <div className="fixed top-0 left-0 h-screen w-screen bg-black z-50 flex flex-col items-center justify-center">
           {/* Cross button to close the mobile menu */}
           <button
-            className="absolute top-2 right-2 p-2 text-white"
+            className="absolute top-4 right-4 p-4 text-white"
             onClick={toggleMobileMenu}
           >
             <svg
@@ -111,26 +112,34 @@ const AnuragNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
-              <Link
-                to="aboutsection"
-                onClick={closeMobileMenu}
-                smooth={true}
-                duration={500}
-              >
-                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
-              </Link>
-              <a href="#horizon" onClick={closeMobileMenu}>
-                <li>ANURAG</li>
-              </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
-              </a>
-              <a href="#getintouch" onClick={closeMobileMenu}>
-                <li>GET IN TOUCH</li>
-              </a>
-            </ul>
+          <div className="text-white text-2xl flex-grow justify-center flex flex-col">
+            <div className="flex items-center justify-center">
+              <ul className="flex flex-col text-center gap-8">
+                <Link
+                  to="aboutsection"
+                  onClick={closeMobileMenu}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+                </Link>
+                <a
+                  href="https://www.instagram.com/saaz_iiitp/"
+                  onClick={closeMobileMenu}
+                >
+                  <li>SAAZ</li>
+                </a>
+                <a href="#guidelines" onClick={closeMobileMenu}>
+                  <li>GUIDELINES</li>
+                </a>
+                <a href="#getintouch" onClick={closeMobileMenu}>
+                  <li>GET IN TOUCH</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}
