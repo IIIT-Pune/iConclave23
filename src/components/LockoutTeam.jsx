@@ -63,8 +63,8 @@ const LockoutTeam = () => {
             })}
           </div>
         </div>
-        <Footer textColor="white"></Footer>
       </div>
+      <Footer textColor="white"></Footer>
     </div>
   );
 };

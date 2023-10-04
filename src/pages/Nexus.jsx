@@ -1,5 +1,7 @@
 import Footer from "../components/Footer";
 import NexusNav from "../components/NexusNav";
+// import 'animate.css';
+
 const Nexus = () => {
   return (
     <div
@@ -13,11 +15,11 @@ const Nexus = () => {
       <NexusNav />
       <div className="flex justify-center flex-grow">
         <div className="text-white pt-32 sm:pt-12 lg:pt-5 flex-col items-center">
-          <h1 className="font-miso text-3xl -mb-5 sm:text-4xl sm:-mb-5  lg:text-5xl lg:-mb-10">
+          <h1 className="font-miso text-3xl -mb-5 sm:text-4xl sm:-mb-5  lg:text-5xl lg:-mb-10 ">
             36 hour hackathon
           </h1>
           <h1
-            className=" font-majormono text-8xl sm:text-10xl lg:text-12xl m-0 p-0 text-center text-white font-normal"
+            className=" font-majormono text-8xl sm:text-10xl lg:text-12xl m-0 p-0 text-center text-white font-normal animate__animated animate__zoomIn"
             id="NEXUS"
           >
             neXus
@@ -33,7 +35,14 @@ const Nexus = () => {
           REGISTER
         </h1>
       </div> */}
-      <Footer textColor="white" />
+      <Footer
+        textColor="white"
+        socialMediaLinks={{
+          mail: "mailto:localhost@iiitp.ac.in",
+          instagram: "https://www.instagram.com/localhost_iiitp/",
+          twitter: "https://twitter.com/localhost_iiitp",
+        }}
+      />
     </div>
   );
 };
