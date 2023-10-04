@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const AnuragNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,25 +29,24 @@ const AnuragNav = () => {
         <div className="hidden lg:flex">
           <div className="text-white text-2xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 ">
+              {/* <a to="aboutsection" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
-              </a>
+              </a> */}
+              {/* <li> */}
+              <Link to="aboutsection" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
+              {/* </li> */}
               <a
                 href="https://www.instagram.com/saaz_iiitp/"
                 className="hover:border-b-2 pb-1 "
               >
                 <li>SAAZ</li>
               </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
               </a>
-              <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#getintouch" className="hover:border-b-2 pb-1 ">
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
@@ -82,7 +82,7 @@ const AnuragNav = () => {
               className="font-smarkan text-4xl m-0 p-6 text-center text-white font-normal"
               id="anurag"
             >
-              ANURAG
+              ANURAAG
             </h1>
           </a>
         </div>
@@ -113,9 +113,14 @@ const AnuragNav = () => {
 
           <div className="text-white text-2xl">
             <ul className="flex flex-col gap-5">
-              <a href="#about" onClick={closeMobileMenu}>
-                <li>ABOUT</li>
-              </a>
+              <Link
+                to="aboutsection"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
               <a href="#horizon" onClick={closeMobileMenu}>
                 <li>ANURAG</li>
               </a>
