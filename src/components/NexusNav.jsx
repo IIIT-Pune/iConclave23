@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 
 const NexusNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -81,46 +82,53 @@ const NexusNav = () => {
       </nav>
       {/* Black overlay for mobile menu */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 h-screen w-screen bg-black z-50 flex flex-col items-center justify-center">
+        <div className="fixed flex flex-col top-0 left-0 h-screen w-screen bg-black z-50 flex flex-col items-center justify-center">
           {/* Cross button to close the mobile menu */}
-          <button
-            className="absolute top-2 right-2 p-2 text-white"
-            onClick={toggleMobileMenu}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div>
+            <button
+              className="absolute top-4 right-4 p-4 text-white"
+              onClick={toggleMobileMenu}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
-              <a href="/about" onClick={closeMobileMenu}>
-                <li>ABOUT</li>
-              </a>
-              <a
-                href="https://www.instagram.com/localhost_iiitp/"
-                onClick={closeMobileMenu}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <li>LOCALHOST</li>
-              </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
-              </a>
-              <a href="team" onClick={closeMobileMenu}>
-                <li>GET IN TOUCH</li>
-              </a>
-            </ul>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div className="text-white flex-grow justify-center flex flex-col text-xl">
+            <div className="flex items-center justify-center">
+              <ul className="flex flex-col items-center justify-between justify-between gap-8">
+                <a href="/about" onClick={closeMobileMenu}>
+                  <li>ABOUT</li>
+                </a>
+                <a
+                  href="https://www.instagram.com/localhost_iiitp/"
+                  onClick={closeMobileMenu}
+                >
+                  <li>LOCALHOST</li>
+                </a>
+                <a href="#guidelines" onClick={closeMobileMenu}>
+                  <li>GUIDELINES</li>
+                </a>
+                <a href="team" onClick={closeMobileMenu}>
+                  <li>GET IN TOUCH</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}
