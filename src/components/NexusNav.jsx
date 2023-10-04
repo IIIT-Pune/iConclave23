@@ -109,7 +109,7 @@ const NexusNav = () => {
           <div className="text-white flex-grow justify-center flex flex-col text-xl">
             <div className="flex items-center justify-center">
               <ul className="flex flex-col items-center justify-between justify-between gap-8">
-                <a href="/about" onClick={closeMobileMenu}>
+                <a href="/nexus/about" onClick={closeMobileMenu}>
                   <li>ABOUT</li>
                 </a>
                 <a
