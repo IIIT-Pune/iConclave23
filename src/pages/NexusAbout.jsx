@@ -41,7 +41,7 @@ const NexusAbout = () => {
               and every second counts. Are you quick enough to outsmart your
               opponent?
             </p>
-            <p className="text-center pt-8">
+            <p className="text-center pt-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
               Get ready to code, create, and conquer at Nexus Hackathon!
             </p>
           </div>
