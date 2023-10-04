@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import NexusNav from "../components/NexusNav";
-import 'animate.css';
+// import 'animate.css';
+
 const Nexus = () => {
   return (
     <div
@@ -34,9 +35,14 @@ const Nexus = () => {
           REGISTER
         </h1>
       </div> */}
-      <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:localhost@iiitp.ac.in',
-    instagram: 'https://www.instagram.com/localhost_iiitp/',
-    twitter: 'https://twitter.com/localhost_iiitp'}} />
+      <Footer
+        textColor="white"
+        socialMediaLinks={{
+          mail: "mailto:localhost@iiitp.ac.in",
+          instagram: "https://www.instagram.com/localhost_iiitp/",
+          twitter: "https://twitter.com/localhost_iiitp",
+        }}
+      />
     </div>
   );
 };
