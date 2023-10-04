@@ -30,7 +30,9 @@ const AawazEAawam = () => {
         </h1>
       </div> */}
       </div>
-      <Footer textColor="white" />
+      <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:abhinay@iiitp.ac.in',
+    instagram: 'https://www.instagram.com/abhinay.iiitp/'
+    }} />
       {/* <AawamAbout/>
       <AawamGuide/> */}
     </div>

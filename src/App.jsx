@@ -152,7 +152,16 @@ const App = () => {
     preloadFonts();//Preload fonts
     const timer = setInterval(() => {
       SetShowLoader(false);
-    }, 2000);
+    }, 1500);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+  const [showLoader2, SetShowLoader2] = useState(true);
+  useEffect(() => {    
+    const timer = setInterval(() => {
+      SetShowLoader2(false);
+    }, 1500);
     return () => {
       clearInterval(timer);
     };
@@ -176,7 +185,12 @@ const App = () => {
     },
     {
       path: "about",
-      element: <About />,
+      element: <>{" "}
+      {showLoader2 && (
+        <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+          <img src={Loader} className="w-[60%]" />
+        </div>
+      )}<About /></>,
     },
     {
       path: "cultnight",
@@ -184,7 +198,12 @@ const App = () => {
     },
     {
       path: "sponsors",
-      element: <Sponsor />,
+      element:<> {" "}
+      {showLoader2 && (
+        <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+          <img src={Loader} className="w-[60%]" />
+        </div>
+      )}<Sponsor /></>,
     },
     // {
     //   path: "getintouch",

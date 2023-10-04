@@ -46,10 +46,6 @@ const Tech = () => {
       }}
       className="tech-container min-h-screen flex flex-col"
     >
-      {/* <h1 className="text-white text-9xl p-14 font-octobercrow tracking-wider">
-        Technical Events
-      </h1> */}
-      <div className="absolute"></div>
       <div className="flex justify-between space-x">
         <a href="/">
           <img
@@ -66,18 +62,18 @@ const Tech = () => {
           />
         </a>
       </div>
-      <div className="flex-grow lg:-mt-40 mb-4">
+      <div className="flex-grow lg:-mt-48 mb-4 -mt-8">
         <img
           src="/images/tech_head.png"
           alt="Technical Events"
-          className="mx-auto sm:px-4 md:px-20 lg:px-24"
+          className="mx-auto sm:px-4 md:px-20 lg:px-32"
         />
         <div className="-mt-28 lg:-mt-60 px-10 py-24 -mb-32">
           {/* Conditionally render Swiper based on screen size */}
           {window.innerWidth <= 1000 ? ( // Mobile view
             <div
-              className="mobile-slides"
-              style={{ maxHeight: "47vh", overflowY: "auto" }}
+              className="mobile-slides -mb-8"
+              style={{ maxHeight: "52vh", overflowY: "auto" }}
             >
               <SwiperSlide className="rounded-3xl">
                 <a href="/nexus">

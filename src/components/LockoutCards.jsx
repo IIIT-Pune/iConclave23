@@ -4,7 +4,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 const Card = ({ name, designation, github, insta, linkedin }) => {
   return (
-    <div className="border border-white rounded-lg h-36 w-72">
+    <div className="border border-white rounded-lg h-36 w-72 backdrop-blur">
       <div className="flex justify-center flex-col items-center font-miso tracking-widest m-3 p-2">
         <h1 className="text-white text-3xl">{name}</h1>
         <h2 className="text-white text-l">{designation}</h2>
