@@ -3,8 +3,18 @@ import React from "react";
 const NexusTimeline = () => {
   return (
     <div class="flex flex-col gap-0 justify-center">
+      <div className="sm:hidden pt-8">
+        <div className="flex justify-center">
+          <img
+            src="/images/nexusschedule.png"
+            alt="schedule"
+            className="w-9/12"
+          />
+        </div>
+      </div>
+
       <div className="flex items-center justify-center">
-        <div class="w-8/12 md:w-9/12 w-full px-4 sm:px-0">
+        <div class="w-10/12 md:w-9/12 px-4 sm:px-0">
           <div class="relative text-black text-2xl sm:text-3xl lg:text-4xl font-medium font-miso">
             <div class="hidden sm:block w-2 bg-white absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
@@ -93,10 +103,10 @@ const NexusTimeline = () => {
         </div>
       </div>
 
-      <div>
+      <div className="hidden sm:block">
         <div className="flex justify-center">
           <img
-            src="./images/nexusschedule.png"
+            src="/images/nexusschedule.png"
             alt="schedule"
             className="w-7/12 md:w-98/12"
           />
@@ -104,7 +114,7 @@ const NexusTimeline = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <div class="w-8/12 md:w-9/12 w-full px-4 sm:px-0">
+        <div class="w-10/12 md:w-9/12 px-4 sm:px-0">
           <div class="relative text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium font-miso">
             <div class="hidden sm:block w-2 bg-white absolute h-full left-1/2 transform -translate-x-1/2"></div>
 

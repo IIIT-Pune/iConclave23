@@ -24,15 +24,17 @@ const NexusNav = () => {
           <div className="flex">
             <nav className="flex  justify-between items-center">
               <div className="flex justify-center items-center">
-                <ul className="flex gap-24 text-white font-miso text-3xl justify-center items-center">
+                <ul className="flex gap-20 text-white font-miso text-3xl justify-center items-center">
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#about">ABOUT</a>
+                    <a href="/nexus/about">ABOUT</a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <a href="#guidelines">GUIDELINES</a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="https://www.instagram.com/localhost_iiitp/">LOCALHOST</a>
+                    <a href="https://www.instagram.com/localhost_iiitp/">
+                      LOCALHOST
+                    </a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <a href="#team">GET IN TOUCH</a>
@@ -42,7 +44,7 @@ const NexusNav = () => {
             </nav>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden flex items-center p-4">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -103,10 +105,13 @@ const NexusNav = () => {
 
           <div className="text-white text-2xl">
             <ul className="flex flex-col gap-5">
-              <a href="#about" onClick={closeMobileMenu}>
+              <a href="/about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
-              <a href="https://www.instagram.com/localhost_iiitp/" onClick={closeMobileMenu}>
+              <a
+                href="https://www.instagram.com/localhost_iiitp/"
+                onClick={closeMobileMenu}
+              >
                 <li>LOCALHOST</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
