@@ -117,7 +117,7 @@ const AnuragNav = () => {
                 <li>ABOUT</li>
               </a>
               <a href="#horizon" onClick={closeMobileMenu}>
-                <li>ANURAG</li>
+                <li>SAAZ</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
