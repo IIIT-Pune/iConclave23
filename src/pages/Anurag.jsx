@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import AnuragNav from "../components/AnuragNav";
 import Footer from "../components/Footer";
+import { Element } from "react-scroll";
 
 const Anurag = () => {
   return (
