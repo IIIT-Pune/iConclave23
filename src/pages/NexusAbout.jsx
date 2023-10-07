@@ -1,7 +1,5 @@
 import Footer from "../components/Footer";
-import NexusNav from "../components/NexusNav";
 import NexusTimeline from "../components/NexusTimeline";
-import Nexussponsor from "../components/Nexussponsor";
 
 const NexusAbout = () => {
   return (
