@@ -27,7 +27,7 @@ const NexusTimeline = () => {
                 <div className="flex justify-end w-full mx-auto items-center">
                   <div className="w-full sm:w-1/2 sm:pl-8">
                     <div className="px-4 flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-white justify-center rounded shadow">
-                      OCT 5 2023
+                      OCT 7 2023
                     </div>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ const NexusTimeline = () => {
                 <div className="flex justify-start w-full mx-auto items-center">
                   <div className="w-full sm:w-1/2 sm:pr-8">
                     <div className="px-4 flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-white justify-center rounded shadow">
-                      OCT 20 2023
+                      OCT 18 2023
                     </div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ const NexusTimeline = () => {
                 <div className="flex  justify-end w-full mx-auto items-center">
                   <div className="w-full sm:w-1/2 sm:pl-8">
                     <div className="px-4 flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-white justify-center rounded shadow">
-                      OCT 23 2023
+                      OCT 20 2023
                     </div>
                   </div>
                 </div>

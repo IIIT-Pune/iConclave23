@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import NexusNav from "../components/NexusNav";
 import NexusAbout from "./NexusAbout";
-// import 'animate.css';
 
 const Nexus = () => {
   useEffect(() => {

@@ -38,7 +38,7 @@ const NexusNav = () => {
                     </a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#team">GET IN TOUCH</a>
+                    <a href="#getintouch">GET IN TOUCH</a>
                   </li>
                 </ul>
               </div>
@@ -121,7 +121,7 @@ const NexusNav = () => {
                 <a href="#guidelines" onClick={closeMobileMenu}>
                   <li>GUIDELINES</li>
                 </a>
-                <a href="team" onClick={closeMobileMenu}>
+                <a href="getintouch" onClick={closeMobileMenu}>
                   <li>GET IN TOUCH</li>
                 </a>
               </ul>

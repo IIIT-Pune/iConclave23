@@ -1,13 +1,17 @@
 import Footer from "../components/Footer";
 import NexusTimeline from "../components/NexusTimeline";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const NexusAbout = () => {
   return (
     <div
       style={{
-        background: "url(/images/nexusabout_bg1.png)",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        background:
+          "linear-gradient(180deg, #020B16 0%, #0D1F35 52.7%, #010B17 100%)",
       }}
       className="flex flex-col"
     >
@@ -17,7 +21,10 @@ const NexusAbout = () => {
         <div className="flex-grow">
           <div
             className="font-newshape flex justify-center lg:justify-start pt-12 md:pt-16 md:px-20"
-            style={{ fontSize: "7rem" }}
+            style={{
+              textShadow:
+                "0px 0px 76.0838394165039px #FFF, 0px 0px 152.1676788330078px #FFF, 0px 0px 532.5868530273438px #FFF, 0px 0px 1065.1737060546875px #FFF, 0px 0px 1826.011962890625px #FFF, 0px 0px 3195.52099609375px #FFF",
+            }}
           >
             <h1
               className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal"
@@ -53,11 +60,9 @@ const NexusAbout = () => {
       <section className="topics">
         <div className="flex flex-col md:hidden py-16 space-y-8">
           <div className="flex items-center justify-center">
-            <img
-              src="/images/nexustopics.png"
-              alt="schedule"
-              className="w-7/12 md:w-98/12"
-            />
+            <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
+              topics
+            </h1>
           </div>
           <div>
             <ul className="text-4xl sm:text-5xl text-center space-y-4 uppercase font-miso text-white justify-center rounded shadow">
@@ -78,12 +83,10 @@ const NexusAbout = () => {
               <div>WEB 3.0</div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
-            <img
-              src="/images/nexustopics.png"
-              alt="schedule"
-              className="w-1/3 md:w-5/12"
-            />
+          <div className="flex items-center justify-center lowercase">
+            <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
+              TOPICS
+            </h1>
           </div>
           <div className="flex justify-between font-miso p-16">
             <div className="flex justify-center mx-8">
@@ -98,31 +101,79 @@ const NexusAbout = () => {
 
       <section id="topic">
         <div className="font-newshape flex justify-center lg:justify-start md:px-20">
-          <h1
-            className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal"
-            id="NEXUS"
-          >
+          <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
             sponsors
           </h1>
         </div>
         <div className="flex justify-center">
           <div className=" my-10 lg:mx-20 lg:my-10 grid lg:grid-cols-3 grid-flow-row gap-10 items-center">
             <img
-              src="./images/nexussponsor1.png"
+              src="/images/nexussponsor1.png"
               alt="DEVFOLIO LOGO"
               className="w-60 lg:w-96"
             />
             <img
-              src="./images/nexussponsor2.png"
+              src="/images/nexussponsor2.png"
               alt="POLYGON LOGO"
               className="w-60 lg:w-96"
             />
             <img
-              src="./images/nexussponsor3.png"
+              src="/images/nexussponsor3.png"
               alt="REPLIT LOGO"
               className="w-60 lg:w-96"
             />
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="flex items-center justify-center">
+          <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
+            faq
+          </h1>
+        </div>
+        <div className="mx-10 my-10 lg:mx-40">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>1. What is the team size?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>- 1-4</Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>2. Registration Fee</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>- No Registration Fee</Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>
+                3. When and where is the hackathon taking place?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                - Provide the 26 October, 4 pm, and Indian Institute of Information Technology Pune details for the
+                hackathon.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </section>
       <Footer textColor="white" />
