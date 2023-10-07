@@ -45,7 +45,7 @@ const Nexus = () => {
       <div className="flex justify-center items-center mb-10 sm:mb-10 2xl:mb-20">
         <div
           className="apply-button"
-          data-hackathon-slug="YOUR-HACKATHON-SLUG"
+          data-hackathon-slug="nexus"
           data-button-theme="light"
           style={{ height: "44px", width: "312px" }}
         ></div>
