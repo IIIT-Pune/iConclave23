@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import FFNav from "../components/FFNav";
 import Footer from "../components/Footer";
+import { ffguidelines } from "../assets/ffguidelines";
+// import RegisterButton from "../components/RegsiterButton";
 
 const FrameFlick = () => {
   return (
@@ -11,11 +13,11 @@ const FrameFlick = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="min-h-screen flex flex-col"
+        className="min-h-screen"
       >
         <FFNav />
 
-        <div className="flex justify-center flex-grow">
+        <div className="flex justify-center">
           <div className="text-white pt-20 flex-col ">
             <h1 className="text-8xl font-grandstander lg:text-10xl text-center pt-20 ">
               FRAME FLICKS
@@ -26,23 +28,21 @@ const FrameFlick = () => {
           </div>
         </div>
 
-        <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:horizon@iiitp.ac.in',
-    instagram: 'https://www.instagram.com/horizon_iiitp/',
-    }} />
-
-        {/* <div className="flex justify-center items-center mt-32 lg:mt-40 p-10">
-          <a href="https://example.com" className="text-white">
+        <div className="flex justify-center items-center">
+          {/* <a href="https://example.com" className="text-white">
             <h1
               className="font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
       transition-transform transform hover:scale-105 hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out"
             >
               register
             </h1>
-          </a>
-        </div> */}
+          </a> */}
+          {/* <RegisterButton fonts="kodchasan" /> */}
+
+          </div>
       </div>
 
-      {/* <div
+      <div
         className="min-h-screen py-10"
         id="about"
         style={{
@@ -109,13 +109,13 @@ const FrameFlick = () => {
           </a>
         </div>
         <div
-          className="min-h-screen "
+          className="min-h-screen"
           id="horizon"
           style={{
             background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
           }}
         >
-          <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
+          <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left ">
             HORIZON
           </h1>
           <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
@@ -141,7 +141,14 @@ const FrameFlick = () => {
             </p>
           </div>
         </div>
-      </div> */}
+        <Footer
+          textColor="white"
+          socialMediaLinks={{
+            mail: "mailto:horizon@iiitp.ac.in",
+            instagram: "https://www.instagram.com/horizon_iiitp/",
+          }}
+        />
+      </div>
     </div>
   );
 };

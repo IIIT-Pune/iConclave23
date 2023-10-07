@@ -74,7 +74,7 @@ const Infinity = () => {
         </div>
       </div>
 
-      {/* <div className="bg-black h-full text-white" id="about">
+      <div className="bg-black h-full text-white" id="about">
         <h1 className="flex justify-center font-nightcore text-4xl lg:text-8xl tracking-widest py-10 pb-8">
           ABOUT THE CO<span className="text-red-600">N</span>TEST
         </h1>
@@ -108,7 +108,7 @@ const Infinity = () => {
             experience at <span className="text-red-600">InfInITy 2k23!</span>
           </p>
         </div>
-      </div> */}
+      </div>
 
 
       <div className="bg-black">
