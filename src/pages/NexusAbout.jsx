@@ -106,7 +106,7 @@ const NexusAbout = () => {
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className=" my-10 lg:mx-20 lg:my-10 grid grid-cols-3 grid-flow-row gap-10 items-center">
+          <div className=" my-10 lg:mx-20 lg:my-10 grid lg:grid-cols-3 grid-flow-row gap-10 items-center">
             <img
               src="./images/nexussponsor1.png"
               alt="DEVFOLIO LOGO"
