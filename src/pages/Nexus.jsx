@@ -1,9 +1,21 @@
-import Footer from "../components/Footer";
+import { useEffect } from "react";
 import NexusNav from "../components/NexusNav";
+import NexusAbout from "./NexusAbout";
 // import 'animate.css';
 
 const Nexus = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
+    <>
     <div
       style={{
         background: "url(/images/nexus_bg.png)",
@@ -30,20 +42,17 @@ const Nexus = () => {
         </div>
       </div>
 
-      {/* <div className="flex justify-center items-center mt-72 sm:mt-36 2xl:mt-48">
-        <h1 className="text-white font-miso border-2 px-8 py-3 text-4xl lg:text-6xl rounded-2xl tracking-wide ">
-          REGISTER
-        </h1>
-      </div> */}
-      <Footer
-        textColor="white"
-        socialMediaLinks={{
-          mail: "mailto:localhost@iiitp.ac.in",
-          instagram: "https://www.instagram.com/localhost_iiitp/",
-          twitter: "https://twitter.com/localhost_iiitp",
-        }}
-      />
+      <div className="flex justify-center items-center mb-10 sm:mb-10 2xl:mb-20">
+        <div
+          className="apply-button"
+          data-hackathon-slug="YOUR-HACKATHON-SLUG"
+          data-button-theme="light"
+          style={{ height: "44px", width: "312px" }}
+        ></div>
+      </div>
     </div>
+    <NexusAbout />
+    </>
   );
 };
 

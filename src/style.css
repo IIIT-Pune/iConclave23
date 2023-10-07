@@ -34,5 +34,11 @@ html{
     transform: translateX(-100%);
     /* Optionally, you can hide it completely */
     /* display: none; */
-  }
-  
+}
+#RegisterBtn{
+    /* box-shadow: 1px 1px 10px white; */
+}
+#RegisterBtn:hover{
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 1px 1px 20px white;
+}
