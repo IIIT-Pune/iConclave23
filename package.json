@@ -26,6 +26,7 @@
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
+    "react-scroll": "^1.8.9",
     "react-select-country-list": "^2.2.3",
     "react-spring": "^9.7.3",
     "sass": "^1.68.0",
