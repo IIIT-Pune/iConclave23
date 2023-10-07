@@ -82,7 +82,7 @@ const NexusNav = () => {
       </nav>
       {/* Black overlay for mobile menu */}
       {isMobileMenuOpen && (
-        <div className="fixed flex flex-col top-0 left-0 h-screen w-screen bg-black z-50 flex flex-col items-center justify-center">
+        <div className="fixed top-0 left-0 h-screen w-screen bg-black z-50 flex flex-col items-center justify-center">
           {/* Cross button to close the mobile menu */}
           <div>
             <button
@@ -108,7 +108,7 @@ const NexusNav = () => {
 
           <div className="text-white flex-grow justify-center flex flex-col text-xl">
             <div className="flex items-center justify-center">
-              <ul className="flex flex-col items-center justify-between justify-between gap-8">
+              <ul className="flex flex-col items-center justify-between gap-8">
                 <a href="/nexus/about" onClick={closeMobileMenu}>
                   <li>ABOUT</li>
                 </a>

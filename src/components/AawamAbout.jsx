@@ -1,11 +1,11 @@
 const AawamAbout = () => {
   return (
     <div
-      className="bg-black text-white font-monoton flex flex-col mt-32 p-14"
+      className="bg-black text-white font-monoton"
       id="about"
     >
-      <h1 className="text-10xl">ABOUT</h1>
-      <div className="p-10 text-justify grid grid-cols-1 gap-12 text-5xl font-miso">
+      <h1 className="text-5xl text-center lg:text-left lg:text-8xl lg:pl-10 lg:pt-10">ABOUT</h1>
+      <div className="py-5 px-7 lg:p-10 text-justify flex flex-col gap-5 lg:gap-10 text-2xl lg:text-5xl font-miso">
         {" "}
         <p>
           Immerse yourself in the compelling world of street theatre, where the

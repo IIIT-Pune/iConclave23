@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-// import { cognitionguidelines } from "../assets/cognitionguidelines";
+import { cognitionguidelines } from "../assets/cognitionguidelines";
 import Footer from "../components/Footer";
 import CogNav from "../components/CogNav";
 const Cognition = () => {
@@ -30,11 +30,7 @@ const Cognition = () => {
         </div> */}
       </div>
 
-      <Footer invert="true" socialMediaLinks={{  mail: 'mailto:q_riocity@iiitp.ac.in',
-    instagram: 'https://www.instagram.com/q_riocity_/'
-   }} ></Footer>
-
-      {/* <div className="font-veterantypewriter" id="about">
+      <div className="font-veterantypewriter" id="about">
         <h1 className="text-5xl lg:text-9xl  ml-10 pt-10 pb-4">ABOUT</h1>
         <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
@@ -80,7 +76,7 @@ const Cognition = () => {
         </h1>
       </div>
 
-      <div className="font-veterantypewriter min-h-screen" id="club">
+      <div className="font-veterantypewriter min-h-screen">
         <h1 className="text-5xl lg:text-9xl  ml-10 pb-4">Q-RIOCITY</h1>
         <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
@@ -120,7 +116,15 @@ const Cognition = () => {
             when our quiz time slot is usurped, but we shall never be boring.
           </p>
         </div>
-      </div> */}
+      </div>
+
+      <Footer
+        invert="true"
+        socialMediaLinks={{
+          mail: "mailto:q_riocity@iiitp.ac.in",
+          instagram: "https://www.instagram.com/q_riocity_/",
+        }}
+      ></Footer>
     </div>
   );
 };

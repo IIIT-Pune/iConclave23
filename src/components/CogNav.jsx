@@ -28,27 +28,27 @@ const CogNav = () => {
         <div className="hidden lg:flex">
           <div className="text-black text-2xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 ">
+              <a href="#about" className="hover:border-b-2 border-black pb-1 ">
                 <li>ABOUT</li>
               </a>
               <a
                 href="#guidelines"
-                className="hover:border-b-2 pb-1 "
+                className="hover:border-b-2 pb-1 border-black "
               >
                 <li>GUIDELINES</li>
               </a>
               <a
                 href="https://www.instagram.com/q_riocity_/"
-                className="hover:border-b-2 pb-1 "
+                className="hover:border-b-2 pb-1 border-black"
               >
                 <li>Q-RIOCITY</li>
               </a>
-              <a
+              {/* <a
                 href="#getintouch"
-                className="hover:border-b-2 pb-1 "
+                className="hover:border-b-2 pb-1 border-black"
               >
                 <li>GET IN TOUCH</li>
-              </a>
+              </a> */}
             </ul>
           </div>
         </div>

@@ -1,12 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Loader from "/images/loader.gif";
 import Infinity from "./pages/Infinity";
-import Landing from "./pages/Landing";
 import About from "./pages/About";
 import CultNight from "./pages/CultNight";
 import Sponsor from "./pages/Sponsor";
-import GetinTouch from "./pages/GetinTouch";
 import Tech from "./pages/Tech";
 import Cult from "./pages/Cult";
 import Nexus from "./pages/Nexus";
