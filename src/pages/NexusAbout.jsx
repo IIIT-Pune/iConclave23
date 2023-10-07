@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import NexusNav from "../components/NexusNav";
 import NexusTimeline from "../components/NexusTimeline";
+import Nexussponsor from "../components/Nexussponsor";
 
 const NexusAbout = () => {
   return (
@@ -10,9 +11,9 @@ const NexusAbout = () => {
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-      className="h-screen w-full overflow-y-auto flex flex-col"
+      className="flex flex-col"
     >
-      <NexusNav />
+      {/* <NexusNav /> */}
 
       <section className="about">
         <div className="flex-grow">
@@ -20,11 +21,12 @@ const NexusAbout = () => {
             className="font-newshape flex justify-center lg:justify-start pt-12 md:pt-16 md:px-20"
             style={{ fontSize: "7rem" }}
           >
-            <img
-              src="/images/nexusabout.png"
-              className="h-16 sm:h-20 md:h-24 lg:h-36"
-              alt=""
-            />
+            <h1
+              className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal"
+              id="NEXUS"
+            >
+              about
+            </h1>
           </div>
 
           <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
@@ -69,8 +71,8 @@ const NexusAbout = () => {
           </div>
         </div>
 
-        <div className="flex flex-col hidden md:block py-16 text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:9xl text-center uppercase text-white justify-center rounded shadow">
-          <div className="flex justify-between font-miso p-16 flex">
+        <div className="flex-col hidden md:block py-16 text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:9xl text-center uppercase text-white justify-center rounded shadow">
+          <div className="flex justify-between font-miso p-16 ">
             <div className="flex justify-center mx-8">
               <div>Healthcare</div>
             </div>
@@ -85,13 +87,43 @@ const NexusAbout = () => {
               className="w-1/3 md:w-5/12"
             />
           </div>
-          <div className="flex justify-between font-miso p-16 flex">
+          <div className="flex justify-between font-miso p-16">
             <div className="flex justify-center mx-8">
               <div>ED TECH</div>
             </div>
             <div className="flex justify-center mx-8">
               <div>ML / AI</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="topic">
+        <div className="font-newshape flex justify-center lg:justify-start md:px-20">
+          <h1
+            className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal"
+            id="NEXUS"
+          >
+            sponsors
+          </h1>
+        </div>
+        <div className="flex justify-center">
+          <div className=" my-10 lg:mx-20 lg:my-10 grid grid-cols-3 grid-flow-row gap-10 items-center">
+            <img
+              src="./images/nexussponsor1.png"
+              alt="DEVFOLIO LOGO"
+              className="w-60 lg:w-96"
+            />
+            <img
+              src="./images/nexussponsor2.png"
+              alt="POLYGON LOGO"
+              className="w-60 lg:w-96"
+            />
+            <img
+              src="./images/nexussponsor3.png"
+              alt="REPLIT LOGO"
+              className="w-60 lg:w-96"
+            />
           </div>
         </div>
       </section>

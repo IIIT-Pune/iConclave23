@@ -35,7 +35,7 @@ const LockoutGuidelines = () => {
             </span>
             <ul
               role="list"
-              class="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
+              className="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
             >
               <li>Make sure you have an active Codeforces account.</li>
               <li>
@@ -50,7 +50,7 @@ const LockoutGuidelines = () => {
             </span>
             <ul
               role="list"
-              class="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
+              className="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
             >
               <li>Bring your own laptop to the tournament.</li>
               <li>You'll need it for coding challenges.</li>
@@ -62,7 +62,7 @@ const LockoutGuidelines = () => {
             </span>
             <ul
               role="list"
-              class="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
+              className="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
             >
               <li>Join the designated Discord server provided to you.</li>
               <li>
@@ -78,7 +78,7 @@ const LockoutGuidelines = () => {
             </span>
             <ul
               role="list"
-              class="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
+              className="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
             >
               <li>
                 Have a code editor of your choice installed and ready to use on
@@ -96,7 +96,7 @@ const LockoutGuidelines = () => {
             </span>
             <ul
               role="list"
-              class="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
+              classNames="marker:text-white-400 list-disc pl-6 sm:pl-8 md:pl-10"
             >
               <li>Ensure your laptop is in good working condition.</li>
               <li>

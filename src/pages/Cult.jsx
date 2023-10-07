@@ -21,7 +21,7 @@ const Cult = () => {
           activeIndex === swiper.slides.length - 1 ? 0 : activeIndex + 1;
         swiper.slideTo(nextIndex);
       }
-    }, 2000); // Change slide every 2 seconds
+    }, 4000); // Change slide every 4 seconds
 
     return () => {
       clearInterval(interval);
