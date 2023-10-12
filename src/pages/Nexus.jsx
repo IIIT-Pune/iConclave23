@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import NexusNav from "../components/NexusNav";
 import NexusAbout from "./NexusAbout";
+import { Element } from "react-scroll";
 // import 'animate.css';
 
 const Nexus = () => {
@@ -51,7 +52,9 @@ const Nexus = () => {
           ></div>
         </div>
       </div>
-      <NexusAbout />
+      <Element id="aboutsection">
+        <NexusAbout />
+      </Element>
     </>
   );
 };
