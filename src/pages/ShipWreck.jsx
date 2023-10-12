@@ -1,5 +1,6 @@
 import ShipWreckNav from "../components/ShipWreckNav";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 
 const ShipWreck = () => {
   return (
@@ -12,6 +13,44 @@ const ShipWreck = () => {
       }}
       className="min-h-screen flex flex-col"
     >
+      <Helmet>
+        <title>ShipWreck - Speak Up, Stay Up</title>
+        <meta
+          name="description"
+          content="ShipWreck - Speak Up, Stay Up. Register for an event that empowers your voice. Contact us at eclectic@iiitp.ac.in."
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Event",
+              "name": "ShipWreck - Speak Up, Stay Up",
+              "description": "Register for an event that empowers your voice.",
+              "url": "https://iconclave.iiitp.ac.in/shipwreck",
+              "image": "https://www.example.com/images/ShipWreck_bg.png",
+              "startDate": "2023-10-12T18:00:00-07:00",
+              "endDate": "2023-10-12T22:00:00-07:00",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 Main Street",
+                    "addressLocality": "Pune",
+                    "addressRegion": " Maharashtra",
+                    "postalCode": "4110441",
+                    "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
+
       <ShipWreckNav />
       <div className="flex flex-col items-center flex-grow">
         <div className="flex flex-col text-white">
@@ -41,7 +80,6 @@ const ShipWreck = () => {
           instagram: "https://www.instagram.com/eclecticiiitp/",
         }}
       />
-
       {/* <div className="bg-[url('/images/ShipWreckbg.png')] text-white min-h-screen flex flex-col bg-cover bg-center"></div> */}
     </div>
   );

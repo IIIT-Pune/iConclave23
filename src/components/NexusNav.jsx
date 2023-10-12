@@ -36,12 +36,7 @@ const NexusNav = () => {
                     <a href="#guidelines">GUIDELINES</a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="https://www.instagram.com/localhost_iiitp/">
-                      LOCALHOST
-                    </a>
-                  </li>
-                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#team">GET IN TOUCH</a>
+                    <a href="#getintouch">GET IN TOUCH</a>
                   </li>
                 </ul>
               </div>
@@ -73,12 +68,12 @@ const NexusNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/nexus">
+          <a href="/tech">
             <h1
-              className=" font-majormono text-5xl m-0 p-6 text-center text-white font-normal"
+              className=" font-majormono text-2xl m-0 p-6 text-center text-white font-normal"
               id="NEXUS"
             >
-              neXus
+              technical events
             </h1>
           </a>
         </div>
@@ -112,6 +107,7 @@ const NexusNav = () => {
           <div className="text-white flex-grow justify-center flex flex-col text-xl">
             <div className="flex items-center justify-center">
               <ul className="flex flex-col items-center justify-between gap-8">
+
                 <Link
                   to="aboutsection"
                   onClick={closeMobileMenu}
@@ -125,11 +121,12 @@ const NexusNav = () => {
                   onClick={closeMobileMenu}
                 >
                   <li>LOCALHOST</li>
+
                 </a>
                 <a href="#guidelines" onClick={closeMobileMenu}>
                   <li>GUIDELINES</li>
                 </a>
-                <a href="team" onClick={closeMobileMenu}>
+                <a href="getintouch" onClick={closeMobileMenu}>
                   <li>GET IN TOUCH</li>
                 </a>
               </ul>

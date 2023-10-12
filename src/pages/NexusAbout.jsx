@@ -1,13 +1,17 @@
 import Footer from "../components/Footer";
 import NexusTimeline from "../components/NexusTimeline";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const NexusAbout = () => {
   return (
     <div
       style={{
-        background: "url(/images/nexusabout_bg1.png)",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        background:
+          "linear-gradient(180deg, #020B16 0%, #0D1F35 52.7%, #010B17 100%)",
       }}
       className="flex flex-col"
     >
@@ -16,6 +20,12 @@ const NexusAbout = () => {
       <section className="about">
         <div className="flex-grow">
           <div
+//             className="font-newshape flex justify-center lg:justify-start pt-12 md:pt-16 md:px-20"
+//             style={{
+//               textShadow:
+//                 "0px 0px 76.0838394165039px #FFF, 0px 0px 152.1676788330078px #FFF, 0px 0px 532.5868530273438px #FFF, 0px 0px 1065.1737060546875px #FFF, 0px 0px 1826.011962890625px #FFF, 0px 0px 3195.52099609375px #FFF",
+//             }}
+
             className="font-newshape flex justify-center pt-12 md:pt-16 md:px-20"
             style={{ fontSize: "7rem" }}
           >
@@ -135,7 +145,59 @@ const NexusAbout = () => {
                 />
               </div>
             </div>
+
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="flex items-center justify-center">
+          <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
+            faq
+          </h1>
+        </div>
+        <div className="mx-10 my-10 lg:mx-40">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>1. What is the team size?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>- 1-4</Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>2. Registration Fee</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>- No Registration Fee</Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>
+                3. When and where is the hackathon taking place?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                - Provide the 26 October, 4 pm, and Indian Institute of Information Technology Pune details for the
+                hackathon.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </section>
       <Footer textColor="white" />

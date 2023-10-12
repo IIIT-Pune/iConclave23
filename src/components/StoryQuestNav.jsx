@@ -31,22 +31,10 @@ const StoryQuestNav = () => {
               <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
-              <a
-                href="https://www.instagram.com/eclecticiiitp/"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>ECLECTIC</li>
-              </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
               </a>
-              <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#getintouch" className="hover:border-b-2 pb-1 ">
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
@@ -77,12 +65,12 @@ const StoryQuestNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#about">
+          <a href="/cult">
             <h1
-              className="font-harryp text-4xl m-0 p-6 text-center text-white font-normal"
+              className="font-harryp text-2xl m-0 p-6 text-center text-white font-normal"
               id="OFFRoadBandit"
             >
-              STORY QUEST
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>
@@ -115,9 +103,6 @@ const StoryQuestNav = () => {
             <ul className="flex flex-col gap-5">
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
-              </a>
-              <a href="#eclectic" onClick={closeMobileMenu}>
-                <li>ECLECTIC</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>

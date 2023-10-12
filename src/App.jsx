@@ -26,6 +26,7 @@ import LockoutGuidelines from "./components/LockoutGuidelines";
 import LockoutTeam from "./components/LockoutTeam";
 import ShipWreck from "./pages/ShipWreck";
 import StoryQuest from "./pages/StoryQuest";
+import NotFound from "./pages/NotFound";
 
 const preloadedImages = [
   '/images/aawaaz_cau.png',
@@ -222,80 +223,84 @@ const App = () => {
       element: <Cult />,
     },
     {
-      path: "nexus",
+      path: "tech/nexus",
       element: <Nexus />,
     },
     {
-      path: "nexus/about",
+      path: "tech/nexus/about",
       element: <NexusAbout />,
     },
     {
-      path: "infinity",
+      path: "tech/infinity",
       element: <Infinity />,
     },
     {
-      path: "infinity/team",
+      path: "tech/infinity/team",
       element: <Infinityteam />,
     },
     {
-      path: "infinity/pastevents",
+      path: "tech/infinity/pastevents",
       element: <Infinitypastevent />,
     },
     {
-      path: "infinity/bitlegion",
+      path: "tech/infinity/bitlegion",
       element: <Bitlegion />,
     },
     {
-      path: "infinity/halloffame",
+      path: "tech/infinity/halloffame",
       element: <InfinityHalloffame />,
     },
     {
-      path: "lockout",
+      path: "tech/lockout",
       element: <Lockout />,
     },
     {
-      path: "lockout/about",
+      path: "tech/lockout/about",
       element: <LockoutAbout />,
     },
     {
-      path: "lockout/guidelines",
+      path: "tech/lockout/guidelines",
       element: <LockoutGuidelines />,
     },
     {
-      path: "/lockout/team",
+      path: "tech/lockout/team",
       element: <LockoutTeam />,
     },
     {
-      path: "rofies1",
+      path: "tech/rofies1",
       element: <Rofies1 />,
     },
     {
-      path: "cognition",
+      path: "cult/cognition",
       element: <Cognition />,
     },
     {
-      path: "aawazeaawam",
+      path: "cult/aawazeaawam",
       element: <AawazEAawam />,
     },
     {
-      path: "frameflick",
+      path: "cult/frameflick",
       element: <FrameFlick />,
     },
     {
-      path: "anurag",
+      path: "cult/anurag",
       element: <Anurag />,
     },
     {
-      path: "nrityanova",
+      path: "cult/nrityanova",
       element: <NrityaNova />,
     },
     {
-      path: "shipwreck",
+      path: "cult/shipwreck",
       element: <ShipWreck />,
     },
     {
-      path: "storyquest",
+      path: "cult/storyquest",
       element: <StoryQuest />,
+    },
+    {
+      path: "/*",
+      element: <NotFound />,
     },
   ]);
   return <RouterProvider router={router} />;

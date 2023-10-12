@@ -15,7 +15,7 @@ const CogNav = () => {
 
   return (
     <div>
-      <nav className="flex justify-between relative">
+      <nav className="flex justify-between">
         <a href="/">
           {/* Show the first logo in both desktop and mobile versions */}
           <img
@@ -77,12 +77,12 @@ const CogNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#about">
+          <a href="/cult">
             <h1
-              className="font-veterantypewriter text-4xl m-0 p-6 text-center text-black font-normal"
+              className="font-veterantypewriter text-2xl m-0 p-6 text-center text-black font-normal"
               id="Cognition"
             >
-              COGNITION
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>

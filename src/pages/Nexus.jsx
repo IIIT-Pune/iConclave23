@@ -4,6 +4,7 @@ import NexusAbout from "./NexusAbout";
 import { Element } from "react-scroll";
 // import 'animate.css';
 
+
 const Nexus = () => {
   useEffect(() => {
     const script = document.createElement("script");

@@ -38,12 +38,6 @@ const AnuragNav = () => {
                 <li className="hover:border-b-2 pb-1 ">ABOUT</li>
               </Link>
               {/* </li> */}
-              <a
-                href="https://www.instagram.com/saaz_iiitp/"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>SAAZ</li>
-              </a>
               <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
               </a>
@@ -78,12 +72,12 @@ const AnuragNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#about">
+          <a href="/cult">
             <h1
-              className="font-smarkan text-4xl m-0 p-6 text-center text-white font-normal"
+              className="font-smarkan text-3xl m-0 p-6 text-center text-white font-normal"
               id="anurag"
             >
-              ANURAAG
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>
@@ -123,12 +117,6 @@ const AnuragNav = () => {
                 >
                   <li className="hover:border-b-2 pb-1 ">ABOUT</li>
                 </Link>
-                <a
-                  href="https://www.instagram.com/saaz_iiitp/"
-                  onClick={closeMobileMenu}
-                >
-                  <li>SAAZ</li>
-                </a>
                 <a href="#guidelines" onClick={closeMobileMenu}>
                   <li>GUIDELINES</li>
                 </a>

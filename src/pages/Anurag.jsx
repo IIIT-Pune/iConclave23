@@ -1,12 +1,51 @@
 /* eslint-disable react/no-unescaped-entities */
 import AnuragNav from "../components/AnuragNav";
 import Footer from "../components/Footer";
-import { Element } from "react-scroll";
+import { Helmet } from "react-helmet";
+// import { Element } from "react-scroll";
 
 const Anurag = () => {
   return (
     <>
       <div className="bg-[url('/images/saaz_bg.png')] text-white h-screen flex flex-col bg-cover bg-center">
+        <Helmet>
+          <title>Anuraag - Battle of Bands</title>
+          <meta
+            name="description"
+            content="Anurag - Battle of Bands. Join us for an exhilarating musical showdown. Explore the world of dance with us. Contact us at saaz_iiitp@iiitp.ac.in."
+          />
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "http://schema.org",
+                "@type": "Event",
+                "name": "Anurag - Battle of Bands",
+                "description": "Join us for an exhilarating musical showdown.",
+                "url": "https://iconclave.iiitp.ac.in/anurag",
+                "image": "https://www.example.com/images/saaz_bg.png",
+                "startDate": "2023-10-12T18:00:00-07:00",
+                "endDate": "2023-10-12T22:00:00-07:00",
+                "location": {
+                  "@type": "Place",
+                  "name": "IIIT Pune",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 Main Street",
+                    "addressLocality": "Pune",
+                    "addressRegion": " Maharashtra",
+                    "postalCode": "4110441",
+                    "addressCountry": "India"
+                  }
+                },
+                "performer": {
+                  "@type": "Organization",
+                  "name": "IConclave - IIIT Pune"
+                }
+              }
+            `}
+          </script>
+        </Helmet>
+
         <AnuragNav />
         <div className="flex flex-col items-center flex-grow">
           <div className="flex flex-col">
@@ -32,7 +71,7 @@ const Anurag = () => {
         className="text-white min-h-screen"
         style={{
           background:
-            "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 59.75%, #000 100%), url('./images/anuragbg.png') ",
+            "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 59.75%, #000 100%), url('/images/anuragbg.png') ",
         }}
       >
         <div className="flex flex-col">
@@ -109,13 +148,15 @@ const Anurag = () => {
           </a>
         </div>
       </div>
-      <div className="bg-black text-white min-h-screen flex flex-col bg-cover bg-center">
+      <div className="bg-black text-white min-h-full flex flex-col bg-cover bg-center">
         <div className="flex flex-col">
-          <h1 className="text-6xl lg:text-9xl mt-10 font-smarkan text-center">
-            <span className="bg-gradient-to-r text-transparent from-[#0042D4] to-[#FE1902] bg-clip-text">
-              saaz
-            </span>
-          </h1>
+          <a href="https://www.instagram.com/saaz_iiitp/">
+            <h1 className="text-6xl lg:text-9xl mt-10 font-smarkan text-center">
+              <span className="bg-gradient-to-r text-transparent from-[#0042D4] to-[#FE1902] bg-clip-text">
+                saaz
+              </span>
+            </h1>
+          </a>
           <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
             <p></p>
           </div>

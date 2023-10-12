@@ -6,7 +6,7 @@ const Cognition = () => {
   return (
     <div className="bg-cognitionbg min-h-screen flex flex-col">
       <CogNav />
-      <div className="hero mt-36 lg:m-0 flex-grow">
+      <div className="hero mt-36 lg:mt-0">
         <div className="flex flex-col items-center ">
           <div className=" -mt-5 flex flex-col z-10 ">
             <h1 className="font-veterantypewriter text-center text-6xl lg:text-10xl">
@@ -18,13 +18,14 @@ const Cognition = () => {
             </h2>
           </div>
           <img
-            src="./images/cognition_bg.png"
+            src="/images/cognition_bg.png"
             alt="bg"
             // className="w-[54rem]"
           />
         </div>
 
         <div className="flex justify-center items-center">
+          
           <a href="https://unstop.com/quiz/cognition-decode-dazzle-dominate-iconclave-indian-institute-of-information-technology-iiit-pune-794293">
             <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
               REGISTER
@@ -79,9 +80,9 @@ const Cognition = () => {
         </h1>
       </div>
 
-      <div className="font-veterantypewriter min-h-screen">
-        <h1 className="text-5xl lg:text-9xl  ml-10 pb-4">Q-RIOCITY</h1>
-        <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
+      <div className="font-veterantypewriter min-h-full">
+        <h1 className="text-5xl text-center lg:text-8xl  ml-10 pb-4">Q-RIOCITY</h1>
+        {/* <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
             Q-riocity is IIIT Pune's quizzing society, like the{" "}
             <span className="font-bold">
@@ -118,7 +119,7 @@ const Cognition = () => {
             We may be geeky, nerdy, introverted, uptight, not funny, or grumpy
             when our quiz time slot is usurped, but we shall never be boring.
           </p>
-        </div>
+        </div> */}
       </div>
 
       <Footer

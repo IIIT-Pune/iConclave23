@@ -31,11 +31,11 @@ const FFNav = () => {
               <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
-              <a href="#horizon" className="hover:border-b-2 pb-1 ">
-                <li>HORIZON</li>
-              </a>
               <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
+              </a>
+              <a href="#getitouch" className="hover:border-b-2 pb-1 ">
+                <li>GET IN TOUCH</li>
               </a>
             </ul>
           </div>
@@ -65,12 +65,12 @@ const FFNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="https://instagram.com/horizon_iiitp">
+          <a href="/cult">
             <h1
               className="font-grandstander text-xl m-0 p-6 text-center text-white font-normal"
               id="OFFRoadBandit"
             >
-              HORIZON
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>
@@ -104,8 +104,9 @@ const FFNav = () => {
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
-              <a href="#horizon" onClick={closeMobileMenu}>
-                <li>HORIZON</li>
+
+              <a href="#guidelines" onClick={closeMobileMenu}>
+                <li>GUIDELINES</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>

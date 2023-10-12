@@ -71,12 +71,12 @@ const OffRoadNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/rofies1">
+          <a href="/tech">
             <h1
-              className="font-silkroad text-xl m-0 p-6 text-center text-white font-normal"
+              className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal"
               id="OFFRoadBandit"
             >
-              OFF-ROAD BANDIT
+              TECHNICAL EVENTS
             </h1>
           </a>
         </div>
