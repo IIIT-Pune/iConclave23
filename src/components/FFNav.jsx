@@ -40,7 +40,7 @@ const FFNav = () => {
             </ul>
           </div>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -63,12 +63,12 @@ const FFNav = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden lg:flex">
+        <div className="flex items-center justify-center hidden lg:block">
           {/* Show the second logo only in the desktop version */}
           <a href="/cult">
             <h1
               className="font-grandstander text-xl m-0 p-6 text-center text-white font-normal"
-              id="OFFRoadBandit"
+              id="frameflicks"
             >
               CULTURAL EVENTS
             </h1>

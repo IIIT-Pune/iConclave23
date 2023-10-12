@@ -128,7 +128,6 @@ const AnuragNav = () => {
           </div>
           <div>
             <Footer textColor={"white"} />
-
           </div>
         </div>
       )}

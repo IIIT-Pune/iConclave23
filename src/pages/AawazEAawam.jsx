@@ -30,7 +30,6 @@ const AawazEAawam = () => {
           `}
         </script>
       </Helmet>
-
       <div
         className="min-h-screen "
         style={{
@@ -54,7 +53,7 @@ const AawazEAawam = () => {
                 aawam
               </h1>
             </div>
-            <p className="text-white font-majormono text-2xl sm:text-4xl lg:text-6xl">
+            <h2 className="text-white font-majormono text-2xl sm:text-4xl lg:text-6xl">
               lights street action
             </h2>
           </div>
@@ -67,16 +66,14 @@ const AawazEAawam = () => {
               </h1>
             </a>
           </div>
-
         </div>
       </div>
       <AawamAbout />
       <AawamGuide />
-
-//       <h1 className="text-white font-monoton text-center text-2xl sm:text-6xl lg:text-7xl">
-//         ABHINAY
-//       </h1>
-
+      //{" "}
+      <h1 className="text-white font-monoton text-center text-2xl sm:text-6xl lg:text-7xl">
+        // ABHINAY //{" "}
+      </h1>
       <Footer
         textColor="white"
         socialMediaLinks={{

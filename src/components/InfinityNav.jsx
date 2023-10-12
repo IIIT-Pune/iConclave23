@@ -45,19 +45,19 @@ const InfinityNav = () => {
             <div className="flex-grow flex items-center justify-center">
               <ul className="flex flex-col items-center justify-between min-h-[250px]">
                 <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                  <a href="/infinity">HOME</a>
+                  <a href="/tech/infinity">HOME</a>
                 </li>
                 <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                  <Link to="/infinity/bitlegion">BIT LEGION</Link>
+                  <Link to="/tech/infinity/bitlegion">BIT LEGION</Link>
                 </li>
                 <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                  <Link to="/infinity/team">TEAM</Link>
+                  <Link to="/tech/infinity/team">TEAM</Link>
                 </li>
                 <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                  <Link to="/infinity/pastevents">PAST EVENTS</Link>
+                  <Link to="/tech/infinity/pastevents">PAST EVENTS</Link>
                 </li>
                 <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                  <Link to="/infinity/halloffame">HALL OF FAME</Link>
+                  <Link to="/tech/infinity/halloffame">HALL OF FAME</Link>
                 </li>
               </ul>
             </div>
@@ -67,19 +67,19 @@ const InfinityNav = () => {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <a href="/infinity">HOME</a>
+            <a href="/tech/infinity">HOME</a>
           </li>
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <Link to="/infinity/bitlegion">BIT LEGION</Link>
+            <Link to="/tech/infinity/bitlegion">BIT LEGION</Link>
           </li>
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <Link to="/infinity/team">TEAM</Link>
+            <Link to="/tech/infinity/team">TEAM</Link>
           </li>
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <Link to="/infinity/pastevents">PAST EVENTS</Link>
+            <Link to="/tech/infinity/pastevents">PAST EVENTS</Link>
           </li>
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <Link to="/infinity/halloffame">HALL OF FAME</Link>
+            <Link to="/tech/infinity/halloffame">HALL OF FAME</Link>
           </li>
         </ul>
       </nav>
@@ -103,7 +103,7 @@ const InfinityNav = () => {
       }
     `}</style>
 
-      <a href="/tech" className="hidden sm:block">
+      <a href="/tech" className="hidden lg:block">
         <h1
           className="font-nightcore text-2xl m-0 text-center tracking-widest text-white font-normal"
           id="OFFRoadBandit"

@@ -3,6 +3,7 @@ import InfinityNav from "./InfinityNav";
 import Card from "./InfinityCards";
 import { team, headteam } from "../assets/team";
 import Footer from "./Footer";
+
 const Infinityteam = () => {
   return (
     <div className="bg-black h-full flex flex-col">

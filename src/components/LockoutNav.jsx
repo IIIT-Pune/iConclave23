@@ -40,13 +40,13 @@ const LockoutNav = () => {
           <div className="flex-grow flex items-center justify-center">
             <ul className="flex flex-col items-center justify-between min-h-[250px] text-white-600">
               <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <a href="/lockout/about">ABOUT</a>
+                <a href="/tech/lockout/about">ABOUT</a>
               </li>
               <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <a href="/lockout/guidelines">GUIDELINES</a>
+                <a href="/tech/lockout/guidelines">GUIDELINES</a>
               </li>
               <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <a href="/lockout/team">TEAM</a>
+                <a href="/tech/lockout/team">TEAM</a>
               </li>
             </ul>
           </div>
@@ -66,23 +66,21 @@ const LockoutNav = () => {
         <div className="flex justify-center pr-4 md:pr-0">
           <ul className="flex text-white font-miso items-center gap-4 text-xs sm:text-base md:text-xl lg:text-3xl md:gap-8 lg:gap-12">
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-              <a href="/lockout/about">ABOUT</a>
+              <a href="/tech/lockout/about">ABOUT</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-              <a href="/lockout/guidelines">GUIDELINES</a>
+              <a href="/tech/lockout/guidelines">GUIDELINES</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-              <a href="/lockout/team">TEAM</a>
+              <a href="/tech/lockout/team">TEAM</a>
             </li>
           </ul>
         </div>
-        <a href="/tech" className="hidden sm:block">
-          <h1
-            className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal"
-          >
-            TECHNICAL EVENTS
+        <div className="flex items-center justify-center">
+          <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
+            <a href="/tech">TECHNICAL EVENTS</a>
           </h1>
-        </a>
+        </div>
       </nav>
       <style>{`
       .hideMenuNav {

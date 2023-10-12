@@ -10,22 +10,16 @@ const NexusAbout = () => {
   return (
     <div
       style={{
-        background:
-          "linear-gradient(180deg, #020B16 0%, #0D1F35 52.7%, #010B17 100%)",
+        background: "url(/images/nexusabout_bg1.png)",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
       className="flex flex-col"
     >
       {/* <NexusNav /> */}
-
       <section className="about">
         <div className="flex-grow">
           <div
-//             className="font-newshape flex justify-center lg:justify-start pt-12 md:pt-16 md:px-20"
-//             style={{
-//               textShadow:
-//                 "0px 0px 76.0838394165039px #FFF, 0px 0px 152.1676788330078px #FFF, 0px 0px 532.5868530273438px #FFF, 0px 0px 1065.1737060546875px #FFF, 0px 0px 1826.011962890625px #FFF, 0px 0px 3195.52099609375px #FFF",
-//             }}
-
             className="font-newshape flex justify-center pt-12 md:pt-16 md:px-20"
             style={{ fontSize: "7rem" }}
           >
@@ -57,9 +51,7 @@ const NexusAbout = () => {
           </div>
         </div>
       </section>
-
       <NexusTimeline />
-
       <section className="topics">
         <div className="flex flex-col md:hidden py-16 space-y-8">
           <div className="font-newshape flex justify-center items-center md:px-20">
@@ -107,7 +99,6 @@ const NexusAbout = () => {
           </div>
         </div>
       </section>
-
       <section id="sponsors">
         <div className="font-newshape flex justify-center items-center md:px-20">
           <h1
@@ -123,14 +114,14 @@ const NexusAbout = () => {
             <div className="flex justify-center flex-col gap-5 sm:gap-10 md:gap-10 sm:flex-row">
               <div>
                 <img
-                  src="./images/nexussponsor1.png"
+                  src="/images/nexussponsor1.png"
                   alt="DEVFOLIO LOGO"
                   className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
                 />
               </div>
               <div>
                 <img
-                  src="./images/nexussponsor2.png"
+                  src="/images/nexussponsor2.png"
                   alt="POLYGON LOGO"
                   className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
                 />
@@ -139,20 +130,21 @@ const NexusAbout = () => {
             <div className="flex justify-center items-center">
               <div className="flex justify-center items-center">
                 <img
-                  src="./images/nexussponsor3.png"
+                  src="/images/nexussponsor3.png"
                   alt="REPLIT LOGO"
                   className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
                 />
               </div>
             </div>
-
           </div>
         </div>
       </section>
-
-      <section>
-        <div className="flex items-center justify-center">
-          <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
+      <section className="faq">
+        <div className="flex items-center justify-center mt-8">
+          <h1
+            className="font-majormono text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 px-4 py-10 text-center text-white font-normal"
+            id="NEXUS"
+          >
             faq
           </h1>
         </div>
@@ -193,13 +185,14 @@ const NexusAbout = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                - Provide the 26 October, 4 pm, and Indian Institute of Information Technology Pune details for the
-                hackathon.
+                - Provide the 26 October, 4 pm, and Indian Institute of
+                Information Technology Pune details for the hackathon.
               </Typography>
             </AccordionDetails>
           </Accordion>
         </div>
       </section>
+      ;
       <Footer textColor="white" />
     </div>
   );
