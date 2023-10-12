@@ -12,8 +12,8 @@ const Infinitypastevent = () => {
         </h1>
 
         <div className="flex justify-center">
-          <div className="flex flex-col mt-10 w-11/12 lg:w-10/12">
-            <div className="border border-1 h-28 m-4 flex gap-10 items-center justify-between  px-6 lg:px-10 rounded-lg">
+          <div className="flex flex-col my-10 w-11/12 lg:w-10/12">
+            <div className="border border-1 h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 m-4 flex gap-10 items-center justify-between  px-6 lg:px-10 rounded-lg">
               <h1 className="text-white text-xl sm:text-3xl md:text-5xl lg:text-7xl font-miso tracking-wider text-left">
                 INFINITY 2k2<span className="text-red-600">2</span>
               </h1>
@@ -29,7 +29,7 @@ const Infinitypastevent = () => {
               </a>
             </div>
 
-            <div className="border border-1 h-28 m-4 gap-10 flex items-center justify-between px-6 lg:px-10 rounded-lg">
+            <div className="border border-1 h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 m-4 flex gap-10 items-center justify-between  px-6 lg:px-10 rounded-lg">
               <a
                 href="https://www.codechef.com/INFI2021"
                 target="_blank"
@@ -45,7 +45,7 @@ const Infinitypastevent = () => {
               </h1>
             </div>
 
-            <div className="border border-1 h-28 m-4 flex gap-10 items-center justify-between  px-6 lg:px-10 rounded-lg">
+            <div className="border border-1 h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 m-4 flex gap-10 items-center justify-between  px-6 lg:px-10 rounded-lg">
               <h1 className="text-white text-xl sm:text-3xl md:text-5xl lg:text-7xl font-miso tracking-wider text-left">
                 INFINITY 2k2<span className="text-red-600">0</span>
               </h1>
@@ -61,7 +61,7 @@ const Infinitypastevent = () => {
               </a>
             </div>
 
-            <div className="border border-1 h-28 m-4 flex gap-10 items-center justify-between  px-6 lg:px-10 rounded-lg">
+            <div className="border border-1 h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 m-4 flex gap-10 items-center justify-between  px-6 lg:px-10 rounded-lg">
               <a
                 href="https://www.codechef.com/INFY2019"
                 target="_blank"
