@@ -5,11 +5,10 @@ const ShipWreck = () => {
   return (
     <div
       style={{
-        background:
-          "url(/images/ShipWreck_bg.png), black 50%",
+        background: "url(/images/ShipWreck_bg.png), black 50%",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
       }}
       className="min-h-screen flex flex-col"
     >
@@ -24,15 +23,24 @@ const ShipWreck = () => {
           </p>
         </div>
 
-        {/* <div className="flex justify-center items-center mt-48 m-10">
-          <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
-            REGISTER
-          </h1>
-        </div> */}
+        <div className="flex justify-center items-center mt-48 m-10">
+          <a
+            href="https://unstop.com/events/shipwreck-iconclave-indian-institute-of-information-technology-iiit-pune-794853"
+            className="text-white"
+          >
+            <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
+              REGISTER
+            </h1>
+          </a>
+        </div>
       </div>
-      <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:eclectic@iiitp.ac.in',
-    instagram: 'https://www.instagram.com/eclecticiiitp/',
-   }} />
+      <Footer
+        textColor="white"
+        socialMediaLinks={{
+          mail: "mailto:eclectic@iiitp.ac.in",
+          instagram: "https://www.instagram.com/eclecticiiitp/",
+        }}
+      />
 
       {/* <div className="bg-[url('/images/ShipWreckbg.png')] text-white min-h-screen flex flex-col bg-cover bg-center"></div> */}
     </div>
