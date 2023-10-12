@@ -10,26 +10,12 @@ const Infinity = () => {
     <div className="bg-black">
       <div className="h-screen flex flex-col relative">
         <InfinityNav />
-
-//         <div className="flex justify-center pt-24 pb-14 mx-3 lg:mx-0 lg:p-8 items-center ">
-
-//           <img
-//             src="/images/Infinity_logo.png"
-//             alt="Infinity Logo"
-//             width={800}
-//           />
-//         </div>
-//         <div className="text-white flex flex-col items-center -p-10 lg:flex-row justify-center text-2xl lg:text-3xl font-miso">
-
-//           <span className="-m-3 lg:m-0 lg:-mt-4">HOSTED ON</span> &nbsp; 
-//           <span className="-m-5 lg:m-0 lg:-mt-4">
-
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex-col">
             {/* <div className="flex justify-center pt-24 pb-14 mx-3 lg:mx-0 lg:p-8 items-center "> */}
             <div className="flex justify-center mt-6 mb-6 lg:mb-2 scale-125 sm:scale-120 md:scale-100">
               <img
-                src="./images/Infinity_logo.png"
+                src="/images/Infinity_logo.png"
                 alt="Infinity Logo"
                 className="w-full scale-125 sm:scale-110  md:scale-100"
               />
@@ -64,7 +50,7 @@ const Infinity = () => {
                 <div className="flex items-center justify-center">
                   <div className="flex items-center justify-center -ml-1">
                     <img
-                      src="./images/Calendar25.png"
+                      src="/images/Calendar25.png"
                       alt="25 Oct"
                       width={50}
                       className="w-5/12 md:w-2/3"
@@ -75,7 +61,7 @@ const Infinity = () => {
                 <div className="flex items-center justify-center">
                   <div className="flex items-center justify-center">
                     <img
-                      src="./images/Alarm.png"
+                      src="/images/Alarm.png"
                       alt="25 Oct"
                       width={50}
                       className="w-5/12 md:w-2/3"
@@ -96,31 +82,6 @@ const Infinity = () => {
                   Register &nbsp; <span className="text-red-600">Now</span>
                 </h1>
               </a>
-
-            </span>{" "}
-            &nbsp;
-            <a
-              target="_blank"
-              href="https://www.codechef.com/START105"
-              rel="noopener"
-            >
-              ( AS STARTERS 105 )
-            </a>
-          </span>
-        </div>
-
-        <div className="text-white flex justify-center text-2xl lg:text-3xl font-miso m-3">
-          <div className="flex flex-col lg:flex-row m-5">
-            <div className="flex items-center -mb-3 lg:-mt-8">
-              <div className="flex items-center justify-center h-10 ">
-                <img src="/images/Calendar25.png" alt="25 Oct" width={50} />
-              </div>
-              OCT 25’ 2023
-            </div>
-            &nbsp;
-            <div className="flex items-center -mt-3 lg:-mt-5">
-              <img src="/images/Alarm.png" alt="25 Oct" width={50} />
-              20:00 - 22:00
             </div>
           </div>
         </div>

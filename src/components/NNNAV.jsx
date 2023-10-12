@@ -46,7 +46,7 @@ const NNNav = () => {
             </ul>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden flex justify-center px-4">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -69,16 +69,13 @@ const NNNav = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden lg:flex">
-          {/* Show the second logo only in the desktop version */}
-          <a href="/cult">
-            <h1
-              className="font-fuzzybubbles text-xl m-0 p-6 text-center text-white font-normal"
-              id="NrityaNova"
-            >
-              CULTURAL EVENTS
-            </h1>
-          </a>
+        <div className="flex  hidden lg:block">
+          <h1
+            className="font-fuzzybubbles text-xl m-0 p-6 flex items-center justify-center text-center text-white font-normal"
+            id="NrityaNova"
+          >
+            <a href="/cult">CULTURAL EVENTS</a>
+          </h1>
         </div>
       </nav>
       {/* Black overlay for mobile menu */}

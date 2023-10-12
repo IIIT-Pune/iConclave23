@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import NNNAv from "../components/NNNAV";
 import Footer from "../components/Footer";
-import { Helmet } from 'react-helmet'; // Import Helmet for managing SEO tags
+import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 
 const NrityaNova = () => {
   return (
@@ -150,7 +150,7 @@ const NrityaNova = () => {
             eagerly anticipated by the IIIT Pune community.
           </p>
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 };

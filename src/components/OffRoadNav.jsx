@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 
 const OffRoadNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,16 +32,10 @@ const OffRoadNav = () => {
               <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
               </a>
-              <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#getintouch" className="hover:border-b-2 pb-1 ">
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
@@ -105,21 +100,23 @@ const OffRoadNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
-              <a href="#" onClick={closeMobileMenu}>
-                <li>HOME</li>
-              </a>
-              <a href="#about" onClick={closeMobileMenu}>
-                <li>ABOUT</li>
-              </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
-              </a>
-              <a href="#getintouch" onClick={closeMobileMenu}>
-                <li>GET IN TOUCH</li>
-              </a>
-            </ul>
+          <div className="text-white flex-grow justify-center flex flex-col text-xl">
+            <div className="flex items-center justify-center">
+              <ul className="flex flex-col items-center justify-between gap-8">
+                <a href="#about" onClick={closeMobileMenu}>
+                  <li>ABOUT</li>
+                </a>
+                <a href="#guidelines" onClick={closeMobileMenu}>
+                  <li>GUIDELINES</li>
+                </a>
+                <a href="#getintouch" onClick={closeMobileMenu}>
+                  <li>GET IN TOUCH</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}
