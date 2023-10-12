@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 
 const StoryQuestNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -99,8 +100,8 @@ const StoryQuestNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
+          <div className="flex-grow text-white flex items-center justify-center">
+            <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
@@ -111,6 +112,9 @@ const StoryQuestNav = () => {
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}

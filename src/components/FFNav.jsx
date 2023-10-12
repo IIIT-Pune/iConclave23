@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 
 const FFNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -99,19 +100,24 @@ const FFNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
+          <div className="flex-grow text-white flex items-center justify-center">
+            <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
-
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
+              <a href="#vanitycrew" onClick={closeMobileMenu}>
+                <li>VANITY CREW</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
+              </a>
+              <a href="#get in touch" onClick={closeMobileMenu}>
+                <li>GET IN TOUCH</li>
               </a>
             </ul>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}
