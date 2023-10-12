@@ -63,8 +63,11 @@ const ShipWreck = () => {
         </div>
 
         <div className="flex justify-center items-center mt-48 m-10">
-          <a href="https://example.com" className="text-white">
-            <h1 className="font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
+          <a
+            href="https://unstop.com/events/shipwreck-iconclave-indian-institute-of-information-technology-iiit-pune-794853"
+            className="text-white"
+          >
+            <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
               REGISTER
             </h1>
           </a>
@@ -77,6 +80,7 @@ const ShipWreck = () => {
           instagram: "https://www.instagram.com/eclecticiiitp/",
         }}
       />
+      {/* <div className="bg-[url('/images/ShipWreckbg.png')] text-white min-h-screen flex flex-col bg-cover bg-center"></div> */}
     </div>
   );
 };

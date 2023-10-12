@@ -20,11 +20,14 @@ const NexusAbout = () => {
       <section className="about">
         <div className="flex-grow">
           <div
-            className="font-newshape flex justify-center lg:justify-start pt-12 md:pt-16 md:px-20"
-            style={{
-              textShadow:
-                "0px 0px 76.0838394165039px #FFF, 0px 0px 152.1676788330078px #FFF, 0px 0px 532.5868530273438px #FFF, 0px 0px 1065.1737060546875px #FFF, 0px 0px 1826.011962890625px #FFF, 0px 0px 3195.52099609375px #FFF",
-            }}
+//             className="font-newshape flex justify-center lg:justify-start pt-12 md:pt-16 md:px-20"
+//             style={{
+//               textShadow:
+//                 "0px 0px 76.0838394165039px #FFF, 0px 0px 152.1676788330078px #FFF, 0px 0px 532.5868530273438px #FFF, 0px 0px 1065.1737060546875px #FFF, 0px 0px 1826.011962890625px #FFF, 0px 0px 3195.52099609375px #FFF",
+//             }}
+
+            className="font-newshape flex justify-center pt-12 md:pt-16 md:px-20"
+            style={{ fontSize: "7rem" }}
           >
             <h1
               className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal"
@@ -59,9 +62,12 @@ const NexusAbout = () => {
 
       <section className="topics">
         <div className="flex flex-col md:hidden py-16 space-y-8">
-          <div className="flex items-center justify-center">
-            <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
-              topics
+          <div className="font-newshape flex justify-center items-center md:px-20">
+            <h1
+              className="font-majormono lowercase text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 px-4 py-10 text-center text-white font-normal"
+              id="NEXUS"
+            >
+              Topics
             </h1>
           </div>
           <div>
@@ -75,7 +81,7 @@ const NexusAbout = () => {
         </div>
 
         <div className="flex-col hidden md:block py-16 text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:9xl text-center uppercase text-white justify-center rounded shadow">
-          <div className="flex justify-between font-miso p-16 ">
+          <div className="flex justify-between font-miso  p-16">
             <div className="flex justify-center mx-8">
               <div>Healthcare</div>
             </div>
@@ -83,9 +89,12 @@ const NexusAbout = () => {
               <div>WEB 3.0</div>
             </div>
           </div>
-          <div className="flex items-center justify-center lowercase">
-            <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
-              TOPICS
+          <div className="font-newshape flex justify-center items-center md:px-20">
+            <h1
+              className="font-majormono lowercase text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 px-4 py-10 text-center text-white font-normal"
+              id="NEXUS"
+            >
+              topics
             </h1>
           </div>
           <div className="flex justify-between font-miso p-16">
@@ -99,29 +108,44 @@ const NexusAbout = () => {
         </div>
       </section>
 
-      <section id="topic">
-        <div className="font-newshape flex justify-center lg:justify-start md:px-20">
-          <h1 className=" font-majormono text-6xl sm:text-8xl lg:text-10xl m-0 p-0 text-center text-white font-normal">
+      <section id="sponsors">
+        <div className="font-newshape flex justify-center items-center md:px-20">
+          <h1
+            className="font-majormono text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 px-4 py-10 text-center text-white font-normal"
+            id="NEXUS"
+          >
             sponsors
           </h1>
         </div>
-        <div className="flex justify-center">
-          <div className=" my-10 lg:mx-20 lg:my-10 grid lg:grid-cols-3 grid-flow-row gap-10 items-center">
-            <img
-              src="/images/nexussponsor1.png"
-              alt="DEVFOLIO LOGO"
-              className="w-60 lg:w-96"
-            />
-            <img
-              src="/images/nexussponsor2.png"
-              alt="POLYGON LOGO"
-              className="w-60 lg:w-96"
-            />
-            <img
-              src="/images/nexussponsor3.png"
-              alt="REPLIT LOGO"
-              className="w-60 lg:w-96"
-            />
+        <div className="flex justify-center px-8">
+          {/* grid grid-cols-3 grid-flow-row */}
+          <div className="my-10 lg:mx-20 lg:my-10 flex flex-col lg:flex-row gap-5 sm:gap-10 items-center">
+            <div className="flex justify-center flex-col gap-5 sm:gap-10 md:gap-10 sm:flex-row">
+              <div>
+                <img
+                  src="./images/nexussponsor1.png"
+                  alt="DEVFOLIO LOGO"
+                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
+                />
+              </div>
+              <div>
+                <img
+                  src="./images/nexussponsor2.png"
+                  alt="POLYGON LOGO"
+                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
+                />
+              </div>
+            </div>
+            <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center">
+                <img
+                  src="./images/nexussponsor3.png"
+                  alt="REPLIT LOGO"
+                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
+                />
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

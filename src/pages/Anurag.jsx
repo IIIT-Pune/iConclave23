@@ -57,11 +57,13 @@ const Anurag = () => {
             </p>
           </div>
 
-          {/* <div className="flex justify-center items-center mt-48 m-10">
-          <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
-            REGISTER
-          </h1>
-        </div> */}
+          <div className="flex justify-center items-center mt-48 m-10">
+            <a href="https://unstop.com/events/anuraag-battle-of-bands-iconclave-indian-institute-of-information-technology-iiit-pune-794646">
+              <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
+                REGISTER
+              </h1>
+            </a>
+          </div>
         </div>
       </div>
       <div

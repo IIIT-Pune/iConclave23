@@ -62,7 +62,17 @@ const StoryQuest = () => {
           </p>
         </div>
 
-        {/* Register button code here... */}
+        <div className="flex justify-center items-center mt-48 m-10">
+          <a
+            href="https://unstop.com/events/storyquest-iconclave23-indian-institute-of-information-technology-iiit-pune-794926"
+            className="text-white"
+          >
+            <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
+              REGISTER
+            </h1>
+          </a>
+        </div>
+
       </div>
       <Footer
         textColor="white"
@@ -71,6 +81,8 @@ const StoryQuest = () => {
           instagram: "https://www.instagram.com/eclecticiiitp/",
         }}
       />
+      {/* <div className="bg-[url('/images/StoryQuestbg.png')] text-white min-h-screen flex flex-col bg-cover bg-center"></div> */}
+
     </div>
   );
 };
