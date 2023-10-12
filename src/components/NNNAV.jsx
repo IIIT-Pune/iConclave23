@@ -37,16 +37,10 @@ const NNNav = () => {
               >
                 <li>VANITY CREW</li>
               </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
               </a>
-              <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#getintouch" className="hover:border-b-2 pb-1 ">
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
@@ -77,12 +71,12 @@ const NNNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#about">
+          <a href="/cult">
             <h1
               className="font-fuzzybubbles text-xl m-0 p-6 text-center text-white font-normal"
               id="NrityaNova"
             >
-              NRITYA NOVA
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>

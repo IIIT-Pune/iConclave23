@@ -14,7 +14,7 @@ const Infinity = () => {
         <div className="flex justify-center pt-24 pb-14 mx-3 lg:mx-0 lg:p-8 items-center ">
 
           <img
-            src="./images/Infinity_logo.png"
+            src="/images/Infinity_logo.png"
             alt="Infinity Logo"
             width={800}
           />
@@ -48,13 +48,13 @@ const Infinity = () => {
           <div className="flex flex-col lg:flex-row m-5">
             <div className="flex items-center -mb-3 lg:-mt-8">
               <div className="flex items-center justify-center h-10 ">
-                <img src="./images/Calendar25.png" alt="25 Oct" width={50} />
+                <img src="/images/Calendar25.png" alt="25 Oct" width={50} />
               </div>
               OCT 25’ 2023
             </div>
             &nbsp;
             <div className="flex items-center -mt-3 lg:-mt-5">
-              <img src="./images/Alarm.png" alt="25 Oct" width={50} />
+              <img src="/images/Alarm.png" alt="25 Oct" width={50} />
               20:00 - 22:00
             </div>
           </div>

@@ -56,26 +56,26 @@ const Cult = () => {
       <div className="flex justify-between space-x">
         <a href="/" className="flex items-center">
           <img
-            src="/images/IConclaveFull.png"
+            src="/images/IConclave.png"
             className="p-4 h-16 sm:h-20 md:h-24 lg:h-28 invert"
             alt="IconclaveFullbg"
           />
         </a>
-        <a href="/" className="flex items-center">
-          <img
-            src="/images/IConclave.png"
-            className="p-4 h-24 sm:h-28 md:h-32 lg:h-36 invert"
-            alt="Iconclavebg"
-          />
-        </a>
+        <div className="flex items-center">
+          <a href="/tech" className="hidden sm:block z-10">
+            <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-[#2E2C2A] font-normal">
+              TECHNICAL EVENTS
+            </h1>
+          </a>
+        </div>
       </div>
-      <div className="flex-grow lg:-mt-48 mb-4 -mt-8">
+      <div className="flex-grow lg:-mt-36 mb-4 -mt-8">
         <img
           src="/images/cult_head.png"
           alt="Cultural Events"
           className="mx-auto sm:px-4 md:px-20 lg:px-32"
         />
-        <div className="-mt-28 lg:-mt-48 px-10 py-24 -mb-32">
+        <div className="-mt-28 lg:-mt-60 px-10 py-24 -mb-32">
           {/* Conditionally render Swiper based on screen size */}
           {window.innerWidth <= 1000 ? ( // Mobile view
             <div
@@ -83,7 +83,7 @@ const Cult = () => {
               style={{ maxHeight: "50vh", overflowY: "auto" }}
             >
               <SwiperSlide className="rounded-3xl">
-                <a href="/nrityanova">
+                <a href="cult/nrityanova">
                   <img
                     src="./images/nritya_cau.png"
                     alt=""
@@ -92,7 +92,7 @@ const Cult = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/anurag">
+                <a href="cult/anurag">
                   <img
                     src="./images/anurag_cau.png"
                     alt=""
@@ -102,7 +102,7 @@ const Cult = () => {
               </SwiperSlide>
 
               <SwiperSlide className="rounded-3xl">
-                <a href="/frameflick">
+                <a href="cult/frameflick">
                   <img
                     src="./images/frame_cau.png"
                     alt=""
@@ -111,7 +111,7 @@ const Cult = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/cognition">
+                <a href="cult/cognition">
                   <img
                     src="./images/cognition_cau.png"
                     alt=""
@@ -120,7 +120,7 @@ const Cult = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/shipwreck">
+                <a href="cult/shipwreck">
                   <img
                     src="./images/shipwreck_cau.png"
                     alt=""
@@ -129,7 +129,7 @@ const Cult = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/storyquest">
+                <a href="cult/storyquest">
                   <img
                     src="./images/story.png"
                     alt=""
@@ -138,7 +138,7 @@ const Cult = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/aawazeaawam">
+                <a href="cult/aawazeaawam">
                   <img
                     src="./images/aawaaz_cau.png"
                     alt=""
@@ -170,7 +170,7 @@ const Cult = () => {
                 onSwiper={(swiper) => setSwiper(swiper)}
               >
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/nrityanova">
+                  <a href="cult/nrityanova">
                     <img
                       src="./images/nritya_cau.png"
                       alt=""
@@ -179,7 +179,7 @@ const Cult = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/anurag">
+                  <a href="cult/anurag">
                     <img
                       src="./images/anurag_cau.png"
                       alt=""
@@ -189,7 +189,7 @@ const Cult = () => {
                 </SwiperSlide>
 
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/frameflick">
+                  <a href="cult/frameflick">
                     <img
                       src="./images/frame_cau.png"
                       alt=""
@@ -198,7 +198,7 @@ const Cult = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/cognition">
+                  <a href="cult/cognition">
                     <img
                       src="./images/cognition_cau.png"
                       alt=""
@@ -207,7 +207,7 @@ const Cult = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/shipwreck">
+                  <a href="cult/shipwreck">
                     <img
                       src="./images/shipwreck_cau.png"
                       alt=""
@@ -216,7 +216,7 @@ const Cult = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/storyquest">
+                  <a href="cult/storyquest">
                     <img
                       src="./images/story.png"
                       alt=""
@@ -225,7 +225,7 @@ const Cult = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/aawazeaawam">
+                  <a href="cult/aawazeaawam">
                     <img
                       src="./images/aawaaz_cau.png"
                       alt=""

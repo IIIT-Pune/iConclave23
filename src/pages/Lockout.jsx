@@ -16,7 +16,7 @@ const Lockout = () => {
         {/* <div className="flex flex-col"> */}
         <div className="flex justify-center">
           <img
-            src="./images/lockout_logo.png"
+            src="/images/lockout_logo.png"
             alt="lockoutlogo"
             className="w-192 p-10"
           />

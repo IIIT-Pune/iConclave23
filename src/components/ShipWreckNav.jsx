@@ -31,22 +31,10 @@ const AnuragNav = () => {
               <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
-              <a
-                href="https://www.instagram.com/eclecticiiitp/"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>ECLECTIC</li>
-              </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
               </a>
-              <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#getintouch" className="hover:border-b-2 pb-1 ">
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
@@ -77,12 +65,12 @@ const AnuragNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#about">
+          <a href="/cult">
             <h1
               className="font-punishment text-4xl m-0 p-6 text-center text-white font-normal"
               id="Shipwreck"
             >
-              SHIPWRECK
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>
@@ -115,9 +103,6 @@ const AnuragNav = () => {
             <ul className="flex flex-col gap-5">
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
-              </a>
-              <a href="#eclectic" onClick={closeMobileMenu}>
-                <li>ECLECTIC</li>
               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>

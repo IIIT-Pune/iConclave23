@@ -33,11 +33,6 @@ const NexusNav = () => {
                     <a href="#guidelines">GUIDELINES</a>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="https://www.instagram.com/localhost_iiitp/">
-                      LOCALHOST
-                    </a>
-                  </li>
-                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <a href="#getintouch">GET IN TOUCH</a>
                   </li>
                 </ul>
@@ -70,12 +65,12 @@ const NexusNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/nexus">
+          <a href="/tech">
             <h1
-              className=" font-majormono text-5xl m-0 p-6 text-center text-white font-normal"
+              className=" font-majormono text-2xl m-0 p-6 text-center text-white font-normal"
               id="NEXUS"
             >
-              neXus
+              technical events
             </h1>
           </a>
         </div>
@@ -111,12 +106,6 @@ const NexusNav = () => {
               <ul className="flex flex-col items-center justify-between gap-8">
                 <a href="/nexus/about" onClick={closeMobileMenu}>
                   <li>ABOUT</li>
-                </a>
-                <a
-                  href="https://www.instagram.com/localhost_iiitp/"
-                  onClick={closeMobileMenu}
-                >
-                  <li>LOCALHOST</li>
                 </a>
                 <a href="#guidelines" onClick={closeMobileMenu}>
                   <li>GUIDELINES</li>

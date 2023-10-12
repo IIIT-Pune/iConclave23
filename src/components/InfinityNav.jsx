@@ -99,12 +99,13 @@ const InfinityNav = () => {
       }
     `}</style>
 
-      <a href="/infinity" className="hidden lg:block">
-        <img
-          src="/images/Infinity_logo.png"
-          className="h-20 p-4"
-          alt="infinity"
-        />
+      <a href="/tech" className="hidden sm:block">
+        <h1
+          className="font-nightcore text-2xl m-0 text-center tracking-widest text-white font-normal"
+          id="OFFRoadBandit"
+        >
+          TECHNICAL &nbsp; <span className="text-red-600">EVENTS</span>
+        </h1>
       </a>
     </div>
   );

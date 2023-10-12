@@ -2,11 +2,49 @@
 import FFNav from "../components/FFNav";
 import Footer from "../components/Footer";
 import { ffguidelines } from "../assets/ffguidelines";
-// import RegisterButton from "../components/RegsiterButton";
+import { Helmet } from "react-helmet";
 
 const FrameFlick = () => {
   return (
     <div className="">
+      <Helmet>
+        <title>Frame Flicks - Your Fest, Your Frame</title>
+        <meta
+          name="description"
+          content="Frame Flicks - Your Fest, Your Frame. Participate in a photography contest capturing the essence of the fest. Contact us at horizon@iiitp.ac.in."
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Event",
+              "name": "Frame Flicks - Your Fest, Your Frame",
+              "description": "Participate in a photography contest capturing the essence of the fest.",
+              "url": "https://iconclave.iiitp.ac.in/frameflick",
+              "image": "https://www.example.com/images/frameflick_bg.png",
+              "startDate": "2023-10-12T18:00:00-07:00",
+              "endDate": "2023-10-12T22:00:00-07:00",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Ambegoan bk",
+                  "addressLocality": "Pune",
+                  "addressRegion": "Maharashtra",
+                  "postalCode": "411041",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
+
       <div
         style={{
           background: "url(/images/frameflick_bg.png)",
@@ -38,8 +76,7 @@ const FrameFlick = () => {
             </h1>
           </a> */}
           {/* <RegisterButton fonts="kodchasan" /> */}
-
-          </div>
+        </div>
       </div>
 
       <div
@@ -79,7 +116,7 @@ const FrameFlick = () => {
       </div>
 
       <div
-        className="min-h-screen py-10"
+        className="min-h-screen pt-10"
         id="guidelines"
         style={{
           background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
@@ -102,23 +139,23 @@ const FrameFlick = () => {
           <a href="https://example.com" className="text-white">
             <h1
               className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
-      hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
+        hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
             >
               RULEBOOK
             </h1>
           </a>
         </div>
         <div
-          className="min-h-screen"
+          className="min-h-full flex flex-col"
           id="horizon"
           style={{
             background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
           }}
         >
-          <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left ">
+          <h1 className="text-5xl p-5 font-grandstander lg:text-8xl text-white m-0 lg:p-0 lg:ml-10 text-center ">
             HORIZON
           </h1>
-          <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
+          {/* <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify flex-grow">
             <p>
               Horizon, established in January 2022 with the ideology of "capture
               imagination," continues to steadfastly pursue and expand upon this
@@ -139,15 +176,15 @@ const FrameFlick = () => {
               organizing its flagship annual photography competition, an event
               eagerly anticipated by the IIIT Pune community.
             </p>
-          </div>
+          </div> */}
+          <Footer
+            textColor="white"
+            socialMediaLinks={{
+              mail: "mailto:horizon@iiitp.ac.in",
+              instagram: "https://www.instagram.com/horizon_iiitp/",
+            }}
+          />
         </div>
-        <Footer
-          textColor="white"
-          socialMediaLinks={{
-            mail: "mailto:horizon@iiitp.ac.in",
-            instagram: "https://www.instagram.com/horizon_iiitp/",
-          }}
-        />
       </div>
     </div>
   );

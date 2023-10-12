@@ -43,9 +43,6 @@ const LockoutNav = () => {
                 <a href="/lockout/about">ABOUT</a>
               </li>
               <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <a href="/infinity/bitlegion">BIT LEGION</a>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
                 <a href="/lockout/guidelines">GUIDELINES</a>
               </li>
               <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
@@ -72,9 +69,6 @@ const LockoutNav = () => {
               <a href="/lockout/about">ABOUT</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-              <a href="/infinity/bitlegion">BIT LEGION</a>
-            </li>
-            <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
               <a href="/lockout/guidelines">GUIDELINES</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
@@ -82,12 +76,12 @@ const LockoutNav = () => {
             </li>
           </ul>
         </div>
-        <a href="/lockout" className="hidden sm:block">
-          <img
-            src="/images/lockout_logo.png"
-            className="px-8 py-4 h-20 md:h-24 lg:h-28"
-            alt="LOCKOUTLOGO"
-          />
+        <a href="/tech" className="hidden sm:block">
+          <h1
+            className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal"
+          >
+            TECHNICAL EVENTS
+          </h1>
         </a>
       </nav>
       <style>{`
