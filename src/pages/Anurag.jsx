@@ -11,22 +11,24 @@ const Anurag = () => {
         <div className="flex flex-col items-center flex-grow">
           <div className="flex flex-col">
             <h1 className="text-8xl lg:text-12xl mt-20 font-smarkan lg:mt-10">
-              anurag
+              anuraag
             </h1>
             <p className="text-4xl lg:text-7xl font-miso lg:-mt-10 lg:-ml-5 text-center">
               BATTLE OF BANDS
             </p>
           </div>
 
-          {/* <div className="flex justify-center items-center mt-48 m-10">
-          <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
-            REGISTER
-          </h1>
-        </div> */}
+          <div className="flex justify-center items-center mt-48 m-10">
+            <a href="https://unstop.com/events/anuraag-battle-of-bands-iconclave-indian-institute-of-information-technology-iiit-pune-794646">
+              <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
+                REGISTER
+              </h1>
+            </a>
+          </div>
         </div>
       </div>
       <div
-      id="about"
+        id="about"
         className="text-white min-h-screen"
         style={{
           background:
@@ -60,7 +62,10 @@ const Anurag = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black text-white min-h-screen flex flex-col bg-cover bg-center" id="guidelines">
+      <div
+        className="bg-black text-white min-h-screen flex flex-col bg-cover bg-center"
+        id="guidelines"
+      >
         <div className="flex flex-col">
           <h1 className="text-6xl lg:text-9xl mt-10 font-smarkan text-center">
             <span className="bg-gradient-to-r text-transparent from-[#FE1902] to-[#0042D4] bg-clip-text">

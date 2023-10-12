@@ -28,15 +28,21 @@ const NrityaNova = () => {
           </div>
         </div>
 
-        {/* <div className="flex justify-center items-center mt-24 p-10">
-          <h1 className="text-white font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider ">
-            register
-          </h1>
-        </div> */}
+        <div className="flex justify-center items-center mt-24 p-10">
+          <a href="https://unstop.com/events/nritya-nova-iconclave-indian-institute-of-information-technology-iiit-pune-794575">
+            <h1 className="text-white font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider">
+              register
+            </h1>
+          </a>
+        </div>
 
-        <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:vanitycrew@iiitp.ac.in',
-    instagram: 'https://www.instagram.com/_vanity_crew/',
-   }}  />
+        <Footer
+          textColor="white"
+          socialMediaLinks={{
+            mail: "mailto:vanitycrew@iiitp.ac.in",
+            instagram: "https://www.instagram.com/_vanity_crew/",
+          }}
+        />
       </div>
 
       {/* <div

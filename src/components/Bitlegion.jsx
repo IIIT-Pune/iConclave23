@@ -4,17 +4,17 @@ import Footer from "./Footer";
 const Bitlegion = () => {
   return (
     <div>
-      <div className="bg-black h-full">
+      <div className="bg-black h-screen flex flex-col">
         <InfinityNav />
 
-        <h1 className="text-5xl text-white pt-4 lg:text-9xl flex justify-center font-nightcore tracking-wider">
+        <h1 className="text-white py-6 md:py-12 lg:py-18 text-5xl sm:text-7xl md:text-8xl lg:text-9xl flex justify-center font-nightcore tracking-wider">
           BIT LE <span className="text-red-600">G</span>ION
         </h1>
 
-        <div className="text-white font-miso text-xl lg:text-3xl px-5 lg:px-32 text-justify py-10 flex flex-col gap-6">
-          <p className="text-center mb-9 mt-2 text-3xl font-bold">
+        <div className="text-white flex-grow text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6  text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+          <p className="text-center font-mono mb-12 mt-2 font-bold">
             printf("There are only 10 types of people in this world, those who
-            know Binary and those who don't);
+            know Binary and those who don't");
           </p>
           <p>
             Welcome to Bit Legion, IIIT Pune's coding hub. We're a passionate
@@ -50,12 +50,9 @@ const Bitlegion = () => {
             exciting coding journey!
           </p>
         </div>
-      </div>
-      <div className="bg-black">
-      <Footer textColor="white"></Footer>
+        <Footer textColor="white"></Footer>
       </div>
     </div>
-    
   );
 };
 

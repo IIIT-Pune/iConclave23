@@ -29,17 +29,19 @@ const FrameFlick = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          {/* <a href="https://example.com" className="text-white">
+          <a
+            href="https://unstop.com/events/frameflicks-iconclave23-indian-institute-of-information-technology-iiit-pune-794971"
+            className="text-white"
+          >
             <h1
               className="font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
       transition-transform transform hover:scale-105 hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out"
             >
               register
             </h1>
-          </a> */}
+          </a>
           {/* <RegisterButton fonts="kodchasan" /> */}
-
-          </div>
+        </div>
       </div>
 
       <div

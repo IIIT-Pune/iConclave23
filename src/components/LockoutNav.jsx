@@ -11,7 +11,7 @@ const LockoutNav = () => {
           <img src="/images/IConclave.png" className="h-16" alt="Iconclavebg" />
         </a>
         <div
-          className="HAMBURGER-ICON space-y-2 mr-8"
+          className="HAMBURGER-ICON space-y-2 mx-8"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
           <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
