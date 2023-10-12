@@ -10,14 +10,14 @@ const NrityaNova = () => {
         <title>Nritya Nova - Every Step Tells a Story</title>
         <meta
           name="description"
-          content="Nritya Nova - Every Step Tells a Story. Explore the world of dance with us. Contact us at vanitycrew@iiitp.ac.in."
+          content="Nritya Nova by Vanity Crew is an intercollege dance competition showcasing diverse dance forms. Open song choice and judging criteria include rhythm, formation, and expression. With a 28 thousand  prize pool, it's a must see celebration of dance talent."
         />
         <script type="application/ld+json">
           {`
             {
               "@context": "http://schema.org",
               "@type": "DanceEvent",
-              "name": "Nritya Nova - Every Step Tells a Story",
+              "name": "Nritya Nova by Vanity Crew is an intercollege dance competition showcasing diverse dance forms. Open song choice and judging criteria include rhythm, formation, and expression. With a 28 thousand  prize pool, it's a must see celebration of dance talent.",
               "description": "Explore the world of dance with us.",
               "url": "https://iconclave.iiitp.ac.in/nrityanova",
               "image": "https://www.example.com/images/nritya_bg.png",

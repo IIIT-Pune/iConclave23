@@ -17,7 +17,7 @@ const StoryQuest = () => {
         <title>Story Quest - Your Creativity, Our Challenge</title>
         <meta
           name="description"
-          content="Story Quest - Your Creativity, Our Challenge. Explore your creative storytelling abilities in this challenge. Contact us at eclectic@iiitp.ac.in."
+          content="StoryQuest is a thrilling competition of creative and original story writing and storytelling. Alternative endings of well known story tales and using the art of improvisational storytelling. A battle of creativity and oratory."
         />
         <script type="application/ld+json">
           {`
@@ -25,7 +25,7 @@ const StoryQuest = () => {
               "@context": "http://schema.org",
               "@type": "Event",
               "name": "Story Quest - Your Creativity, Our Challenge",
-              "description": "Explore your creative storytelling abilities in this challenge.",
+              "description": "StoryQuest is a thrilling competition of creative and original story writing and storytelling. Alternative endings of well known story tales and using the art of improvisational storytelling. A battle of creativity and oratory.",
               "url": "https://iconclave.iiitp.ac.in/storyquest",
               "image": "https://www.example.com/images/StoryQuest_bg.png",
               "startDate": "2023-10-12T18:00:00-07:00",

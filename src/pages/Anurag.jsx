@@ -12,7 +12,7 @@ const Anurag = () => {
           <title>Anuraag - Battle of Bands</title>
           <meta
             name="description"
-            content="Anurag - Battle of Bands. Join us for an exhilarating musical showdown. Explore the world of dance with us. Contact us at saaz_iiitp@iiitp.ac.in."
+            content="Join the ultimate Inter-College Battle of Bands – a celebration of music and art! Watch college bands compete in an exhilarating musical showdown. Don't miss this unforgettable evening of song, dance and more."
           />
           <script type="application/ld+json">
             {`
@@ -20,7 +20,7 @@ const Anurag = () => {
                 "@context": "http://schema.org",
                 "@type": "Event",
                 "name": "Anurag - Battle of Bands",
-                "description": "Join us for an exhilarating musical showdown.",
+                "description": Join the ultimate Inter-College Battle of Bands – a celebration of music and art! Watch college bands compete in an exhilarating musical showdown. Don't miss this unforgettable evening of song, dance and more.",
                 "url": "https://iconclave.iiitp.ac.in/anurag",
                 "image": "https://www.example.com/images/saaz_bg.png",
                 "startDate": "2023-10-12T18:00:00-07:00",

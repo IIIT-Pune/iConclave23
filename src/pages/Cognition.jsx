@@ -2,9 +2,48 @@
 import { cognitionguidelines } from "../assets/cognitionguidelines";
 import Footer from "../components/Footer";
 import CogNav from "../components/CogNav";
+import { Helmet } from "react-helmet";
 const Cognition = () => {
   return (
     <div className="bg-cognitionbg min-h-screen flex flex-col">
+      <Helmet>
+        <title>Cognition - Decode, Dazzle, Dominate</title>
+        <meta
+          name="description"
+          content="Cognition is an online trivia extravaganza brought to you by the Quiz Club Q-riocity. Delve into a diverse range of intriguing topics and join students from esteemed colleges. Compete for the coveted title of ultimate quizmaster in the grand setting of IIIT Pune"
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Event",
+              "name": "Cognition - Decode, Dazzle, Dominate",
+              "description": "Cognition is an online trivia extravaganza brought to you by the Quiz Club Q-riocity. Delve into a diverse range of intriguing topics and join students from esteemed colleges. Compete for the coveted title of ultimate quizmaster in the grand setting of IIIT Pune",
+              "url": "https://www.example.com/cognition",
+              "image": "https://www.example.com/images/cognition_bg.png",
+              "startDate": "2023-10-12T18:00:00-07:00",
+              "endDate": "2023-10-12T22:00:00-07:00",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 Main Street",
+                    "addressLocality": "Pune",
+                    "addressRegion": " Maharashtra",
+                    "postalCode": "4110441",
+                    "addressCountry": "India"
+                  }
+                },
+                "performer": {
+                  "@type": "Organization",
+                  "name": "IConclave - IIIT Pune"
+                }
+              }
+            `}
+        </script>
+      </Helmet>
+
       <CogNav />
       <div className="hero mt-36 lg:mt-0">
         <div className="flex flex-col items-center ">
@@ -77,7 +116,9 @@ const Cognition = () => {
       </div>
 
       <div className="font-veterantypewriter min-h-full">
-        <h1 className="text-5xl text-center lg:text-8xl  ml-10 pb-4">Q-RIOCITY</h1>
+        <h1 className="text-5xl text-center lg:text-8xl  ml-10 pb-4">
+          Q-RIOCITY
+        </h1>
         {/* <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
           <p>
             Q-riocity is IIIT Pune's quizzing society, like the{" "}

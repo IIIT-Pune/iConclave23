@@ -17,7 +17,7 @@ const ShipWreck = () => {
         <title>ShipWreck - Speak Up, Stay Up</title>
         <meta
           name="description"
-          content="ShipWreck - Speak Up, Stay Up. Register for an event that empowers your voice. Contact us at eclectic@iiitp.ac.in."
+          content="Shipwreck offers a platform of arguments and counter arguments. Persuade the jury on why their character should be saved on a sinking ship. Participants must showcase their powers of persuasion. A challenge of communication and convincing skills."
         />
         <script type="application/ld+json">
           {`
@@ -25,7 +25,7 @@ const ShipWreck = () => {
               "@context": "http://schema.org",
               "@type": "Event",
               "name": "ShipWreck - Speak Up, Stay Up",
-              "description": "Register for an event that empowers your voice.",
+              "description": "Shipwreck offers a platform of arguments and counter arguments. Persuade the jury on why their character should be saved on a sinking ship. Participants must showcase their powers of persuasion. A challenge of communication and convincing skills.",
               "url": "https://iconclave.iiitp.ac.in/shipwreck",
               "image": "https://www.example.com/images/ShipWreck_bg.png",
               "startDate": "2023-10-12T18:00:00-07:00",

@@ -2,17 +2,51 @@
 
 import InfinityNav from "../components/InfinityNav";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
 /* eslint-disable react/jsx-no-target-blank */
 // eslint-disable-next-line no-shadow-restricted-names
 const Infinity = () => {
   return (
-
     <div className="">
+      <Helmet>
+        <title>Infinity 2k23 - Coding Contest</title>
+        <meta
+          name="description"
+          content="Infinity is IIIT Pune’s 2-hour Annual Flagship coding contest on CodeChef, featuring ACM style scoring. Showcase your top-tier problem-solving skills and data structure and algorithm efficiency for a thrilling coding experience"
+        />
+        <script type="application/ld+json">
+          {`
+              {
+                "@context": "http://schema.org",
+                "@type": "Event",
+                "name": "Infinity 2k23 - Coding Contest",
+                "description": "Infinity is IIIT Pune’s 2-hour Annual Flagship coding contest on CodeChef, featuring ACM style scoring. Showcase your top-tier problem-solving skills and data structure and algorithm efficiency for a thrilling coding experience",
+                "startDate": "2023-10-25T20:00:00Z",
+                "endDate": "2023-10-25T22:00:00Z",
+                "location": {
+                  "@type": "Place",
+                  "name": "IIIT Pune",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 Main Street",
+                    "addressLocality": "Pune",
+                    "addressRegion": " Maharashtra",
+                    "postalCode": "4110441",
+                    "addressCountry": "India"
+                  }
+                },
+                "performer": {
+                  "@type": "Organization",
+                  "name": "IConclave - IIIT Pune"
+                }
+              }
+            `}
+        </script>
+      </Helmet>
       <div className="bg-black h-screen flex flex-col">
         <InfinityNav />
         <div className="flex justify-center pt-24 pb-14 mx-3 lg:mx-0 lg:p-8 items-center ">
-
           <img
             src="/images/Infinity_logo.png"
             alt="Infinity Logo"
@@ -20,10 +54,8 @@ const Infinity = () => {
           />
         </div>
         <div className="text-white flex flex-col items-center -p-10 lg:flex-row justify-center text-2xl lg:text-3xl font-miso">
-
-          <span className="-m-3 lg:m-0 lg:-mt-4">HOSTED ON</span> &nbsp; 
+          <span className="-m-3 lg:m-0 lg:-mt-4">HOSTED ON</span> &nbsp;
           <span className="-m-5 lg:m-0 lg:-mt-4">
-
             <span className="font-nightcore">
               <a
                 target="_blank"
@@ -61,7 +93,6 @@ const Infinity = () => {
         </div>
 
         <div className="text-white flex justify-center pt-5 lg:pt-0 lg:-mt-4">
-
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScAr32xvlkGK7EZxsp3RU0Ix-r2RgiDjX8sWcrX4JoWJ5VYlw/viewform"
             target="_blank"
@@ -110,14 +141,17 @@ const Infinity = () => {
         </div>
       </div>
 
-
       <div className="bg-black">
-        <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:bitlegion@iiitp.ac.in',
-    instagram: 'https://www.instagram.com/bit.iiitp/',
-    linkedin: 'https://www.linkedin.com/company/bitlegion/',
-    twitter: 'https://twitter.com/bit_iiitp'}} ></Footer>
+        <Footer
+          textColor="white"
+          socialMediaLinks={{
+            mail: "mailto:bitlegion@iiitp.ac.in",
+            instagram: "https://www.instagram.com/bit.iiitp/",
+            linkedin: "https://www.linkedin.com/company/bitlegion/",
+            twitter: "https://twitter.com/bit_iiitp",
+          }}
+        ></Footer>
       </div>
-
     </div>
   );
 };

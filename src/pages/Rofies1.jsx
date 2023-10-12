@@ -16,7 +16,7 @@ const Rofies1 = () => {
         <title>Off-Road Bandit - Navigate, Relay, Triumph</title>
         <meta
           name="description"
-          content="Off-Road Bandit - Navigate, Relay, Triumph. Join the adventure and show your off-road skills. Visit our Instagram page for more information."
+          content="A robotic challenge that showcases your skills as a Duo! Join our event where teams deploy carrier bots in 'The Wastelands,' navigating a terrain filled with obstacles. Experience a course filled with checkpoints, offering you the chance to recover from mishaps such as package drops or unexpected traps."
         />
         <script type="application/ld+json">
           {`
@@ -24,7 +24,7 @@ const Rofies1 = () => {
               "@context": "http://schema.org",
               "@type": "Event",
               "name": "Off-Road Bandit - Navigate, Relay, Triumph",
-              "description": "Join the adventure and show your off-road skills.",
+              "description": "A robotic challenge that showcases your skills as a Duo! Join our event where teams deploy carrier bots in "The Wastelands," navigating a terrain filled with obstacles. Experience a course filled with checkpoints, offering you the chance to recover from mishaps such as package drops or unexpected traps.",
               "url": "https://www.example.com/rofies1",
               "image": "https://www.example.com/images/bg_off.png",
               "startDate": "2023-10-12T18:00:00-07:00",

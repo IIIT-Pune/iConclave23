@@ -11,7 +11,7 @@ const FrameFlick = () => {
         <title>Frame Flicks - Your Fest, Your Frame</title>
         <meta
           name="description"
-          content="Frame Flicks - Your Fest, Your Frame. Participate in a photography contest capturing the essence of the fest. Contact us at horizon@iiitp.ac.in."
+          content="FrameFlicks: Inter-College Photography Competition by Horizon. Capture the festival's essence with your camera or smartphone, submit "
         />
         <script type="application/ld+json">
           {`
@@ -19,7 +19,7 @@ const FrameFlick = () => {
               "@context": "http://schema.org",
               "@type": "Event",
               "name": "Frame Flicks - Your Fest, Your Frame",
-              "description": "Participate in a photography contest capturing the essence of the fest.",
+              "description": "FrameFlicks: Inter-College Photography Competition by Horizon. Capture the festival's essence with your camera or smartphone, submit ",
               "url": "https://iconclave.iiitp.ac.in/frameflick",
               "image": "https://www.example.com/images/frameflick_bg.png",
               "startDate": "2023-10-12T18:00:00-07:00",

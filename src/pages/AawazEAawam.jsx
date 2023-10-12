@@ -11,7 +11,7 @@ const AawazEAawam = () => {
         <title>Aawaz-E-Aawam - Lights Street Action</title>
         <meta
           name="description"
-          content="Aawaz-E-Aawam - Lights Street Action."
+          content="Awaz-e-Awam by Abhinay presents an on-campus street play/theater competition during I-Conclave at IIIT Pune. Transform impactful social messages into performances and compete for a substantial prize pool of 38k. "
         />
         <script type="application/ld+json">
           {`
@@ -19,7 +19,7 @@ const AawazEAawam = () => {
               "@context": "http://schema.org",
               "@type": "WebPage",
               "name": "Aawaz-E-Aawam - Lights Street Action",
-              "description": "Learn more about our mission and guide to take action.",
+              "description": "Awaz-e-Awam by Abhinay presents an on-campus street play/theater competition during I-Conclave at IIIT Pune. Transform impactful social messages into performances and compete for a substantial prize pool of 38k.",
               "url": "https://iconclave.iiitp.ac.in/aawazeaawam",
               "image": "https://www.example.com/images/aawazeaawam.png",
               "author": {
