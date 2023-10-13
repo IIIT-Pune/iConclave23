@@ -32,17 +32,6 @@ const NexusNav = () => {
                       <li className="hover:border-b-2 pb-1 ">ABOUT</li>
                     </Link>
                   </li>
-
-
-//                   <li>
-//                     {" "}
-//                     <a
-//                       href="https://www.instagram.com/localhost_iiitp/"
-//                       onClick={closeMobileMenu}
-//                     >
-//                       LOCALHOST
-//                     </a>
-
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <Link to="schedule" smooth={true} duration={500}>
                       <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>

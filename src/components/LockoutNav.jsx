@@ -82,15 +82,12 @@ const LockoutNav = () => {
             </li>
           </ul>
         </div>
-//         <div className="flex items-center justify-center">
-//           <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
-//             <a href="/tech">TECHNICAL EVENTS</a>
-
-        <a href="/tech" className="hidden sm:block">
-          <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
-            TECHNICAL EVENTS
-
-          </h1>
+        <div className="flex items-center justify-center">
+          <a href="/tech" className="hidden sm:block">
+            <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
+              TECHNICAL EVENTS
+            </h1>
+          </a>
         </div>
       </nav>
       <style>{`
