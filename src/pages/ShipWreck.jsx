@@ -65,6 +65,7 @@ const ShipWreck = () => {
 
         <div className="flex justify-center items-center mt-10 sm:mt-60 lg:mt-20">
           <RegisterButton link="https://unstop.com/events/shipwreck-iconclave-indian-institute-of-information-technology-iiit-pune-794853" />
+
         </div>
       </div>
       <Footer

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Footer from "./Footer";
 import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 const NexusNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -121,6 +122,21 @@ const NexusNav = () => {
           <div className="text-white flex-grow justify-center flex flex-col text-xl">
             <div className="flex items-center justify-center">
               <ul className="flex flex-col items-center justify-between gap-8">
+
+                <Link
+                  to="aboutsection"
+                  onClick={closeMobileMenu}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+                </Link>
+                <a
+                  href="https://www.instagram.com/localhost_iiitp/"
+                  onClick={closeMobileMenu}
+                >
+                  <li>LOCALHOST</li>
+
                 <Link
                   to="aboutsection"
                   onClick={closeMobileMenu}

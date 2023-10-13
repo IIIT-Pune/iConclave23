@@ -55,37 +55,22 @@ const AawazEAawam = () => {
         }}
       >
         <AawamNav />
-
-        <div className="flex flex-col gap-10 flex-grow">
-          <div className="flex flex-col justify-center text-center gap-5 items-center mt-40 md:mt-32 lg:mt-10">
-            <div className="flex flex-col gap-2 lg:flex-row">
-              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
-                aawaz
-              </h1>
-              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
-                -E-
-              </h1>
-              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
-                aawam
-              </h1>
-            </div>
+        <div className="flex flex-col flex-grow">
+          <div className="flex flex-col justify-center items-center mt-40 md:mt-32 lg:mt-10">
+            <h1 className="text-white font-monoton text-3xl sm:text-7xl lg:text-8xl">
+              aawaz-E-aawam
+            </h1>
             <h2 className="text-white font-majormono text-2xl sm:text-4xl lg:text-6xl">
               lights street action
             </h2>
-          </div>
-
-          <div className="flex justify-center items-center mt-10 sm:mt-60 lg:mt-32">
-            <RegisterButton link="https://unstop.com/events/aawaz-e-aawam-lights-street-action-iconclave-indian-institute-of-information-technology-iiit-pune-794605" />
           </div>
         </div>
       </div>
       <AawamAbout />
       <AawamGuide />
-
       <h1 className="text-white font-monoton text-center text-2xl sm:text-6xl lg:text-7xl">
         ABHINAY
       </h1>
-
       <Footer
         textColor="white"
         // socialMediaLinks={{
