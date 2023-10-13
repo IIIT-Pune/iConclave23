@@ -66,7 +66,7 @@ const FrameFlick = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center pt-28 items-center">
           <a
             href="https://unstop.com/events/frameflicks-iconclave23-indian-institute-of-information-technology-iiit-pune-794971"
             className="text-white"
@@ -77,8 +77,7 @@ const FrameFlick = () => {
             >
               register
             </h1>
-          </a> */}
-          {/* <RegisterButton fonts="kodchasan" /> */}
+          </a>
         </div>
       </div>
 

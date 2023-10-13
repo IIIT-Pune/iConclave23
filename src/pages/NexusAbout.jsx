@@ -113,23 +113,34 @@ const NexusAbout = () => {
             sponsors
           </h1>
         </div>
-        <div className="flex justify-center">
-          <div className=" my-10 lg:mx-20 lg:my-10 grid lg:grid-cols-3 grid-flow-row gap-10 items-center">
-            <img
-              src="/images/nexussponsor1.png"
-              alt="DEVFOLIO LOGO"
-              className="w-60 lg:w-96"
-            />
-            <img
-              src="/images/nexussponsor2.png"
-              alt="POLYGON LOGO"
-              className="w-60 lg:w-96"
-            />
-            <img
-              src="/images/nexussponsor3.png"
-              alt="REPLIT LOGO"
-              className="w-60 lg:w-96"
-            />
+        <div className="flex justify-center px-8">
+          {/* grid grid-cols-3 grid-flow-row */}
+          <div className="my-10 lg:mx-20 lg:my-10 flex flex-col lg:flex-row gap-5 sm:gap-10 items-center">
+            <div className="flex justify-center flex-col gap-5 sm:gap-10 md:gap-10 sm:flex-row">
+              <div>
+                <img
+                  src="/images/nexussponsor1.png"
+                  alt="DEVFOLIO LOGO"
+                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
+                />
+              </div>
+              <div>
+                <img
+                  src="/images/nexussponsor2.png"
+                  alt="POLYGON LOGO"
+                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
+                />
+              </div>
+            </div>
+            <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center">
+                <img
+                  src="/images/nexussponsor3.png"
+                  alt="REPLIT LOGO"
+                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

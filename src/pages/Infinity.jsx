@@ -8,70 +8,119 @@ import { Helmet } from "react-helmet";
 // eslint-disable-next-line no-shadow-restricted-names
 const Infinity = () => {
   return (
-
-    <div className="">
-      <div className="bg-black h-screen flex flex-col">
-        <InfinityNav />
-        <div className="flex justify-center pt-24 pb-14 mx-3 lg:mx-0 lg:p-8 items-center ">
-
-          <img
-            src="/images/Infinity_logo.png"
-            alt="Infinity Logo"
-            width={800}
+    <div className="bg-black">
+      <div className="h-screen flex flex-col relative">
+        <Helmet>
+          <title>Infinity 2k23 - Coding Contest</title>
+          <meta
+            name="description"
+            content="Infinity is IIIT Pune’s 2-hour Annual Flagship coding contest on CodeChef, featuring ACM style scoring. Showcase your top-tier problem-solving skills and data structure and algorithm efficiency for a thrilling coding experience."
           />
-        </div>
-        <div className="text-white flex flex-col items-center -p-10 lg:flex-row justify-center text-2xl lg:text-3xl font-miso">
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "http://schema.org",
+                "@type": "Event",
+                "name": "Infinity 2k23 - Coding Contest",
+                "description": "Infinity is IIIT Pune’s 2-hour Annual Flagship coding contest on CodeChef, featuring ACM style scoring. Showcase your top-tier problem-solving skills and data structure and algorithm efficiency for a thrilling coding experience.",
+                "startDate": "2023-10-25T20:00:00Z",
+                "endDate": "2023-10-25T22:00:00Z",
+                "location": {
+                  "@type": "Place",
+                  "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Ambegoan bk",
+                  "addressLocality": "Pune",
+                  "addressRegion": "Maharashtra",
+                  "postalCode": "411041",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+          </script>
+        </Helmet>
 
-          <span className="-m-3 lg:m-0 lg:-mt-4">HOSTED ON</span> &nbsp; 
-          <span className="-m-5 lg:m-0 lg:-mt-4">
+        <InfinityNav />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="flex-col">
+            {/* <div className="flex justify-center pt-24 pb-14 mx-3 lg:mx-0 lg:p-8 items-center "> */}
+            <div className="flex justify-center mt-6 mb-6 lg:mb-2 scale-125 sm:scale-120 md:scale-100">
+              <img
+                src="/images/Infinity_logo.png"
+                alt="Infinity Logo"
+                className="w-full scale-125 sm:scale-110  md:scale-100"
+              />
+            </div>
+            {/* <div className="text-white flex flex-col items-center gap-2 -p-10 justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-miso"> */}
+            <div className="text-white flex flex-col items-center gap-2 justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-miso">
+              <span className="">HOSTED ON</span>
+              {/* <span className="font-nightcore text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"> */}
+              <span className="font-nightcore text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                <a
+                  target="_blank"
+                  href="https://www.codechef.com/"
+                  rel="noopener"
+                >
+                  CODE <span className="text-red-600">CHEF</span>
+                </a>
+              </span>
+              <span>
+                <a
+                  target="_blank"
+                  href="https://www.codechef.com/START105"
+                  rel="noopener"
+                >
+                  ( AS STARTERS 105 )
+                </a>
+              </span>
+            </div>
 
-            <span className="font-nightcore">
+            <div className="text-white flex justify-center pr-5 md:pr-0 text-xl sm:text-2xl lg:text-3xl font-miso">
+              <div className="flex flex-col md:flex-row gap-2 my-2 md:mt-5">
+                {/* <div className="flex items-center -mb-3 lg:-mt-8"> */}
+                <div className="flex items-center justify-center">
+                  <div className="flex items-center justify-center -ml-1">
+                    <img
+                      src="/images/Calendar25.png"
+                      alt="25 Oct"
+                      width={50}
+                      className="w-5/12 md:w-2/3"
+                    />
+                  </div>
+                  OCT 25’ 2023
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="flex items-center justify-center">
+                    <img
+                      src="/images/Alarm.png"
+                      alt="25 Oct"
+                      width={50}
+                      className="w-5/12 md:w-2/3"
+                    />
+                  </div>
+                  20:00 - 22:00
+                </div>
+              </div>
+            </div>
+            {/* <div className="text-white flex justify-center pt-5 lg:pt-0 lg:-mt-4"> */}
+            <div className="text-white flex items-center mt-4 justify-center">
               <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScAr32xvlkGK7EZxsp3RU0Ix-r2RgiDjX8sWcrX4JoWJ5VYlw/viewform"
                 target="_blank"
-                href="https://www.codechef.com/"
                 rel="noopener"
               >
-                CODE <span className="text-red-600">CHEF</span>
+                <h1 className="border border-1 border-white px-5 md:px-8 lg:px-14 py-2 md:py-4 lg:py-6 rounded-2xl sm:text-3xl md:text-4xl lg:text-5xl font-nightcore">
+                  Register &nbsp; <span className="text-red-600">Now</span>
+                </h1>
               </a>
-            </span>{" "}
-            &nbsp;
-            <a
-              target="_blank"
-              href="https://www.codechef.com/START105"
-              rel="noopener"
-            >
-              ( AS STARTERS 105 )
-            </a>
-          </span>
-        </div>
-
-        <div className="text-white flex justify-center text-2xl lg:text-3xl font-miso m-3">
-          <div className="flex flex-col lg:flex-row m-5">
-            <div className="flex items-center -mb-3 lg:-mt-8">
-              <div className="flex items-center justify-center h-10 ">
-                <img src="/images/Calendar25.png" alt="25 Oct" width={50} />
-              </div>
-              OCT 25’ 2023
-            </div>
-            &nbsp;
-            <div className="flex items-center -mt-3 lg:-mt-5">
-              <img src="/images/Alarm.png" alt="25 Oct" width={50} />
-              20:00 - 22:00
             </div>
           </div>
-        </div>
-
-        <div className="text-white flex justify-center pt-5 lg:pt-0 lg:-mt-4">
-
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScAr32xvlkGK7EZxsp3RU0Ix-r2RgiDjX8sWcrX4JoWJ5VYlw/viewform"
-            target="_blank"
-            rel="noopener"
-          >
-            <h1 className="border border-1 border-white px-5 lg:px-14 py-2 lg:py-5 rounded-2xl text-4xl lg:text-4xl font-nightcore">
-              Register &nbsp; <span className="text-red-600">Now</span>
-            </h1>
-          </a>
         </div>
       </div>
 
@@ -112,10 +161,15 @@ const Infinity = () => {
       </div>
 
       <div className="bg-black">
-        <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:bitlegion@iiitp.ac.in',
-    instagram: 'https://www.instagram.com/bit.iiitp/',
-    linkedin: 'https://www.linkedin.com/company/bitlegion/',
-    twitter: 'https://twitter.com/bit_iiitp'}} ></Footer>
+        <Footer
+          textColor="white"
+          // socialMediaLinks={{
+          //   mail: "mailto:bitlegion@iiitp.ac.in",
+          //   instagram: "https://www.instagram.com/bit.iiitp/",
+          //   linkedin: "https://www.linkedin.com/company/bitlegion/",
+          //   twitter: "https://twitter.com/bit_iiitp",
+          // }}
+        ></Footer>
       </div>
     </div>
   );

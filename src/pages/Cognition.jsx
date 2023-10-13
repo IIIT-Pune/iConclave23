@@ -53,7 +53,8 @@ const Cognition = () => {
             <h1 className="font-veterantypewriter text-center text-6xl lg:text-10xl">
               COGNITION
             </h1>
-            <h2 className="text-l lg:text-4xl font-1942 text-right -mt-2">
+            {/* <h2 className="text-l lg:text-4xl font-1942 text-right -mt-2"> */}
+            <h2 className="text-xl lg:text-4xl font-1942 lg:-mt-5 text-right">
               decode dazzle dominate
             </h2>
           </div>
@@ -64,11 +65,10 @@ const Cognition = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center">
-          <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
-            REGISTER
-          </h1>
-        </div>
+        <RegisterButton
+          fonts="punktypewriter"
+          link="https://unstop.com/quiz/cognition-decode-dazzle-dominate-iconclave-indian-institute-of-information-technology-iiit-pune-794293"
+        />
       </div>
 
       <div className="font-veterantypewriter" id="about">

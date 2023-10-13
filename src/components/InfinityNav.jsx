@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Footer from "./Footer";
-import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 const InfinityNav = () => {
@@ -43,23 +42,26 @@ const InfinityNav = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <a href="/infinity">HOME</a>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <Link to="/infinity/bitlegion">BIT LEGION</Link>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <Link to="/infinity/team">TEAM</Link>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <Link to="/infinity/pastevents">PAST EVENTS</Link>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <Link to="/infinity/halloffame">HALL OF FAME</Link>
-              </li>
-            </ul>
+            <div className="flex-grow flex items-center justify-center">
+              <ul className="flex flex-col items-center justify-between min-h-[250px]">
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <a href="/tech/infinity">HOME</a>
+                </li>
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <Link to="/tech/infinity/bitlegion">BIT LEGION</Link>
+                </li>
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <Link to="/tech/infinity/team">TEAM</Link>
+                </li>
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <Link to="/tech/infinity/pastevents">PAST EVENTS</Link>
+                </li>
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <Link to="/tech/infinity/halloffame">HALL OF FAME</Link>
+                </li>
+              </ul>
+            </div>
+            <Footer textColor={"white"} />
           </div>
         </section>
 
