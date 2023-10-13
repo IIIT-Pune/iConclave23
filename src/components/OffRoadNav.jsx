@@ -1,5 +1,7 @@
 import { useState } from "react";
+import Footer from "./Footer";
 import { Link } from "react-scroll";
+
 
 const OffRoadNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,6 +31,7 @@ const OffRoadNav = () => {
         <div className="hidden lg:flex">
           <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
+
               <Link to="about" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">ABOUT</li>
               </Link>
@@ -38,6 +41,7 @@ const OffRoadNav = () => {
               <Link to="guidelines" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
               </Link>
+
             </ul>
           </div>
         </div>
@@ -100,8 +104,9 @@ const OffRoadNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
+          <div className="text-white flex-grow justify-center flex flex-col text-xl">
+            <div className="flex items-center justify-center">
+              <ul className="flex flex-col gap-5">
               <Link
                 to="about"
                 onClick={closeMobileMenu}
@@ -127,6 +132,11 @@ const OffRoadNav = () => {
                 <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
               </Link>
             </ul>
+            </div>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
+
           </div>
         </div>
       )}

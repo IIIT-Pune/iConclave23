@@ -43,7 +43,7 @@ const InfinityNav = () => {
               </svg>
             </div>
             <div className="flex-grow flex items-center justify-center">
-              <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              <ul className="flex flex-col items-center justify-between gap-4 text-xl sm:text-2xl md:text-3xl text-white-600">
                 <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
                   <a href="/tech/infinity">HOME</a>
                 </li>
@@ -103,7 +103,7 @@ const InfinityNav = () => {
       }
     `}</style>
 
-      <a href="/tech" className="hidden sm:block">
+      <a href="/tech" className="hidden lg:block">
         <h1
           className="font-nightcore text-2xl m-0 pr-5 text-center tracking-widest text-white font-normal"
           id="OFFRoadBandit"

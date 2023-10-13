@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 import RegisterButton from "../components/RegsiterButton";
 
+
 const NrityaNova = () => {
   return (
     <div className="">
@@ -149,7 +150,8 @@ const NrityaNova = () => {
             eagerly anticipated by the IIIT Pune community.
           </p>
         </div>
-      </div> */}
+      </div>*/}
+
     </div>
   );
 };

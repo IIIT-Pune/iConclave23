@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 
 const NNNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ const NNNav = () => {
             </ul>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden flex justify-center px-4">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -99,11 +100,14 @@ const NNNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
+          <div className="text-white flex-grow flex items-center justify-center">
+            <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
+//               <a href="#vanitycrew" onClick={closeMobileMenu}>
+//                 <li>VANITY CREW</li>
+//               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
               </a>
@@ -111,6 +115,9 @@ const NNNav = () => {
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}

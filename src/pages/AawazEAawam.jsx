@@ -45,7 +45,6 @@ const AawazEAawam = () => {
           `}
         </script>
       </Helmet>
-
       <div
         className="min-h-screen "
         style={{

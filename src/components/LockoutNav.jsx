@@ -38,7 +38,7 @@ const LockoutNav = () => {
             </svg>
           </div>
           <div className="flex-grow flex items-center justify-center">
-            <ul className="flex flex-col items-center justify-between min-h-[250px] text-white-600">
+            <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
               <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
                 <a href="/tech/lockout">HOME</a>
               </li>
@@ -82,11 +82,16 @@ const LockoutNav = () => {
             </li>
           </ul>
         </div>
+//         <div className="flex items-center justify-center">
+//           <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
+//             <a href="/tech">TECHNICAL EVENTS</a>
+
         <a href="/tech" className="hidden sm:block">
           <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
             TECHNICAL EVENTS
+
           </h1>
-        </a>
+        </div>
       </nav>
       <style>{`
       .hideMenuNav {
