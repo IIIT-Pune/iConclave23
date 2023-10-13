@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import NexusNav from "../components/NexusNav";
 import NexusAbout from "./NexusAbout";
 import { Element } from "react-scroll";
-// import 'animate.css';
-
+import { Helmet } from "react-helmet";
 
 const Nexus = () => {
   useEffect(() => {
@@ -26,6 +25,42 @@ const Nexus = () => {
         }}
         className="h-screen flex flex-col"
       >
+        <Helmet>
+          <title>NEXUS - 36 Hour Hackathon</title>
+          <meta
+            name="description"
+            content="An exhilarating 36-hour offline hackathon, one designed to ignite your creative genius and technical skills. Problem statements include healthtech, edtech, web 3.0/blockchain and AI/ML. Craft innovative solutions with the potential to revolutionize the world."
+          />
+          <script type="application/ld+json">
+            {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Event",
+              "name": "neXus - 36 Hour Hackathon",
+              "description": "An exhilarating 36-hour offline hackathon, one designed to ignite your creative genius and technical skills. Problem statements include healthtech, edtech, web 3.0/blockchain and AI/ML. Craft innovative solutions with the potential to revolutionize the world.",
+              "startDate": "2023-11-01T00:00:00Z",
+              "endDate": "2023-11-02T23:59:59Z",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Ambegoan bk",
+                  "addressLocality": "Pune",
+                  "addressRegion": "Maharashtra",
+                  "postalCode": "411041",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+          </script>
+        </Helmet>
+
         <NexusNav />
         <div className="flex justify-center flex-grow">
           <div className="text-white pt-32 sm:pt-12 lg:pt-5 flex-col items-center">

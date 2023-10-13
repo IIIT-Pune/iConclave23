@@ -51,7 +51,11 @@ const NexusAbout = () => {
           </div>
         </div>
       </section>
-      <NexusTimeline />
+              
+      <section id="schedule">
+        <NexusTimeline />
+      </section>
+              
       <section className="topics">
         <div className="flex flex-col md:hidden py-16 space-y-8">
           <div className="font-newshape flex justify-center items-center md:px-20">
@@ -139,7 +143,8 @@ const NexusAbout = () => {
           </div>
         </div>
       </section>
-      <section className="faq">
+
+      <section className="FAQs">
         <div className="flex items-center justify-center mt-8">
           <h1
             className="font-majormono text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 px-4 py-10 text-center text-white font-normal"

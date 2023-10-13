@@ -2,6 +2,7 @@
 import AnuragNav from "../components/AnuragNav";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import RegisterButton from "../components/RegsiterButton";
 // import { Element } from "react-scroll";
 
 const Anurag = () => {
@@ -57,12 +58,8 @@ const Anurag = () => {
             </p>
           </div>
 
-          <div className="flex justify-center items-center mt-48 m-10">
-            <a href="https://unstop.com/events/anuraag-battle-of-bands-iconclave-indian-institute-of-information-technology-iiit-pune-794646">
-              <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
-                REGISTER
-              </h1>
-            </a>
+          <div className="flex justify-center items-center mt-52 sm:mt-60 lg:mt-24 m-10">
+            <RegisterButton link="https://unstop.com/events/anuraag-battle-of-bands-iconclave-indian-institute-of-information-technology-iiit-pune-794646" />
           </div>
         </div>
       </div>
@@ -163,10 +160,10 @@ const Anurag = () => {
         </div>
         <Footer
           textColor="white"
-          socialMediaLinks={{
-            mail: "mailto:saaz_iiitp@iiitp.ac.in",
-            instagram: "https://www.instagram.com/saaz_iiitp/",
-          }}
+          // socialMediaLinks={{
+          //   mail: "mailto:saaz_iiitp@iiitp.ac.in",
+          //   instagram: "https://www.instagram.com/saaz_iiitp/",
+          // }}
         />
       </div>
     </>

@@ -11,7 +11,7 @@ const FrameFlick = () => {
         <title>Frame Flicks - Your Fest, Your Frame</title>
         <meta
           name="description"
-          content="Frame Flicks - Your Fest, Your Frame. Participate in a photography contest capturing the essence of the fest. Contact us at horizon@iiitp.ac.in."
+          content="FrameFlicks: Inter-College Photography Competition by Horizon. Capture the festival's essence with your camera or smartphone, submit"
         />
         <script type="application/ld+json">
           {`
@@ -19,7 +19,7 @@ const FrameFlick = () => {
               "@context": "http://schema.org",
               "@type": "Event",
               "name": "Frame Flicks - Your Fest, Your Frame",
-              "description": "Participate in a photography contest capturing the essence of the fest.",
+              "description": "FrameFlicks: Inter-College Photography Competition by Horizon. Capture the festival's essence with your camera or smartphone, submit ",
               "url": "https://iconclave.iiitp.ac.in/frameflick",
               "image": "https://www.example.com/images/frameflick_bg.png",
               "startDate": "2023-10-12T18:00:00-07:00",
@@ -56,7 +56,7 @@ const FrameFlick = () => {
         <FFNav />
 
         <div className="flex justify-center">
-          <div className="text-white pt-20 flex-col ">
+          <div className="text-white pt-16 flex-col ">
             <h1 className="text-8xl font-grandstander lg:text-10xl text-center pt-20 ">
               FRAME FLICKS
             </h1>
@@ -66,7 +66,7 @@ const FrameFlick = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center pt-28 items-center">
           <a
             href="https://unstop.com/events/frameflicks-iconclave23-indian-institute-of-information-technology-iiit-pune-794971"
             className="text-white"
@@ -78,7 +78,6 @@ const FrameFlick = () => {
               register
             </h1>
           </a>
-          {/* <RegisterButton fonts="kodchasan" /> */}
         </div>
       </div>
 
@@ -182,10 +181,10 @@ const FrameFlick = () => {
           </div> */}
           <Footer
             textColor="white"
-            socialMediaLinks={{
-              mail: "mailto:horizon@iiitp.ac.in",
-              instagram: "https://www.instagram.com/horizon_iiitp/",
-            }}
+            // socialMediaLinks={{
+            //   mail: "mailto:horizon@iiitp.ac.in",
+            //   instagram: "https://www.instagram.com/horizon_iiitp/",
+            // }}
           />
         </div>
       </div>

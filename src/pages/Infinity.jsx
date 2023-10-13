@@ -2,6 +2,7 @@
 
 import InfinityNav from "../components/InfinityNav";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
 /* eslint-disable react/jsx-no-target-blank */
 // eslint-disable-next-line no-shadow-restricted-names
@@ -9,6 +10,42 @@ const Infinity = () => {
   return (
     <div className="bg-black">
       <div className="h-screen flex flex-col relative">
+        <Helmet>
+          <title>Infinity 2k23 - Coding Contest</title>
+          <meta
+            name="description"
+            content="Infinity is IIIT Pune’s 2-hour Annual Flagship coding contest on CodeChef, featuring ACM style scoring. Showcase your top-tier problem-solving skills and data structure and algorithm efficiency for a thrilling coding experience."
+          />
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "http://schema.org",
+                "@type": "Event",
+                "name": "Infinity 2k23 - Coding Contest",
+                "description": "Infinity is IIIT Pune’s 2-hour Annual Flagship coding contest on CodeChef, featuring ACM style scoring. Showcase your top-tier problem-solving skills and data structure and algorithm efficiency for a thrilling coding experience.",
+                "startDate": "2023-10-25T20:00:00Z",
+                "endDate": "2023-10-25T22:00:00Z",
+                "location": {
+                  "@type": "Place",
+                  "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Ambegoan bk",
+                  "addressLocality": "Pune",
+                  "addressRegion": "Maharashtra",
+                  "postalCode": "411041",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+          </script>
+        </Helmet>
+
         <InfinityNav />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex-col">
@@ -126,12 +163,12 @@ const Infinity = () => {
       <div className="bg-black">
         <Footer
           textColor="white"
-          socialMediaLinks={{
-            mail: "mailto:bitlegion@iiitp.ac.in",
-            instagram: "https://www.instagram.com/bit.iiitp/",
-            linkedin: "https://www.linkedin.com/company/bitlegion/",
-            twitter: "https://twitter.com/bit_iiitp",
-          }}
+          // socialMediaLinks={{
+          //   mail: "mailto:bitlegion@iiitp.ac.in",
+          //   instagram: "https://www.instagram.com/bit.iiitp/",
+          //   linkedin: "https://www.linkedin.com/company/bitlegion/",
+          //   twitter: "https://twitter.com/bit_iiitp",
+          // }}
         ></Footer>
       </div>
     </div>

@@ -40,6 +40,9 @@ const LockoutNav = () => {
           <div className="flex-grow flex items-center justify-center">
             <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
               <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                <a href="/tech/lockout">HOME</a>
+              </li>
+              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
                 <a href="/tech/lockout/about">ABOUT</a>
               </li>
               <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
@@ -66,6 +69,9 @@ const LockoutNav = () => {
         <div className="flex justify-center pr-4 md:pr-0">
           <ul className="flex text-white font-miso items-center gap-4 text-xs sm:text-base md:text-xl lg:text-3xl md:gap-8 lg:gap-12">
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+              <a href="/tech/lockout">HOME</a>
+            </li>
+            <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
               <a href="/tech/lockout/about">ABOUT</a>
             </li>
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
@@ -76,9 +82,14 @@ const LockoutNav = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-center">
+//         <div className="flex items-center justify-center">
+//           <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
+//             <a href="/tech">TECHNICAL EVENTS</a>
+
+        <a href="/tech" className="hidden sm:block">
           <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
-            <a href="/tech">TECHNICAL EVENTS</a>
+            TECHNICAL EVENTS
+
           </h1>
         </div>
       </nav>

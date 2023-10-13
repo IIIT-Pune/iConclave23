@@ -55,7 +55,7 @@ const Tech = () => {
           />
         </a>
         <div className="flex items-center">
-          <a href="/cult" className="hidden sm:block z-10">
+          <a href="/cult" className="sm:block z-10">
             <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
               CULTURAL EVENTS
             </h1>

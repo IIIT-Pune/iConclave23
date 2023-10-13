@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import StoryQuestNav from "../components/StoryQuestNav";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
+import RegisterButton from "../components/RegsiterButton";
 
 const StoryQuest = () => {
   return (
@@ -17,7 +18,7 @@ const StoryQuest = () => {
         <title>Story Quest - Your Creativity, Our Challenge</title>
         <meta
           name="description"
-          content="Story Quest - Your Creativity, Our Challenge. Explore your creative storytelling abilities in this challenge. Contact us at eclectic@iiitp.ac.in."
+          content="StoryQuest is a thrilling competition of creative and original story writing and storytelling. Alternative endings of well known story tales and using the art of improvisational storytelling. A battle of creativity and oratory."
         />
         <script type="application/ld+json">
           {`
@@ -25,7 +26,7 @@ const StoryQuest = () => {
               "@context": "http://schema.org",
               "@type": "Event",
               "name": "Story Quest - Your Creativity, Our Challenge",
-              "description": "Explore your creative storytelling abilities in this challenge.",
+              "description": "StoryQuest is a thrilling competition of creative and original story writing and storytelling. Alternative endings of well known story tales and using the art of improvisational storytelling. A battle of creativity and oratory.",
               "url": "https://iconclave.iiitp.ac.in/storyquest",
               "image": "https://www.example.com/images/StoryQuest_bg.png",
               "startDate": "2023-10-12T18:00:00-07:00",
@@ -54,7 +55,7 @@ const StoryQuest = () => {
       <StoryQuestNav />
       <div className="flex flex-col items-center flex-grow">
         <div className="flex flex-col text-white">
-          <h1 className="text-6xl text-center lg:text-12xl mt-40 font-harryp lg:mt-10">
+          <h1 className="text-6xl text-center lg:text-11xl mt-40 font-harryp lg:mt-10">
             STORY QUEST
           </h1>
           <p className="text-3xl lg:text-7xl font-miso lg:-ml-5 text-center">
@@ -62,27 +63,18 @@ const StoryQuest = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center mt-48 m-10">
-          <a
-            href="https://unstop.com/events/storyquest-iconclave23-indian-institute-of-information-technology-iiit-pune-794926"
-            className="text-white"
-          >
-            <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
-              REGISTER
-            </h1>
-          </a>
+        <div className="flex justify-center items-center mt-10 sm:mt-60 lg:mt-20">
+          <RegisterButton link="https://unstop.com/events/storyquest-iconclave23-indian-institute-of-information-technology-iiit-pune-794926" />
         </div>
-
       </div>
       <Footer
         textColor="white"
-        socialMediaLinks={{
-          mail: "mailto:eclectic@iiitp.ac.in",
-          instagram: "https://www.instagram.com/eclecticiiitp/",
-        }}
+        // socialMediaLinks={{
+        //   mail: "mailto:eclectic@iiitp.ac.in",
+        //   instagram: "https://www.instagram.com/eclecticiiitp/",
+        // }}
       />
       {/* <div className="bg-[url('/images/StoryQuestbg.png')] text-white min-h-screen flex flex-col bg-cover bg-center"></div> */}
-
     </div>
   );
 };

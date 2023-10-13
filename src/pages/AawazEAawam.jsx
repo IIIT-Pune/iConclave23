@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import AawamAbout from "../components/AawamAbout";
 import AawamGuide from "../components/AawamGuide";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
+import RegisterButton from "../components/RegsiterButton";
 
 const AawazEAawam = () => {
   return (
@@ -11,19 +12,33 @@ const AawazEAawam = () => {
         <title>Aawaz-E-Aawam - Lights Street Action</title>
         <meta
           name="description"
-          content="Aawaz-E-Aawam - Lights Street Action."
+          content="Awaz-e-Awam by Abhinay presents an on-campus street play/theater competition during I-Conclave at IIIT Pune. Transform impactful social messages into performances and compete for a substantial prize pool of 38k."
         />
         <script type="application/ld+json">
           {`
             {
               "@context": "http://schema.org",
               "@type": "WebPage",
-              "name": "Aawaz-E-Aawam - Lights Street Action",
+              "name": "Awaz-e-Awam by Abhinay presents an on-campus street play/theater competition during I-Conclave at IIIT Pune. Transform impactful social messages into performances and compete for a substantial prize pool of 38k. ",
               "description": "Learn more about our mission and guide to take action.",
               "url": "https://iconclave.iiitp.ac.in/aawazeaawam",
               "image": "https://www.example.com/images/aawazeaawam.png",
-              "author": {
-                "@type": "Organisation",
+              "startDate": "2023-10-12T18:00:00-07:00",
+              "endDate": "2023-10-12T22:00:00-07:00",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "123 Main Street",
+                  "addressLocality": "Pune",
+                  "addressRegion": " Maharashtra",
+                  "postalCode": "4110441",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
                 "name": "IConclave - IIIT Pune"
               }
             }
@@ -58,28 +73,24 @@ const AawazEAawam = () => {
             </h2>
           </div>
 
-          {/* <div className="flex justify-center items-center -mt-20"> */}
-          <div className="flex justify-center items-center">
-            <a href="https://unstop.com/events/aawaz-e-aawam-lights-street-action-iconclave-indian-institute-of-information-technology-iiit-pune-794605">
-              <h1 className="font-majormono text-white border-2 border-white px-5 py-1 text-4xl rounded-lg">
-                register
-              </h1>
-            </a>
+          <div className="flex justify-center items-center mt-10 sm:mt-60 lg:mt-32">
+            <RegisterButton link="https://unstop.com/events/aawaz-e-aawam-lights-street-action-iconclave-indian-institute-of-information-technology-iiit-pune-794605" />
           </div>
         </div>
       </div>
       <AawamAbout />
       <AawamGuide />
-      //{" "}
+
       <h1 className="text-white font-monoton text-center text-2xl sm:text-6xl lg:text-7xl">
-        // ABHINAY //{" "}
+        ABHINAY
       </h1>
+
       <Footer
         textColor="white"
-        socialMediaLinks={{
-          mail: "mailto:abhinay@iiitp.ac.in",
-          instagram: "https://www.instagram.com/abhinay.iiitp/",
-        }}
+        // socialMediaLinks={{
+        //   mail: "mailto:abhinay@iiitp.ac.in",
+        //   instagram: "https://www.instagram.com/abhinay.iiitp/",
+        // }}
       />
     </div>
   );

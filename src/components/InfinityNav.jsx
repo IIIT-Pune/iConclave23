@@ -105,7 +105,7 @@ const InfinityNav = () => {
 
       <a href="/tech" className="hidden lg:block">
         <h1
-          className="font-nightcore text-2xl m-0 text-center tracking-widest text-white font-normal"
+          className="font-nightcore text-2xl m-0 pr-5 text-center tracking-widest text-white font-normal"
           id="OFFRoadBandit"
         >
           TECHNICAL &nbsp; <span className="text-red-600">EVENTS</span>

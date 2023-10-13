@@ -27,16 +27,10 @@ const NNNav = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="text-white text-2xl flex items-center">
+          <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
               <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
-              </a>
-              <a
-                href="https://www.instagram.com/_vanity_crew/"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>VANITY CREW</li>
               </a>
               <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
@@ -70,13 +64,16 @@ const NNNav = () => {
             </svg>
           </button>
         </div>
-        <div className="flex  hidden lg:block">
-          <h1
-            className="font-fuzzybubbles text-xl m-0 p-6 flex items-center justify-center text-center text-white font-normal"
-            id="NrityaNova"
-          >
-            <a href="/cult">CULTURAL EVENTS</a>
-          </h1>
+        <div className="hidden lg:flex lg:items-center">
+          {/* Show the second logo only in the desktop version */}
+          <a href="/cult">
+            <h1
+              className="font-fuzzybubbles text-xl m-0 p-5 text-center text-white font-normal"
+              id="NrityaNova"
+            >
+              CULTURAL EVENTS
+            </h1>
+          </a>
         </div>
       </nav>
       {/* Black overlay for mobile menu */}
@@ -108,9 +105,9 @@ const NNNav = () => {
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
-              <a href="#vanitycrew" onClick={closeMobileMenu}>
-                <li>VANITY CREW</li>
-              </a>
+//               <a href="#vanitycrew" onClick={closeMobileMenu}>
+//                 <li>VANITY CREW</li>
+//               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
               </a>
