@@ -92,9 +92,9 @@ const Cult = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="cult/anurag">
+                <a href="cult/anuraag">
                   <img
-                    src="./images/anurag_cau.png"
+                    src="./images/anuraag_cau.png"
                     alt=""
                     className="rounded-3xl"
                   />
@@ -179,9 +179,9 @@ const Cult = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="cult/anurag">
+                  <a href="cult/anuraag">
                     <img
-                      src="./images/anurag_cau.png"
+                      src="./images/anuraag_cau.png"
                       alt=""
                       className="rounded-3xl"
                     />

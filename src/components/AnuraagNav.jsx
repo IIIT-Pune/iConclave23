@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import Footer from "./Footer";
 
-const AnuragNav = () => {
+const AnuraagNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Function to toggle the mobile menu
@@ -38,9 +38,12 @@ const AnuragNav = () => {
                 <li className="hover:border-b-2 pb-1 ">ABOUT</li>
               </Link>
               {/* </li> */}
-              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              {/* <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
-              </a>
+              </a> */}
               <a href="#getintouch" className="hover:border-b-2 pb-1 ">
                 <li>GET IN TOUCH</li>
               </a>
@@ -75,7 +78,7 @@ const AnuragNav = () => {
           <a href="/cult">
             <h1
               className="font-smarkan text-3xl m-0 p-6 text-center text-white font-normal"
-              id="anurag"
+              id="anuraag"
             >
               CULTURAL EVENTS
             </h1>
@@ -135,4 +138,4 @@ const AnuragNav = () => {
   );
 };
 
-export default AnuragNav;
+export default AnuraagNav;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "./Footer";
 
-const AnuragNav = () => {
+const AnuraagNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Function to toggle the mobile menu
@@ -122,4 +122,4 @@ const AnuragNav = () => {
   );
 };
 
-export default AnuragNav;
+export default AnuraagNav;

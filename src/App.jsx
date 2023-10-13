@@ -10,7 +10,7 @@ import Cult from "./pages/Cult";
 import Nexus from "./pages/Nexus";
 import NexusAbout from "./pages/NexusAbout";
 import Lockout from "./pages/Lockout";
-import Anurag from "./pages/Anurag";
+import Anuraag from "./pages/Anuraag";
 import Rofies1 from "./pages/Rofies1";
 import Infinityteam from "./components/Infinityteam";
 import Infinitypastevent from "./components/Infinitypastevent";
@@ -26,6 +26,7 @@ import LockoutGuidelines from "./components/LockoutGuidelines";
 import LockoutTeam from "./components/LockoutTeam";
 import ShipWreck from "./pages/ShipWreck";
 import StoryQuest from "./pages/StoryQuest";
+import AnuraagRulebook from "./components/AnuraagRulebook";
 import NotFound from "./pages/NotFound";
 
 const preloadedImages = [
@@ -33,8 +34,8 @@ const preloadedImages = [
   "/images/aawazeaawam.png",
   "/images/aboutimage.png",
   "/images/Alarm.png",
-  "/images/anuragbg.png",
-  "/images/anurag_cau.png",
+  "/images/anuraagbg.png",
+  "/images/anuraag_cau.png",
   "/images/bg_off.png",
   "/images/Calendar25.png",
   "/images/codecheflogo.svg",
@@ -283,8 +284,12 @@ const App = () => {
       element: <FrameFlick />,
     },
     {
-      path: "cult/anurag",
-      element: <Anurag />,
+      path: "cult/anuraag",
+      element: <Anuraag />,
+    },
+    {
+      path: "cult/anuraag/rulebook",
+      element: <AnuraagRulebook />,
     },
     {
       path: "cult/nrityanova",
