@@ -28,22 +28,17 @@ const AnuragNav = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="text-white text-2xl flex items-center">
+          <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
-              {/* <a to="aboutsection" className="hover:border-b-2 pb-1 ">
-                <li>ABOUT</li>
-              </a> */}
-              {/* <li> */}
-              <Link to="aboutsection" smooth={true} duration={500}>
+              <Link to="about" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">ABOUT</li>
               </Link>
-              {/* </li> */}
-              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
-                <li>GUIDELINES</li>
-              </a>
-              <a href="#getintouch" className="hover:border-b-2 pb-1 ">
-                <li>GET IN TOUCH</li>
-              </a>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -110,25 +105,34 @@ const AnuragNav = () => {
             <div className="flex items-center justify-center">
               <ul className="flex flex-col text-center gap-8">
                 <Link
-                  to="aboutsection"
+                  to="about"
                   onClick={closeMobileMenu}
                   smooth={true}
                   duration={500}
                 >
                   <li className="hover:border-b-2 pb-1 ">ABOUT</li>
                 </Link>
-                <a href="#guidelines" onClick={closeMobileMenu}>
-                  <li>GUIDELINES</li>
-                </a>
-                <a href="#getintouch" onClick={closeMobileMenu}>
-                  <li>GET IN TOUCH</li>
-                </a>
+                <Link
+                  to="guidelines"
+                  onClick={closeMobileMenu}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+                </Link>
+                <Link
+                  to="getintouch"
+                  onClick={closeMobileMenu}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+                </Link>
               </ul>
             </div>
           </div>
           <div>
             <Footer textColor={"white"} />
-
           </div>
         </div>
       )}

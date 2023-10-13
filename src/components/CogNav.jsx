@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const CogNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,29 +27,21 @@ const CogNav = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="text-black text-2xl flex items-center">
+          <div className="text-black text-xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 border-black pb-1 ">
-                <li>ABOUT</li>
-              </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 border-black "
-              >
-                <li>GUIDELINES</li>
-              </a>
-              <a
-                href="https://www.instagram.com/q_riocity_/"
-                className="hover:border-b-2 pb-1 border-black"
-              >
-                <li>Q-RIOCITY</li>
-              </a>
-              {/* <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 border-black"
-              >
-                <li>GET IN TOUCH</li>
-              </a> */}
+              <Link to="about" smooth={true} duration={500}>
+                <li className="hover:border-b-2 border-black pb-1 ">ABOUT</li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 border-black pb-1 ">
+                  GUIDELINES
+                </li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 border-black pb-1 ">
+                  GET IN TOUCH
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -113,18 +106,30 @@ const CogNav = () => {
 
           <div className="text-white text-2xl">
             <ul className="flex flex-col gap-5">
-              <a href="#about" onClick={closeMobileMenu}>
-                <li>ABOUT</li>
-              </a>
-              <a href="#qrc" onClick={closeMobileMenu}>
-                <li>Q-RIOCITY</li>
-              </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
-              </a>
-              <a href="#getintouch" onClick={closeMobileMenu}>
-                <li>GET IN TOUCH</li>
-              </a>
+              <Link
+                to="about"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
+              <Link
+                to="guidelines"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              <Link
+                to="getintouch"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+              </Link>
             </ul>
           </div>
         </div>

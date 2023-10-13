@@ -1,6 +1,7 @@
 import LockoutNav from "../components/LockoutNav";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import RegisterButton from "../components/RegsiterButton";
 
 const Lockout = () => {
   return (
@@ -58,23 +59,19 @@ const Lockout = () => {
             className="w-192 p-10"
           />
         </div>
-
-        {/* <div className="flex justify-center items-center">
-          <h1 className="text-white font-captainamerica tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl border-4 md:border-6 lg:border-8 px-2 sm:px-4 md:px-10 lg:px-10 py-1 md:py-2 lg:py-3">
-            REGISTER
-          </h1>
-        </div>
-        </div> */}
+      </div>
+      <div className="flex justify-center items-center ">
+        <RegisterButton link="https://forms.gle/r8W9gevCxfWUGrn47" />
       </div>
 
       <Footer
         textColor={"white"}
-        socialMediaLinks={{
-          mail: "mailto:bitlegion@iiitp.ac.in",
-          instagram: "https://www.instagram.com/bit.iiitp/",
-          linkedin: "https://www.linkedin.com/company/bitlegion/",
-          twitter: "https://twitter.com/bit_iiitp",
-        }}
+        // socialMediaLinks={{
+        //   mail: "mailto:bitlegion@iiitp.ac.in",
+        //   instagram: "https://www.instagram.com/bit.iiitp/",
+        //   linkedin: "https://www.linkedin.com/company/bitlegion/",
+        //   twitter: "https://twitter.com/bit_iiitp",
+        // }}
       />
     </div>
   );

@@ -1,6 +1,7 @@
 import ShipWreckNav from "../components/ShipWreckNav";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
+import RegisterButton from "../components/RegsiterButton";
 
 const ShipWreck = () => {
   return (
@@ -62,21 +63,18 @@ const ShipWreck = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center mt-48 m-10">
-          <a href="https://example.com" className="text-white">
-            <h1 className="font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
-              REGISTER
-            </h1>
-          </a>
+        <div className="flex justify-center items-center mt-10 sm:mt-60 lg:mt-20">
+          <RegisterButton link="https://unstop.com/events/shipwreck-iconclave-indian-institute-of-information-technology-iiit-pune-794853" />
         </div>
       </div>
       <Footer
         textColor="white"
-        socialMediaLinks={{
-          mail: "mailto:eclectic@iiitp.ac.in",
-          instagram: "https://www.instagram.com/eclecticiiitp/",
-        }}
+        // socialMediaLinks={{
+        //   mail: "mailto:eclectic@iiitp.ac.in",
+        //   instagram: "https://www.instagram.com/eclecticiiitp/",
+        // }}
       />
+      {/* <div className="bg-[url('/images/ShipWreckbg.png')] text-white min-h-screen flex flex-col bg-cover bg-center"></div> */}
     </div>
   );
 };

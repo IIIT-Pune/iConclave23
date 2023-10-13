@@ -2,7 +2,9 @@
 import { cognitionguidelines } from "../assets/cognitionguidelines";
 import Footer from "../components/Footer";
 import CogNav from "../components/CogNav";
+import RegisterButton from "../components/RegsiterButtoninverted";
 import { Helmet } from "react-helmet";
+
 const Cognition = () => {
   return (
     <div className="bg-cognitionbg min-h-screen flex flex-col">
@@ -51,7 +53,8 @@ const Cognition = () => {
             <h1 className="font-veterantypewriter text-center text-6xl lg:text-10xl">
               COGNITION
             </h1>
-            <h2 className="text-l lg:text-4xl font-1942 text-right -mt-2">
+            {/* <h2 className="text-l lg:text-4xl font-1942 text-right -mt-2"> */}
+            <h2 className="text-xl lg:text-4xl font-1942 lg:-mt-5 text-right">
               decode dazzle dominate
             </h2>
           </div>
@@ -62,11 +65,10 @@ const Cognition = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center">
-          <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
-            REGISTER
-          </h1>
-        </div>
+        <RegisterButton
+          fonts="punktypewriter"
+          link="https://unstop.com/quiz/cognition-decode-dazzle-dominate-iconclave-indian-institute-of-information-technology-iiit-pune-794293"
+        />
       </div>
 
       <div className="font-veterantypewriter" id="about">
@@ -119,52 +121,14 @@ const Cognition = () => {
         <h1 className="text-5xl text-center lg:text-8xl  ml-10 pb-4">
           Q-RIOCITY
         </h1>
-        {/* <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
-          <p>
-            Q-riocity is IIIT Pune's quizzing society, like the{" "}
-            <span className="font-bold">
-              dead poet's society, minus the poets.
-            </span>
-          </p>
-          <p>
-            Q-riocity, also widely known as QRC, is where you interact with your
-            seniors, conduct and attend quizzes on topics such as commercial
-            aviation to the Mahabharata, discuss the latest geopolitical events
-            and analyse them, debate Snape's character arch—whew, all under ONE
-            ROOF!!
-          </p>
-          <p>
-            Joining QRC in the first year is relatively simple; you just have to
-            show up, but the real achievement lies in maintaining this
-            membership past the first year, for which you have to do the
-            herculean task of, (any guesses), showing up.
-          </p>
-          <p>
-            In our free time, we're also the exclusive quizmasters of IIIT Pune,
-            like the Warden of the Quizzes. We tried calling our club leads
-            that, but it didn't stick.
-          </p>
-          <p>
-            We wholeheartedly agree with Stalin's words, "Quantity has a Quality
-            of its Own", but he went out of fashion ages ago, and SFs around the
-            world have limited membership. So we at QRC follow the same
-            principle until it remains in vogue. We may not have as many members
-            to form our very own PLA, but those that we do have are surely worth
-            more than a pineapple in the 17th century.
-          </p>
-          <p className="pb-5 lg:pb-10">
-            We may be geeky, nerdy, introverted, uptight, not funny, or grumpy
-            when our quiz time slot is usurped, but we shall never be boring.
-          </p>
-        </div> */}
       </div>
 
       <Footer
         invert="true"
-        socialMediaLinks={{
-          mail: "mailto:q_riocity@iiitp.ac.in",
-          instagram: "https://www.instagram.com/q_riocity_/",
-        }}
+        // socialMediaLinks={{
+        //   mail: "mailto:q_riocity@iiitp.ac.in",
+        //   instagram: "https://www.instagram.com/q_riocity_/",
+        // }}
       ></Footer>
     </div>
   );

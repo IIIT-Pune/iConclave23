@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import NexusNav from "../components/NexusNav";
 import NexusAbout from "./NexusAbout";
+import { Element } from "react-scroll";
 import { Helmet } from "react-helmet";
 
 const Nexus = () => {
@@ -16,14 +17,22 @@ const Nexus = () => {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>Nexus - 36 Hour Hackathon</title>
-        <meta
-          name="description"
-          content="An exhilarating 36-hour offline hackathon, one designed to ignite your creative genius and technical skills. Problem statements include healthtech, edtech, web 3.0/blockchain and AI/ML. Craft innovative solutions with the potential to revolutionize the world."
-        />
-        <script type="application/ld+json">
-          {`
+      <div
+        style={{
+          background: "url(/images/nexus_bg.png)",
+          backgroundPosition: "top center",
+          backgroundSize: "cover",
+        }}
+        className="h-screen flex flex-col"
+      >
+        <Helmet>
+          <title>NEXUS - 36 Hour Hackathon</title>
+          <meta
+            name="description"
+            content="An exhilarating 36-hour offline hackathon, one designed to ignite your creative genius and technical skills. Problem statements include healthtech, edtech, web 3.0/blockchain and AI/ML. Craft innovative solutions with the potential to revolutionize the world."
+          />
+          <script type="application/ld+json">
+            {`
             {
               "@context": "http://schema.org",
               "@type": "Event",
@@ -34,36 +43,28 @@ const Nexus = () => {
               "location": {
                 "@type": "Place",
                 "name": "IIIT Pune",
-                  "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "123 Main Street",
-                    "addressLocality": "Pune",
-                    "addressRegion": " Maharashtra",
-                    "postalCode": "4110441",
-                    "addressCountry": "India"
-                  }
-                },
-                "performer": {
-                  "@type": "Organization",
-                  "name": "IConclave - IIIT Pune"
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Ambegoan bk",
+                  "addressLocality": "Pune",
+                  "addressRegion": "Maharashtra",
+                  "postalCode": "411041",
+                  "addressCountry": "India"
                 }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
               }
-            `}
-        </script>
-      </Helmet>
+            }
+          `}
+          </script>
+        </Helmet>
 
-      <div
-        style={{
-          background: "url(/images/nexus_bg.png)",
-          backgroundPosition: "top center",
-          backgroundSize: "cover",
-        }}
-        className="h-screen flex flex-col"
-      >
         <NexusNav />
         <div className="flex justify-center flex-grow">
           <div className="text-white pt-32 sm:pt-12 lg:pt-5 flex-col items-center">
-            <h1 className="font-miso text-3xl -mb-5 sm:text-4xl sm:-mb-5  lg:text-5xl lg:-mb-10 ">
+            <h1 className="font-miso text-3xl -mb-2 sm:text-4xl sm:-mb-4 lg:text-5xl lg:-mb-8 ">
               36 hour hackathon
             </h1>
             <h1
@@ -72,7 +73,7 @@ const Nexus = () => {
             >
               neXus
             </h1>
-            <p className=" font-miso text-3xl sm:text-5xl sm:- lg:text-7xl lg:-mt-5 text-center ">
+            <p className=" font-miso text-3xl sm:text-5xl lg:text-7xl lg:-mt-5 text-center ">
               CODE, CREATE, CONNECT
             </p>
           </div>
@@ -87,7 +88,9 @@ const Nexus = () => {
           ></div>
         </div>
       </div>
-      <NexusAbout />
+      <Element id="aboutsection">
+        <NexusAbout />
+      </Element>
     </>
   );
 };

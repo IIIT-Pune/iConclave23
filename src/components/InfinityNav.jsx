@@ -1,10 +1,11 @@
 import { useState } from "react";
+import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 const InfinityNav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex items-center justify-between border-b border-black py-4 px-10 text-white">
+    <div className="flex items-center justify-between border-b border-black text-white">
       <a href="/">
         <img
           src="/images/IConclave.png"
@@ -15,12 +16,12 @@ const InfinityNav = () => {
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="HAMBURGER-ICON space-y-2 mx-8"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
           </div>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
@@ -41,41 +42,44 @@ const InfinityNav = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <a href="/infinity">HOME</a>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <Link to="/infinity/bitlegion">BIT LEGION</Link>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <Link to="/infinity/team">TEAM</Link>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <Link to="/infinity/pastevents">PAST EVENTS</Link>
-              </li>
-              <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-                <Link to="/infinity/halloffame">HALL OF FAME</Link>
-              </li>
-            </ul>
+            <div className="flex-grow flex items-center justify-center">
+              <ul className="flex flex-col items-center justify-between min-h-[250px]">
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <a href="/tech/infinity">HOME</a>
+                </li>
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <Link to="/tech/infinity/bitlegion">BIT LEGION</Link>
+                </li>
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <Link to="/tech/infinity/team">TEAM</Link>
+                </li>
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <Link to="/tech/infinity/pastevents">PAST EVENTS</Link>
+                </li>
+                <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
+                  <Link to="/tech/infinity/halloffame">HALL OF FAME</Link>
+                </li>
+              </ul>
+            </div>
+            <Footer textColor={"white"} />
           </div>
         </section>
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <a href="/infinity">HOME</a>
+            <a href="/tech/infinity">HOME</a>
           </li>
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <Link to="/infinity/bitlegion">BIT LEGION</Link>
+            <Link to="/tech/infinity/bitlegion">BIT LEGION</Link>
           </li>
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <Link to="/infinity/team">TEAM</Link>
+            <Link to="/tech/infinity/team">TEAM</Link>
           </li>
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <Link to="/infinity/pastevents">PAST EVENTS</Link>
+            <Link to="/tech/infinity/pastevents">PAST EVENTS</Link>
           </li>
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
-            <Link to="/infinity/halloffame">HALL OF FAME</Link>
+            <Link to="/tech/infinity/halloffame">HALL OF FAME</Link>
           </li>
         </ul>
       </nav>
@@ -101,7 +105,7 @@ const InfinityNav = () => {
 
       <a href="/tech" className="hidden sm:block">
         <h1
-          className="font-nightcore text-2xl m-0 text-center tracking-widest text-white font-normal"
+          className="font-nightcore text-2xl m-0 pr-5 text-center tracking-widest text-white font-normal"
           id="OFFRoadBandit"
         >
           TECHNICAL &nbsp; <span className="text-red-600">EVENTS</span>

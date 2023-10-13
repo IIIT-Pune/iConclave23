@@ -53,7 +53,7 @@ const Cult = () => {
       {/* <h1 className="text-white text-9xl p-14 font-octobercrow tracking-wider">
         Technical Events
       </h1> */}
-      <div className="flex justify-between space-x">
+      <div className="flex justify-between mt-5">
         <a href="/" className="flex items-center">
           <img
             src="/images/IConclave.png"
@@ -62,7 +62,7 @@ const Cult = () => {
           />
         </a>
         <div className="flex items-center">
-          <a href="/tech" className="hidden sm:block z-10">
+          <a href="/tech" className="sm:block z-10">
             <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-[#2E2C2A] font-normal">
               TECHNICAL EVENTS
             </h1>

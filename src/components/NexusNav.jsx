@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Footer from "./Footer";
+import { Link } from "react-scroll";
 
 const NexusNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,15 +26,31 @@ const NexusNav = () => {
           <div className="flex">
             <nav className="flex  justify-between items-center">
               <div className="flex justify-center items-center">
-                <ul className="flex gap-20 text-white font-miso text-3xl justify-center items-center">
+                <ul className="flex gap-20 text-white font-miso text-2xl justify-center items-center">
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="/nexus/about">ABOUT</a>
+                    <Link to="aboutsection" smooth={true} duration={500}>
+                      <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+                    </Link>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#guidelines">GUIDELINES</a>
+                    <Link to="schedule" smooth={true} duration={500}>
+                      <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
+                    </Link>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#getintouch">GET IN TOUCH</a>
+                    <Link to="topics" smooth={true} duration={500}>
+                      <li className="hover:border-b-2 pb-1 ">TOPICS</li>
+                    </Link>
+                  </li>
+                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                    <Link to="FAQs" smooth={true} duration={500}>
+                      <li className="hover:border-b-2 pb-1 ">FAQs</li>
+                    </Link>
+                  </li>
+                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                    <Link to="getintouch" smooth={true} duration={500}>
+                      <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -104,8 +121,19 @@ const NexusNav = () => {
           <div className="text-white flex-grow justify-center flex flex-col text-xl">
             <div className="flex items-center justify-center">
               <ul className="flex flex-col items-center justify-between gap-8">
-                <a href="/nexus/about" onClick={closeMobileMenu}>
-                  <li>ABOUT</li>
+                <Link
+                  to="aboutsection"
+                  onClick={closeMobileMenu}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+                </Link>
+                <a
+                  href="https://www.instagram.com/localhost_iiitp/"
+                  onClick={closeMobileMenu}
+                >
+                  <li>LOCALHOST</li>
                 </a>
                 <a href="#guidelines" onClick={closeMobileMenu}>
                   <li>GUIDELINES</li>

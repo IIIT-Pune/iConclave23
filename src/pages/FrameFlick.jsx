@@ -11,7 +11,7 @@ const FrameFlick = () => {
         <title>Frame Flicks - Your Fest, Your Frame</title>
         <meta
           name="description"
-          content="FrameFlicks: Inter-College Photography Competition by Horizon. Capture the festival's essence with your camera or smartphone, submit "
+          content="FrameFlicks: Inter-College Photography Competition by Horizon. Capture the festival's essence with your camera or smartphone, submit"
         />
         <script type="application/ld+json">
           {`
@@ -56,7 +56,7 @@ const FrameFlick = () => {
         <FFNav />
 
         <div className="flex justify-center">
-          <div className="text-white pt-20 flex-col ">
+          <div className="text-white pt-16 flex-col ">
             <h1 className="text-8xl font-grandstander lg:text-10xl text-center pt-20 ">
               FRAME FLICKS
             </h1>
@@ -66,16 +66,18 @@ const FrameFlick = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
-          {/* <a href="https://example.com" className="text-white">
+        <div className="flex justify-center pt-28 items-center">
+          <a
+            href="https://unstop.com/events/frameflicks-iconclave23-indian-institute-of-information-technology-iiit-pune-794971"
+            className="text-white"
+          >
             <h1
               className="font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
       transition-transform transform hover:scale-105 hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out"
             >
               register
             </h1>
-          </a> */}
-          {/* <RegisterButton fonts="kodchasan" /> */}
+          </a>
         </div>
       </div>
 
@@ -179,10 +181,10 @@ const FrameFlick = () => {
           </div> */}
           <Footer
             textColor="white"
-            socialMediaLinks={{
-              mail: "mailto:horizon@iiitp.ac.in",
-              instagram: "https://www.instagram.com/horizon_iiitp/",
-            }}
+            // socialMediaLinks={{
+            //   mail: "mailto:horizon@iiitp.ac.in",
+            //   instagram: "https://www.instagram.com/horizon_iiitp/",
+            // }}
           />
         </div>
       </div>

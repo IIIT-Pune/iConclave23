@@ -2,6 +2,7 @@
 import AnuragNav from "../components/AnuragNav";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import RegisterButton from "../components/RegsiterButton";
 // import { Element } from "react-scroll";
 
 const Anurag = () => {
@@ -12,7 +13,7 @@ const Anurag = () => {
           <title>Anuraag - Battle of Bands</title>
           <meta
             name="description"
-            content="Join the ultimate Inter-College Battle of Bands – a celebration of music and art! Watch college bands compete in an exhilarating musical showdown. Don't miss this unforgettable evening of song, dance and more."
+            content="Anurag - Battle of Bands. Join us for an exhilarating musical showdown. Explore the world of dance with us. Contact us at saaz_iiitp@iiitp.ac.in."
           />
           <script type="application/ld+json">
             {`
@@ -20,7 +21,7 @@ const Anurag = () => {
                 "@context": "http://schema.org",
                 "@type": "Event",
                 "name": "Anurag - Battle of Bands",
-                "description": Join the ultimate Inter-College Battle of Bands – a celebration of music and art! Watch college bands compete in an exhilarating musical showdown. Don't miss this unforgettable evening of song, dance and more.",
+                "description": "Join us for an exhilarating musical showdown.",
                 "url": "https://iconclave.iiitp.ac.in/anurag",
                 "image": "https://www.example.com/images/saaz_bg.png",
                 "startDate": "2023-10-12T18:00:00-07:00",
@@ -57,11 +58,9 @@ const Anurag = () => {
             </p>
           </div>
 
-          {/* <div className="flex justify-center items-center mt-48 m-10">
-          <h1 className="text-white font-miso border-2 px-5 py-3 text-4xl lg:text-5xl rounded-2xl tracking-wider ">
-            REGISTER
-          </h1>
-        </div> */}
+          <div className="flex justify-center items-center mt-52 sm:mt-60 lg:mt-24 m-10">
+            <RegisterButton link="https://unstop.com/events/anuraag-battle-of-bands-iconclave-indian-institute-of-information-technology-iiit-pune-794646" />
+          </div>
         </div>
       </div>
       <div
@@ -161,10 +160,10 @@ const Anurag = () => {
         </div>
         <Footer
           textColor="white"
-          socialMediaLinks={{
-            mail: "mailto:saaz_iiitp@iiitp.ac.in",
-            instagram: "https://www.instagram.com/saaz_iiitp/",
-          }}
+          // socialMediaLinks={{
+          //   mail: "mailto:saaz_iiitp@iiitp.ac.in",
+          //   instagram: "https://www.instagram.com/saaz_iiitp/",
+          // }}
         />
       </div>
     </>
