@@ -48,7 +48,7 @@ const Anurag = () => {
         </Helmet>
 
         <AnuragNav />
-        <div className="flex flex-col items-center flex justify-center flex-grow">
+        <div className="flex flex-col items-center justify-center flex-grow">
           <div className="flex flex-col">
             <h1 className="text-8xl sm:text-10xl md:text-11xl lg:text-13xl font-smarkan">
               anuraag
@@ -135,7 +135,7 @@ const Anurag = () => {
           </div>
         </div>
         <div className="flex justify-center items-center p-10">
-          <a href="#" className="text-white">
+          <a href="https://example.com" className="text-white">
             <h1
               className="font-miso border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
       hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
