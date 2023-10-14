@@ -118,9 +118,21 @@ const Cognition = () => {
       </div>
 
       <div className="font-veterantypewriter min-h-full">
-        <h1 className="text-5xl text-center lg:text-8xl  ml-10 pb-4">
-          Q-RIOCITY
-        </h1>
+        <div className="flex flex-col lg:flex-row gap-5 justify-center lg:justify-evenly items-center">
+          <div className="font-miso flex flex-col items-center">
+            <h3 className="text-3xl lg:text-5xl">Brijdeep Goyal</h3>
+            <h4 className="text-2xl lg:text-4xl">+91 8946919684</h4>
+          </div>
+          <a href="https://www.instagram.com/q_riocity_/">
+            <h1 className="font-veterantypewriter text-center text-5xl lg:text-7xl">
+              Q-RIOCITY
+            </h1>
+          </a>
+          <div className="font-miso flex flex-col items-center">
+            <h3 className="text-3xl lg:text-5xl">Shreerang M.</h3>
+            <h4 className="text-2xl lg:text-4xl">+91 8149202000</h4>
+          </div>
+        </div>
       </div>
 
       <Footer

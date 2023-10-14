@@ -46,7 +46,12 @@ const NexusNav = () => {
                     <Link to="FAQs" smooth={true} duration={500}>
                       <li className="hover:border-b-2 pb-1 ">FAQs</li>
                     </Link>
+
                   </li>
+
+                  {/* <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                    <a href="#guidelines">GUIDELINES</a>
+                  </li> */}
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <Link to="getintouch" smooth={true} duration={500}>
                       <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
@@ -120,7 +125,9 @@ const NexusNav = () => {
 
           <div className="text-white flex-grow justify-center flex flex-col text-xl">
             <div className="flex items-center justify-center">
-              <ul className="flex flex-col items-center justify-between gap-8">
+              
+              <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
+
                 <Link
                   to="aboutsection"
                   onClick={closeMobileMenu}
@@ -138,7 +145,7 @@ const NexusNav = () => {
                 <a href="#guidelines" onClick={closeMobileMenu}>
                   <li>GUIDELINES</li>
                 </a>
-                <a href="getintouch" onClick={closeMobileMenu}>
+                <a href="#getintouch" onClick={closeMobileMenu}>
                   <li>GET IN TOUCH</li>
                 </a>
               </ul>

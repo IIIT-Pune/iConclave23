@@ -155,9 +155,9 @@ const FrameFlick = () => {
             background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
           }}
         >
-          <h1 className="text-5xl p-5 font-grandstander lg:text-8xl text-white m-0 lg:p-0 lg:ml-10 text-center ">
+          {/* <h1 className="text-5xl p-5 font-grandstander lg:text-8xl text-white m-0 lg:p-0 lg:ml-10 text-center ">
             HORIZON
-          </h1>
+          </h1> */}
           {/* <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify flex-grow">
             <p>
               Horizon, established in January 2022 with the ideology of "capture
@@ -180,6 +180,17 @@ const FrameFlick = () => {
               eagerly anticipated by the IIIT Pune community.
             </p>
           </div> */}
+          <div className="flex flex-col text-white lg:flex-row gap-5 justify-center lg:justify-evenly items-center">
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-3xl lg:text-5xl">Ishan Upadhyaya</h3>
+              <h4 className="text-2xl lg:text-4xl">+91 8009904204</h4>
+            </div>
+            <a href="https://www.instagram.com/horizon_iiitp/">
+              <h1 className="font-grandstander text-center text-5xl lg:text-7xl">
+                HORIZON
+              </h1>
+            </a>
+          </div>
           <Footer
             textColor="white"
             // socialMediaLinks={{

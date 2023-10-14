@@ -1,5 +1,7 @@
 import { useState } from "react";
+import Footer from "./Footer";
 import { Link } from "react-scroll";
+
 
 const FFNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -100,8 +102,10 @@ const FFNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
+
+          <div className="flex-grow text-white flex items-center justify-center">
+            <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
+           
               <Link
                 to="about"
                 onClick={closeMobileMenu}
@@ -126,7 +130,11 @@ const FFNav = () => {
               >
                 <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
               </Link>
+
             </ul>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}

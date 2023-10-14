@@ -45,7 +45,6 @@ const AawazEAawam = () => {
           `}
         </script>
       </Helmet>
-
       <div
         className="min-h-screen "
         style={{
@@ -82,9 +81,21 @@ const AawazEAawam = () => {
       <AawamAbout />
       <AawamGuide />
 
-      <h1 className="text-white font-monoton text-center text-2xl sm:text-6xl lg:text-7xl">
-        ABHINAY
-      </h1>
+      <div className="flex flex-col text-white lg:flex-row gap-5 lg:justify-evenly lg:items-center">
+        <div className="font-miso flex flex-col items-center">
+          <h3 className="text-3xl lg:text-5xl">Priyansh</h3>
+          <h4 className="text-2xl lg:text-4xl">+91 7050943292</h4>
+        </div>
+        <a href="https://www.instagram.com/abhinay.iiitp/">
+          <h1 className="font-monoton text-center text-5xl lg:text-7xl">
+            ABHINAY
+          </h1>
+        </a>
+        <div className="font-miso flex flex-col items-center">
+          <h3 className="text-3xl lg:text-5xl">Svayam Kapadia</h3>
+          <h4 className="text-2xl lg:text-4xl">+91 8320094646</h4>
+        </div>
+      </div>
 
       <Footer
         textColor="white"

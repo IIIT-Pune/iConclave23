@@ -147,13 +147,23 @@ const Anurag = () => {
       </div>
       <div className="bg-black text-white min-h-full flex flex-col bg-cover bg-center">
         <div className="flex flex-col">
-          <a href="https://www.instagram.com/saaz_iiitp/">
-            <h1 className="text-6xl lg:text-9xl mt-10 font-smarkan text-center">
-              <span className="bg-gradient-to-r text-transparent from-[#0042D4] to-[#FE1902] bg-clip-text">
-                saaz
-              </span>
+          <div className="flex flex-col lg:flex-row gap-5 lg:justify-evenly lg:items-center">
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-3xl lg:text-5xl">Gurdeep Singh</h3>
+              <h4 className="text-2xl lg:text-4xl">+91 9957552015</h4>
+            </div>
+            <h1 className="text-6xl lg:text-9xl font-smarkan text-center">
+              <a href="https://www.instagram.com/saaz_iiitp/">
+                <span className="bg-gradient-to-r text-transparent from-[#0042D4] to-[#FE1902] bg-clip-text">
+                  saaz
+                </span>
+              </a>
             </h1>
-          </a>
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-3xl lg:text-5xl">Vatsal Furia</h3>
+              <h4 className="text-2xl lg:text-4xl">+91 8850236175</h4>
+            </div>
+          </div>
           <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
             <p></p>
           </div>
