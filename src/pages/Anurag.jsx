@@ -48,34 +48,34 @@ const Anurag = () => {
         </Helmet>
 
         <AnuragNav />
-        <div className="flex flex-col items-center flex-grow">
+        <div className="flex flex-col items-center flex justify-center flex-grow">
           <div className="flex flex-col">
-            <h1 className="text-8xl lg:text-12xl mt-20 font-smarkan lg:mt-10">
+            <h1 className="text-8xl sm:text-10xl md:text-11xl lg:text-13xl font-smarkan">
               anuraag
             </h1>
-            <p className="text-4xl lg:text-7xl font-miso lg:-mt-10 lg:-ml-5 text-center">
+            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-miso -mt-4 sm:-mt-6 md:-mt-8 lg:-mt-10 lg:-ml-5 text-center">
               BATTLE OF BANDS
             </p>
           </div>
 
-          <div className="flex justify-center items-center mt-52 sm:mt-60 lg:mt-24 m-10">
+          <div className="flex justify-center items-center mt-8 sm:mt-24 lg:mt-24 ">
             <RegisterButton link="https://unstop.com/events/anuraag-battle-of-bands-iconclave-indian-institute-of-information-technology-iiit-pune-794646" />
           </div>
         </div>
       </div>
       <div
         id="about"
-        className="text-white min-h-screen"
+        className="text-white min-h-screen flex justify-center items-center"
         style={{
           background:
             "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 59.75%, #000 100%), url('/images/anuragbg.png') ",
         }}
       >
         <div className="flex flex-col">
-          <h1 className="text-6xl lg:text-9xl mt-10 font-smarkan text-center ">
+          <h1 className="font-smarkan text-6xl sm:text-8xl lg:text-10xl mt-10 p-0 text-center text-white font-normal">
             about
           </h1>
-          <div className="font-miso text-2xl my-1 mx-5 lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col gap-7">
+          <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
             <p>
               Prepare for an unparalleled musical showdown as the stage comes
               alive with the thunderous beats and electrifying melodies of the{" "}
@@ -99,16 +99,16 @@ const Anurag = () => {
         </div>
       </div>
       <div
-        className="bg-black text-white min-h-screen flex flex-col bg-cover bg-center"
+        className="bg-black text-white min-h-screen flex flex-col justify-center bg-cover bg-center"
         id="guidelines"
       >
         <div className="flex flex-col">
-          <h1 className="text-6xl lg:text-9xl mt-10 font-smarkan text-center">
+          <h1 className="font-smarkan text-6xl sm:text-8xl lg:text-10xl mt-10 p-0 text-center text-white font-normal">
             <span className="bg-gradient-to-r text-transparent from-[#FE1902] to-[#0042D4] bg-clip-text">
               guidelines
             </span>
           </h1>
-          <div className="font-miso text-2xl my-1 mx-5 lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col gap-7">
+          <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
             <p>
               In this competition, bands of 6-8 members, including up to 4
               accompanists, can perform. Participants can sing and play
@@ -135,7 +135,7 @@ const Anurag = () => {
           </div>
         </div>
         <div className="flex justify-center items-center p-10">
-          <a href="https://example.com" className="text-white">
+          <a href="#" className="text-white">
             <h1
               className="font-miso border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
       hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
@@ -145,14 +145,21 @@ const Anurag = () => {
           </a>
         </div>
       </div>
-      <div className="bg-black text-white min-h-full flex flex-col bg-cover bg-center">
-        <div className="flex flex-col">
-          <div className="flex flex-col lg:flex-row gap-5 lg:justify-evenly lg:items-center">
+      <div
+        id="getintouch"
+        className="bg-black text-white min-h-full flex flex-col bg-cover bg-center"
+      >
+        <div className="flex flex-col py-6">
+          <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
             <div className="font-miso flex flex-col items-center">
-              <h3 className="text-3xl lg:text-5xl">Gurdeep Singh</h3>
-              <h4 className="text-2xl lg:text-4xl">+91 9957552015</h4>
+              <h3 className="text-2xl sm:text-3xl lg:text-5xl">
+                Gurdeep Singh
+              </h3>
+              <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                +91 9957552015
+              </h4>
             </div>
-            <h1 className="text-6xl lg:text-9xl font-smarkan text-center">
+            <h1 className="text-6xl md:text-8xl lg:text-10xl font-smarkan text-center">
               <a href="https://www.instagram.com/saaz_iiitp/">
                 <span className="bg-gradient-to-r text-transparent from-[#0042D4] to-[#FE1902] bg-clip-text">
                   saaz
@@ -160,8 +167,10 @@ const Anurag = () => {
               </a>
             </h1>
             <div className="font-miso flex flex-col items-center">
-              <h3 className="text-3xl lg:text-5xl">Vatsal Furia</h3>
-              <h4 className="text-2xl lg:text-4xl">+91 8850236175</h4>
+              <h3 className="text-2xl sm:text-3xl lg:text-5xl">Vatsal Furia</h3>
+              <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                +91 8850236175
+              </h4>
             </div>
           </div>
           <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
