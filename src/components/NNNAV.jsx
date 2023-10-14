@@ -26,7 +26,7 @@ const NNNav = () => {
           />
         </a>
         {/* Desktop Menu */}
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex pl-20">
           <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
               <a href="#about" className="hover:border-b-2 pb-1 ">

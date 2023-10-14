@@ -25,7 +25,7 @@ const NexusNav = () => {
         <div className="hidden lg:flex">
           <div className="flex">
             <nav className="flex  justify-between items-center">
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center pl-44 items-center">
                 <ul className="flex gap-20 text-white font-miso text-2xl justify-center items-center">
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <Link to="aboutsection" smooth={true} duration={500}>
@@ -89,7 +89,7 @@ const NexusNav = () => {
           {/* Show the second logo only in the desktop version */}
           <a href="/tech">
             <h1
-              className=" font-majormono text-2xl m-0 p-6 text-center text-white font-normal"
+              className=" font-majormono text-2xl m-0 py-6 pr-6 text-center text-white font-normal"
               id="NEXUS"
             >
               technical events
