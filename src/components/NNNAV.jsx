@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 
 const NNNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,33 +27,21 @@ const NNNav = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="text-white text-2xl flex items-center">
+          <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
               <a href="#about" className="hover:border-b-2 pb-1 ">
                 <li>ABOUT</li>
               </a>
-              <a
-                href="https://www.instagram.com/_vanity_crew/"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>VANITY CREW</li>
-              </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
                 <li>GUIDELINES</li>
               </a>
-              <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 "
-              >
+              <a href="#getintouch" className="hover:border-b-2 pb-1 ">
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden flex justify-center px-4">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -75,14 +64,14 @@ const NNNav = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex lg:items-center">
           {/* Show the second logo only in the desktop version */}
-          <a href="#about">
+          <a href="/cult">
             <h1
-              className="font-fuzzybubbles text-xl m-0 p-6 text-center text-white font-normal"
+              className="font-fuzzybubbles text-xl m-0 p-5 text-center text-white font-normal"
               id="NrityaNova"
             >
-              NRITYA NOVA
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>
@@ -111,14 +100,14 @@ const NNNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
+          <div className="text-white flex-grow flex items-center justify-center">
+            <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
               <a href="#about" onClick={closeMobileMenu}>
                 <li>ABOUT</li>
               </a>
-              <a href="#horizon" onClick={closeMobileMenu}>
-                <li>VANITY CREW</li>
-              </a>
+//               <a href="#vanitycrew" onClick={closeMobileMenu}>
+//                 <li>VANITY CREW</li>
+//               </a>
               <a href="#guidelines" onClick={closeMobileMenu}>
                 <li>GUIDELINES</li>
               </a>
@@ -126,6 +115,9 @@ const NNNav = () => {
                 <li>GET IN TOUCH</li>
               </a>
             </ul>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}

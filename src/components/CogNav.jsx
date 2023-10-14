@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Footer from "./Footer";
+import { Link } from "react-scroll";
 
 const CogNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,7 +17,7 @@ const CogNav = () => {
 
   return (
     <div>
-      <nav className="flex justify-between relative">
+      <nav className="flex justify-between">
         <a href="/">
           {/* Show the first logo in both desktop and mobile versions */}
           <img
@@ -26,29 +28,21 @@ const CogNav = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="text-black text-2xl flex items-center">
+          <div className="text-black text-xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 ">
-                <li>ABOUT</li>
-              </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>GUIDELINES</li>
-              </a>
-              <a
-                href="https://www.instagram.com/q_riocity_/"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>Q-RIOCITY</li>
-              </a>
-              <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>GET IN TOUCH</li>
-              </a>
+              <Link to="about" smooth={true} duration={500}>
+                <li className="hover:border-b-2 border-black pb-1 ">ABOUT</li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 border-black pb-1 ">
+                  GUIDELINES
+                </li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 border-black pb-1 ">
+                  GET IN TOUCH
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -77,12 +71,12 @@ const CogNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#about">
+          <a href="/cult">
             <h1
-              className="font-veterantypewriter text-4xl m-0 p-6 text-center text-black font-normal"
+              className="font-veterantypewriter text-2xl m-0 p-6 text-center text-black font-normal"
               id="Cognition"
             >
-              COGNITION
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>
@@ -111,21 +105,39 @@ const CogNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
-              <a href="#about" onClick={closeMobileMenu}>
-                <li>ABOUT</li>
-              </a>
-              <a href="#qrc" onClick={closeMobileMenu}>
-                <li>Q-RIOCITY</li>
-              </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
-              </a>
-              <a href="#getintouch" onClick={closeMobileMenu}>
-                <li>GET IN TOUCH</li>
-              </a>
+
+          <div className="text-white flex-grow flex items-center justify-center">
+            <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
+             
+              <Link
+                to="about"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
+              <Link
+                to="guidelines"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              <Link
+                to="getintouch"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+              </Link>
+
             </ul>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}

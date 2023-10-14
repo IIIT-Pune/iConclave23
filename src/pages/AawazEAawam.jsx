@@ -1,40 +1,97 @@
 import AawamNav from "../components/AawamNav";
 import Footer from "../components/Footer";
-// import AawamAbout from "../components/AawamAbout";
-// import AawamGuide from "../components/AawamGuide";
+import AawamAbout from "../components/AawamAbout";
+import AawamGuide from "../components/AawamGuide";
+import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
+import RegisterButton from "../components/RegsiterButton";
+
 const AawazEAawam = () => {
   return (
-    <div
-      className="min-h-screen flex flex-col bg-black"
-      style={{
-        background: "url(/images/aawazeaawam.png)",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
-    >
-      {/* <GNavBar club="ABHINAY" color="white" hcolor="white"/> */}
-      <AawamNav />
-      <div className="flex flex-col flex-grow">
-        <div className="flex flex-col justify-center items-center mt-40 md:mt-32 lg:mt-10">
-          <h1 className="text-white font-monoton text-3xl sm:text-7xl lg:text-8xl">
-            aawaz-E-aawam
-          </h1>
-          <p className="text-white font-majormono text-2xl sm:text-4xl lg:text-6xl">
-            lights street action
-          </p>
-        </div>
+    <div className="bg-black">
+      <Helmet>
+        <title>Aawaz-E-Aawam - Lights Street Action</title>
+        <meta
+          name="description"
+          content="Awaz-e-Awam by Abhinay presents an on-campus street play/theater competition during I-Conclave at IIIT Pune. Transform impactful social messages into performances and compete for a substantial prize pool of 38k."
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "WebPage",
+              "name": "Awaz-e-Awam by Abhinay presents an on-campus street play/theater competition during I-Conclave at IIIT Pune. Transform impactful social messages into performances and compete for a substantial prize pool of 38k. ",
+              "description": "Learn more about our mission and guide to take action.",
+              "url": "https://iconclave.iiitp.ac.in/aawazeaawam",
+              "image": "https://www.example.com/images/aawazeaawam.png",
+              "startDate": "2023-10-12T18:00:00-07:00",
+              "endDate": "2023-10-12T22:00:00-07:00",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "123 Main Street",
+                  "addressLocality": "Pune",
+                  "addressRegion": " Maharashtra",
+                  "postalCode": "4110441",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
+      <div
+        className="min-h-screen "
+        style={{
+          background: "url(/images/aawazeaawam.png)",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <AawamNav />
 
-        {/* <div className="flex justify-center items-center -mt-20">
-        <h1 className="font-majormono text-white border-2 border-white px-5 py-1 text-4xl rounded-lg">
-        register
-        </h1>
-      </div> */}
+        <div className="flex flex-col gap-10 flex-grow">
+          <div className="flex flex-col justify-center text-center gap-5 items-center mt-40 md:mt-32 lg:mt-10">
+            <div className="flex flex-col gap-2 lg:flex-row">
+              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
+                aawaz
+              </h1>
+              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
+                -E-
+              </h1>
+              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
+                aawam
+              </h1>
+            </div>
+            <h2 className="text-white font-majormono text-2xl sm:text-4xl lg:text-6xl">
+              lights street action
+            </h2>
+          </div>
+
+          <div className="flex justify-center items-center mt-10 sm:mt-60 lg:mt-32">
+            <RegisterButton link="https://unstop.com/events/aawaz-e-aawam-lights-street-action-iconclave-indian-institute-of-information-technology-iiit-pune-794605" />
+          </div>
+        </div>
       </div>
-      <Footer textColor="white" socialMediaLinks={{  mail: 'mailto:abhinay@iiitp.ac.in',
-    instagram: 'https://www.instagram.com/abhinay.iiitp/'
-    }} />
-      {/* <AawamAbout/>
-      <AawamGuide/> */}
+      <AawamAbout />
+      <AawamGuide />
+
+      <h1 className="text-white font-monoton text-center text-2xl sm:text-6xl lg:text-7xl">
+        ABHINAY
+      </h1>
+
+      <Footer
+        textColor="white"
+        // socialMediaLinks={{
+        //   mail: "mailto:abhinay@iiitp.ac.in",
+        //   instagram: "https://www.instagram.com/abhinay.iiitp/",
+        // }}
+      />
     </div>
   );
 };

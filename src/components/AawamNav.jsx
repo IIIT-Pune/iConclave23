@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Footer from "./Footer";
+import { Link } from "react-scroll";
+
 
 const FFNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,23 +29,17 @@ const FFNav = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="text-white text-2xl flex items-center">
+          <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 ">
-                <li>ABOUT</li>
-              </a>
-              <a
-                href="https://www.instagram.com/abhinay.iiitp/"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>ABHINAY</li>
-              </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>GUIDELINES</li>
-              </a>
+              <Link to="about" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -71,12 +68,12 @@ const FFNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#abhinay">
+          <a href="/cult">
             <h1
               className="font-monoton text-xl m-0 p-6 text-center text-white font-normal"
               id="Aawazeaawam"
             >
-              AAWAZ-E-AAWAM
+              CULTURAL &nbsp; EVENTS
             </h1>
           </a>
         </div>
@@ -105,18 +102,39 @@ const FFNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
-              <a href="#about" onClick={closeMobileMenu}>
-                <li>ABOUT</li>
-              </a>
-              <a href="#abhinay" onClick={closeMobileMenu}>
-                <li>ABHINAY</li>
-              </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
-              </a>
+
+          <div className="flex-grow text-white flex items-center justify-center">
+            <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
+           
+              <Link
+                to="about"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
+              <Link
+                to="guidelines"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              <Link
+                to="getintouch"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+              </Link>
+
             </ul>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}

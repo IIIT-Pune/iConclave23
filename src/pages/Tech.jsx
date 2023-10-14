@@ -17,7 +17,7 @@ const Tech = () => {
           activeIndex === swiper.slides.length - 1 ? 0 : activeIndex + 1;
         swiper.slideTo(nextIndex);
       }
-    }, 2000); // Change slide every 1.5 seconds
+    }, 4000); // Change slide every 4 seconds
 
     return () => {
       clearInterval(interval);
@@ -46,7 +46,7 @@ const Tech = () => {
       }}
       className="tech-container min-h-screen flex flex-col"
     >
-      <div className="flex justify-between space-x">
+      <nav className="flex justify-between space-x z-10">
         <a href="/">
           <img
             src="/images/IConclave.png"
@@ -54,14 +54,14 @@ const Tech = () => {
             alt="Iconclavebg"
           />
         </a>
-        <a href="/" className="flex items-center">
-          <img
-            src="/images/IConclaveFull.png"
-            className="p-4 h-16 sm:h-20 md:h-24 lg:h-28"
-            alt="IconclaveFullbg"
-          />
-        </a>
-      </div>
+        <div className="flex items-center">
+          <a href="/cult" className="sm:block z-10">
+            <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
+              CULTURAL EVENTS
+            </h1>
+          </a>
+        </div>
+      </nav>
       <div className="flex-grow lg:-mt-48 mb-4 -mt-8">
         <img
           src="/images/tech_head.png"
@@ -76,7 +76,7 @@ const Tech = () => {
               style={{ maxHeight: "52vh", overflowY: "auto" }}
             >
               <SwiperSlide className="rounded-3xl">
-                <a href="/nexus">
+                <a href="tech/nexus">
                   <img
                     src="./images/nexus_cau.png"
                     alt=""
@@ -85,7 +85,7 @@ const Tech = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/lockout">
+                <a href="tech/lockout">
                   <img
                     src="./images/lockout_cau.png"
                     alt=""
@@ -94,7 +94,7 @@ const Tech = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/infinity">
+                <a href="tech/infinity">
                   <img
                     src="./images/infinity_cau.png"
                     alt=""
@@ -103,7 +103,7 @@ const Tech = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="/rofies1">
+                <a href="tech/rofies1">
                   <img
                     src="./images/offrd_cau.png"
                     alt=""
@@ -130,7 +130,7 @@ const Tech = () => {
                 onSwiper={(swiper) => setSwiper(swiper)}
               >
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/nexus">
+                  <a href="tech/nexus">
                     <img
                       src="./images/nexus_cau.png"
                       alt=""
@@ -139,7 +139,7 @@ const Tech = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/infinity">
+                  <a href="tech/infinity">
                     <img
                       src="./images/infinity_cau.png"
                       alt=""
@@ -148,7 +148,7 @@ const Tech = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/rofies1">
+                  <a href="tech/rofies1">
                     <img
                       src="./images/offrd_cau.png"
                       alt=""
@@ -157,7 +157,7 @@ const Tech = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="/lockout">
+                  <a href="tech/lockout">
                     <img
                       src="./images/lockout_cau.png"
                       alt=""

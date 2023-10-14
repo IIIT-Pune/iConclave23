@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
+import Footer from "./Footer";
 
 const AnuragNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,33 +28,21 @@ const AnuragNav = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
-          <div className="text-white text-2xl flex items-center">
+          <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 ">
-                <li>ABOUT</li>
-              </a>
-              <a
-                href="https://www.instagram.com/saaz_iiitp/"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>SAAZ</li>
-              </a>
-              <a
-                href="#guidelines"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>GUIDELINES</li>
-              </a>
-              <a
-                href="#getintouch"
-                className="hover:border-b-2 pb-1 "
-              >
-                <li>GET IN TOUCH</li>
-              </a>
+              <Link to="about" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+              </Link>
             </ul>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden flex items-center px-4">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -77,12 +67,12 @@ const AnuragNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="#about">
+          <a href="/cult">
             <h1
-              className="font-smarkan text-4xl m-0 p-6 text-center text-white font-normal"
+              className="font-smarkan text-3xl m-0 p-6 text-center text-white font-normal"
               id="anurag"
             >
-              ANURAG
+              CULTURAL EVENTS
             </h1>
           </a>
         </div>
@@ -92,7 +82,7 @@ const AnuragNav = () => {
         <div className="fixed top-0 left-0 h-screen w-screen bg-black z-50 flex flex-col items-center justify-center">
           {/* Cross button to close the mobile menu */}
           <button
-            className="absolute top-2 right-2 p-2 text-white"
+            className="absolute top-4 right-4 p-4 text-white"
             onClick={toggleMobileMenu}
           >
             <svg
@@ -111,21 +101,38 @@ const AnuragNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl">
-            <ul className="flex flex-col gap-5">
-              <a href="#about" onClick={closeMobileMenu}>
-                <li>ABOUT</li>
-              </a>
-              <a href="#horizon" onClick={closeMobileMenu}>
-                <li>ANURAG</li>
-              </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
-              </a>
-              <a href="#getintouch" onClick={closeMobileMenu}>
-                <li>GET IN TOUCH</li>
-              </a>
-            </ul>
+          <div className="text-white text-2xl flex-grow justify-center flex flex-col">
+            <div className="flex items-center justify-center">
+              <ul className="flex flex-col text-center gap-8">
+                <Link
+                  to="about"
+                  onClick={closeMobileMenu}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+                </Link>
+                <Link
+                  to="guidelines"
+                  onClick={closeMobileMenu}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+                </Link>
+                <Link
+                  to="getintouch"
+                  onClick={closeMobileMenu}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+                </Link>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <Footer textColor={"white"} />
           </div>
         </div>
       )}
