@@ -51,42 +51,40 @@ const NrityaNova = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="h-screen"
+        className="h-screen text-white flex flex-col bg-cover bg-center"
       >
         <NNNAv />
 
-        <div className="flex justify-center">
-          <div className="text-white pt-40 sm:pt-20 lg:pt-6 flex-col">
-            <div className="flex flex-col">
-              <h1 className=" font-fuzzybubbles text-5xl lg:text-10xl text-center pt-20">
-                NRITYA NOVA
-              </h1>
-              <p className=" font-miso text-2xl lg:text-4xl -lg:mt-16 text-right ">
-                EVERY STEP TELLS A STORY!
-              </p>
-            </div>
+        <div className="flex flex-col gap-4 sm:gap-8 items-center text-white justify-center flex-grow">
+          <div className="flex flex-col">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-10xl font-fuzzybubbles">
+              NRITYA NOVA
+            </h1>
+            <p className="text-base sm:text-xl md:text-3xl lg:text-5xl font-miso sm:-mt-2 md:-mt-4 lg:-mt-6 text-right">
+              EVERY STEP TELLS A STORY!
+            </p>
           </div>
-        </div>
 
-        <div className="flex justify-center items-center mt-32 sm:mt-60 lg:mt-24 m-10">
-          <RegisterButton
-            fonts="majormono"
-            link="https://unstop.com/events/nritya-nova-iconclave-indian-institute-of-information-technology-iiit-pune-794575"
-          />
+          <div className="flex justify-center items-center mt-8 sm:mt-24 md:mt-24 lg:mt-20 ">
+            <RegisterButton
+              fonts="majormono"
+              link="https://unstop.com/events/nritya-nova-iconclave-indian-institute-of-information-technology-iiit-pune-794575"
+            />
+          </div>
         </div>
       </div>
 
       <div
-        className="min-h-screen py-10"
+        className="text-white min-h-screen flex flex-col justify-center bg-cover bg-center"
         id="about"
         style={{
           background: "linear-gradient(180deg, #000001 0%, #0C0C0C 100%)",
         }}
       >
-        <h1 className="font-grandstander text-5xl p-5 lg:text-10xl text-white m-0 lg:p-0 ml-10">
+        <h1 className="font-fuzzybubbles text-5xl sm:text-7xl lg:text-9xl mt-10 py-10 text-center text-white font-normal">
           ABOUT
         </h1>
-        <div className=" font-miso text-2xl lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
+        <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
           <p>
             Get ready to witness the epitome of rhythm and grace at the
             intercollege dance competition, "Nritya Nova," hosted by Vanity
@@ -106,34 +104,120 @@ const NrityaNova = () => {
           </p>
         </div>
       </div>
+
       <div
-        className="min-h-full text-white"
-        id="about"
+        className="bg-black text-white min-h-screen flex flex-col justify-center bg-cover bg-center"
+        id="guidelines"
         style={{
           background: "linear-gradient(180deg, #0C0C0C 0%, #0C0C0C 100%)",
         }}
       >
-        <div className="flex flex-col lg:flex-row gap-5 justify-center lg:justify-evenly items-center">
-          <div className="font-miso flex flex-col items-center">
-            <h3 className="text-3xl lg:text-5xl">Nisha</h3>
-            <h4 className="text-2xl lg:text-4xl">+91 9529858782</h4>
-          </div>
-          <a href="https://www.instagram.com/_vanity_crew/">
-            <h1 className="font-grandstander text-center text-5xl lg:text-7xl">
-              VANITY CREW
-            </h1>
-          </a>
-          <div className="font-miso flex flex-col items-center">
-            <h3 className="text-3xl lg:text-5xl">Siddhesh Kale</h3>
-            <h4 className="text-2xl lg:text-4xl"> +91 9420048563</h4>
-          </div>
+        <h1 className="font-fuzzybubbles text-5xl sm:text-7xl lg:text-9xl mt-10 py-10 text-center text-white font-normal">
+          GUIDELINES
+        </h1>
+        <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+          <ul
+            role="list"
+            className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+          >
+            <li>
+              Each team will comprise a maximum of 12 participants and minimum 6
+              participants.
+            </li>
+            <li>
+              Choice of songs is open to the participants whether
+              classical,bollywood,english,etc.
+            </li>
+            <li>
+              The participants will be judged on the basis of their rhythm,
+              formation, synchronisation, expressions, and costumes, setup and
+              overall effects.
+            </li>
+            <li>
+              College reserves the right to revise the rules and regulations of
+              these competitions.
+            </li>
+          </ul>
+          <p>
+            <span className="font-bold text-xl sm:text-2xl lg:text-4xl">
+              Round 1:
+            </span>
+            <ul
+              role="list"
+              className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+            >
+              <li>
+                First round will be conducted online whereby the submissions
+                will be taken in form of video format through mail links and the
+                time duration of video should be maximum 5 mins.
+              </li>
+              <li>
+                Approximately 12 shortlisted teams will be called for the second
+                round to perform in campus during iConclave'23.
+              </li>
+            </ul>
+          </p>
+          <p>
+            <span className="font-bold text-xl sm:text-2xl lg:text-4xl">
+              Round 2:
+            </span>
+            <ul
+              role="list"
+              className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+            >
+              <li>
+                Each team will have to perform for a maximum of 10 minutes and
+                minimum 6 minutes.
+              </li>
+              <li>
+                No props will be provided by the coordinators. Participants can
+                carry their own props.
+              </li>
+              <li>
+                The song for the dance should be submitted prior as an mp3 file.
+              </li>
+              <li>Decision of the judges will be final and binding.</li>
+            </ul>
+          </p>
         </div>
+      </div>
 
+      <div
+        className="min-h-full text-white"
+        id="getintouch"
+        style={{
+          background: "linear-gradient(180deg, #0C0C0C 0%, #0C0C0C 100%)",
+        }}
+      >
+        <div className="flex flex-col pt-16">
+          <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-2xl sm:text-3xl lg:text-5xl">Nisha</h3>
+              <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                +91 9529858782
+              </h4>
+            </div>
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-grandstander text-center">
+              <a href="https://www.instagram.com/_vanity_crew/">VANITY CREW</a>
+            </h1>
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-2xl sm:text-3xl lg:text-5xl">
+                Siddhesh Kale
+              </h3>
+              <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                +91 9420048563
+              </h4>
+            </div>
+          </div>
+          {/* <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
+            <p></p>
+          </div> */}
+        </div>
         <Footer
           textColor="white"
           // socialMediaLinks={{
-          //   mail: "mailto:vanitycrew@iiitp.ac.in",
-          //   instagram: "https://www.instagram.com/_vanity_crew/",
+          //   mail: "mailto:saaz_iiitp@iiitp.ac.in",
+          //   instagram: "https://www.instagram.com/saaz_iiitp/",
           // }}
         />
       </div>
