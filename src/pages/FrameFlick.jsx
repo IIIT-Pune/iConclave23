@@ -70,6 +70,7 @@ const FrameFlick = () => {
           <a
             href="https://unstop.com/events/frameflicks-iconclave23-indian-institute-of-information-technology-iiit-pune-794971"
             className="text-white"
+            target="blank"
           >
             <h1
               className="font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 

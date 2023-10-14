@@ -26,7 +26,7 @@ const AnuragNav = () => {
           />
         </a>
         {/* Desktop Menu */}
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex pl-28">
           <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
               <Link to="about" smooth={true} duration={500}>
