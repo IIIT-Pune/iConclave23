@@ -67,7 +67,7 @@ const LockoutNav = () => {
           />
         </a>
         <div className="flex justify-center pr-4 md:pr-0">
-          <ul className="flex text-white font-miso items-center gap-4 text-xs sm:text-base md:text-xl lg:text-3xl md:gap-8 lg:gap-12">
+          <ul className="flex text-white font-miso items-center gap-4 text-xs sm:text-base md:text-xl lg:text-3xl md:gap-8 lg:gap-12 lg:pl-20">
             <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
               <a href="/tech/lockout">HOME</a>
             </li>
@@ -82,16 +82,11 @@ const LockoutNav = () => {
             </li>
           </ul>
         </div>
-//         <div className="flex items-center justify-center">
-//           <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
-//             <a href="/tech">TECHNICAL EVENTS</a>
-
         <a href="/tech" className="hidden sm:block">
-          <h1 className="font-silkroad text-2xl m-0 p-6 text-center text-white font-normal">
+          <h1 className=" text-2xl m-0 p-7 text-center text-white font-captainamerica">
             TECHNICAL EVENTS
-
           </h1>
-        </div>
+        </a>
       </nav>
       <style>{`
       .hideMenuNav {

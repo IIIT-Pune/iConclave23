@@ -27,7 +27,7 @@ const CogNav = () => {
           />
         </a>
         {/* Desktop Menu */}
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex pl-36">
           <div className="text-black text-xl flex items-center">
             <ul className="flex gap-24 ">
               <Link to="about" smooth={true} duration={500}>

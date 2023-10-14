@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 import RegisterButton from "../components/RegsiterButton";
 
-
 const NrityaNova = () => {
   return (
     <div className="">
@@ -52,11 +51,11 @@ const NrityaNova = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="h-screen flex flex-col"
+        className="h-screen"
       >
         <NNNAv />
 
-        <div className="flex justify-center flex-grow">
+        <div className="flex justify-center">
           <div className="text-white pt-40 sm:pt-20 lg:pt-6 flex-col">
             <div className="flex flex-col">
               <h1 className=" font-fuzzybubbles text-5xl lg:text-10xl text-center pt-20">
@@ -69,11 +68,66 @@ const NrityaNova = () => {
           </div>
         </div>
 
-
+        <div className="flex justify-center items-center mt-32 sm:mt-60 lg:mt-24 m-10">
           <RegisterButton
             fonts="majormono"
             link="https://unstop.com/events/nritya-nova-iconclave-indian-institute-of-information-technology-iiit-pune-794575"
           />
+        </div>
+      </div>
+
+      <div
+        className="min-h-screen py-10"
+        id="about"
+        style={{
+          background: "linear-gradient(180deg, #000001 0%, #0C0C0C 100%)",
+        }}
+      >
+        <h1 className="font-grandstander text-5xl p-5 lg:text-10xl text-white m-0 lg:p-0 ml-10">
+          ABOUT
+        </h1>
+        <div className=" font-miso text-2xl lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
+          <p>
+            Get ready to witness the epitome of rhythm and grace at the
+            intercollege dance competition, "Nritya Nova," hosted by Vanity
+            Crew, the dance club of IIIT Pune! With teams from across colleges
+            converging on our stage, this event promises to be a breathtaking
+            display of talent and creativity.
+          </p>
+          <p>
+            Performers will bring their A-game, fusing diverse dance forms into
+            mesmerising performances that will leave you awestruck. From
+            contemporary to hip-hop, classical to fusion, "Nritya Nova" is a
+            celebration of the art of dance.
+          </p>
+          <p>
+            Join us in this dance extravaganza that will set the stage on fire
+            and leave you tapping your feet in sheer amazement!
+          </p>
+        </div>
+      </div>
+      <div
+        className="min-h-full text-white"
+        id="about"
+        style={{
+          background: "linear-gradient(180deg, #0C0C0C 0%, #0C0C0C 100%)",
+        }}
+      >
+        <div className="flex flex-col lg:flex-row gap-5 justify-center lg:justify-evenly items-center">
+          <div className="font-miso flex flex-col items-center">
+            <h3 className="text-3xl lg:text-5xl">Nisha</h3>
+            <h4 className="text-2xl lg:text-4xl">+91 9529858782</h4>
+          </div>
+          <a href="https://www.instagram.com/_vanity_crew/">
+            <h1 className="font-grandstander text-center text-5xl lg:text-7xl">
+              VANITY CREW
+            </h1>
+          </a>
+          <div className="font-miso flex flex-col items-center">
+            <h3 className="text-3xl lg:text-5xl">Siddhesh Kale</h3>
+            <h4 className="text-2xl lg:text-4xl"> +91 9420048563</h4>
+          </div>
+        </div>
 
         <Footer
           textColor="white"
@@ -83,75 +137,6 @@ const NrityaNova = () => {
           // }}
         />
       </div>
-
-      {/* <div
-        className="min-h-screen"
-        id="about"
-        style={{
-          background: "linear-gradient(180deg, #141119 0%, #000 100%)",
-        }}
-      >
-        <h1 className="font-grandstander text-5xl p-5 lg:text-10xl text-white m-0 lg:p-0 ml-10">
-          ABOUT
-        </h1>
-        <div className=" font-miso text-2xl lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
-          <p>
-            At the beginning of the fest, a single word will be revealed for
-            each team, through the chit system. This word will serve as the
-            thematic core for each team’s photography journey.
-          </p>
-          <p>
-            Using the camera or smartphone, the task is to capture a series of
-            photographs throughout the fest that resonates with the chosen word.
-            Every click should encapsulate the essence of the fest and the
-            chosen team.
-          </p>
-          <p>
-            Submit the series of photographs along with a cover image by
-            designated deadline. Remarks: Cookie points – transform one of the
-            best shots into a stunning edited version. For example, it can be
-            converted to a splash photograph.
-          </p>
-          <p>
-            Splash photography involves isolating the subject against a dynamic,
-            colorful backdrop, creating a visual masterpiece.You can use this
-            edited masterpiece as your cover image.
-          </p>
-        </div>
-      </div>
-      <div
-        className="min-h-screen"
-        id="about"
-        style={{
-          background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
-        }}
-      >
-        <h1 className="font-grandstander p-5 text-5xl lg:text-10xl text-white m-0 ;g:p-0 ml-10">
-          VANITY CREW
-        </h1>
-        <div className=" font-miso text-2xl lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
-          <p>
-            Horizon, established in January 2022 with the ideology of "capture
-            imagination," continues to steadfastly pursue and expand upon this
-            captivating concept. As the photography and videography club of IIIT
-            Pune, Horizon has swiftly emerged as one of the institute's most
-            dynamic and youthful clubs. Its ubiquitous presence is felt
-            throughout campus events, where it skillfully encapsulates cherished
-            memories. This proactive involvement has rightfully earned Horizon
-            the designation of being IIIT Pune's dedicated media house.
-          </p>
-          <p>
-            The scope of Horizon extends beyond mere media coverage. The club
-            fervently fosters an environment of creativity and engagement. Among
-            its diverse initiatives, Horizon hosts contests tailored for
-            newcomers, fostering an inclusive atmosphere. With an ambitious
-            vision in mind, the club is actively targeting and working towards
-            organizing its flagship annual photography competition, an event
-            eagerly anticipated by the IIIT Pune community.
-          </p>
-        </div>
-      </div>*/}
-
     </div>
   );
 };
