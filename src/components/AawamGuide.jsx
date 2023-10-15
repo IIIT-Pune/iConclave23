@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 const AawamGuide = () => {
   return (
     <div
@@ -7,7 +8,7 @@ const AawamGuide = () => {
       <div>
         <div>
           <h1 className="text-5xl text-center lg:text-left sm:text-6xl md:text-7xl lg:text-8xl lg:pl-10 lg:pt-10">
-            GUILDLINES
+            GUIDELINES
           </h1>
         </div>
         <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
@@ -49,9 +50,8 @@ const AawamGuide = () => {
           </h1>
           <div className="lg:text-4xl">
             <p className="">
-              Teams will have to submit a synopsis of their play. The synopsis
-              should be precise and well-written, as it will be a deciding
-              factor in a team's entry to phase 2.
+              Top few teams will be shortlisted and notified and will be invited
+              to IIIT Pune to present their play during I-Conclave.
             </p>
           </div>
         </div>
