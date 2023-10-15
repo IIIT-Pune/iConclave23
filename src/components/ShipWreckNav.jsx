@@ -36,7 +36,7 @@ const AnuragNav = () => {
               <Link to="guidelines" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
               </Link>
-              <Link to="guidelines" smooth={true} duration={500}>
+              <Link to="getintouch" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
               </Link>
             </ul>
@@ -101,10 +101,8 @@ const AnuragNav = () => {
             </svg>
           </button>
 
-
           <div className="flex-grow text-white flex items-center justify-center">
             <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
-              
               <Link
                 to="about"
                 onClick={closeMobileMenu}
@@ -129,7 +127,6 @@ const AnuragNav = () => {
               >
                 <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
               </Link>
-
             </ul>
           </div>
           <div>

@@ -107,7 +107,7 @@ const ShipWreck = () => {
 
       <section
         className="min-h-screen pt-10 flex flex-col"
-        id="about"
+        id="guidelines"
         style={{
           background: "linear-gradient(180deg, #000 0%, #000 100%)",
         }}
@@ -146,9 +146,7 @@ const ShipWreck = () => {
                 </h4>
               </div>
               <h1 className="text-4xl md:text-6xl lg:text-8xl font-punishment text-center">
-                <a href="https://www.instagram.com/eclecticiiitp/">
-                  ECLECTIC
-                </a>
+                <a href="https://www.instagram.com/eclecticiiitp/">ECLECTIC</a>
               </h1>
               <div className="font-miso flex flex-col items-center">
                 <h3 className="text-2xl sm:text-3xl lg:text-5xl">Ritu Singh</h3>
