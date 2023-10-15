@@ -130,14 +130,12 @@ const StoryQuest = () => {
             INR 6k
           </p>
         </div>
-      </div>
-
       <div
         id="getintouch"
-        className="bg-black text-white h-full flex flex-col bg-cover bg-center"
-        style={{
-          background: "linear-gradient(138deg, #000 68.43%, #000 68.43%)",
-        }}
+        className=" text-white h-full flex flex-col bg-cover bg-center"
+        // style={{
+        //   background: "linear-gradient(138deg, #000 68.43%, #000 68.43%)",
+        // }}
       >
         <div className="flex flex-col py-6">
           <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
@@ -151,6 +149,7 @@ const StoryQuest = () => {
               <a
                 href="https://www.instagram.com/eclecticiiitp/"
                 target="_blank"
+                rel="noopener"
               >
                 ECLECTIC
               </a>
@@ -174,6 +173,8 @@ const StoryQuest = () => {
           // }}
         />
       </div>
+      </div>
+
     </div>
   );
 };

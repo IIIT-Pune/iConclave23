@@ -51,11 +51,11 @@ const NexusAbout = () => {
           </div>
         </div>
       </section>
-              
+
       <section id="schedule">
         <NexusTimeline />
       </section>
-              
+
       <section className="topics">
         <div className="flex flex-col md:hidden py-16 space-y-8">
           <div className="font-newshape flex justify-center items-center md:px-20">
