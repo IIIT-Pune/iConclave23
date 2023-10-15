@@ -94,8 +94,8 @@ const AawazEAawam = () => {
           </h1>
         </a>
         <div className="font-miso flex flex-col items-center">
-          <h3 className="text-2xl sm:text-3xl lg:text-5xl">Svayam Kapadia</h3>
-          <h4 className="text-xl sm:text-2xl lg:text-4xl">+91 8320094646</h4>
+          <h3 className="text-2xl sm:text-3xl lg:text-5xl">Tanmay Khaitan</h3>
+          <h4 className="text-xl sm:text-2xl lg:text-4xl">+91 9784306503</h4>
         </div>
       </div>
 

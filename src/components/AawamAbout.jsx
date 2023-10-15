@@ -6,7 +6,7 @@ const AawamAbout = () => {
     >
       <div>
         <div>
-          <h1 className="text-5xl text-center lg:text-left lg:text-8xl lg:pl-10 lg:pt-10">
+          <h1 className="text-5xl text-center lg:text-left sm:text-6xl md:text-7xl lg:text-8xl lg:pl-10 lg:pt-10">
             ABOUT
           </h1>
         </div>
