@@ -70,7 +70,7 @@ const Infinity = () => {
                   CODE <span className="text-red-600">CHEF</span>
                 </a>
               </span>
-              <span>
+              {/* <span>
                 <a
                   target="_blank"
                   href="https://www.codechef.com/START105"
@@ -78,7 +78,7 @@ const Infinity = () => {
                 >
                   ( AS STARTERS 105 )
                 </a>
-              </span>
+              </span> */}
             </div>
 
             {/* <div className="text-white flex justify-center pr-5 md:pr-0 text-xl sm:text-2xl lg:text-3xl font-miso"> */}
