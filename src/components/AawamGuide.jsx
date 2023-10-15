@@ -46,7 +46,7 @@ const AawamGuide = () => {
             </div>
           </div>
           <h1 className="text-3xl text-center lg:text-left lg:text-6xl">
-            PHASE 2:
+            PHASE 2(On-Campus Round):
           </h1>
           <div className="lg:text-4xl">
             <p className="">
