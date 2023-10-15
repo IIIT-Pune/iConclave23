@@ -81,10 +81,11 @@ const Infinity = () => {
               </span>
             </div>
 
-            <div className="text-white flex justify-center pr-5 md:pr-0 text-xl sm:text-2xl lg:text-3xl font-miso">
+            {/* <div className="text-white flex justify-center pr-5 md:pr-0 text-xl sm:text-2xl lg:text-3xl font-miso"> */}
+            <div className="text-white flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-miso">
               <div className="flex flex-col md:flex-row gap-2 my-2 md:mt-5">
                 {/* <div className="flex items-center -mb-3 lg:-mt-8"> */}
-                <div className="flex items-center justify-center">
+                {/* <div className="flex items-center justify-center">
                   <div className="flex items-center justify-center -ml-1">
                     <img
                       src="/images/Calendar25.png"
@@ -105,6 +106,10 @@ const Infinity = () => {
                     />
                   </div>
                   20:00 - 22:00
+                </div> */}
+                <div className="font-nightcore ">
+                  COMING &nbsp;
+                  <span className="text-red-600">SOON</span>
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import Footer from "./Footer";
 
 const NNNav = () => {
@@ -29,15 +30,15 @@ const NNNav = () => {
         <div className="hidden lg:flex pl-20">
           <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
-              <a href="#about" className="hover:border-b-2 pb-1 ">
-                <li>ABOUT</li>
-              </a>
-              <a href="#guidelines" className="hover:border-b-2 pb-1 ">
-                <li>GUIDELINES</li>
-              </a>
-              <a href="#getintouch" className="hover:border-b-2 pb-1 ">
-                <li>GET IN TOUCH</li>
-              </a>
+              <Link to="about" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
+              <Link to="guidelines" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              <Link to="getintouch" smooth={true} duration={500}>
+                <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -102,18 +103,33 @@ const NNNav = () => {
 
           <div className="text-white flex-grow flex items-center justify-center">
             <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
-              <a href="#about" onClick={closeMobileMenu}>
-                <li>ABOUT</li>
-              </a>
-//               <a href="#vanitycrew" onClick={closeMobileMenu}>
-//                 <li>VANITY CREW</li>
-//               </a>
-              <a href="#guidelines" onClick={closeMobileMenu}>
-                <li>GUIDELINES</li>
-              </a>
-              <a href="#get in touch" onClick={closeMobileMenu}>
-                <li>GET IN TOUCH</li>
-              </a>
+              <Link
+                to="about"
+                smooth={true}
+                onClick={closeMobileMenu}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+              </Link>
+              <Link
+                to="guidelines"
+                smooth={true}
+                onClick={closeMobileMenu}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
+              </Link>
+              <Link
+                to="getintouch"
+                smooth={true}
+                onClick={closeMobileMenu}
+                duration={500}
+              >
+                <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
+              </Link>
+              {/* <a href="#vanitycrew" onClick={closeMobileMenu}>
+                <li>VANITY CREW</li>
+              </a> */}
             </ul>
           </div>
           <div>

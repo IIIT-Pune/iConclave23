@@ -46,7 +46,7 @@ const AawazEAawam = () => {
         </script>
       </Helmet>
       <div
-        className="min-h-screen "
+        className="h-screen flex flex-col"
         style={{
           background: "url(/images/aawazeaawam.png)",
           backgroundPosition: "center",
@@ -55,25 +55,24 @@ const AawazEAawam = () => {
       >
         <AawamNav />
 
-        <div className="flex flex-col gap-10 flex-grow">
-          <div className="flex flex-col justify-center text-center gap-5 items-center mt-40 md:mt-32 lg:mt-10">
+        <div className="flex flex-col gap-20 flex-grow items-center text-white justify-center">
+          <div className="flex flex-col justify-center text-center gap-5 items-center">
             <div className="flex flex-col gap-2 lg:flex-row">
-              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
+              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-7xl">
                 aawaz
               </h1>
-              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
+              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-7xl">
                 -E-
               </h1>
-              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-8xl">
+              <h1 className="text-white font-monoton text-5xl sm:text-7xl lg:text-7xl">
                 aawam
               </h1>
             </div>
-            <h2 className="text-white font-majormono text-2xl sm:text-4xl lg:text-6xl">
+            <h2 className="text-white font-majormono text-xl sm:text-4xl md:text-4xl lg:text-5xl">
               lights street action
             </h2>
           </div>
-
-          <div className="flex justify-center items-center mt-10 sm:mt-60 lg:mt-32">
+          <div className="flex justify-center items-center">
             <RegisterButton link="https://unstop.com/events/aawaz-e-aawam-lights-street-action-iconclave-indian-institute-of-information-technology-iiit-pune-794605" />
           </div>
         </div>
@@ -81,19 +80,22 @@ const AawazEAawam = () => {
       <AawamAbout />
       <AawamGuide />
 
-      <div className="flex flex-col text-white lg:flex-row gap-5 lg:justify-evenly lg:items-center">
+      <div
+        id="getintouch"
+        className="flex pt-8 lg:pt-12 lg:mb-4 flex-col text-white lg:flex-row gap-6 lg:justify-evenly lg:items-center"
+      >
         <div className="font-miso flex flex-col items-center">
-          <h3 className="text-3xl lg:text-5xl">Priyansh</h3>
-          <h4 className="text-2xl lg:text-4xl">+91 7050943292</h4>
+          <h3 className="text-2xl sm:text-3xl lg:text-5xl">Priyansh</h3>
+          <h4 className="text-xl sm:text-2xl lg:text-4xl">+91 7050943292</h4>
         </div>
         <a href="https://www.instagram.com/abhinay.iiitp/">
-          <h1 className="font-monoton text-center text-5xl lg:text-7xl">
+          <h1 className="font-monoton text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl">
             ABHINAY
           </h1>
         </a>
         <div className="font-miso flex flex-col items-center">
-          <h3 className="text-3xl lg:text-5xl">Svayam Kapadia</h3>
-          <h4 className="text-2xl lg:text-4xl">+91 8320094646</h4>
+          <h3 className="text-2xl sm:text-3xl lg:text-5xl">Tanmay Khaitan</h3>
+          <h4 className="text-xl sm:text-2xl lg:text-4xl">+91 9784306503</h4>
         </div>
       </div>
 
