@@ -54,31 +54,30 @@ const StoryQuest = () => {
         className="min-h-screen flex flex-col"
       >
         <StoryQuestNav />
-        <div className="flex flex-col items-center flex-grow">
+        <div className="flex flex-col items-center justify-center flex-grow">
           <div className="flex flex-col text-white">
-            <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-11xl  text-center mt-40 font-harryp lg:mt-10">
+            <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-11xl  text-center font-harryp">
               STORY QUEST
             </h1>
-            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-miso lg:-ml-5 text-center">
+            <p className="text-xl sm:text-4xl md:text-5xl lg:text-7xl font-miso lg:-ml-5 text-center">
               YOUR CREATIVITY, OUR CHALLENGE!
             </p>
-          </div>
-
-          <div className="flex justify-center items-center mt-10 sm:mt-60 lg:mt-20">
-            <RegisterButton link="https://unstop.com/events/storyquest-iconclave23-indian-institute-of-information-technology-iiit-pune-794926" />
+            <div className="flex justify-center items-center mt-10 sm:mt-32">
+              <RegisterButton link="https://unstop.com/events/storyquest-iconclave23-indian-institute-of-information-technology-iiit-pune-794926" />
+            </div>
           </div>
         </div>
       </div>
 
       <div
-        className="text-white min-h-screen flex flex-col justify-center bg-cover bg-center"
+        className="text-white min-h-screen flex flex-col gap-4 md:gap-10 justify-center bg-cover bg-center"
         id="about"
         style={{
           background: "linear-gradient(138deg, #0A2404 7.82%, #000 68.43%)",
         }}
       >
         <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
-          <h1 className="font-harryp text-6xl sm:text-8xl lg:text-10xl p-0 text-center text-white font-normal">
+          <h1 className="font-harryp text-6xl sm:text-8xl lg:text-10xl p-0 text-center text-white font-normal sm:mb-12">
             ABOUT
           </h1>
 
@@ -123,7 +122,7 @@ const StoryQuest = () => {
             </ul>
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center mt-16">
+        <div className="flex flex-col justify-center items-center lg:mb-12">
           <p className="font-miso uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             Prizes worth
           </p>
@@ -134,29 +133,38 @@ const StoryQuest = () => {
       </div>
 
       <div
-        className="min-h-full text-white"
         id="getintouch"
+        className="bg-black text-white h-full flex flex-col bg-cover bg-center"
         style={{
-          background: "linear-gradient(180deg, #0C0C0C 0%, #0C0C0C 100%)",
+          background: "linear-gradient(138deg, #000 68.43%, #000 68.43%)",
         }}
       >
-        <div className="flex flex-col pt-16">
+        <div className="flex flex-col py-6">
           <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
-            {/* <div className="font-miso flex flex-col items-center">
-              <h3 className="text-2xl sm:text-3xl lg:text-5xl">NAME</h3>
-              <h4 className="text-xl sm:text-2xl lg:text-4xl">+91</h4>
-            </div> */}
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-2xl sm:text-3xl lg:text-5xl">Manan Mangal</h3>
+              <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                +91 6376895822
+              </h4>
+            </div>
             <h1 className="text-6xl md:text-8xl lg:text-10xl font-punishment text-center">
-              <a href="https://www.instagram.com/_vanity_crew/">ECLECTIC</a>
+              <a
+                href="https://www.instagram.com/eclecticiiitp/"
+                target="_blank"
+              >
+                ECLECTIC
+              </a>
             </h1>
-            {/* <div className="font-miso flex flex-col items-center">
-              <h3 className="text-2xl sm:text-3xl lg:text-5xl">NAME</h3>
-              <h4 className="text-xl sm:text-2xl lg:text-4xl">+91</h4>
-            </div> */}
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-2xl sm:text-3xl lg:text-5xl">Ritu Singh</h3>
+              <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                +91 8668449378
+              </h4>
+            </div>
           </div>
-          {/* <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
+          <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
             <p></p>
-          </div> */}
+          </div>
         </div>
         <Footer
           textColor="white"
