@@ -42,7 +42,7 @@ const NNNav = () => {
             </ul>
           </div>
         </div>
-        <div className="lg:hidden flex justify-center px-4">
+        <div className="flex flex-col px-4 justify-center lg:hidden">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -79,7 +79,7 @@ const NNNav = () => {
       </nav>
       {/* Black overlay for mobile menu */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 h-screen w-screen bg-black z-50 flex flex-col items-center justify-center">
+        <div className="flex flex-col px-4 justify-center lg:hidden">
           {/* Cross button to close the mobile menu */}
           <button
             className="absolute top-2 right-2 p-2 text-white"

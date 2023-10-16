@@ -107,9 +107,9 @@ const Infinity = () => {
                   </div>
                   20:00 - 22:00
                 </div> */}
-                <div className="font-nightcore ">
+                <div className="font-miso text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-400">
                   COMING &nbsp;
-                  <span className="text-red-600">SOON</span>
+                  <span className="text-gray-400">SOON</span>
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@ const Infinity = () => {
         <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6  text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
           <p className="font-miso text-xl lg:text-3xl text-justify">
             Welcome to InfInITy 2k23, the{" "}
-            <span className="text-red-600">sixth installment</span> of IIIT
+            <span className="text-red-600">seventh installment</span> of IIIT
             Pune's flagship annual coding contest! If you have a passion for
             coding and a competitive spirit, this event is tailor-made for you.
           </p>
