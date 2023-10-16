@@ -42,8 +42,9 @@ const FFNav = () => {
             </ul>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="flex flex-col px-4 justify-center lg:hidden">
           {/* Mobile menu button */}
+
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
