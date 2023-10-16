@@ -25,6 +25,8 @@ const HOFCard = ({ title, bgcolor, ccolor, transy, data }) => {
               name={ele.name}
               clg={ele.clg}
               year={ele.year}
+              GitHub={ele.GitHub}
+              Linked={ele.Linked}
             />
           );
         })}

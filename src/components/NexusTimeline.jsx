@@ -38,7 +38,7 @@ const NexusTimeline = () => {
                 <div className="flex  justify-end w-full mx-auto items-center">
                   <div className="w-full sm:w-1/2 sm:pl-8">
                     <div className="p-4 flex text-center justify-center bg-white rounded shadow">
-                      REGISTERATION STARTS
+                      REGISTRATION STARTS
                     </div>
                   </div>
                 </div>

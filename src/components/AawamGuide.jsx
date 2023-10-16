@@ -15,7 +15,7 @@ const AawamGuide = () => {
           <h1 className="text-3xl text-center lg:text-left lg:text-6xl lg:pt-10">
             PHASE 1:
           </h1>
-          <div className="text-2xl lg:text-4xl ">
+          <div className="">
             <p className="">
               Teams will have to submit a synopsis of their play. The synopsis
               should be precise and well-written, as it will be a deciding
@@ -23,7 +23,7 @@ const AawamGuide = () => {
             </p>
             <p className=" ">
               The team has to send the synopsis of their street play at
-              abhinay@iiitp.ac.in by 5th October 2023.
+              abhinay@iiitp.ac.in by 20th October 2023.
             </p>
             <p>Submission Guidelines:-</p>
             <div className="m-2 lg:m-5">
@@ -48,10 +48,21 @@ const AawamGuide = () => {
           <h1 className="text-3xl text-center lg:text-left lg:text-6xl">
             PHASE 2(On-Campus Round):
           </h1>
-          <div className="lg:text-4xl">
+          <div className="">
             <p className="">
-              Top few teams will be shortlisted and notified and will be invited
-              to IIIT Pune to present their play during I-Conclave.
+            The top 6-8 teams will be shortlisted and invited to IIIT Pune to present their play during iConclave.
+<p>
+The time limit for the act is 15 minutes.
+</p>
+<p>
+Any kind of vulgarity will lead to direct disqualification, indecent language is not allowed.
+</p>
+<p>
+Teams will be penalized for exceeding the time limit.
+</p>
+<p>
+The Organising committee reserves the right to change the venue and time.
+</p>
             </p>
           </div>
         </div>

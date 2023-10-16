@@ -109,29 +109,80 @@ const Anurag = () => {
             </span>
           </h1>
           <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
-            <p>
-              In this competition, bands of 6-8 members, including up to 4
-              accompanists, can perform. Participants can sing and play
-              instruments, but they'll be counted as both vocalists and
-              accompanists.
-            </p>
-            <p>
-              Bands must attend an on-site orientation to determine their
-              performance order. Each band is allowed 12 minutes, sound check
-              included, with score deductions for exceeding the time limit.
-              Background tracks are not allowed.
-            </p>
-            <p>
-              Instruments are provided, but participants are encouraged to bring
-              their own. Only English and Hindi songs are permitted, and
-              performances must be free of obscenity. Originality in lyrics and
-              instrumentation is rewarded.
-            </p>
-            <p>
-              Valid college ID is mandatory, and bands must be from the same
-              college. Judges' decisions are final, and organizers may modify
-              rules. College reserves the right to revise regulations as needed.
-            </p>
+            <div>
+              <ul
+                role="list"
+                className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+              >
+                <li>Band of 5-8 people.</li>
+                <li>
+                  All participants shall give their valid college id for
+                  verification.
+                </li>
+                <li>
+                  The bands must be present and signed in on-site for
+                  orientation prior to the allotted time.
+                </li>
+                <li>
+                  Order of performances will be decided by the coordinators and
+                  time slots will be allotted to each band in the same order
+                  during this time.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span className="font-bold text-xl sm:text-2xl lg:text-4xl">
+                Round 1: Audition Round
+              </span>
+              <ul
+                role="list"
+                className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+              >
+                <li>
+                  The teams will have to submit a video of their performance.
+                  Last date for registration and video submission is 20th
+                  October 2023.
+                </li>
+                <li>
+                  The video should include all the players and instruments the
+                  band desires to play in further rounds.
+                </li>
+                <li>
+                  The video should be uploaded on drive, and the link should be
+                  shared on saaz_iiitp@iiitp.ac.in or uploaded on Unstop.
+                </li>
+                <li>
+                  You will get a confirmation response within a day for the
+                  same.
+                </li>
+                <li>
+                  The same performances can be repeated for the final round.
+                  Marks of the audition round will not be carried forward.
+                </li>
+                <li>Results will be announced by 22nd October 2023.</li>
+                <li>Selected bands will be invited to IIIT Pune.</li>
+                <li>Details of reporting time and venue will be provided.</li>
+              </ul>
+            </div>
+            <div>
+              <span className="font-bold text-xl sm:text-2xl lg:text-4xl">
+                Round 2:
+              </span>
+              <ul
+                role="list"
+                className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+              >
+                <li>
+                  Only selected bands shall perform live, at IIIT Pune in the
+                  2nd round.
+                </li>
+                <li>Only players in the video should perform in Round 2.</li>
+                <li>
+                  Bands will have to perform in accordance with the guidelines
+                  mentioned in the rulebook.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="flex justify-center items-center p-10">

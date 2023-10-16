@@ -13,12 +13,14 @@ const InfinityHalloffame = () => {
         </h1>
         <div className="flex flex-col gap-5 items-center lg:gap-4 lg:mt-20 lg:relative">
           <div className="lg:flex lg:justify-center lg:gap-72 ">
-            <HOFCard
-              title="INDIA #1"
-              bgcolor="white"
-              ccolor="black"
-              data={india}
-            />
+            <div>
+              <HOFCard
+                title="INDIA #1"
+                bgcolor="white"
+                ccolor="black"
+                data={india}
+              />
+            </div>
             <div className="lg:absolute lg:-top-12 z-1">
               <HOFCard
                 title="WORLD #1"
@@ -28,12 +30,14 @@ const InfinityHalloffame = () => {
                 data={world}
               />
             </div>
-            <HOFCard
-              title="IIIT Pune #1"
-              bgcolor="white"
-              ccolor="black"
-              data={iiitp}
-            />
+            <div>
+              <HOFCard
+                title="IIIT Pune #1"
+                bgcolor="white"
+                ccolor="black"
+                data={iiitp}
+              />
+            </div>
           </div>
         </div>
       </div>
