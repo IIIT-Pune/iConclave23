@@ -47,15 +47,11 @@ const NexusNav = () => {
                       <li className="hover:border-b-2 pb-1 ">FAQs</li>
                     </Link>
                   </li>
-
                   {/* <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
-                    <a href="#guidelines">GUIDELINES</a>
-                  </li> */}
-                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <Link to="getintouch" smooth={true} duration={500}>
                       <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </nav>
