@@ -51,25 +51,23 @@ const FrameFlick = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="min-h-screen"
+        className="h-screen text-white flex flex-col bg-cover bg-center"
       >
         <FFNav />
 
-        <div className="flex justify-center">
-          <div className="text-white pt-16 flex-col ">
-            <h1 className="text-8xl font-grandstander lg:text-10xl text-center pt-20 ">
+        <div className="flex flex-col gap-12 sm:gap-18 md:gap-24 lg:gap-32 items-center text-white justify-center flex-grow">
+          <div className="text-white flex-col ">
+            <h1 className="font-grandstander text-7xl sm:text-8xl lg:text-10xl text-center">
               FRAME FLICKS
             </h1>
-            <p className=" text-center font-kodchasan text-3xl lg:text-5xl lg:-mt-12 lg:text-right ">
+            <p className=" text-center font-kodchasan text-2xl sm:text-4xl lg:text-5xl lg:-mt-6 lg:text-right ">
               your fest your frame
             </p>
           </div>
-        </div>
-
-        <div className="flex justify-center pt-28 items-center">
           <a
             href="https://unstop.com/events/frameflicks-iconclave23-indian-institute-of-information-technology-iiit-pune-794971"
             className="text-white"
+            target="blank"
           >
             <h1
               className="font-majormono border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
@@ -82,82 +80,92 @@ const FrameFlick = () => {
       </div>
 
       <div
-        className="min-h-screen py-10"
+        className="min-h-screen py-10 flex flex-col justify-center items-center"
         id="about"
         style={{
           background: "linear-gradient(180deg, #141119 0%, #000 100%)",
         }}
       >
-        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
-          ABOUT
-        </h1>
-        <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
-          <p>
-            At the beginning of the fest, a single word will be revealed for
-            each team, through the chit system. This word will serve as the
-            thematic core for each team’s photography journey.
-          </p>
-          <p>
-            Using the camera or smartphone, the task is to capture a series of
-            photographs throughout the fest that resonates with the chosen word.
-            Every click should encapsulate the essence of the fest and the
-            chosen team.
-          </p>
-          <p>
-            Submit the series of photographs along with a cover image by
-            designated deadline. Remarks: Cookie points – transform one of the
-            best shots into a stunning edited version. For example, it can be
-            converted to a splash photograph.
-          </p>
-          <p>
-            Splash photography involves isolating the subject against a dynamic,
-            colorful backdrop, creating a visual masterpiece.You can use this
-            edited masterpiece as your cover image.
-          </p>
+        <div>
+          <div>
+            <h1 className="text-6xl sm:text-8xl lg:text-10xl font-grandstander text-white text-center lg:text-left mt-5 lg:mx-20">
+              ABOUT
+            </h1>
+          </div>
+
+          <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+            <p>
+              At the beginning of the fest, a single word will be revealed for
+              each team, through the chit system. This word will serve as the
+              thematic core for each team’s photography journey.
+            </p>
+            <p>
+              Using the camera or smartphone, the task is to capture a series of
+              photographs throughout the fest that resonates with the chosen
+              word. Every click should encapsulate the essence of the fest and
+              the chosen team.
+            </p>
+            <p>
+              Submit the series of photographs along with a cover image by
+              designated deadline. Remarks: Cookie points – transform one of the
+              best shots into a stunning edited version. For example, it can be
+              converted to a splash photograph.
+            </p>
+            <p>
+              Splash photography involves isolating the subject against a
+              dynamic, colorful backdrop, creating a visual masterpiece.You can
+              use this edited masterpiece as your cover image.
+            </p>
+          </div>
         </div>
       </div>
 
       <div
-        className="min-h-screen pt-10"
+        className="min-h-screen pt-10 flex flex-col justify-center items-center"
         id="guidelines"
         style={{
           background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
         }}
       >
-        <h1 className="text-5xl p-5 font-grandstander lg:text-10xl text-white m-0 lg:p-0 lg:ml-10 text-center lg:text-left">
-          GUIDELINES
-        </h1>
-        <div className="text-2xl lg:text-3xl text-white flex flex-col gap-5 mx-7 lg:mx-20 text-justify font-miso">
-          {ffguidelines.map((rule, index) => {
-            return (
-              <div key={index} className="flex gap-5">
-                <h1>{index + 1}.</h1>
-                <p>{rule}</p>
-              </div>
-            );
-          })}
-        </div>
-        <div className="flex justify-center items-center p-10">
-          <a href="https://example.com" className="text-white">
-            <h1
-              className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
-        hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
-            >
-              RULEBOOK
+        <div>
+          <div>
+            <h1 className="text-6xl sm:text-8xl lg:text-10xl font-grandstander text-white text-center lg:text-left mt-5 lg:mx-20">
+              GUIDELINES
             </h1>
-          </a>
+          </div>
+          <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+            {ffguidelines.map((rule, index) => {
+              return (
+                <div key={index} className="flex gap-5">
+                  <h1>{index + 1}.</h1>
+                  <p>{rule}</p>
+                </div>
+              );
+            })}
+          </div>
+          <div className="flex justify-center items-center pb-8 pt-4">
+            <a href="https://example.com" className="text-white">
+              <h1
+                className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
+        hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
+              >
+                RULEBOOK
+              </h1>
+            </a>
+          </div>
         </div>
-        <div
-          className="min-h-full flex flex-col"
-          id="horizon"
-          style={{
-            background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
-          }}
-        >
-          <h1 className="text-5xl p-5 font-grandstander lg:text-8xl text-white m-0 lg:p-0 lg:ml-10 text-center ">
+      </div>
+      <div
+        className="min-h-full flex flex-col"
+        id="getintouch"
+        style={{
+          background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
+        }}
+      >
+        {/* <h1 className="text-5xl p-5 font-grandstander lg:text-8xl text-white m-0 lg:p-0 lg:ml-10 text-center ">
             HORIZON
-          </h1>
-          {/* <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify flex-grow">
+          </h1> */}
+        {/* <div className="text-2xl font-miso lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify flex-grow">
             <p>
               Horizon, established in January 2022 with the ideology of "capture
               imagination," continues to steadfastly pursue and expand upon this
@@ -179,14 +187,28 @@ const FrameFlick = () => {
               eagerly anticipated by the IIIT Pune community.
             </p>
           </div> */}
-          <Footer
-            textColor="white"
-            // socialMediaLinks={{
-            //   mail: "mailto:horizon@iiitp.ac.in",
-            //   instagram: "https://www.instagram.com/horizon_iiitp/",
-            // }}
-          />
+        <div className="flex pt-8 lg:pt-12 lg:mb-4 flex-col text-white lg:flex-row gap-5 lg:ml-32 justify-center lg:justify-evenly items-center">
+          <div className="font-miso flex flex-col items-center">
+            <h3 className="text-2xl sm:text-3xl lg:text-5xl">
+              Ishan Upadhyaya
+            </h3>
+            <h4 className="text-xl sm:text-2xl lg:text-4xl">+91 8009904204</h4>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/horizon_iiitp/">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-grandstander text-center">
+                HORIZON
+              </h1>
+            </a>
+          </div>
         </div>
+        <Footer
+          textColor="white"
+          // socialMediaLinks={{
+          //   mail: "mailto:horizon@iiitp.ac.in",
+          //   instagram: "https://www.instagram.com/horizon_iiitp/",
+          // }}
+        />
       </div>
     </div>
   );

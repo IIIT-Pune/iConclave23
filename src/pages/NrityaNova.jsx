@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 import RegisterButton from "../components/RegsiterButton";
 
-
 const NrityaNova = () => {
   return (
     <div className="">
@@ -52,106 +51,176 @@ const NrityaNova = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="h-screen flex flex-col"
+        className="h-screen text-white flex flex-col bg-cover bg-center"
       >
         <NNNAv />
 
-        <div className="flex justify-center flex-grow">
-          <div className="text-white pt-40 sm:pt-20 lg:pt-6 flex-col">
-            <div className="flex flex-col">
-              <h1 className=" font-fuzzybubbles text-5xl lg:text-10xl text-center pt-20">
-                NRITYA NOVA
-              </h1>
-              <p className=" font-miso text-2xl lg:text-4xl -lg:mt-16 text-right ">
-                EVERY STEP TELLS A STORY!
-              </p>
-            </div>
+        <div className="flex flex-col gap-4 sm:gap-8 items-center text-white justify-center flex-grow">
+          <div className="flex flex-col">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-10xl font-fuzzybubbles">
+              NRITYA NOVA
+            </h1>
+            <p className="text-base sm:text-xl md:text-3xl lg:text-5xl font-miso sm:-mt-2 md:-mt-4 lg:-mt-6 text-right">
+              EVERY STEP TELLS A STORY!
+            </p>
+          </div>
+
+          <div className="flex justify-center items-center mt-8 sm:mt-24 md:mt-24 lg:mt-20 ">
+            <RegisterButton
+              fonts="majormono"
+              link="https://unstop.com/events/nritya-nova-iconclave-indian-institute-of-information-technology-iiit-pune-794575"
+            />
           </div>
         </div>
+      </div>
 
+      <div
+        className="text-white min-h-screen flex flex-col justify-center bg-cover bg-center"
+        id="about"
+        style={{
+          background: "linear-gradient(180deg, #000001 0%, #0C0C0C 100%)",
+        }}
+      >
+        <h1 className="font-fuzzybubbles text-5xl sm:text-7xl lg:text-9xl mt-10 py-10 text-center text-white font-normal">
+          ABOUT
+        </h1>
+        <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+          <p>
+            Get ready to witness the epitome of rhythm and grace at the
+            intercollege dance competition, "Nritya Nova," hosted by Vanity
+            Crew, the dance club of IIIT Pune! With teams from across colleges
+            converging on our stage, this event promises to be a breathtaking
+            display of talent and creativity.
+          </p>
+          <p>
+            Performers will bring their A-game, fusing diverse dance forms into
+            mesmerising performances that will leave you awestruck. From
+            contemporary to hip-hop, classical to fusion, "Nritya Nova" is a
+            celebration of the art of dance.
+          </p>
+          <p>
+            Join us in this dance extravaganza that will set the stage on fire
+            and leave you tapping your feet in sheer amazement!
+          </p>
+        </div>
+      </div>
 
-          <RegisterButton
-            fonts="majormono"
-            link="https://unstop.com/events/nritya-nova-iconclave-indian-institute-of-information-technology-iiit-pune-794575"
-          />
+      <div
+        className="bg-black text-white min-h-screen flex flex-col justify-center bg-cover bg-center"
+        id="guidelines"
+        style={{
+          background: "linear-gradient(180deg, #0C0C0C 0%, #0C0C0C 100%)",
+        }}
+      >
+        <h1 className="font-fuzzybubbles text-5xl sm:text-7xl lg:text-9xl mt-10 py-10 text-center text-white font-normal">
+          GUIDELINES
+        </h1>
+        <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+          <ul
+            role="list"
+            className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+          >
+            <li>
+              Each team will comprise a maximum of 12 participants and minimum 6
+              participants.
+            </li>
+            <li>
+              Choice of songs is open to the participants whether
+              classical,bollywood,english,etc.
+            </li>
+            <li>
+              The participants will be judged on the basis of their rhythm,
+              formation, synchronisation, expressions, and costumes, setup and
+              overall effects.
+            </li>
+            <li>
+              College reserves the right to revise the rules and regulations of
+              these competitions.
+            </li>
+          </ul>
+          <p>
+            <span className="font-bold text-xl sm:text-2xl lg:text-4xl">
+              Round 1:
+            </span>
+            <ul
+              role="list"
+              className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+            >
+              <li>
+                First round will be conducted online whereby the submissions
+                will be taken in form of video format through mail links and the
+                time duration of video should be maximum 5 mins.
+              </li>
+              <li>
+                Approximately 12 shortlisted teams will be called for the second
+                round to perform in campus during iConclave'23.
+              </li>
+            </ul>
+          </p>
+          <p>
+            <span className="font-bold text-xl sm:text-2xl lg:text-4xl">
+              Round 2:
+            </span>
+            <ul
+              role="list"
+              className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
+            >
+              <li>
+                Each team will have to perform for a maximum of 10 minutes and
+                minimum 6 minutes.
+              </li>
+              <li>
+                No props will be provided by the coordinators. Participants can
+                carry their own props.
+              </li>
+              <li>
+                The song for the dance should be submitted prior as an mp3 file.
+              </li>
+              <li>Decision of the judges will be final and binding.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
 
+      <div
+        className="min-h-full text-white"
+        id="getintouch"
+        style={{
+          background: "linear-gradient(180deg, #0C0C0C 0%, #0C0C0C 100%)",
+        }}
+      >
+        <div className="flex flex-col pt-16">
+          <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-2xl sm:text-3xl lg:text-5xl">Nisha</h3>
+              <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                +91 9529858782
+              </h4>
+            </div>
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-grandstander text-center">
+              <a href="https://www.instagram.com/_vanity_crew/">VANITY CREW</a>
+            </h1>
+            <div className="font-miso flex flex-col items-center">
+              <h3 className="text-2xl sm:text-3xl lg:text-5xl">
+                Siddhesh Kale
+              </h3>
+              <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                +91 9420048563
+              </h4>
+            </div>
+          </div>
+          {/* <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
+            <p></p>
+          </div> */}
+        </div>
         <Footer
           textColor="white"
           // socialMediaLinks={{
-          //   mail: "mailto:vanitycrew@iiitp.ac.in",
-          //   instagram: "https://www.instagram.com/_vanity_crew/",
+          //   mail: "mailto:saaz_iiitp@iiitp.ac.in",
+          //   instagram: "https://www.instagram.com/saaz_iiitp/",
           // }}
         />
       </div>
-
-      {/* <div
-        className="min-h-screen"
-        id="about"
-        style={{
-          background: "linear-gradient(180deg, #141119 0%, #000 100%)",
-        }}
-      >
-        <h1 className="font-grandstander text-5xl p-5 lg:text-10xl text-white m-0 lg:p-0 ml-10">
-          ABOUT
-        </h1>
-        <div className=" font-miso text-2xl lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
-          <p>
-            At the beginning of the fest, a single word will be revealed for
-            each team, through the chit system. This word will serve as the
-            thematic core for each team’s photography journey.
-          </p>
-          <p>
-            Using the camera or smartphone, the task is to capture a series of
-            photographs throughout the fest that resonates with the chosen word.
-            Every click should encapsulate the essence of the fest and the
-            chosen team.
-          </p>
-          <p>
-            Submit the series of photographs along with a cover image by
-            designated deadline. Remarks: Cookie points – transform one of the
-            best shots into a stunning edited version. For example, it can be
-            converted to a splash photograph.
-          </p>
-          <p>
-            Splash photography involves isolating the subject against a dynamic,
-            colorful backdrop, creating a visual masterpiece.You can use this
-            edited masterpiece as your cover image.
-          </p>
-        </div>
-      </div>
-      <div
-        className="min-h-screen"
-        id="about"
-        style={{
-          background: "linear-gradient(180deg, #000001 0%, #000001 100%)",
-        }}
-      >
-        <h1 className="font-grandstander p-5 text-5xl lg:text-10xl text-white m-0 ;g:p-0 ml-10">
-          VANITY CREW
-        </h1>
-        <div className=" font-miso text-2xl lg:text-4xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
-          <p>
-            Horizon, established in January 2022 with the ideology of "capture
-            imagination," continues to steadfastly pursue and expand upon this
-            captivating concept. As the photography and videography club of IIIT
-            Pune, Horizon has swiftly emerged as one of the institute's most
-            dynamic and youthful clubs. Its ubiquitous presence is felt
-            throughout campus events, where it skillfully encapsulates cherished
-            memories. This proactive involvement has rightfully earned Horizon
-            the designation of being IIIT Pune's dedicated media house.
-          </p>
-          <p>
-            The scope of Horizon extends beyond mere media coverage. The club
-            fervently fosters an environment of creativity and engagement. Among
-            its diverse initiatives, Horizon hosts contests tailored for
-            newcomers, fostering an inclusive atmosphere. With an ambitious
-            vision in mind, the club is actively targeting and working towards
-            organizing its flagship annual photography competition, an event
-            eagerly anticipated by the IIIT Pune community.
-          </p>
-        </div>
-      </div>*/}
-
     </div>
   );
 };

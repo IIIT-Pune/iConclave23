@@ -27,7 +27,7 @@ const AnuragNav = () => {
           />
         </a>
         {/* Desktop Menu */}
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex pl-28">
           <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
               <Link to="about" smooth={true} duration={500}>
@@ -42,7 +42,7 @@ const AnuragNav = () => {
             </ul>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="flex flex-col px-4 justify-center lg:hidden">
           {/* Mobile menu button */}
           <button className="p-4 focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -67,14 +67,16 @@ const AnuragNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/cult">
-            <h1
-              className="font-punishment text-4xl m-0 p-6 text-center text-white font-normal"
-              id="Shipwreck"
-            >
-              CULTURAL EVENTS
-            </h1>
-          </a>
+          <div className="flex flex-col justify-center">
+            <a href="/cult">
+              <h1
+                className="font-punishment text-4xl m-0 p-6 text-center text-white font-normal"
+                id="Shipwreck"
+              >
+                CULTURAL EVENTS
+              </h1>
+            </a>
+          </div>
         </div>
       </nav>
       {/* Black overlay for mobile menu */}
@@ -101,10 +103,8 @@ const AnuragNav = () => {
             </svg>
           </button>
 
-
           <div className="flex-grow text-white flex items-center justify-center">
             <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
-              
               <Link
                 to="about"
                 onClick={closeMobileMenu}
@@ -129,7 +129,6 @@ const AnuragNav = () => {
               >
                 <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
               </Link>
-
             </ul>
           </div>
           <div>

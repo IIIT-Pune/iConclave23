@@ -283,7 +283,7 @@ const App = () => {
       element: <FrameFlick />,
     },
     {
-      path: "cult/anurag",
+      path: "cult/anuraag",
       element: <Anurag />,
     },
     {

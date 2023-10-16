@@ -50,7 +50,7 @@ const Lockout = () => {
       </Helmet>
 
       <LockoutNav />
-      <div className="flex-grow flex items-center justify-center">
+      <div className="flex-grow flex flex-col items-center justify-center">
         {/* <div className="flex flex-col"> */}
         <div className="flex justify-center">
           <img
@@ -59,9 +59,9 @@ const Lockout = () => {
             className="w-192 p-10"
           />
         </div>
-      </div>
-      <div className="flex justify-center items-center ">
-        <RegisterButton link="https://forms.gle/r8W9gevCxfWUGrn47" />
+        <div className="flex justify-center items-center ">
+          <RegisterButton link="https://forms.gle/r8W9gevCxfWUGrn47" />
+        </div>
       </div>
 
       <Footer

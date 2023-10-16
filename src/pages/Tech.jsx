@@ -84,15 +84,7 @@ const Tech = () => {
                   />
                 </a>
               </SwiperSlide>
-              <SwiperSlide className="rounded-3xl">
-                <a href="tech/lockout">
-                  <img
-                    src="./images/lockout_cau.png"
-                    alt=""
-                    className="rounded-3xl"
-                  />
-                </a>
-              </SwiperSlide>
+              
               <SwiperSlide className="rounded-3xl">
                 <a href="tech/infinity">
                   <img
@@ -106,6 +98,15 @@ const Tech = () => {
                 <a href="tech/rofies1">
                   <img
                     src="./images/offrd_cau.png"
+                    alt=""
+                    className="rounded-3xl"
+                  />
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="rounded-3xl">
+                <a href="tech/lockout">
+                  <img
+                    src="./images/lockout_cau.png"
                     alt=""
                     className="rounded-3xl"
                   />

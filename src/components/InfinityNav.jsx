@@ -65,7 +65,7 @@ const InfinityNav = () => {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex pl-40">
           <li className="pb-2 hover:text-red-600 hover:border-b-2 border-red-600">
             <a href="/tech/infinity">HOME</a>
           </li>

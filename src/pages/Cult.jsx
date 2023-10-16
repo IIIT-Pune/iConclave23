@@ -92,7 +92,7 @@ const Cult = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="cult/anurag">
+                <a href="cult/anuraag">
                   <img
                     src="./images/anurag_cau.png"
                     alt=""
@@ -100,7 +100,15 @@ const Cult = () => {
                   />
                 </a>
               </SwiperSlide>
-
+              <SwiperSlide className="rounded-3xl">
+                <a href="cult/aawazeaawam">
+                  <img
+                    src="./images/aawaaz_cau.png"
+                    alt=""
+                    className="rounded-3xl"
+                  />
+                </a>
+              </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
                 <a href="cult/frameflick">
                   <img
@@ -132,15 +140,6 @@ const Cult = () => {
                 <a href="cult/storyquest">
                   <img
                     src="./images/story.png"
-                    alt=""
-                    className="rounded-3xl"
-                  />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="rounded-3xl">
-                <a href="cult/aawazeaawam">
-                  <img
-                    src="./images/aawaaz_cau.png"
                     alt=""
                     className="rounded-3xl"
                   />
@@ -179,7 +178,7 @@ const Cult = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="cult/anurag">
+                  <a href="cult/anuraag">
                     <img
                       src="./images/anurag_cau.png"
                       alt=""
@@ -187,7 +186,15 @@ const Cult = () => {
                     />
                   </a>
                 </SwiperSlide>
-
+                <SwiperSlide className="rounded-3xl">
+                  <a href="cult/aawazeaawam">
+                    <img
+                      src="./images/aawaaz_cau.png"
+                      alt=""
+                      className="rounded-3xl"
+                    />
+                  </a>
+                </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
                   <a href="cult/frameflick">
                     <img
@@ -224,15 +231,7 @@ const Cult = () => {
                     />
                   </a>
                 </SwiperSlide>
-                <SwiperSlide className="rounded-3xl">
-                  <a href="cult/aawazeaawam">
-                    <img
-                      src="./images/aawaaz_cau.png"
-                      alt=""
-                      className="rounded-3xl"
-                    />
-                  </a>
-                </SwiperSlide>
+
                 <div className="swiper-pagination"></div>
                 {/* Previous Button */}
                 <div className="swiper-button-prev " onClick={goPrev}></div>

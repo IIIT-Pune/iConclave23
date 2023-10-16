@@ -27,7 +27,7 @@ const AnuragNav = () => {
           />
         </a>
         {/* Desktop Menu */}
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex pl-32">
           <div className="text-white text-xl flex items-center">
             <ul className="flex gap-24 ">
               <Link to="about" smooth={true} duration={500}>
@@ -36,7 +36,7 @@ const AnuragNav = () => {
               <Link to="guidelines" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
               </Link>
-              <Link to="guidelines" smooth={true} duration={500}>
+              <Link to="getintouch" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
               </Link>
             </ul>
@@ -67,14 +67,16 @@ const AnuragNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/cult">
-            <h1
-              className="font-smarkan text-3xl m-0 p-6 text-center text-white font-normal"
-              id="anurag"
-            >
-              CULTURAL EVENTS
-            </h1>
-          </a>
+          <div className="flex flex-col justify-center">
+            <a href="/cult">
+              <h1
+                className="font-smarkan text-3xl m-0 p-6 text-center text-white font-normal"
+                id="anurag"
+              >
+                CULTURAL EVENTS
+              </h1>
+            </a>
+          </div>
         </div>
       </nav>
       {/* Black overlay for mobile menu */}
@@ -101,7 +103,7 @@ const AnuragNav = () => {
             </svg>
           </button>
 
-          <div className="text-white text-2xl flex-grow justify-center flex flex-col">
+          <div className="text-white text-2xl flex-grow justify-center flex flex-col ">
             <div className="flex items-center justify-center">
               <ul className="flex flex-col text-center gap-8">
                 <Link
