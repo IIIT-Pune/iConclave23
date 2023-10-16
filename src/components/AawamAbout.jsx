@@ -10,7 +10,7 @@ const AawamAbout = () => {
             ABOUT
           </h1>
         </div>
-        <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+        <div className="text-white text-base sm:text-xl md:text-2xl lg:text-4xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
           <p>
             Immerse yourself in the compelling world of street theatre, where
             the art of performance becomes a dynamic force for change.
