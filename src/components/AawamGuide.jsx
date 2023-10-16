@@ -22,7 +22,7 @@ const AawamGuide = () => {
             </p>
             <p className=" ">
               The team has to send the synopsis of their street play at
-              abhinay@iiitp.ac.in by 5th October 2023.
+              abhinay@iiitp.ac.in by 20th October 2023.
             </p>
             <p>Submission Guidelines:-</p>
             <div className="m-2 lg:m-5">
