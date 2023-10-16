@@ -107,9 +107,9 @@ const Infinity = () => {
                   </div>
                   20:00 - 22:00
                 </div> */}
-                <div className="font-nightcore ">
+                <div className="font-miso text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-400">
                   COMING &nbsp;
-                  <span className="text-red-600">SOON</span>
+                  <span className="text-gray-400">SOON</span>
                 </div>
               </div>
             </div>
