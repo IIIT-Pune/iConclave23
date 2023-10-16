@@ -66,16 +66,18 @@ const FFNav = () => {
           </button>
         </div>
 
-        <div className="flex items-center justify-center hidden lg:block">
+        <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/cult">
-            <h1
-              className="font-grandstander text-xl m-0 p-6 text-center text-white font-normal"
-              id="frameflicks"
-            >
-              CULTURAL EVENTS
-            </h1>
-          </a>
+          <div className="flex flex-col justify-center">
+            <a href="/cult">
+              <h1
+                className="font-grandstander text-xl m-0 p-7 text-center text-white font-normal"
+                id="frameflicks"
+              >
+                CULTURAL EVENTS
+              </h1>
+            </a>
+          </div>
         </div>
       </nav>
       {/* Black overlay for mobile menu */}

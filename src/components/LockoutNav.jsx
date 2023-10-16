@@ -84,7 +84,7 @@ const LockoutNav = () => {
         </div>
         <div className="flex flex-col justify-center">
           <a href="/tech" className="hidden sm:block">
-            <h1 className=" text-2xl m-0 p-7 text-center text-white font-captainamerica">
+            <h1 className=" text-3xl m-0 p-7 text-center text-white font-captainamerica">
               TECHNICAL EVENTS
             </h1>
           </a>

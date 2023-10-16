@@ -25,7 +25,7 @@ const NexusNav = () => {
         <div className="hidden lg:flex">
           <div className="flex">
             <nav className="flex  justify-between items-center">
-              <div className="flex justify-center pl-44 items-center">
+              <div className="flex justify-center items-center">
                 <ul className="flex gap-20 text-white font-miso text-2xl justify-center items-center">
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <Link to="aboutsection" smooth={true} duration={500}>
@@ -89,10 +89,16 @@ const NexusNav = () => {
           <div className="flex flex-col justify-center">
             <a href="/tech">
               <h1
-                className=" font-majormono text-2xl m-0 py-6 px-2 text-center text-white font-normal"
+                className=" font-majormono text-xl m-0 pt-2 px-4 text-center text-white font-normal"
                 id="NEXUS"
               >
-                technical events
+                technical
+              </h1>
+              <h1
+                className=" font-majormono text-xl m-0 pb-2 px-4 text-center text-white font-normal"
+                id="NEXUS"
+              >
+                events
               </h1>
             </a>
           </div>
@@ -127,26 +133,46 @@ const NexusNav = () => {
           <div className="text-white flex-grow justify-center flex flex-col text-xl">
             <div className="flex items-center justify-center">
               <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
-                <Link
-                  to="aboutsection"
-                  onClick={closeMobileMenu}
-                  smooth={true}
-                  duration={500}
-                >
-                  <li className="hover:border-b-2 pb-1 ">ABOUT</li>
-                </Link>
-                <a
-                  href="https://www.instagram.com/localhost_iiitp/"
-                  onClick={closeMobileMenu}
-                >
-                  <li>LOCALHOST</li>
-                </a>
-                <a href="#guidelines" onClick={closeMobileMenu}>
-                  <li>GUIDELINES</li>
-                </a>
-                <a href="#getintouch" onClick={closeMobileMenu}>
-                  <li>GET IN TOUCH</li>
-                </a>
+                <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                  <Link
+                    to="aboutsection"
+                    smooth={true}
+                    onClick={closeMobileMenu}
+                    duration={500}
+                  >
+                    <li className="hover:border-b-2 pb-1 ">ABOUT</li>
+                  </Link>
+                </li>
+                <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                  <Link
+                    to="schedule"
+                    smooth={true}
+                    onClick={closeMobileMenu}
+                    duration={500}
+                  >
+                    <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
+                  </Link>
+                </li>
+                <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                  <Link
+                    to="topics"
+                    smooth={true}
+                    onClick={closeMobileMenu}
+                    duration={500}
+                  >
+                    <li className="hover:border-b-2 pb-1 ">TOPICS</li>
+                  </Link>
+                </li>
+                <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                  <Link
+                    to="FAQs"
+                    smooth={true}
+                    onClick={closeMobileMenu}
+                    duration={500}
+                  >
+                    <li className="hover:border-b-2 pb-1 ">FAQs</li>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
