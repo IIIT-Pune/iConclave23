@@ -4,7 +4,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { SiCodechef } from "react-icons/si";
 
-const HOFCardContent = ({ ccolor, name, clg, year }) => {
+const HOFCardContent = ({ ccolor, name, clg, year ,GitHub,Linked}) => {
+  console.log(GitHub,Linked)
   return (
     <div>
       <div className="flex justify-center py-6">
@@ -18,8 +19,12 @@ const HOFCardContent = ({ ccolor, name, clg, year }) => {
             <p className=" text-3xl text-center mb-0.5">{name}</p>
             <p className=" text-xl text-center leading-4 ">{clg}</p>
             <div className="flex gap-4 justify-center pt-1.5">
+             <a href={GitHub} target="blank">
               <AiFillGithub color="black" size={25} />
-              <AiFillLinkedin color="black" size={25} />
+             </a>
+             <a href={Linked} target="blank">
+            <AiFillLinkedin color="black" size={25} />
+             </a>
             </div>
           </div>
           <h1 className="w-1/4 text-7xl opacity-60">{year}</h1>
