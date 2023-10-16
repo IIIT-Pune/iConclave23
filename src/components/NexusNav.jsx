@@ -46,7 +46,6 @@ const NexusNav = () => {
                     <Link to="FAQs" smooth={true} duration={500}>
                       <li className="hover:border-b-2 pb-1 ">FAQs</li>
                     </Link>
-
                   </li>
 
                   {/* <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
@@ -87,14 +86,16 @@ const NexusNav = () => {
         </div>
         <div className="hidden lg:flex">
           {/* Show the second logo only in the desktop version */}
-          <a href="/tech">
-            <h1
-              className=" font-majormono text-2xl m-0 py-6 pr-6 text-center text-white font-normal"
-              id="NEXUS"
-            >
-              technical events
-            </h1>
-          </a>
+          <div className="flex flex-col justify-center">
+            <a href="/tech">
+              <h1
+                className=" font-majormono text-2xl m-0 py-6 px-2 text-center text-white font-normal"
+                id="NEXUS"
+              >
+                technical events
+              </h1>
+            </a>
+          </div>
         </div>
       </nav>
       {/* Black overlay for mobile menu */}
@@ -125,9 +126,7 @@ const NexusNav = () => {
 
           <div className="text-white flex-grow justify-center flex flex-col text-xl">
             <div className="flex items-center justify-center">
-              
               <ul className="flex flex-col items-center justify-between gap-8 text-xl sm:text-2xl md:text-3xl text-white-600">
-
                 <Link
                   to="aboutsection"
                   onClick={closeMobileMenu}
