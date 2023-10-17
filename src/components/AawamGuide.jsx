@@ -67,10 +67,10 @@ const AawamGuide = () => {
             </p>
           </div>
         </div>
-        <RulebookButton link="/notfound" />
+        <RulebookButton link="https://docs.google.com/document/d/1Ms8sHHWHkuDF_ZMY0fav162YPIz4dLcP/edit?usp=drive_link&ouid=102752599690170514768&rtpof=true&sd=true" />
       </div>
     </div>
-  );
+  );  
 };
 
 export default AawamGuide;
