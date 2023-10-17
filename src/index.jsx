@@ -4,8 +4,9 @@ import { Canvas } from "@react-three/fiber";
 import Experience from "./Experience.jsx";
 import { Leva } from "leva";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 
-const root = ReactDOM.createRoot(document.querySelector("#root"));
+// const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 const portrait = window.innerHeight > window.innerWidth;
 const portraitMultiplier = portrait ? 2 : 1;
@@ -23,31 +24,44 @@ const Home = () => {
     }
   }
 
-  const opts = {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    headline: "Sample Article Headline",
-    datePublished: "2023-10-12",
-    author: {
-      "@type": "Person",
-      name: "John Doe",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Sample News",
-    },
-    image: "http://example.com/sample-image.jpg",
-    description: "This is a sample article description.",
-  };
   
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(opts),
-        }}
-      />{" "}
+      <Helmet>
+        <title>IConclave'23</title>
+        <meta
+          name="description"
+          content="iConclave is a technical and cultural fest of IIIT Pune. It consists of 14+ events and prize pool worth 2.5 lakh. The cultural night khwaab, coding contests, hackathons, dance, literary, debate, photography, music and acting competitions make iconclave an all rounder event worth remembering."
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "WebPage",
+              "name": "iConclave is a technical and cultural fest of IIIT Pune. It consists of 14+ events and prize pool worth 2.5 lakh. The cultural night khwaab, coding contests, hackathons, dance, literary, debate, photography, music and acting competitions make iconclave an all rounder event worth remembering.",
+              "url": "https://iconclave.iiitp.ac.in/",
+              "startDate": "2023-10-12T18:00:00-07:00",
+              "endDate": "2023-10-12T22:00:00-07:00",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "123 Main Street",
+                  "addressLocality": "Pune",
+                  "addressRegion": " Maharashtra",
+                  "postalCode": "4110441",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <Canvas
         shadows
         camera={{
