@@ -3,6 +3,7 @@ import FFNav from "../components/FFNav";
 import Footer from "../components/Footer";
 import { ffguidelines } from "../assets/ffguidelines";
 import { Helmet } from "react-helmet";
+import RulebookButton from "../components/RulebookButton";
 
 const FrameFlick = () => {
   return (
@@ -143,16 +144,7 @@ const FrameFlick = () => {
               );
             })}
           </div>
-          <div className="flex justify-center items-center pb-8 pt-4">
-            <a href="https://example.com" className="text-white">
-              <h1
-                className="font-grandstander border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
-        hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
-              >
-                RULEBOOK
-              </h1>
-            </a>
-          </div>
+          <RulebookButton link="https://docs.google.com/document/d/1EKYHWB2ZWv9Xej7PrPpSSqm3pNO_udWe/edit" />
         </div>
       </div>
       <div

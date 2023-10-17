@@ -3,6 +3,7 @@ import AnuragNav from "../components/AnuragNav";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 import RegisterButton from "../components/RegsiterButton";
+import RulebookButton from "../components/RulebookButton";
 // import { Element } from "react-scroll";
 
 const Anurag = () => {
@@ -185,16 +186,8 @@ const Anurag = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center p-10">
-          <a href="https://example.com" className="text-white">
-            <h1
-              className="font-miso border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider 
-      hover:font-semibold hover:border-4 hover:border-white hover:ease-in-out transition-all"
-            >
-              RULEBOOK
-            </h1>
-          </a>
-        </div>
+
+        <RulebookButton link="https://docs.google.com/document/d/1d0f0EAME-zPL1gQgDdW0ZJaHH0ZxQ_0L/edit" />
       </div>
       <div
         id="getintouch"

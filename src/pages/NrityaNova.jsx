@@ -3,6 +3,7 @@ import NNNAv from "../components/NNNAV";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 import RegisterButton from "../components/RegsiterButton";
+import RulebookButton from "../components/RulebookButton";
 
 const NrityaNova = () => {
   return (
@@ -180,6 +181,7 @@ const NrityaNova = () => {
             </ul>
           </p>
         </div>
+        <RulebookButton link="https://docs.google.com/document/d/1NWa_-Omt6hDE0TLlocEE75ieom2sk5UG/edit" />
       </div>
 
       <div
