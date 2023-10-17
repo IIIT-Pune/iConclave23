@@ -1,5 +1,4 @@
 import "./style.css";
-import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import Experience from "./Experience.jsx";
 import { Leva } from "leva";
@@ -28,17 +27,17 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>IConclave'23</title>
+        <title>IConclave &#39; 23</title>
         <meta
           name="description"
-          content="iConclave is a technical and cultural fest of IIIT Pune. It consists of 14+ events and prize pool worth 2.5 lakh. The cultural night khwaab, coding contests, hackathons, dance, literary, debate, photography, music and acting competitions make iconclave an all rounder event worth remembering."
+          content="iConclave is a technical and cultural fest of IIIT Pune. Having 14+ events and prize pool worth 2.5 lakh, it is an event worth remembering. It features a cultural night khwaab, coding contests, hackathons, dance, literary, debate, photography, music and acting competitions."
         />
         <script type="application/ld+json">
           {`
             {
               "@context": "http://schema.org",
               "@type": "WebPage",
-              "name": "iConclave is a technical and cultural fest of IIIT Pune. It consists of 14+ events and prize pool worth 2.5 lakh. The cultural night khwaab, coding contests, hackathons, dance, literary, debate, photography, music and acting competitions make iconclave an all rounder event worth remembering.",
+              "name": "iConclave is a technical and cultural fest of IIIT Pune. Having 14+ events and prize pool worth 2.5 lakh, it is an event worth remembering. It features a cultural night khwaab, coding contests, hackathons, dance, literary, debate, photography, music and acting competitions.",
               "url": "https://iconclave.iiitp.ac.in/",
               "startDate": "2023-10-12T18:00:00-07:00",
               "endDate": "2023-10-12T22:00:00-07:00",

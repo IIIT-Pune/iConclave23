@@ -6,6 +6,7 @@ import "swiper/css/autoplay";
 import "swiper/css/keyboard";
 import "swiper/css/mousewheel";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 
 import { useState, useEffect } from "react";
 import "../App.css";
@@ -50,6 +51,41 @@ const Cult = () => {
       }}
       className="tech-container min-h-screen flex flex-col"
     >
+      <Helmet>
+        <title>Cultural Events - IConclave &#39; 23</title>
+        <meta
+          name="description"
+          content="IIIT Pune,cultural events,Cognition,Quiz Q-riocity,IIIT Pune,Nritya Nova,Vanity Crew,dance ,Rhythm, Prize pool, Aawaz-e-awaam, Abhinay, Street play/theater, iConclave, Shipwreck, Communication,StoryQuest,Story writing,Storytelling,FrameFlicks,Horizon,Photography, Battle of Bands, Music & Art,Cultural Night, Khwaab, Entertainment"
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "WebPage",
+              "name": "IIIT Pune,cultural events,Cognition,Quiz Q-riocity,IIIT Pune,Nritya Nova,Vanity Crew,dance ,Rhythm, Prize pool, Aawaz-e-awaam, Abhinay, Street play/theater, iConclave, Shipwreck, Communication,StoryQuest,Story writing,Storytelling,FrameFlicks,Horizon,Photography, Battle of Bands, Music & Art,Cultural Night, Khwaab,Entertainment",
+              "url": "https://iconclave.iiitp.ac.in/cult",
+              "startDate": "2023-10-12T18:00:00-07:00",
+              "endDate": "2023-10-12T22:00:00-07:00",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "123 Main Street",
+                  "addressLocality": "Pune",
+                  "addressRegion": " Maharashtra",
+                  "postalCode": "4110441",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       {/* <h1 className="text-white text-9xl p-14 font-octobercrow tracking-wider">
         Technical Events
       </h1> */}

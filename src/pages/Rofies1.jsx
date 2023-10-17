@@ -165,7 +165,7 @@ const Rofies1 = () => {
                   +91 8770062687
                 </h4>
               </div>
-              <a href="https://www.instagram.com/q_riocity_/">
+              <a href="https://www.instagram.com/rofies_iiitp/">
                 <h1 className="font-veterantypewriter text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl">
                   ROFIES
                 </h1>
