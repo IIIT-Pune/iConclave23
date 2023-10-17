@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import CogNav from "../components/CogNav";
 import RegisterButton from "../components/RegsiterButtoninverted";
 import { Helmet } from "react-helmet";
+import RulebookButton from "../components/RulebookButtoninverted";
 
 const Cognition = () => {
   return (
@@ -133,10 +134,8 @@ const Cognition = () => {
             })}
           </div>
         </div>
-        <div className="flex justify-center items-center p-10">
-          <h1 className="font-punktypewriter border-2 border-black px-5 py-1 text-5xl rounded-lg tracking-wider">
-            RULEBOOK
-          </h1>
+        <div className="sm:mt-10">
+          <RulebookButton link="https://docs.google.com/document/d/1W6yrXXWv_m00RU63rLGM3m2hTinz0Fvp/edit" />
         </div>
       </div>
 

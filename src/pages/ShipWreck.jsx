@@ -2,6 +2,7 @@ import ShipWreckNav from "../components/ShipWreckNav";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 import RegisterButton from "../components/RegsiterButton";
+import RulebookButton from "../components/RulebookButton";
 
 const ShipWreck = () => {
   return (
@@ -134,6 +135,9 @@ const ShipWreck = () => {
             of these competition
           </li>
         </ul>
+        <div className="sm:m-10">
+          <RulebookButton link="https://docs.google.com/document/d/1wfciLsfbLV8AgvN2n_riWwA9WuOCMT6r/edit" />
+        </div>
         <div id="getintouch" className="bg-black text-white flex flex-col">
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
@@ -154,9 +158,6 @@ const ShipWreck = () => {
                   +91 8668449378
                 </h4>
               </div>
-            </div>
-            <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
-              <p></p>
             </div>
           </div>
           <Footer

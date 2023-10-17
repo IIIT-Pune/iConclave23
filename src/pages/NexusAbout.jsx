@@ -5,8 +5,15 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useState } from "react";
+
 
 const NexusAbout = () => {
+  const [expandedAccordion, setExpandedAccordion] = useState(null);
+
+  const handleAccordionChange = (panel) => (event, isExpanded) => {
+    setExpandedAccordion(isExpanded ? panel : null);
+  };
   return (
     <div
       style={{
@@ -151,7 +158,10 @@ const NexusAbout = () => {
           </h1>
         </div>
         <div className="mx-10 my-10 lg:mx-40">
-          <Accordion>
+          <Accordion
+            expanded={expandedAccordion === "panel1"}
+            onChange={handleAccordionChange("panel1")}
+          >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -163,11 +173,14 @@ const NexusAbout = () => {
               <Typography>- 1-4</Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion
+            expanded={expandedAccordion === "panel2"}
+            onChange={handleAccordionChange("panel2")}
+          >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
+              aria-controls="panel2a-content"
+              id="panel2a-header"
             >
               <Typography>2. Registration Fee</Typography>
             </AccordionSummary>
@@ -175,11 +188,14 @@ const NexusAbout = () => {
               <Typography>- No Registration Fee</Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion
+            expanded={expandedAccordion === "panel3"}
+            onChange={handleAccordionChange("panel3")}
+          >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
+              aria-controls="panel3a-content"
+              id="panel3a-header"
             >
               <Typography>
                 3. When and where is the hackathon taking place?
@@ -187,8 +203,28 @@ const NexusAbout = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                - Provide the 26 October, 4 pm, and Indian Institute of
-                Information Technology Pune details for the hackathon.
+                - The prelims round is in the online mode, while the finale will
+                be conducted in the offline mode .
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expandedAccordion === "panel4"}
+            onChange={handleAccordionChange("panel4")}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel4a-content"
+              id="panel4a-header"
+            >
+              <Typography>
+                4. Will accommodations and meals be provided during the duration
+                of our stay?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                - Yes, it will be provided by the organizing team.
               </Typography>
             </AccordionDetails>
           </Accordion>

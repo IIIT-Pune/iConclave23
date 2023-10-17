@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import { useState, useEffect } from "react";
 import "../App.css";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 
 const Tech = () => {
   const [swiper, setSwiper] = useState(null);
@@ -46,6 +47,41 @@ const Tech = () => {
       }}
       className="tech-container min-h-screen flex flex-col"
     >
+      <Helmet>
+        <title>Technical Events - IConclave &#39; 23</title>
+        <meta
+          name="description"
+          content="IIIT Pune,technical events,Infinity,coding contest,CodeChef,ACM-style scoring,problem-solving skills,data structures,Lockout,1v1 coding battles, algorithms,Nexus, 36-hour offline hackathon,healthtech,edtech,web 3.0,blockchain,AI/ML,Off-Road Bandit,robotics challenge,carrier bots,obstacles,checkpoints"
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "WebPage",
+              "name": "IIIT Pune,technical events,Infinity,coding contest,CodeChef,ACM-style scoring,problem-solving skills,data structures,Lockout,1v1 coding battles, algorithms,Nexus, 36-hour offline hackathon,healthtech,edtech,web 3.0,blockchain,AI/ML,Off-Road Bandit,robotics challenge,carrier bots,obstacles,checkpoints",
+              "url": "https://iconclave.iiitp.ac.in/tech",
+              "startDate": "2023-10-12T18:00:00-07:00",
+              "endDate": "2023-10-12T22:00:00-07:00",
+              "location": {
+                "@type": "Place",
+                "name": "IIIT Pune",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "123 Main Street",
+                  "addressLocality": "Pune",
+                  "addressRegion": " Maharashtra",
+                  "postalCode": "4110441",
+                  "addressCountry": "India"
+                }
+              },
+              "performer": {
+                "@type": "Organization",
+                "name": "IConclave - IIIT Pune"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <nav className="flex justify-between space-x z-10">
         <a href="/">
           <img
@@ -84,7 +120,7 @@ const Tech = () => {
                   />
                 </a>
               </SwiperSlide>
-              
+
               <SwiperSlide className="rounded-3xl">
                 <a href="tech/infinity">
                   <img

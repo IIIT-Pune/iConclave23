@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import StoryQuestNav from "../components/StoryQuestNav";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 import RegisterButton from "../components/RegsiterButton";
+import RulebookButton from "../components/RulebookButton";
 
 const StoryQuest = () => {
   return (
@@ -121,6 +122,9 @@ const StoryQuest = () => {
               </li>
             </ul>
           </p>
+          <div className="sm:m-10">
+            <RulebookButton link="https://docs.google.com/document/d/1g5Oc8PzSz18F0fYkNT7gFiBugGORE9SB/edit" />
+          </div>
         </div>
         <div className="flex flex-col justify-center items-center lg:mb-12">
           <p className="font-miso uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
@@ -130,51 +134,51 @@ const StoryQuest = () => {
             INR 6k
           </p>
         </div>
-      <div
-        id="getintouch"
-        className=" text-white h-full flex flex-col bg-cover bg-center"
-        // style={{
-        //   background: "linear-gradient(138deg, #000 68.43%, #000 68.43%)",
-        // }}
-      >
-        <div className="flex flex-col py-6">
-          <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
-            <div className="font-miso flex flex-col items-center">
-              <h3 className="text-2xl sm:text-3xl lg:text-5xl">Manan Mangal</h3>
-              <h4 className="text-xl sm:text-2xl lg:text-4xl">
-                +91 6376895822
-              </h4>
-            </div>
-            <h1 className="text-6xl md:text-8xl lg:text-10xl font-punishment text-center">
-              <a
-                href="https://www.instagram.com/eclecticiiitp/"
-                target="_blank"
-                rel="noopener"
-              >
-                ECLECTIC
-              </a>
-            </h1>
-            <div className="font-miso flex flex-col items-center">
-              <h3 className="text-2xl sm:text-3xl lg:text-5xl">Ritu Singh</h3>
-              <h4 className="text-xl sm:text-2xl lg:text-4xl">
-                +91 8668449378
-              </h4>
-            </div>
-          </div>
-          <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
-            <p></p>
-          </div>
-        </div>
-        <Footer
-          textColor="white"
-          // socialMediaLinks={{
-          //   mail: "mailto:eclectic@iiitp.ac.in",
-          //   instagram: "https://www.instagram.com/eclecticiiitp/",
+        <div
+          id="getintouch"
+          className=" text-white h-full flex flex-col bg-cover bg-center"
+          // style={{
+          //   background: "linear-gradient(138deg, #000 68.43%, #000 68.43%)",
           // }}
-        />
+        >
+          <div className="flex flex-col py-6">
+            <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
+              <div className="font-miso flex flex-col items-center">
+                <h3 className="text-2xl sm:text-3xl lg:text-5xl">
+                  Manan Mangal
+                </h3>
+                <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                  +91 6376895822
+                </h4>
+              </div>
+              <h1 className="text-6xl md:text-8xl lg:text-10xl font-punishment text-center">
+                <a
+                  href="https://www.instagram.com/eclecticiiitp/"
+                  target="_blank"
+                >
+                  ECLECTIC
+                </a>
+              </h1>
+              <div className="font-miso flex flex-col items-center">
+                <h3 className="text-2xl sm:text-3xl lg:text-5xl">Ritu Singh</h3>
+                <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                  +91 8668449378
+                </h4>
+              </div>
+            </div>
+            <div className="font-miso lg:text-4xl lg:mx-7 lg:my-3 text-justify flex flex-col flex-grow gap-7">
+              <p></p>
+            </div>
+          </div>
+          <Footer
+            textColor="white"
+            // socialMediaLinks={{
+            //   mail: "mailto:eclectic@iiitp.ac.in",
+            //   instagram: "https://www.instagram.com/eclecticiiitp/",
+            // }}
+          />
+        </div>
       </div>
-      </div>
-
     </div>
   );
 };

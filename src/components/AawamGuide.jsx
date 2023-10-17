@@ -1,3 +1,5 @@
+import RulebookButton from "./RulebookButton";
+
 /* eslint-disable react/no-unescaped-entities */
 const AawamGuide = () => {
   return (
@@ -50,22 +52,22 @@ const AawamGuide = () => {
           </h1>
           <div className="">
             <p className="">
-            The top 6-8 teams will be shortlisted and invited to IIIT Pune to present their play during iConclave.
-<p>
-The time limit for the act is 15 minutes.
-</p>
-<p>
-Any kind of vulgarity will lead to direct disqualification, indecent language is not allowed.
-</p>
-<p>
-Teams will be penalized for exceeding the time limit.
-</p>
-<p>
-The Organising committee reserves the right to change the venue and time.
-</p>
+              The top 6-8 teams will be shortlisted and invited to IIIT Pune to
+              present their play during iConclave.
+              <p>The time limit for the act is 15 minutes.</p>
+              <p>
+                Any kind of vulgarity will lead to direct disqualification,
+                indecent language is not allowed.
+              </p>
+              <p>Teams will be penalized for exceeding the time limit.</p>
+              <p>
+                The Organising committee reserves the right to change the venue
+                and time.
+              </p>
             </p>
           </div>
         </div>
+        <RulebookButton link="/notfound" />
       </div>
     </div>
   );

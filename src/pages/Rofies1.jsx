@@ -2,7 +2,8 @@
 import Footer from "../components/Footer";
 import OffRoadNav from "../components/OffRoadNav";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
-import {offroadguidelines } from "../assets/offroadguidelines";
+import { offroadguidelines } from "../assets/offroadguidelines";
+import RegisterButton from "../components/RegsiterButton";
 
 const Rofies1 = () => {
   return (
@@ -64,6 +65,12 @@ const Rofies1 = () => {
             <p className="font-miso text-4xl lg:text-8xl mt-6">
               NAVIGATE, RELAY, TRIUMPH
             </p>
+            <div className="flex justify-center items-center mt-8 sm:mt-24 md:mt-24 lg:mt-20 ">
+              <RegisterButton
+                fonts="majormono"
+                link="https://unstop.com/competitions/off-road-bandits-the-mini-rover-bot-relay-race-iconclave23-indian-institute-of-information-technology-iiit--796092"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -147,9 +154,31 @@ const Rofies1 = () => {
           </h1>
         </div>
 
-        <h1 className="font-silkroad text-white text-7xl text-center lg:text-8xl lg:block sm:text-7xl lg:text-10xl">
-          ROFIES
-        </h1>
+        <div id="getintouch" className="pt-8 lg:pt-12 lg:mb-4">
+          <div className="font-veterantypewriter min-h-full text-white">
+            <div className="flex flex-col lg:flex-row gap-5 justify-center lg:justify-evenly items-center">
+              <div className="font-miso flex flex-col items-center">
+                <h3 className="text-2xl sm:text-3xl lg:text-5xl">
+                  Mahim Gupta
+                </h3>
+                <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                  +91 8770062687
+                </h4>
+              </div>
+              <a href="https://www.instagram.com/rofies_iiitp/">
+                <h1 className="font-veterantypewriter text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl">
+                  ROFIES
+                </h1>
+              </a>
+              <div className="font-miso flex flex-col items-center">
+                <h3 className="text-2xl sm:text-3xl lg:text-5xl">Deep Onkar</h3>
+                <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                  +91 9766818266
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
         <Footer
           textColor="white"
           // socialMediaLinks={{
