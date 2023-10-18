@@ -138,7 +138,7 @@ const ShipWreck = () => {
         <div className="sm:m-10">
           <RulebookButton link="https://docs.google.com/document/d/1wfciLsfbLV8AgvN2n_riWwA9WuOCMT6r/edit" />
         </div>
-        <div id="getintouch" className="bg-black text-white flex flex-col">
+        <div id="getintouch" className="bg-black text-white flex flex-col lg:mt-0 md:mt-0 mt-10">
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row gap-5 md:justify-evenly md:items-center">
               <div className="font-miso flex flex-col items-center">
