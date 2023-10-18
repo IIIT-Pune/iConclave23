@@ -148,11 +148,11 @@ const Rofies1 = () => {
             })}
           </div>
         </p>
-        <div className="flex justify-center items-center p-10">
+        {/* <div className="flex justify-center items-center p-10">
           <h1 className="text-white font-newshape border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider">
             RULEBOOK
           </h1>
-        </div>
+        </div> */}
 
         <div id="getintouch" className="pt-8 lg:pt-12 lg:mb-4">
           <div className="font-veterantypewriter min-h-full text-white">
@@ -166,7 +166,7 @@ const Rofies1 = () => {
                 </h4>
               </div>
               <a href="https://www.instagram.com/rofies_iiitp/">
-                <h1 className="font-veterantypewriter text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl">
+                <h1 className="font-silkroad text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl">
                   ROFIES
                 </h1>
               </a>
