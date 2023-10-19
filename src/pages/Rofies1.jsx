@@ -60,7 +60,7 @@ const Rofies1 = () => {
         <div className="flex justify-center items-center flex-grow">
           <div className="text-white text-center">
             <h1 className="font-silkroad text-6xl sm:text-7xl md:text-8xl lg:text-9xl lg:block">
-              OFF - ROAD BANDIT
+              OFF - ROAD BANDITS
             </h1>
             <p className="font-miso text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-4">
               NAVIGATE, RELAY, TRIUMPH
