@@ -267,7 +267,7 @@ const App = () => {
       element: <LockoutTeam />,
     },
     {
-      path: "tech/rofies1",
+      path: "tech/offroadbandits",
       element: <Rofies1 />,
     },
     {
