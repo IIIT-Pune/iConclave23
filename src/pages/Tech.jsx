@@ -131,7 +131,7 @@ const Tech = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="rounded-3xl">
-                <a href="tech/rofies1">
+                <a href="tech/offroadbandits">
                   <img
                     src="./images/offrd_cau.png"
                     alt=""
@@ -185,7 +185,7 @@ const Tech = () => {
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="rounded-3xl">
-                  <a href="tech/rofies1">
+                  <a href="tech/offroadbandits">
                     <img
                       src="./images/offrd_cau.png"
                       alt=""
