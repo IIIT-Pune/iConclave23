@@ -87,7 +87,7 @@ const Cognition = () => {
               ABOUT
             </h1>
           </div>
-          <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
+          <div className="text-base sm:text-xl md:text-2xl lg:text-3xl flex flex-col mx-10 lg:mx-20 gap-10 text-justify">
             <p>
               Prepare to push the boundaries of your knowledge and embark on an
               exhilarating journey through the world of trivia with the Quiz
@@ -109,9 +109,11 @@ const Cognition = () => {
               of being crowned the ultimate quizzing champions.
             </p>
           </div>
-          <div className="text-center text-black">
-            <h3 className="text-5xl font-miso">PRIZE POOL</h3>
-            <h1 className="text-center text-6xl text-black lg:text-9xl font-veterantypewriter">
+          <div className="text-center text-white my-10">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl text-black lg:text-5xl font-miso">
+              PRIZE POOL
+            </h3>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl py-2 text-center text-black font-normal font-veterantypewriter">
               INR 10K
             </h1>
           </div>
@@ -129,7 +131,7 @@ const Cognition = () => {
             </h1>
           </div>
 
-          <div className="text-l md:text-4xl flex flex-col mx-10 lg:mx-20  text-justify ">
+          <div className="text-base sm:text-xl md:text-2xl lg:text-3xl flex flex-col mx-10 lg:mx-20  text-justify ">
             {cognitionguidelines.map((rule, index) => {
               return (
                 <div key={index} className="flex gap-5">

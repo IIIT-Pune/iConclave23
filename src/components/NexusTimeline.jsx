@@ -42,7 +42,7 @@ const NexusTimeline = () => {
                     </div>
                   </div>
                 </div>
-                <div className="rounded-full bg-green-400 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"></div>
+                <div className="rounded-full bg-green-600 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"></div>
               </div>
             </div>
 

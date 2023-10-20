@@ -99,7 +99,7 @@ const ShipWreck = () => {
               debate scenario.
             </p>
           </div>
-          <div className="text-center text-white">
+          <div className="text-center my-10 text-white">
             <h3 className="text-5xl font-miso">PRIZE POOL</h3>
             <h1 className="text-center text-6xl text-white lg:text-9xl font-punishment">
               INR 6K
