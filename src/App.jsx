@@ -165,6 +165,8 @@ const App = () => {
     };
   }, []);
 
+  const isLargeScreen = window.innerWidth >= 768;
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -176,7 +178,7 @@ const App = () => {
               <img src={Loader} className="w-[60%]" />
             </div>
           )}
-          <Landing />
+          {isLargeScreen ? <Home /> : <Landing />}
         </>
       ),
     },
