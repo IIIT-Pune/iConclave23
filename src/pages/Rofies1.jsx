@@ -59,10 +59,10 @@ const Rofies1 = () => {
         </div>
         <div className="flex justify-center items-center flex-grow">
           <div className="text-white text-center">
-            <h1 className="font-silkroad text-7xl lg:text-9xl lg:block sm:text-8xl lg:text-11xl">
-              OFF - ROAD BANDIT
+            <h1 className="font-silkroad text-6xl sm:text-7xl md:text-8xl lg:text-9xl lg:block">
+              OFF - ROAD BANDITS
             </h1>
-            <p className="font-miso text-4xl lg:text-8xl mt-6">
+            <p className="font-miso text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-4">
               NAVIGATE, RELAY, TRIUMPH
             </p>
             <div className="flex justify-center items-center mt-8 sm:mt-24 md:mt-24 lg:mt-20 ">
@@ -75,7 +75,7 @@ const Rofies1 = () => {
         </div>
       </div>
       <section
-        className="min-h-screen pb-10"
+        className="min-h-screen flex flex-col justify-center items-center"
         id="about"
         style={{
           background: "url(/images/off-roadbgblur.png)",
@@ -83,108 +83,140 @@ const Rofies1 = () => {
           backgroundSize: "cover",
         }}
       >
-        <h1
-          className="font-silkroad text-5xl pt-5 lg:p-0 lg:text-10xl text-white ml-10 lg:pt-10 "
-          style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
-        >
-          ABOUT
-        </h1>
+        <div className="flex flex-col my-10">
+          <h1
+            className="font-silkroad text-6xl sm:text-8xl  lg:text-10xl p-0 text-center lg:text-left lg:pl-16 text-white font-normal"
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+          >
+            ABOUT
+          </h1>
 
-        <div className=" font-miso text-2xl lg:text-4xl flex flex-col gap-5 text-white mx-7 lg:mx-20 text-justify">
-          <p>
-            This event gives a golden opportunity to its participants to show
-            off their skills as a Duo. The participating team will deploy their
-            carrier bots in{" "}
-            <span className="text-cyan-300">"The Wastelands"</span> covered with
-            many obstacles and different terrains.
-          </p>
-          <p>
-            The map is divided into two parts (
-            <span className="text-red-600">Red</span> and{" "}
-            <span className="text-cyan-300">Blue</span>) where each bot has to
-            cross their respective course and relay "The Package" to the other
-            bot on the other side of the map while dropping it on "delivery zone
-            A" where the other bot also has to pick it up and cover their
-            respective course and finally drop "The Package" into 'The Delivery
-            Zone" as a "<span className="text-red-600">Duo</span>".
-          </p>
-          <p>
-            The entire course will be divided into checkpoints allowing the
-            participants to restart from their recent checkpoint in case they
-            drop "The Package" or get stuck in some traps.
-          </p>
+          <div className="text-white text-xl sm:text-2xl md:text-3xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 font-miso">
+            <p>
+              This event gives a golden opportunity to its participants to show
+              off their skills as a Duo. The participating team will deploy
+              their carrier bots in{" "}
+              <span className="text-cyan-300">"The Wastelands"</span> covered
+              with many obstacles and different terrains.
+            </p>
+            <p>
+              The map is divided into two parts (
+              <span className="text-red-600">Red</span> and{" "}
+              <span className="text-cyan-300">Blue</span>) where each bot has to
+              cross their respective course and relay "The Package" to the other
+              bot on the other side of the map while dropping it on "delivery
+              zone A" where the other bot also has to pick it up and cover their
+              respective course and finally drop "The Package" into 'The
+              Delivery Zone" as a "<span className="text-red-600">Duo</span>".
+            </p>
+            <p>
+              The entire course will be divided into checkpoints allowing the
+              participants to restart from their recent checkpoint in case they
+              drop "The Package" or get stuck in some traps.
+            </p>
+          </div>
         </div>
       </section>
       <section
-        className="min-h-screen bg-yellow-600"
-        id="guidelines"
         style={{
           background: "url(/images/off-roadbigbgblur.png), #000000 50%",
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
       >
-        <h1
-          className="font-silkroad text-5xl pt-5 lg:p-0 lg:text-10xl text-white ml-10 lg:pt-10"
-          style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+        <section
+          className="min-h-screen flex flex-col justify-center items-center"
+          id="guidelines"
         >
-          GUIDELINES
-        </h1>
-
-        <p className=" font-miso text-2xl lg:text-3xl flex flex-col gap-5 text-white mx-5 lg:mx-20 text-justify">
-          Teams have to build a manually controlled bot that can do simple tasks
-          of gripping objects and putting them in target zones or just picking
-          up a package with a scooper blade and dropping it off at the finish
-          line(delivery zone), so that it can complete its respective route
-          while overcoming the hurdles in its path.
-          <div className="text-2xl lg:text-3xl flex flex-col gap-5 mx-5 lg:mx-20 text-justify font-miso">
-            {offroadguidelines.map((rule, index) => {
-              return (
-                <div key={index} className="flex gap-5">
-                  <h1>{index + 1}.</h1>
-                  <p>{rule}</p>
-                </div>
-              );
-            })}
+          <div className="flex flex-col my-20">
+            <h1
+              className="font-silkroad text-6xl sm:text-8xl lg:text-10xl p-0 text-center lg:text-left lg:pl-16 text-white font-normal"
+              style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+            >
+              GUIDELINES
+            </h1>
+            <div className="text-white text-xl sm:text-2xl md:text-3xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 font-miso">
+              <p>
+                Teams have to build a manually controlled bot that can do simple
+                tasks of gripping objects and putting them in target zones or
+                just picking up a package with a scooper blade and dropping it
+                off at the finish line(delivery zone), so that it can complete
+                its respective route while overcoming the hurdles in its path.
+              </p>
+              <div>
+                {offroadguidelines.map((rule, index) => {
+                  if (index >= 9) {
+                    return (
+                      <div
+                        key={index}
+                        className="flex gap-2 my-3 md:my-4 lg:my-5 sm:gap-3 md:gap-4 lg:gap-5"
+                      >
+                        <h1>{index + 1}.</h1>
+                        <p>{rule}</p>
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <div
+                        key={index}
+                        className="flex gap-4 my-3 md:my-4 lg:my-5 sm:gap-5 md:gap-6 lg:gap-7"
+                      >
+                        {/* <div></div> */}
+                        <h1>{index + 1}.</h1>
+                        <p>{rule}</p>
+                      </div>
+                    );
+                  }
+                })}
+              </div>
+            </div>
           </div>
-        </p>
-        {/* <div className="flex justify-center items-center p-10">
+          {/* <div className="flex justify-center items-center p-10">
           <h1 className="text-white font-newshape border-2 px-5 py-3 text-2xl lg:text-4xl rounded-2xl tracking-wider">
             RULEBOOK
           </h1>
         </div> */}
+        </section>
 
-        <div id="getintouch" className="pt-8 lg:pt-12 lg:mb-4">
-          <div className="font-veterantypewriter min-h-full text-white">
-            <div className="flex flex-col lg:flex-row gap-5 justify-center lg:justify-evenly items-center">
-              <div className="font-miso flex flex-col items-center">
-                <h3 className="text-2xl sm:text-3xl lg:text-5xl">
-                  Mahim Gupta
-                </h3>
-                <h4 className="text-xl sm:text-2xl lg:text-4xl">
-                  +91 8770062687
-                </h4>
-              </div>
-              <a href="https://www.instagram.com/rofies_iiitp/">
-                <h1 className="font-silkroad text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl">
-                  ROFIES
-                </h1>
-              </a>
-              <div className="font-miso flex flex-col items-center">
-                <h3 className="text-2xl sm:text-3xl lg:text-5xl">Deep Onkar</h3>
-                <h4 className="text-xl sm:text-2xl lg:text-4xl">
-                  +91 9766818266
-                </h4>
+        <section
+          id="getintouch"
+          className="min-h-full flex flex-col
+        bg-cover bg-center"
+        >
+          <div id="getintouch" className="pt-8 lg:pt-12 lg:mb-4">
+            <div className="font-veterantypewriter min-h-full text-white">
+              <div className="flex flex-col lg:flex-row gap-5 justify-center lg:justify-evenly items-center">
+                <div className="font-miso flex flex-col items-center">
+                  <h3 className="text-2xl sm:text-3xl lg:text-5xl">
+                    Mahim Gupta
+                  </h3>
+                  <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                    +91 8770062687
+                  </h4>
+                </div>
+                <a href="https://www.instagram.com/rofies_iiitp/">
+                  <h1 className="font-silkroad text-6xl text-center sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl">
+                    ROFIES
+                  </h1>
+                </a>
+                <div className="font-miso flex flex-col items-center">
+                  <h3 className="text-2xl sm:text-3xl lg:text-5xl">
+                    Deep Onkar
+                  </h3>
+                  <h4 className="text-xl sm:text-2xl lg:text-4xl">
+                    +91 9766818266
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <Footer
-          textColor="white"
-          // socialMediaLinks={{
-          //   instagram: "https://www.instagram.com/rofies_iiitp/",
-          // }}
-        />
+          <Footer
+            textColor="white"
+            // socialMediaLinks={{
+            //   instagram: "https://www.instagram.com/rofies_iiitp/",
+            // }}
+          />
+        </section>
       </section>
     </>
   );
