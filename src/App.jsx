@@ -27,7 +27,6 @@ import LockoutTeam from "./components/LockoutTeam";
 import ShipWreck from "./pages/ShipWreck";
 import StoryQuest from "./pages/StoryQuest";
 import NotFound from "./pages/NotFound";
-import Form from "./components/Form";
 
 const preloadedImages = [
   "/images/aawaaz_cau.png",
@@ -302,10 +301,6 @@ const App = () => {
     {
       path: "/*",
       element: <NotFound />,
-    },
-    {
-      path: "/test",
-      element: <Form />,
     },
   ]);
   return <RouterProvider router={router} />;
