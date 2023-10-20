@@ -56,6 +56,12 @@ const NexusAbout = () => {
               Get ready to code, create, and conquer at Nexus Hackathon!
             </p>
           </div>
+          <div className="text-center text-white mb-20">
+            <h3 className="text-5xl font-miso">PRIZE POOL</h3>
+            <h1 className="text-center text-5xl text-white lg:text-8xl font-majormono">
+              inr 1l+
+            </h1>
+          </div>
         </div>
       </section>
       <section id="schedule">

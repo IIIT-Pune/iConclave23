@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import { Html, OrbitControls } from '@react-three/drei';
+import { useEffect } from 'react';
+import { OrbitControls } from '@react-three/drei';
 import { Perf } from 'r3f-perf';
-import { Debug, Physics } from '@react-three/rapier';
+import { Physics } from '@react-three/rapier';
 import { useControls } from 'leva'; // Import useControls
 import { useThree } from '@react-three/fiber';
 import Floor from './Floor.jsx';
@@ -9,14 +9,12 @@ import MainText from './MainText.jsx';
 import BackgroundText from './BackgroundText.jsx';
 import Effects from './Effects.jsx';
 import Fog from './Fog.jsx';
-// import Logo from './Logo.jsx';
 import Boundings from './Boundings.jsx';
 import Cylinder from './Cylinder.jsx';
 import Button from './Button.jsx';
-import BackgroundIcon from './BackgroundIcon.jsx';
 
 export default function Experience() {
-  const { controls, gl, camera } = useThree();
+  const { controls, camera } = useThree();
 
   useEffect(() => {
     if (controls) {
@@ -84,7 +82,7 @@ export default function Experience() {
         <MainText />
 
         {/* Background Text */}
-        <BackgroundText y={0.02} text={''} zpos = '10' fontName={"./fonts/Horrors.ttf"} size = {2.5}/>
+        {/* <BackgroundText y={0.02} text={''} zpos = '10' fontName={"./fonts/Horrors.ttf"} size = {2.5}/> */}
 
         {/* Buttons */}
         
@@ -94,23 +92,12 @@ export default function Experience() {
           <Button buttonText="About" buttonSize={4} xPos = {-6.1} zPos = {14.1} link='/about' />
           <Button buttonText="Sponsors" buttonSize={4} xPos = {0} zPos = {14.1} link='/sponsors'/>
           <Button buttonText="Contact us" buttonSize={4} xPos = {6.1} zPos = {14.1} link="mailto:iconclave@iiitp.ac.in"/>
-          {/*
-          */}
          </>
          
          <BackgroundText y={0.02} text={'26-28 OCTOBER'} zpos = '16.3' fontName={"./fonts/Horrors.ttf"} size = {2}/>
 
          <BackgroundText y={0.02} text={'INDIAN INSTITUTE OF INFORMATION TECHNOLOGY PUNE'} zpos = '17.7' fontName={"./fonts/miso.woff"} size = {0.7}/>
-{/* 
-         <>
-            <BackgroundIcon />
-         </> */}
-       
 
-        {/* Logo */}
-        {/* <Logo /> */}
-
-        {/* Cylinders */}
         <Cylinder name="cylinder1" color="#ff5959" radius={0} position={[-12, 5]} intensity={4.5} />
         <Cylinder name="cylinder2" color="#3f85fc" radius={0} position={[12, 5]} intensity={4.5} />
         <Cylinder name="cylinder3" color="#3f85fc" radius={0} position={[12, 5]} intensity={4.5} />

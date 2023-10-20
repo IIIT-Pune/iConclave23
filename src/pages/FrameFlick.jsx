@@ -118,6 +118,12 @@ const FrameFlick = () => {
               use this edited masterpiece as your cover image.
             </p>
           </div>
+          <div className="text-center text-white">
+            <h3 className="text-5xl font-miso">PRIZE POOL</h3>
+            <h1 className="text-center text-6xl text-white lg:text-9xl font-grandstander">
+              INR 10K
+            </h1>
+          </div>
         </div>
       </div>
 

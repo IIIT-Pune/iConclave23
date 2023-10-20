@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react';
-import { useFrame } from '@react-three/fiber';
+import { useRef, useState } from 'react';
 import { Line, Text } from '@react-three/drei';
 import gsap from 'gsap';
 import './button.css'; // Import your CSS file for styling
@@ -65,7 +64,12 @@ export default function Button({ buttonText, buttonSize, xPos, zPos, link }) {
       />
 
       <Text font="./fonts/Slimespooky.woff" fontSize={1} textAlign="center">
-        <meshBasicMaterial color={0x000} toneMapped={false} transparent opacity={1} />
+        <meshBasicMaterial
+          color={0x000}
+          toneMapped={false}
+          transparent
+          opacity={1}
+        />
         {buttonText}
       </Text>
     </group>

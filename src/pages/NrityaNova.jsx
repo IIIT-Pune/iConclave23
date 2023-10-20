@@ -85,7 +85,7 @@ const NrityaNova = () => {
         <h1 className="font-fuzzybubbles text-5xl sm:text-7xl lg:text-9xl mt-10 py-10 text-center text-white font-normal">
           ABOUT
         </h1>
-        <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 py-10 lg:py-12 font-miso">
+        <div className="text-white text-base sm:text-xl md:text-2xl lg:text-3xl space-y-6 text-justify leading-relaxed px-10 sm:px-20 pb-10 lg:pb-12 font-miso">
           <p>
             Get ready to witness the epitome of rhythm and grace at the
             intercollege dance competition, "Nritya Nova," hosted by Vanity
@@ -103,6 +103,12 @@ const NrityaNova = () => {
             Join us in this dance extravaganza that will set the stage on fire
             and leave you tapping your feet in sheer amazement!
           </p>
+        </div>
+        <div className="text-center text-white">
+          <h3 className="text-5xl font-miso">PRIZE POOL</h3>
+          <h1 className="text-center text-5xl text-white lg:text-8xl font-fuzzybubbles">
+            INR 18K
+          </h1>
         </div>
       </div>
 

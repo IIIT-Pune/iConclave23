@@ -83,7 +83,7 @@ const Cognition = () => {
       >
         <div>
           <div>
-            <h1 className="text-center lg:text-left text-5xl lg:text-9xl sm:text-6xl md:text-7xl lg:text-8xl lg:ml-10 pb-8">
+            <h1 className="text-center lg:text-left text-5xl lg:text-9xl sm:text-6xl md:text-7xl lg:ml-10 pb-8">
               ABOUT
             </h1>
           </div>
@@ -109,6 +109,12 @@ const Cognition = () => {
               of being crowned the ultimate quizzing champions.
             </p>
           </div>
+          <div className="text-center text-black">
+            <h3 className="text-5xl font-miso">PRIZE POOL</h3>
+            <h1 className="text-center text-6xl text-black lg:text-9xl font-veterantypewriter">
+              INR 10K
+            </h1>
+          </div>
         </div>
       </div>
 
@@ -118,7 +124,7 @@ const Cognition = () => {
       >
         <div>
           <div>
-            <h1 className="text-center lg:text-left text-5xl lg:text-9xl sm:text-6xl md:text-7xl lg:text-8xl lg:ml-10 pb-8">
+            <h1 className="text-center lg:text-left text-5xl lg:text-9xl sm:text-6xl md:text-7xl lg:ml-10 pb-8">
               GUIDELINES
             </h1>
           </div>
