@@ -7,11 +7,120 @@ import "swiper/css/keyboard";
 import "swiper/css/mousewheel";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
-
 import { useState, useEffect } from "react";
 import "../App.css";
 
+const preloadedImages = [
+  "/images/aawaaz_cau.png",
+  "/images/aawazeaawam.png",
+  "/images/anuragbg.png",
+  "/images/anurag_cau.png",
+  "/images/cognition_bg.png",
+  "/images/cognition_cau.png",
+  "/images/Cultcard1.png",
+  "/images/cult_back.png",
+  "/images/cult_head.png",
+  "/images/footerblack.png",
+  "/images/footerwhite.png",
+  "/images/frameflick_bg.png",
+  "/images/frame_cau.png",
+  "/images/ghost.png",
+  "/images/Home_bg.png",
+  "/images/host2.png",
+  "/images/IConclave.png",
+  "/images/IConclaveFull.png",
+  "/images/loader.gif",
+  "/images/loader.webp",
+  "/images/loader2.gif",
+  "/images/nritya_bg.png",
+  "/images/nritya_cau.png",
+  "/images/saaz_bg.png",
+  "/images/ShipWreck_bg.png",
+  "/images/shipwreck_cau.png",
+  "/images/story.png",
+  "/images/StoryQuest_bg.png",
+];
+
+const preloadImages = () => {
+  preloadedImages.forEach((imagePath) => {
+    const img = new Image();
+    img.src = imagePath;
+  });
+};
+
+const preloadedFonts = [
+  // "/fonts/1942.ttf",
+  // "/fonts/AmericanCaptain.otf",
+  // "/fonts/FuzzyBubbles.ttf",
+  // "/fonts/Grandstander.ttf",
+  // "/fonts/GreycliffCF-Bold_Regular.json",
+  // "/fonts/GreycliffCF-ExtraBold.woff",
+  // "/fonts/GreycliffCF-ExtraLight.woff",
+  // "/fonts/GreycliffCF-Heavy.woff",
+  // "/fonts/GreycliffCF-Light.woff",
+  // "/fonts/GreycliffCF-Medium.woff",
+  // "/fonts/GreycliffCF-Regular.woff",
+  // "/fonts/GreycliffCF-Thin.woff",
+  // "/fonts/HARRYP.ttf",
+  // "/fonts/helvetiker_regular.typeface.json",
+  // "/fonts/Horrors.ttf",
+  // "/fonts/Horrors.woff",
+  // "/fonts/Kodchasan.ttf",
+  // "/fonts/liquidism.ttf",
+  // "/fonts/MajorMonoDisplay.ttf",
+  // "/fonts/miso copy.woff",
+  // "/fonts/miso-bold copy.woff",
+  // "/fonts/miso-bold.woff",
+  // "/fonts/miso-light copy.woff",
+  // "/fonts/miso-light.woff",
+  // "/fonts/miso.woff",
+  // "/fonts/Miso_Regular.json",
+  // "/fonts/NewShape-Book.ttf",
+  // "/fonts/NewShape.ttf",
+  // "/fonts/Nightcore Demo.woff",
+  // "/fonts/Nightcore.json",
+  // "/fonts/NightcoreDemo.ttf",
+  // "/fonts/OctoberCrow.ttf",
+  // "/fonts/Punishment.otf",
+  // "/fonts/PunkTypewriter.otf",
+  // "/fonts/samarkan.TTF",
+  // "/fonts/SilkRoad.ttf",
+  // "/fonts/Slimespooky.woff",
+  // "/fonts/veterantypewriter.ttf",
+  // "/fonts/Zombie City PERSONAL USE ONLY!.woff",
+];
+
+const preloadFonts = () => {
+  preloadedFonts.forEach((fontPath) => {
+    const link = document.createElement("link");
+    link.href = fontPath;
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+  });
+};
+
 const Cult = () => {
+  const [showLoader, SetShowLoader] = useState(true);
+  useEffect(() => {
+    preloadImages(); // Preload images
+    preloadFonts(); //Preload fonts
+    const timer = setInterval(() => {
+      SetShowLoader(false);
+    }, 1500);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+  const [showLoader2, SetShowLoader2] = useState(true);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      SetShowLoader2(false);
+    }, 1500);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   const [swiper, setSwiper] = useState(null);
 
   useEffect(() => {
