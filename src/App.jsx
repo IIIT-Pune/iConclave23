@@ -27,6 +27,8 @@ import LockoutTeam from "./components/LockoutTeam";
 import ShipWreck from "./pages/ShipWreck";
 import StoryQuest from "./pages/StoryQuest";
 import NotFound from "./pages/NotFound";
+import Landing from "./pages/Landing";
+
 
 const preloadedImages = [
   //   "/images/aawaaz_cau.png",

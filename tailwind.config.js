@@ -22,6 +22,7 @@ export default {
         fuzzybubbles: ["FuzzyBubbles", "cursive"],
         punishment: ["Punishment", "cursive"],
         harryp: ["HARRYP", "cursive"],
+        Horrors: ["Horrors", "cursive"],
       },
       colors: {
         lockoutred: "#571d20",

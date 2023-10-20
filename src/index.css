@@ -69,6 +69,10 @@
   font-family: HARRYP;
   src: url("/fonts/HARRYP.ttf");
 }
+@font-face {
+  font-family: Horrors;
+  src: url("/fonts/Horrors.ttf");
+}
 ::-webkit-scrollbar {
   display: none;
 }

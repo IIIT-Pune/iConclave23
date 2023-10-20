@@ -130,8 +130,8 @@ const NrityaNova = () => {
             className="marker:text-white-400 list-disc pl-2 sm:pl-4 md:pl-6 lg:pl-8"
           >
             <li>
-              Each team will comprise a maximum of 12 participants and minimum 6
-              participants.
+              Each team will comprise a maximum of 15 participants and a minimum
+              of 6 participants, with on Stage participation of max 12 people.
             </li>
             <li>
               Choice of songs is open to the participants whether
