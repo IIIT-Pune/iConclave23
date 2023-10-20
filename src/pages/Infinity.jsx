@@ -163,12 +163,20 @@ const Infinity = () => {
             experience at <span className="text-red-600">InfInITy 2k23!</span>
           </p>
         </div>
-        <div className="text-center text-white">
+        <div className="text-center text-white mb-20">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-miso">
+            PRIZE POOL
+          </h3>
+          <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-8xl xl:text-9xl py-2 text-center text-white font-normal font-miso">
+            INR 35K
+          </h1>
+        </div>
+        {/* <div className="text-center text-white">
           <h3 className="text-5xl font-miso">PRIZE POOL</h3>
           <h1 className="text-center text-5xl text-white lg:text-9xl font-miso">
             INR 35K
           </h1>
-        </div>
+        </div> */}
       </div>
 
       <div className="bg-black">

@@ -122,15 +122,16 @@ const StoryQuest = () => {
               </li>
             </ul>
           </p>
-          <div className="sm:m-10">
+          <div className="py-8">
             <RulebookButton link="https://docs.google.com/document/d/1g5Oc8PzSz18F0fYkNT7gFiBugGORE9SB/edit" />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center lg:mb-12">
+
+        <div className="flex flex-col justify-center my-10 items-center lg:mb-12">
           <p className="font-miso uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             Prizes worth
           </p>
-          <p className="font-harryp uppercase text-5xl sm:text-7xl lg:text-9xl">
+          <p className="font-harryp uppercase text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
             INR 6k
           </p>
         </div>

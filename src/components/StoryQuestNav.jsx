@@ -33,9 +33,9 @@ const StoryQuestNav = () => {
               <Link to="about" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">ABOUT</li>
               </Link>
-              <Link to="guidelines" smooth={true} duration={500}>
+              {/* <Link to="guidelines" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
-              </Link>
+              </Link> */}
               <Link to="getintouch" smooth={true} duration={500}>
                 <li className="hover:border-b-2 pb-1 ">GET IN TOUCH</li>
               </Link>
@@ -113,14 +113,14 @@ const StoryQuestNav = () => {
               >
                 <li className="hover:border-b-2 pb-1 ">ABOUT</li>
               </Link>
-              <Link
+              {/* <Link
                 to="guidelines"
                 onClick={closeMobileMenu}
                 smooth={true}
                 duration={500}
               >
                 <li className="hover:border-b-2 pb-1 ">GUIDELINES</li>
-              </Link>
+              </Link> */}
               <Link
                 to="getintouch"
                 onClick={closeMobileMenu}
