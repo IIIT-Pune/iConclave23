@@ -142,16 +142,16 @@ const Infinity = () => {
           </p>
           <p className="font-miso text-xl lg:text-3xl text-justify">
             InfInITy made its debut in 2017 and has since evolved into a
-            thrilling coding contest that attracts participants from all over globe.
-            Initially limited to IIIT Pune, it has now become a prestigious
-            event open to coding enthusiasts everywhere.
+            thrilling coding contest that attracts participants from all over
+            globe. Initially limited to IIIT Pune, it has now become a
+            prestigious event open to coding enthusiasts everywhere.
           </p>
           <p className="font-miso text-xl lg:text-3xl text-justify">
             InfInITy is a <span className="text-red-600">2-hour coding</span>{" "}
-            challenge that promises to keep you on the edge of your seat. Whether
-            you're a beginner taking your first steps in the world of coding or
-            an experienced coder looking for a new challenge, we have problems
-            designed to test and elevate your coding skills.
+            challenge that promises to keep you on the edge of your seat.
+            Whether you're a beginner taking your first steps in the world of
+            coding or an experienced coder looking for a new challenge, we have
+            problems designed to test and elevate your coding skills.
           </p>
           <p className="font-miso text-xl lg:text-3xl text-justify">
             Whether you're a student, a professional, or simply someone who
@@ -162,6 +162,12 @@ const Infinity = () => {
             Mark your calendars and get ready for an adrenaline-pumping coding
             experience at <span className="text-red-600">InfInITy 2k23!</span>
           </p>
+        </div>
+        <div className="text-center text-white">
+          <h3 className="text-5xl font-miso">PRIZE POOL</h3>
+          <h1 className="text-center text-5xl text-white lg:text-9xl font-miso">
+            INR 50K
+          </h1>
         </div>
       </div>
 
