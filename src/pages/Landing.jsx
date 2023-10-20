@@ -8,29 +8,27 @@ const Landing = () => {
         backgroundPosition: "bottom center",
         backgroundSize: "cover",
       }}
-      className="h-screen"
+      className="min-h-screen flex flex-col"
     >
-      <LandingPageNav/>
-      <div className="flex h-[calc(100vh-10rem)] flex-col justify-center items-center">
-        <div className="flex flex-col flex-grow justify-center items-center pb-10">
-          <img
-            src="./images/IClogo.png"
-            alt="Logo"
-            className="w-128 -translate-y-5 "
-          />
-          <div className="text-white font-miso flex flex-col lg:flex-row lg:gap-80 lg:text-6xl">
+      <LandingPageNav />
+      <div className="flex flex-col flex-grow  justify-center items-center pb-8">
+        <div className="flex flex-col justify-center items-center mb-56 gap-4 sm:gap-0">
+          <img src="./images/IClogo.png" alt="Logo" className="w-72 sm:w-128" />
+          <div className="text-white font-miso flex flex-col sm:flex-row gap-4 sm:gap-8 text-4xl md:text-6xl">
             <div className="border-2 bg-black border-white px-4 py-2 rounded-2xl">
-              Technical Events
+              <a href="/tech">Technical Events</a>
             </div>
             <div className="border-2 bg-black border-white px-4 py-2 rounded-2xl">
-              Cultural Events
+              <a href="/cult">Cultural Events</a>
             </div>
           </div>
         </div>
-        <p className="text-white text-6xl uppercase font-Horrors">
+      </div>
+      <div>
+        <p className="text-white text-5xl text-center sm:text-7xl py-8 md:py-2 uppercase font-Horrors">
           26-28 October
         </p>
-        <h4 className="text-white text-4xl font-miso uppercase ">
+        <h4 className="text-white text-4xl text-center font-miso py-4 uppercase hidden sm:block">
           Indian Institute of Information Technology Pune
         </h4>
       </div>

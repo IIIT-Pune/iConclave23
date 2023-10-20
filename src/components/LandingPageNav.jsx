@@ -22,7 +22,7 @@ const FFNav = () => {
           {/* Show the first logo in both desktop and mobile versions */}
           <img
             src="/images/IConclave.png"
-            className="h-32 p-4"
+            className="h-32 py-4"
             alt="Iconclavebg"
           />
         </a>
@@ -74,7 +74,7 @@ const FFNav = () => {
       </nav>
       {/* Black overlay for mobile menu */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 h-screen w-screen bg-black z-50 flex flex-col items-center justify-center">
+        <div className="fixed top-0 left-0 h-screen w-screen bg-gradient-to-b from-[#0E687D]  to-[#012745] z-50 flex flex-col items-center justify-center">
           {/* Cross button to close the mobile menu */}
           <button
             className="absolute top-2 right-2 p-2 text-white"
