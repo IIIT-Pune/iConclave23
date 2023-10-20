@@ -166,7 +166,7 @@ const Infinity = () => {
         <div className="text-center text-white">
           <h3 className="text-5xl font-miso">PRIZE POOL</h3>
           <h1 className="text-center text-5xl text-white lg:text-9xl font-miso">
-            INR 50K
+            INR 35K
           </h1>
         </div>
       </div>
