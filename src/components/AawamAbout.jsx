@@ -27,9 +27,11 @@ const AawamAbout = () => {
             stage, and together, we become the voice of change!
           </p>
         </div>
-        <div className="text-center text-white">
-          <h3 className="text-5xl font-miso">PRIZE POOL</h3>
-          <h1 className="text-center text-5xl text-white lg:text-8xl font-monoton">
+        <div className="text-center text-white mb-20">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-miso">
+            PRIZE POOL
+          </h3>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl py-2 text-center text-white font-normal font-monoton">
             INR 18K
           </h1>
         </div>

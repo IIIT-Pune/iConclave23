@@ -97,9 +97,11 @@ const Anurag = () => {
               cheering, dancing and grooving along to the song beats!
             </p>
           </div>
-          <div className="text-center text-white">
-            <h3 className="text-5xl font-miso">PRIZE POOL</h3>
-            <h1 className="text-center text-6xl text-white lg:text-9xl font-miso">
+          <div className="text-center text-white mb-20">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-miso">
+              PRIZE POOL
+            </h3>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl py-2 text-center text-white font-normal font-miso">
               INR 18K
             </h1>
           </div>

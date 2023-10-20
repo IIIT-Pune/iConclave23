@@ -7,6 +7,70 @@ import "../App.css";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet"; // Import Helmet for managing SEO tags
 
+const preloadedImages = [
+  "/images/aboutimage.png",
+  "/images/Alarm.png",
+  "/images/bg_off.png",
+  "/images/Calendar25.png",
+  "/images/codecheflogo.svg",
+  "/images/coding.png",
+  "/images/footerblack.png",
+  "/images/footerwhite.png",
+  "/images/ghost.png",
+  "/images/guidelinesimage.png",
+  "/images/host2.png",
+  "/images/IConclave.png",
+  "/images/IConclaveFull.png",
+  "/images/infinity_bg.png",
+  "/images/infinity_cau.png",
+  "/images/Infinity_logo.png",
+  "/images/loader.gif",
+  "/images/loader.webp",
+  "/images/loader2.gif",
+  "/images/lockoutbg.png",
+  "/images/lockout_bg.png",
+  "/images/lockout_cau.png",
+  "/images/lockout_logo.png",
+  "/images/nexus_bg.png",
+  "/images/nexus_cau.png",
+  "/images/off-roadbgblur.png",
+  "/images/off-roadbigbgblur.png",
+  "/images/offrd_cau.png",
+  "/images/tech_2.png",
+  "/images/tech_head.png",
+];
+
+const preloadImages = () => {
+  preloadedImages.forEach((imagePath) => {
+    const img = new Image();
+    img.src = imagePath;
+  });
+};
+
+const preloadedFonts = [
+  "/fonts/MajorMonoDisplay.ttf",
+  "/fonts/miso copy.woff",
+  "/fonts/miso-bold copy.woff",
+  "/fonts/miso-bold.woff",
+  "/fonts/miso-light copy.woff",
+  "/fonts/miso-light.woff",
+  "/fonts/miso.woff",
+  "/fonts/Miso_Regular.json",
+  "/fonts/NewShape-Book.ttf",
+  "/fonts/NewShape.ttf",
+  "/fonts/NightcoreDemo.ttf",
+  "/fonts/SilkRoad.ttf",
+];
+
+const preloadFonts = () => {
+  preloadedFonts.forEach((fontPath) => {
+    const link = document.createElement("link");
+    link.href = fontPath;
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+  });
+};
+
 const Tech = () => {
   const [swiper, setSwiper] = useState(null);
 
