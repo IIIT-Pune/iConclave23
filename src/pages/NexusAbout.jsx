@@ -176,7 +176,7 @@ const NexusAbout = () => {
               <Typography>1. What is the team size?</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>- 1-4</Typography>
+              <Typography>- 1-6</Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
