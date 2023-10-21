@@ -42,7 +42,9 @@ const FFNav = () => {
 
               <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
 
-              <li className="hover:border-b-2 pb-1 ">CONTACT US</li>
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="mailto:iconclave@iiitp.ac.in">CONTACT US</a>
+              </li>
             </ul>
           </div>
         </div>
