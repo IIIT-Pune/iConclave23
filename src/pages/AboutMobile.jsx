@@ -12,8 +12,10 @@ const AboutMobile = () => {
       }}
     >
       <LandingPageNav />
-      <h1 className="text-white text-6xl font-Horrors text-center">About</h1>
-      <div className="text-white font-bold font-miso text-2xl px-5 py-10 text-justify">
+      <h1 className="text-white text-6xl sm: font-Horrors text-center">
+        About
+      </h1>
+      <div className="text-white font-bold font-miso text-2xl px-5 py-10 flex flex-col gap-6 text-justify">
         <p>
           As the spirit of Halloween descends upon us, we at the Indian
           Institute of Information Technology Pune are filled with eerie

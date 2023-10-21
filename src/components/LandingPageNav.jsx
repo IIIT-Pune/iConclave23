@@ -95,7 +95,7 @@ const FFNav = () => {
           </button>
 
           <div className="flex-grow text-white flex items-center justify-center">
-            <ul className="flex flex-col items-center justify-between gap-4 text-xl sm:text-2xl md:text-3xl text-gray-300">
+            <ul className="flex flex-col items-center justify-between gap-6 text-xl sm:text-2xl md:text-3xl text-gray-300">
               <li className="hover:border-b-2 pb-1">
                 <a href="/about">ABOUT</a>
               </li>
