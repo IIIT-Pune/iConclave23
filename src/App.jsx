@@ -28,6 +28,7 @@ import ShipWreck from "./pages/ShipWreck";
 import StoryQuest from "./pages/StoryQuest";
 import NotFound from "./pages/NotFound";
 import Landing from "./pages/Landing";
+// import LandingAbout from "./components/LandingAbout";
 
 const preloadedImages = [
   //   "/images/aawaaz_cau.png",
@@ -194,6 +195,7 @@ const App = () => {
           )}
           <About />
         </>
+        // <LandingAbout />
       ),
     },
     {
