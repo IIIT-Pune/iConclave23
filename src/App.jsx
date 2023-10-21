@@ -28,6 +28,8 @@ import ShipWreck from "./pages/ShipWreck";
 import StoryQuest from "./pages/StoryQuest";
 import NotFound from "./pages/NotFound";
 import Landing from "./pages/Landing";
+import SponsorsMobile from "./pages/SponsorsMobile";
+import AboutMobile from "./pages/AboutMobile";
 
 const preloadedImages = [
   //   "/images/aawaaz_cau.png",
@@ -192,7 +194,7 @@ const App = () => {
               <img src={Loader} className="w-[60%]" />
             </div>
           )}
-          <About />
+          {isLargeScreen ? <About /> : <AboutMobile />}
         </>
       ),
     },
@@ -210,7 +212,7 @@ const App = () => {
               <img src={Loader} className="w-[60%]" />
             </div>
           )}
-          <Sponsor />
+          {isLargeScreen ? <Sponsor /> : <SponsorsMobile />}
         </>
       ),
     },

@@ -98,46 +98,27 @@ const FFNav = () => {
 
           <div className="flex-grow text-white flex items-center justify-center">
             <ul className="flex flex-col items-center justify-between gap-4 text-xl sm:text-2xl md:text-3xl text-white-600">
-              <Link
-                to="about"
-                onClick={closeMobileMenu}
-                smooth={true}
-                duration={500}
-              >
+              <a href="about" onClick={closeMobileMenu}>
                 <li className="hover:border-b-2 pb-1 ">ABOUT</li>
-              </Link>
-              <Link
-                to="getintouch"
-                onClick={closeMobileMenu}
-                smooth={true}
-                duration={500}
-              >
+              </a>
+              <a href="cultnight" onClick={closeMobileMenu}>
                 <li className="hover:border-b-2 pb-1 ">KHWAAB</li>
-              </Link>
-              <Link
-                to="getintouch"
-                onClick={closeMobileMenu}
-                smooth={true}
-                duration={500}
-              >
+              </a>
+              <a href="sponsors" onClick={closeMobileMenu}>
                 <li className="hover:border-b-2 pb-1 ">SPONSORS</li>
-              </Link>
-              <Link
-                to="getintouch"
+              </a>
+              <a
+                href="schedule"
                 onClick={closeMobileMenu}
-                smooth={true}
-                duration={500}
               >
                 <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
-              </Link>
-              <Link
-                to="getintouch"
+              </a>
+              <a
+                href="getintouch"
                 onClick={closeMobileMenu}
-                smooth={true}
-                duration={500}
               >
                 <li className="hover:border-b-2 pb-1 ">CONTACT US</li>
-              </Link>
+              </a>
             </ul>
           </div>
           <div>
