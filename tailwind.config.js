@@ -23,6 +23,8 @@ export default {
         punishment: ["Punishment", "cursive"],
         harryp: ["HARRYP", "cursive"],
         Horrors: ["Horrors", "cursive"],
+        mrsmonster: ["mrsmonster", "cursive"],
+        youmurdererbb: ["youmurdererbb", "cursive"],
       },
       colors: {
         lockoutred: "#571d20",
