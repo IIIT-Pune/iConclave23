@@ -10,101 +10,101 @@ const Schedule = () => {
       {
         time: "10:00 AM - 11:00 AM",
         event: "Opening Ceremony",
-        location: "CR 9",
+        // location: "CR 9",
       },
       {
         time: "11:00 PM - 1:30 PM",
         event: "cognition",
-        location: "CR 9",
+        // location: "CR 9",
       },
       {
         time: "1:00 PM - 5:30 PM",
         event: "off road bandits",
-        location: "COLLEGE ROOF",
+        // location: "COLLEGE ROOF",
       },
       {
         time: "11:00 AM - 5:30 PM",
         event: "frame flicks",
-        location: "CAMPUS",
+        // location: "CAMPUS",
       },
       {
         time: "2:00 PM - 6:00 PM",
         event: "lockout",
-        location: "CR 7, CR 8",
+        // location: "CR 7, CR 8",
       },
       {
         time: "5:00 PM - 11:59 PM",
         event: "nexus",
-        location: "CR 3, CR 4",
+        // location: "CR 3, CR 4",
       },
       {
         time: "5:30 PM - 21:30 PM",
         event: "nritya nova",
-        location: "AMPHI",
+        // location: "AMPHI",
       },
     ],
     [
       {
         time: "00:00 AM - 11:59 PM",
         event: "nexus",
-        location: "CR 3, CR 4",
+        // location: "CR 3, CR 4",
       },
       {
         time: "00:30 AM - 11:59 PM",
         event: "frame flicks",
-        location: "CAMPUS",
+        // location: "CAMPUS",
       },
       {
         time: "10:30 AM - 11:00 AM",
         event: "Aawaz-e-aawam",
-        location: "PARKING",
+        // location: "PARKING",
       },
       {
         time: "11:30 AM - 1:30 PM",
         event: "story quest R1",
-        location: "CR 7",
+        // location: "CR 7",
       },
       {
         time: "2:30 PM - 4:30 PM",
         event: "story quest r2",
-        location: "CR 7",
+        // location: "CR 7",
       },
       {
         time: "5:00 PM - 9:30 PM",
         event: "anuraag",
-        location: "AMPHI",
+        // location: "AMPHI",
       },
     ],
     [
       {
         time: "00:00 AM - 6:00 AM",
         event: "nexus",
-        location: "CR 3, CR 4",
+        // location: "CR 3, CR 4",
       },
       {
         time: "00:00 AM - 5:00 PM",
         event: "frame flicks",
-        location: "CAMPUS",
+        // location: "CAMPUS",
       },
       {
         time: "10:00 AM - 2:00 PM",
         event: "shipwreck",
-        location: "CR 10",
+        // location: "CR 10",
       },
       {
         time: "2:00 PM - 4:30 PM",
         event: "lockout",
-        location: "CR 7, CR 8",
+        // location: "CR 7, CR 8",
       },
       {
         time: "5:00 PM - 7:00 PM",
         event: "closing ceremony",
-        location: "PARKING",
+        // location: "PARKING",
       },
       {
         time: "7:00 PM - 10:00 PM",
         event: "cultural night",
-        location: "PARKING",
+        // location: "PARKING",
       },
       // Add more events for Day 3 here
     ],
@@ -141,13 +141,13 @@ const Schedule = () => {
           ))}
         </div>
 
-        <div className="overflow-x-auto font-mrsmonster text-xl">
+        <div className="overflow-x-auto font-mrsmonster text-2xl">
           <table className="w-full table-auto">
-            <thead className="font-Horrors">
+            <thead className="font-Horrors text-5xl">
               <tr>
                 <th className="px-4 py-2">Event</th>
                 <th className="px-4 py-2">Time</th>
-                <th className="px-4 py-2">Location</th>
+                {/* <th className="px-4 py-2">Location</th> */}
               </tr>
             </thead>
             <tbody>
@@ -155,9 +155,9 @@ const Schedule = () => {
                 <tr key={index}>
                   <td className="px-4 py-2 sm:px-6 sm:py-3">{event.event}</td>
                   <td className="px-4 py-2 sm:px-6 sm:py-3">{event.time}</td>
-                  <td className="px-4 py-2 sm:px-6 sm:py-3">
+                  {/* <td className="px-4 py-2 sm:px-6 sm:py-3">
                     {event.location}
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>

@@ -17,6 +17,36 @@ const SponsorsMobile = () => {
         <div className="flex justify-center">
           <div className="grid p-5 lg:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center">
             <SponsorCard
+              logo="nexussponsor1.png"
+              name="DevFolio"
+              website="#"
+              partner="Gold Sponsor"
+            />
+            <SponsorCard
+              logo="nexussponsor2.png"
+              name="Polygon"
+              website="#"
+              partner="Silver Sponsor"
+            />
+            <SponsorCard
+              logo="nexussponsor3.png"
+              name="Replit"
+              website="#"
+              partner="Silver Sponsor"
+            />
+            <SponsorCard
+              logo="nexussponsor4.png"
+              name="Pune DAO"
+              website="#"
+              partner="Silver Sponsor"
+            />
+            <SponsorCard
+              logo="nexussponsor5.png"
+              name="Rariko"
+              website="#"
+              partner="Silver Sponsor"
+            />
+            <SponsorCard
               logo="Unstop.png"
               name="Unstop"
               website="#"
