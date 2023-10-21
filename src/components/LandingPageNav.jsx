@@ -34,13 +34,17 @@ const FFNav = () => {
                 <a href="/about">ABOUT</a>
               </li>
 
-              <li className="hover:border-b-2 pb-1 ">KHWAAB</li>
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/cultnight">KHWAAB</a>
+              </li>
 
               <li className="hover:border-b-2 pb-1 ">
                 <a href="/sponsors">SPONSORS</a>
               </li>
 
-              <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/schedule">SCHEDULE</a>
+              </li>
 
               <li className="hover:border-b-2 pb-1 ">
                 <a href="mailto:iconclave@iiitp.ac.in">CONTACT US</a>
@@ -111,7 +115,7 @@ const FFNav = () => {
               </li>
 
               <li className="hover:border-b-2 pb-1 ">
-                <a href="/schedule"> SCHEDULE</a>
+                <a href="/schedule">SCHEDULE</a>
               </li>
 
               <li className="hover:border-b-2 pb-1 ">
