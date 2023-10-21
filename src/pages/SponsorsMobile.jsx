@@ -21,6 +21,7 @@ const SponsorsMobile = () => {
             website="#"
             partner="Event Partner"
           />
+
           <SponsorCard
             logo="Tech1.png"
             name="Devfolio"
