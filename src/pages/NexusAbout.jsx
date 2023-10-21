@@ -96,7 +96,7 @@ const NexusAbout = () => {
         </div>
 
         <div className="flex-col hidden md:block py-16 text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:9xl text-center uppercase text-white justify-center rounded shadow">
-          <div className="flex justify-between font-miso  p-16">
+          <div className="flex justify-between font-miso p-16">
             <div className="flex justify-center mx-8">
               <div>Healthcare</div>
             </div>
@@ -131,57 +131,74 @@ const NexusAbout = () => {
             sponsors
           </h1>
         </div>
+
         <div className="flex justify-center px-8">
           {/* grid grid-cols-3 grid-flow-row */}
-          <div className="my-10 lg:mx-20 lg:my-10 flex flex-col lg:flex-row gap-5 sm:gap-10 items-center">
-            <div className="flex justify-center flex-col gap-5 sm:gap-10 md:gap-10 sm:flex-row">
-              <div>
-                <img
-                  src="/images/nexussponsor1.png"
-                  alt="DEVFOLIO LOGO"
-                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
-                />
-              </div>
-              <div>
-                <img
-                  src="/images/nexussponsor2.png"
-                  alt="POLYGON LOGO"
-                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
-                />
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="flex justify-center items-center">
-                <img
-                  src="/images/nexussponsor3.png"
-                  alt="REPLIT LOGO"
-                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
-                />
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="flex justify-center items-center">
-                <img
-                  src="/images/nexussponsor4.png"
-                  alt="REPLIT LOGO"
-                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
-                />
+          <div className="flex flex-col gap-4 sm:gap-8 items-center">
+            <div>
+              <h1
+                className="font-majormono text-bold text-4xl sm:text-6xl lg:text-7xl m-0 px-4 py-10 text-center text-yellow-600 font-normal"
+                id="NEXUS"
+              >
+                gold
+              </h1>
+              <div className="flex justify-center flex-col gap-5 sm:gap-10 md:gap-10 sm:flex-row">
+                <div>
+                  <img
+                    src="/images/nexussponsor1.png"
+                    alt="DEVFOLIO LOGO"
+                    className="w-64 sm:w-72 md:w-80 lg:w-96"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/images/nexussponsor2.png"
+                    alt="POLYGON LOGO"
+                    className="w-64 sm:w-72 md:w-80 lg:w-96"
+                  />
+                </div>
               </div>
             </div>
-            <div className="flex justify-center items-center">
-              <div className="flex justify-center items-center">
-                <img
-                  src="/images/nexussponsor5.png"
-                  alt="REPLIT LOGO"
-                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
-                />
+            <div>
+              <h1
+                className="font-majormono text-bold text-4xl sm:text-6xl lg:text-7xl m-0 px-4 py-10 text-center text-gray-400 font-normal"
+                id="NEXUS"
+              >
+                silver
+              </h1>
+              <div className="flex flex-col lg:flex-row gap-5 sm:gap-10 items-center">
+                <div className="flex justify-center flex-col gap-5 sm:gap-10 md:gap-10 sm:flex-row">
+                  <div>
+                    <img
+                      src="/images/nexussponsor3.png"
+                      alt="REPLIT LOGO"
+                      className="w-56 sm:w-60 md:w-68 lg:w-80"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="/images/nexussponsor4.png"
+                      alt="PUNE DAO LOGO"
+                      className="w-56 sm:w-60 md:w-68 lg:w-80"
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center items-center">
+                  <div className="flex justify-center items-center">
+                    <img
+                      src="/images/nexussponsor5.png"
+                      alt="RARIKO LOGO"
+                      className="w-56 sm:w-60 md:w-68 lg:w-80"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section className="FAQs">
-        <div className="flex items-center justify-center mt-8">
+        <div className="flex items-center justify-center mt-16">
           <h1
             className="font-majormono text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 px-4 py-10 text-center text-white font-normal"
             id="NEXUS"
