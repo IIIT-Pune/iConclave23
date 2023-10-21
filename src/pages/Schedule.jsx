@@ -8,50 +8,103 @@ const Schedule = () => {
   const eventSchedules = [
     [
       {
-        time: "10:00 AM - 11:30 AM",
+        time: "10:00 AM - 11:00 AM",
         event: "Opening Ceremony",
-        location: "Main Stage",
+        location: "CR 9",
       },
       {
-        time: "12:00 PM - 1:30 PM",
-        event: "Workshop: Topic 1",
-        location: "Room A",
+        time: "11:00 PM - 1:30 PM",
+        event: "cognition",
+        location: "CR 9",
       },
       {
-        time: "2:00 PM - 3:30 PM",
-        event: "Panel Discussion: Topic 2",
-        location: "Room B",
+        time: "1:00 PM - 5:30 PM",
+        event: "off road bandits",
+        location: "COLLEGE ROOF",
       },
-      // Add more events for Day 1 here
+      {
+        time: "11:00 AM - 5:30 PM",
+        event: "frame flicks",
+        location: "CAMPUS",
+      },
+      {
+        time: "2:00 PM - 6:00 PM",
+        event: "lockout",
+        location: "CR 7, CR 8",
+      },
+      {
+        time: "5:00 PM - 11:59 PM",
+        event: "nexus",
+        location: "CR 3, CR 4",
+      },
+      {
+        time: "5:30 PM - 21:30 PM",
+        event: "nritya nova",
+        location: "AMPHI",
+      },
     ],
     [
       {
-        time: "9:30 AM - 11:00 AM",
-        event: "Morning Session",
-        location: "Main Stage",
+        time: "00:00 AM - 11:59 PM",
+        event: "nexus",
+        location: "CR 3, CR 4",
       },
       {
-        time: "12:30 PM - 2:00 PM",
-        event: "Workshop: Topic 3",
-        location: "Room A",
+        time: "00:30 AM - 11:59 PM",
+        event: "frame flicks",
+        location: "CAMPUS",
       },
       {
-        time: "3:30 PM - 5:00 PM",
-        event: "Panel Discussion: Topic 4",
-        location: "Room B",
+        time: "10:30 AM - 11:00 AM",
+        event: "Aawaz-e-aawam",
+        location: "PARKING",
       },
-      // Add more events for Day 2 here
+      {
+        time: "11:30 AM - 1:30 PM",
+        event: "story quest R1",
+        location: "CR 7",
+      },
+      {
+        time: "2:30 PM - 4:30 PM",
+        event: "story quest r2",
+        location: "CR 7",
+      },
+      {
+        time: "5:00 PM - 9:30 PM",
+        event: "anuraag",
+        location: "AMPHI",
+      },
     ],
     [
       {
-        time: "11:00 AM - 12:30 PM",
-        event: "Workshop: Topic 5",
-        location: "Room A",
+        time: "00:00 AM - 6:00 AM",
+        event: "nexus",
+        location: "CR 3, CR 4",
       },
       {
-        time: "1:30 PM - 3:00 PM",
-        event: "Closing Ceremony",
-        location: "Main Stage",
+        time: "00:00 AM - 5:00 PM",
+        event: "frame flicks",
+        location: "CAMPUS",
+      },
+      {
+        time: "10:00 AM - 2:00 PM",
+        event: "shipwreck",
+        location: "CR 10",
+      },
+      {
+        time: "2:00 PM - 4:30 PM",
+        event: "lockout",
+        location: "CR 7, CR 8",
+      },
+      {
+        time: "5:00 PM - 7:00 PM",
+        event: "closing ceremony",
+        location: "PARKING",
+      },
+      {
+        time: "7:00 PM - 10:00 PM",
+        event: "cultural night",
+        location: "PARKING",
       },
       // Add more events for Day 3 here
     ],
@@ -59,18 +112,20 @@ const Schedule = () => {
 
   return (
     <div
-      className="h-screen flex flex-col"
+      className="min-h-screen flex flex-col"
       style={{
-        background: "url(/images/longpost3.png)",
-        backgroundPosition: "right center",
+        background: "url(/images/longpost4.png), lightgray 50%",
+        backgroundPosition: "center",
         backgroundSize: "cover",
       }}
     >
       <LandingPageNav />
-      <h1 className="text-white text-6xl font-Horrors text-center">Schedule</h1>
+      <h1 className="text-white text-7xl font-youmurdererbb text-center">
+        Event Schedule
+      </h1>
 
       <div className=" text-white p-4 mx-auto mt-6 rounded-lg shadow-md">
-        <div className="flex justify-center mb-4 space-x-4">
+        <div className="flex font-mrsmonster justify-center mb-4 space-x-4">
           {eventSchedules.map((_, index) => (
             <button
               key={index}
@@ -86,20 +141,20 @@ const Schedule = () => {
           ))}
         </div>
 
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto font-mrsmonster text-xl">
           <table className="w-full table-auto">
-            <thead>
+            <thead className="font-Horrors">
               <tr>
-                <th className="px-4 py-2">Time</th>
                 <th className="px-4 py-2">Event</th>
+                <th className="px-4 py-2">Time</th>
                 <th className="px-4 py-2">Location</th>
               </tr>
             </thead>
             <tbody>
               {eventSchedules[activeDay - 1].map((event, index) => (
                 <tr key={index}>
-                  <td className="px-4 py-2 sm:px-6 sm:py-3">{event.time}</td>
                   <td className="px-4 py-2 sm:px-6 sm:py-3">{event.event}</td>
+                  <td className="px-4 py-2 sm:px-6 sm:py-3">{event.time}</td>
                   <td className="px-4 py-2 sm:px-6 sm:py-3">
                     {event.location}
                   </td>

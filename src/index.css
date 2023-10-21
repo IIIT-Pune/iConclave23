@@ -73,6 +73,14 @@
   font-family: Horrors;
   src: url("/fonts/Horrors.ttf");
 }
+@font-face {
+  font-family: mrsmonster;
+  src: url("/fonts/mrsmonster.ttf");
+}
+@font-face {
+  font-family: youmurdererbb;
+  src: url("/fonts/youmurdererbb.ttf");
+}
 ::-webkit-scrollbar {
   display: none;
 }
