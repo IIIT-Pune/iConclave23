@@ -70,7 +70,7 @@ const Infinity = () => {
                   CODE <span className="text-red-600">CHEF</span>
                 </a>
               </span>
-              {/* <span>
+              <span>
                 <a
                   target="_blank"
                   href="https://www.codechef.com/START105"
@@ -78,14 +78,14 @@ const Infinity = () => {
                 >
                   ( AS STARTERS 105 )
                 </a>
-              </span> */}
+              </span>
             </div>
 
             {/* <div className="text-white flex justify-center pr-5 md:pr-0 text-xl sm:text-2xl lg:text-3xl font-miso"> */}
             <div className="text-white flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-miso">
               <div className="flex flex-col md:flex-row gap-2 my-2 md:mt-5">
                 {/* <div className="flex items-center -mb-3 lg:-mt-8"> */}
-                {/* <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center">
                   <div className="flex items-center justify-center -ml-1">
                     <img
                       src="/images/Calendar25.png"
@@ -106,11 +106,11 @@ const Infinity = () => {
                     />
                   </div>
                   20:00 - 22:00
-                </div> */}
-                <div className="font-miso text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-400">
+                </div>
+                {/* <div className="font-miso text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-400">
                   COMING &nbsp;
                   <span className="text-gray-400">SOON</span>
-                </div>
+                </div> */}
               </div>
             </div>
             {/* <div className="text-white flex justify-center pt-5 lg:pt-0 lg:-mt-4"> */}
@@ -168,7 +168,7 @@ const Infinity = () => {
             PRIZE POOL
           </h3>
           <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-8xl xl:text-9xl py-2 text-center text-white font-normal font-miso">
-            INR 35K
+            INR 50K
           </h1>
         </div>
         {/* <div className="text-center text-white">
