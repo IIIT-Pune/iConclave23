@@ -1,5 +1,6 @@
 import LandingPageNav from "../components/LandingPageNav";
 import SponsorCard from "../components/SponsorCard";
+import Footer from "../components/Footer";
 
 const SponsorsMobile = () => {
   return (
@@ -12,10 +13,12 @@ const SponsorsMobile = () => {
       }}
     >
       <LandingPageNav />
-      <h1 className="text-white text-6xl font-Horrors text-center">Sponsors</h1>
+      <h1 className="text-white my-8 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-Horrors text-center ">
+        Sponsors
+      </h1>
       <div className="">
         <div className="flex justify-center">
-          <div className="grid p-5 lg:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center">
+          <div className="grid p-5 gap-5 lg:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center">
             <SponsorCard
               logo="Unstop.png"
               name="Unstop"
@@ -49,6 +52,7 @@ const SponsorsMobile = () => {
           </div>
         </div>
       </div>
+      <Footer textColor={"white"} />
     </div>
   );
 };
