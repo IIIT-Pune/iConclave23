@@ -159,6 +159,24 @@ const NexusAbout = () => {
                 />
               </div>
             </div>
+            <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center">
+                <img
+                  src="/images/nexussponsor4.png"
+                  alt="REPLIT LOGO"
+                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
+                />
+              </div>
+            </div>
+            <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center">
+                <img
+                  src="/images/nexussponsor5.png"
+                  alt="REPLIT LOGO"
+                  className="w-56 sm:w-62 md:w-68 lg:w-96 xl:w-104"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
