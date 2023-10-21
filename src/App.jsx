@@ -214,7 +214,7 @@ const App = () => {
               <img src={Loader} className="w-[60%]" />
             </div>
           )}
-          {isLargeScreen ? <Sponsor /> : <SponsorsMobile />}
+          {1==0 ? <Sponsor /> : <SponsorsMobile />}
         </>
       ),
     },
