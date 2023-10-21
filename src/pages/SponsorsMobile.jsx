@@ -13,33 +13,40 @@ const SponsorsMobile = () => {
     >
       <LandingPageNav />
       <h1 className="text-white text-6xl font-Horrors text-center">Sponsors</h1>
-      <div className="m-5">
-        <div className="flex flex-col justify-center items-center">
-          <SponsorCard
-            logo="Unstop.png"
-            name="Unstop"
-            website="#"
-            partner="Event Partner"
-          />
-
-          <SponsorCard
-            logo="Tech1.png"
-            name="Devfolio"
-            website="#"
-            partner="Technical Partner"
-          />
-          <SponsorCard
-            logo="Tech2.png"
-            name="Pune DAO"
-            website="#"
-            partner="Community Partner"
-          />
-          <SponsorCard
-            logo="Tech3.png"
-            name="Rise In"
-            website="#"
-            partner="Technical Partner"
-          />
+      <div className="">
+        <div className="flex justify-center">
+          <div className="grid p-5 lg:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center">
+            <SponsorCard
+              logo="Unstop.png"
+              name="Unstop"
+              website="#"
+              partner="Event Partner"
+            />
+            <SponsorCard
+              logo="Ed_Times.png"
+              name="ED Times"
+              website="#"
+              partner="Online Media Partner"
+            />
+            <SponsorCard
+              logo="India_College_Fest.png"
+              name="India College Fest"
+              website="#"
+              partner="Online Media Partner"
+            />
+            <SponsorCard
+              logo="Campus_Times_Pune.png"
+              name="Campus Times Pune"
+              website="#"
+              partner="Youth Partner"
+            />
+            <SponsorCard
+              logo="Plum_Body_Lovin.png"
+              name="Plum Body Lovin"
+              website="#"
+              partner="Body Product Partner"
+            />
+          </div>
         </div>
       </div>
     </div>
