@@ -196,6 +196,7 @@ const App = () => {
           )}
           {isLargeScreen ? <About /> : <AboutMobile />}
         </>
+        // <LandingAbout />
       ),
     },
     {

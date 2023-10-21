@@ -28,23 +28,21 @@ const FFNav = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex pl-40 font-miso px-6">
-          <div className="text-white text-2xl flex items-center">
+          <div className="text-white gap-4 text-2xl sm:text-3xl md:text-4xl flex items-center">
             <ul className="flex gap-10 z-10">
-              <Link to="about" smooth={true} duration={500}>
-                <li className="hover:border-b-2 pb-1">ABOUT</li>
-              </Link>
-              <Link to="getintouch" smooth={true} duration={500}>
-                <li className="hover:border-b-2 pb-1 ">KHWAAB</li>
-              </Link>
-              <Link to="getintouch" smooth={true} duration={500}>
-                <li className="hover:border-b-2 pb-1 ">SPONSORS</li>
-              </Link>
-              <Link to="getintouch" smooth={true} duration={500}>
-                <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
-              </Link>
-              <Link to="getintouch" smooth={true} duration={500}>
-                <li className="hover:border-b-2 pb-1 ">CONTACT US</li>
-              </Link>
+              <li className="hover:border-b-2 pb-1">
+                <a href="/about">ABOUT</a>
+              </li>
+
+              <li className="hover:border-b-2 pb-1 ">KHWAAB</li>
+
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/sponsors">SPONSORS</a>
+              </li>
+
+              <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
+
+              <li className="hover:border-b-2 pb-1 ">CONTACT US</li>
             </ul>
           </div>
         </div>
@@ -77,12 +75,12 @@ const FFNav = () => {
         <div className="fixed top-0 left-0 h-screen w-screen bg-gradient-to-b from-[#0E687D]  to-[#012745] z-50 flex flex-col items-center justify-center">
           {/* Cross button to close the mobile menu */}
           <button
-            className="absolute top-2 right-2 p-2 text-white"
+            className="absolute top-6 right-4 p-4"
             onClick={toggleMobileMenu}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-white"
+              className="h-8 w-8 text-gray-400"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -97,28 +95,26 @@ const FFNav = () => {
           </button>
 
           <div className="flex-grow text-white flex items-center justify-center">
-            <ul className="flex flex-col items-center justify-between gap-4 text-xl sm:text-2xl md:text-3xl text-white-600">
-              <a href="about" onClick={closeMobileMenu}>
-                <li className="hover:border-b-2 pb-1 ">ABOUT</li>
-              </a>
-              <a href="cultnight" onClick={closeMobileMenu}>
-                <li className="hover:border-b-2 pb-1 ">KHWAAB</li>
-              </a>
-              <a href="sponsors" onClick={closeMobileMenu}>
-                <li className="hover:border-b-2 pb-1 ">SPONSORS</li>
-              </a>
-              <a
-                href="schedule"
-                onClick={closeMobileMenu}
-              >
-                <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
-              </a>
-              <a
-                href="getintouch"
-                onClick={closeMobileMenu}
-              >
-                <li className="hover:border-b-2 pb-1 ">CONTACT US</li>
-              </a>
+            <ul className="flex flex-col items-center justify-between gap-4 text-xl sm:text-2xl md:text-3xl text-gray-300">
+              <li className="hover:border-b-2 pb-1">
+                <a href="/about">ABOUT</a>
+              </li>
+
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/cultnight">KHWAAB</a>
+              </li>
+
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/sponsors">SPONSORS</a>
+              </li>
+
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/schedule"> SCHEDULE</a>
+              </li>
+
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="mailto:iconclave@iiitp.ac.in">CONTACT US</a>
+              </li>
             </ul>
           </div>
           <div>

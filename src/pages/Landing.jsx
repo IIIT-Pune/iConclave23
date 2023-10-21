@@ -1,5 +1,35 @@
 import LandingPageNav from "../components/LandingPageNav";
 
+const preloadedImages = ["/images/longpost.png", "/images/IClogo.png"];
+
+const preloadImages = () => {
+  preloadedImages.forEach((imagePath) => {
+    const img = new Image();
+    img.src = imagePath;
+  });
+};
+
+const preloadedFonts = [
+  "/fonts/Horrors.ttf",
+  "/fonts/Horrors.woff",
+  "/fonts/miso copy.woff",
+  "/fonts/miso-bold copy.woff",
+  "/fonts/miso-bold.woff",
+  "/fonts/miso-light copy.woff",
+  "/fonts/miso-light.woff",
+  "/fonts/miso.woff",
+  "/fonts/Miso_Regular.json",
+];
+
+const preloadFonts = () => {
+  preloadedFonts.forEach((fontPath) => {
+    const link = document.createElement("link");
+    link.href = fontPath;
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+  });
+};
+
 const Landing = () => {
   return (
     <div
