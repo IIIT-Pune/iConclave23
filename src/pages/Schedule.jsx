@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LandingPageNav from "../components/LandingPageNav";
+import Footer from "../components/Footer";
 
 const Schedule = () => {
   const [activeDay, setActiveDay] = useState(1); // Initial active day
@@ -120,50 +121,61 @@ const Schedule = () => {
       }}
     >
       <LandingPageNav />
-      <h1 className="text-white text-7xl font-youmurdererbb text-center">
-        Event Schedule
-      </h1>
+      <div className="flex-grow flex flex-col py-6 justify-center">
+        <h1 className="text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-youmurdererbb text-center">
+          Event Schedule
+        </h1>
 
-      <div className=" text-white p-4 mx-auto mt-6 rounded-lg shadow-md">
-        <div className="flex font-mrsmonster justify-center mb-4 space-x-4">
-          {eventSchedules.map((_, index) => (
-            <button
-              key={index}
-              className={`${
-                activeDay === index + 1
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-300 text-gray-700"
-              } px-4 py-2 rounded-md`}
-              onClick={() => setActiveDay(index + 1)}
-            >
-              Day {index + 1}
-            </button>
-          ))}
-        </div>
+        <div className=" text-white p-4 mx-auto mt-6 rounded-lg shadow-md">
+          <div className="flex font-mrsmonster justify-evenly mb-16 space-x-4">
+            {eventSchedules.map((_, index) => (
+              <button
+                key={index}
+                className={`${
+                  activeDay === index + 1
+                    ? "bg-red-500 text-white"
+                    : "bg-gray-200 text-gray-700"
+                } px-4 py-2 rounded-md text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
+                onClick={() => setActiveDay(index + 1)}
+              >
+                Day {index + 1}
+              </button>
+            ))}
+          </div>
 
-        <div className="overflow-x-auto font-mrsmonster text-2xl">
-          <table className="w-full table-auto">
-            <thead className="font-Horrors text-5xl">
-              <tr>
-                <th className="px-4 py-2">Event</th>
-                <th className="px-4 py-2">Time</th>
-                {/* <th className="px-4 py-2">Location</th> */}
-              </tr>
-            </thead>
-            <tbody>
-              {eventSchedules[activeDay - 1].map((event, index) => (
-                <tr key={index}>
-                  <td className="px-4 py-2 sm:px-6 sm:py-3">{event.event}</td>
-                  <td className="px-4 py-2 sm:px-6 sm:py-3">{event.time}</td>
-                  {/* <td className="px-4 py-2 sm:px-6 sm:py-3">
+          <div className="overflow-x-auto font-mrsmonster text-2xl">
+            <table className="w-full table-auto">
+              <thead className="font-Horrors text-gray-200">
+                <tr>
+                  <th className="px-4 pt-2 pb-4 lg:pb-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                    Event
+                  </th>
+                  <th className="px-4 pt-2 pb-4 lg:pb-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                    Time
+                  </th>
+                  {/* <th className="px-4 py-2">Location</th> */}
+                </tr>
+              </thead>
+              <tbody>
+                {eventSchedules[activeDay - 1].map((event, index) => (
+                  <tr key={index}>
+                    <td className="px-4 py-2 sm:px-6 sm:py-3 text-xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-400 text-center">
+                      {event.event}
+                    </td>
+                    <td className="py-2 sm:px-6 sm:py-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center text-gray-300 font-miso">
+                      {event.time}
+                    </td>
+                    {/* <td className="px-4 py-2 sm:px-6 sm:py-3">
                     {event.location}
                   </td> */}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
+      <Footer textColor={"white"} />
     </div>
   );
 };
