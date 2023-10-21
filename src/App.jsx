@@ -167,7 +167,7 @@ const App = () => {
     };
   }, []);
 
-  const isLargeScreen = window.innerWidth >= 768;
+  const isLargeScreen = window.innerWidth >= 1024;
 
   const router = createBrowserRouter([
     {
