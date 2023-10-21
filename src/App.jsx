@@ -28,7 +28,7 @@ import ShipWreck from "./pages/ShipWreck";
 import StoryQuest from "./pages/StoryQuest";
 import NotFound from "./pages/NotFound";
 import Landing from "./pages/Landing";
-import LandingAbout from "./components/LandingAbout";
+// import LandingAbout from "./components/LandingAbout";
 
 const preloadedImages = [
   //   "/images/aawaaz_cau.png",
@@ -186,16 +186,16 @@ const App = () => {
     {
       path: "about",
       element: (
-        // <>
-        //   {" "}
-        //   {showLoader2 && (
-        //     <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
-        //       <img src={Loader} className="w-[60%]" />
-        //     </div>
-        //   )}
-        //   <About />
-        // </>
-        <LandingAbout />
+        <>
+          {" "}
+          {showLoader2 && (
+            <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+              <img src={Loader} className="w-[60%]" />
+            </div>
+          )}
+          <About />
+        </>
+        // <LandingAbout />
       ),
     },
     {
