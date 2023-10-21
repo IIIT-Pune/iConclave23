@@ -30,6 +30,7 @@ import NotFound from "./pages/NotFound";
 import Landing from "./pages/Landing";
 import SponsorsMobile from "./pages/SponsorsMobile";
 import AboutMobile from "./pages/AboutMobile";
+import Schedule from "./pages/Schedule";
 
 const preloadedImages = [
   //   "/images/aawaaz_cau.png",
@@ -248,6 +249,10 @@ const App = () => {
           <Cult />
         </>
       ),
+    },
+    {
+      path: "schedule",
+      element: <Schedule />,
     },
     {
       path: "tech/nexus",
