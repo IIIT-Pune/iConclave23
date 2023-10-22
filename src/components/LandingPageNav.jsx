@@ -34,13 +34,17 @@ const FFNav = () => {
                 <a href="/about">ABOUT</a>
               </li>
 
-              <li className="hover:border-b-2 pb-1 ">KHWAAB</li>
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/cultnight">KHWAAB</a>
+              </li>
 
               <li className="hover:border-b-2 pb-1 ">
                 <a href="/sponsors">SPONSORS</a>
               </li>
 
-              <li className="hover:border-b-2 pb-1 ">SCHEDULE</li>
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/schedule">SCHEDULE</a>
+              </li>
 
               <li className="hover:border-b-2 pb-1 ">
                 <a href="mailto:iconclave@iiitp.ac.in">CONTACT US</a>
@@ -74,7 +78,8 @@ const FFNav = () => {
       </nav>
       {/* Black overlay for mobile menu */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 h-screen w-screen bg-gradient-to-b from-[#0E687D]  to-[#012745] z-50 flex flex-col items-center justify-center">
+        <div className="fixed top-0 left-0 h-screen w-screen bg-[url('/images/longpost4.png')] text-white h-screen flex flex-col bg-cover bg-center z-50">
+          {/* bg-gradient-to-b from-[#0E687D]  to-[#012745] */}
           {/* Cross button to close the mobile menu */}
           <button
             className="absolute top-6 right-4 p-4"
@@ -111,7 +116,7 @@ const FFNav = () => {
               </li>
 
               <li className="hover:border-b-2 pb-1 ">
-                <a href="/schedule"> SCHEDULE</a>
+                <a href="/schedule">SCHEDULE</a>
               </li>
 
               <li className="hover:border-b-2 pb-1 ">

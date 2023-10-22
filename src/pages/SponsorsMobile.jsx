@@ -5,10 +5,10 @@ import Footer from "../components/Footer";
 const SponsorsMobile = () => {
   return (
     <div
-      className="h-screen flex flex-col"
+      className="min-h-screen flex flex-col bg-no-repeat"
       style={{
-        background: "url(/images/longpost2.png)",
-        backgroundPosition: "right center",
+        background: "url(/images/longpost6.png)",
+        backgroundPosition: "center center",
         backgroundSize: "cover",
       }}
     >
@@ -29,7 +29,7 @@ const SponsorsMobile = () => {
               logo="nexussponsor2.png"
               name="Polygon"
               website="#"
-              partner="Silver Sponsor"
+              partner="Gold Sponsor"
             />
             <SponsorCard
               logo="nexussponsor3.png"

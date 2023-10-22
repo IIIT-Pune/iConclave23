@@ -11,10 +11,10 @@ const SponsorCard = ({ logo, name, website, partner }) => {
           />
         </div>
         <div className="flex flex-col pb-4 gap-2 w-10/12">
-          <h1 className="text-4xl font-normal	font-miso text-center bg-opacity-[0.70] bg-neutral-500	shadow-2xl rounded-xl p-2">
+          <h1 className="text-4xl font-normal	font-miso text-center bg-opacity-[0.60] bg-gray-500	shadow-2xl rounded-xl p-2">
             {name}
           </h1>
-          <div className="flex justify-center">
+          <div className="flex text-gray-400 justify-center">
             <h3 className="text-4xl font-medium	font-miso text-center">
               {partner}
             </h3>
