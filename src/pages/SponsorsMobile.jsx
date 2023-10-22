@@ -68,6 +68,12 @@ const SponsorsMobile = () => {
               partner="Online Media Partner"
             />
             <SponsorCard
+              logo="IHONK.png"
+              name="It Happens only in Kota"
+              website="#"
+              partner="Online Media Partner"
+            />
+            <SponsorCard
               logo="Campus_Times_Pune.png"
               name="Campus Times Pune"
               website="#"
@@ -78,6 +84,24 @@ const SponsorsMobile = () => {
               name="Plum Body Lovin"
               website="#"
               partner="Body Product Partner"
+            />
+            <SponsorCard
+              logo="Tarkashastra.png"
+              name="Tarkashastra"
+              website="#"
+              partner="Education Partner"
+            />
+            <SponsorCard
+              logo="TIME_Institute.png"
+              name="T.I.M.E"
+              website="#"
+              partner="Education Partner"
+            />
+            <SponsorCard
+              logo="ALCHERINGAIITG.png"
+              name="ALCHERINGA IITG"
+              website="#"
+              partner="Talent Showcase Partner"
             />
           </div>
         </div>

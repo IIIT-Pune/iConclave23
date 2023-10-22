@@ -2,12 +2,12 @@
 const SponsorCard = ({ logo, name, website, partner }) => {
   return (
     <a href={website}>
-      <div className="h-72 w-80 bg-white bg-opacity-[0.85] rounded-3xl my-3 flex flex-col justify-center items-center">
+      <div className="h-80 w-80 bg-white bg-opacity-[0.85] rounded-3xl my-3 flex flex-col justify-center items-center">
         <div className="h-3/5 flex justify-center items-center">
           <img
             src={`./sponsors/` + logo}
             alt={logo}
-            className="w-10/12 max-h-full"
+            className="w-10/12 max-h-full p-2"
           />
         </div>
         <div className="flex flex-col pb-4 gap-2 w-10/12">
