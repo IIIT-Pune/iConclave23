@@ -220,7 +220,7 @@ const App = () => {
               <img src={Loader} className="w-[60%]" />
             </div>
           )}
-          {1==0 ? <Sponsor /> : <SponsorsMobile />}
+          {1 == 0 ? <Sponsor /> : <SponsorsMobile />}
         </>
       ),
     },
@@ -258,7 +258,17 @@ const App = () => {
     },
     {
       path: "schedule",
-      element: <Schedule />,
+      element: (
+        <>
+          {" "}
+          {showLoader2 && (
+            <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+              <img src={Loader} className="w-[60%]" />
+            </div>
+          )}
+          <Schedule />
+        </>
+      ),
     },
     {
       path: "tech/nexus",
