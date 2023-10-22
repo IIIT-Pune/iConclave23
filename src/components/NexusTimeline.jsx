@@ -105,7 +105,7 @@ const NexusTimeline = () => {
       <div className="hidden sm:block">
         <div className="flex justify-center">
           <h1
-            className=" font-majormono text-6xl pb-2 text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 p-0 text-center text-white font-normal"
+            className=" font-majormono text-6xl pb-2 sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 p-0 text-center text-white font-normal"
             id="NEXUS"
           >
             schedule

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Footer from "./Footer";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const FFNav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,9 +11,9 @@ const FFNav = () => {
   };
 
   // Function to close the mobile menu
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+  // const closeMobileMenu = () => {
+  //   setIsMobileMenuOpen(false);
+  // };
 
   return (
     <div>
@@ -78,7 +78,7 @@ const FFNav = () => {
       </nav>
       {/* Black overlay for mobile menu */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 h-screen w-screen bg-[url('/images/longpost4.png')] text-white h-screen flex flex-col bg-cover bg-center z-50">
+        <div className="fixed top-0 left-0 h-screen w-screen bg-[url('/images/longpost4.png')] text-white flex flex-col bg-cover bg-center z-50">
           {/* bg-gradient-to-b from-[#0E687D]  to-[#012745] */}
           {/* Cross button to close the mobile menu */}
           <button
