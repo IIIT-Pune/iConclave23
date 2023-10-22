@@ -51,7 +51,7 @@ const Schedule = () => {
         // location: "CR 3, CR 4",
       },
       {
-        time: "00:30 AM - 11:59 PM",
+        time: "00:00 AM - 11:59 PM",
         event: "frame flicks",
         // location: "CAMPUS",
       },
