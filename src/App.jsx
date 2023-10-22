@@ -67,6 +67,9 @@ const preloadedImages = [
   "/images/longpost.png",
   "/images/longpost22.png",
   "/images/longpost2.png",
+  "/images/longpost4.png",
+  "/images/longpost6.png",
+
   //   "/images/lockoutbg.png",
   //   "/images/lockout_bg.png",
   //   "/images/lockout_cau.png",
