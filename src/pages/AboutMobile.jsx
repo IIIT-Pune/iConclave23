@@ -7,7 +7,7 @@ const AboutMobile = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        background: "url(/images/longpost22.png)",
+        background: "url(/images/longpost4.png)",
         backgroundPosition: "center center",
         backgroundSize: "cover",
       }}
