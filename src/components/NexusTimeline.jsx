@@ -51,7 +51,7 @@ const NexusTimeline = () => {
                 <div className="flex justify-start w-full mx-auto items-center">
                   <div className="w-full sm:w-1/2 sm:pr-8">
                     <div className="px-4 flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-white justify-center rounded shadow">
-                      OCT 21 2023
+                      OCT 23 2023
                     </div>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const NexusTimeline = () => {
                 <div className="flex  justify-end w-full mx-auto items-center">
                   <div className="w-full sm:w-1/2 sm:pl-8">
                     <div className="px-4 flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-white justify-center rounded shadow">
-                      OCT 22 2023
+                      OCT 24 2023
                     </div>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const NexusTimeline = () => {
       <div className="hidden sm:block">
         <div className="flex justify-center">
           <h1
-            className=" font-majormono text-6xl pb-2 text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 p-0 text-center text-white font-normal"
+            className=" font-majormono text-6xl pb-2 sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl m-0 p-0 text-center text-white font-normal"
             id="NEXUS"
           >
             schedule

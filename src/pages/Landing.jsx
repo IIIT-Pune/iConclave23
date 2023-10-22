@@ -48,7 +48,7 @@ const Landing = () => {
             <div className="border-2 bg-black border-white px-4 py-2 text-center rounded-2xl">
               <a href="/tech">Technical Events</a>
             </div>
-            <div className="border-2 bg-black border-white px-4 py-2 text-center rounded-2xl">
+            <div className="border-2 bg-black border-white px-4 py-2 rounded-2xl">
               <a href="/cult">Cultural Events</a>
             </div>
           </div>
