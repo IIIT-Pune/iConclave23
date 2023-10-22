@@ -43,6 +43,11 @@ const NexusNav = () => {
                     </Link>
                   </li>
                   <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                    <Link to="sponsors" smooth={true} duration={500}>
+                      <li className="hover:border-b-2 pb-1 ">SPONSORS</li>
+                    </Link>
+                  </li>
+                  <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
                     <Link to="FAQs" smooth={true} duration={500}>
                       <li className="hover:border-b-2 pb-1 ">FAQs</li>
                     </Link>
@@ -157,6 +162,16 @@ const NexusNav = () => {
                     duration={500}
                   >
                     <li className="hover:border-b-2 pb-1 ">TOPICS</li>
+                  </Link>
+                </li>
+                <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
+                  <Link
+                    to="sponsors"
+                    smooth={true}
+                    onClick={closeMobileMenu}
+                    duration={500}
+                  >
+                    <li className="hover:border-b-2 pb-1 ">SPONSORS</li>
                   </Link>
                 </li>
                 <li className=" border-b-2 border-transparent hover:border-b-2 hover:border-white">
