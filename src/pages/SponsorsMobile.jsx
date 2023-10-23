@@ -98,8 +98,8 @@ const SponsorsMobile = () => {
               partner="Education Partner"
             />
             <SponsorCard
-              logo="ALCHERINGAIITG.png"
-              name="ALCHERINGA IITG"
+              logo="AlcheringaIITG.png"
+              name="ALCHERINGA'24 IITG"
               website="#"
               partner="Dreaming Partner"
             />
