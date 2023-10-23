@@ -47,7 +47,7 @@ const FFNav = () => {
               </li>
 
               <li className="hover:border-b-2 pb-1 ">
-                <a href="mailto:iconclave@iiitp.ac.in">CONTACT US</a>
+                <a href="/contactus">CONTACT US</a>
               </li>
             </ul>
           </div>
@@ -120,7 +120,7 @@ const FFNav = () => {
               </li>
 
               <li className="hover:border-b-2 pb-1 ">
-                <a href="mailto:iconclave@iiitp.ac.in">CONTACT US</a>
+                <a href="/contactus">CONTACT US</a>
               </li>
             </ul>
           </div>

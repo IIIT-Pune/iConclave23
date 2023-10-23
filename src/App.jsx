@@ -31,6 +31,7 @@ import Landing from "./pages/Landing";
 import SponsorsMobile from "./pages/SponsorsMobile";
 import AboutMobile from "./pages/AboutMobile";
 import Schedule from "./pages/Schedule";
+import ContactUs from "./pages/ContactUs";
 
 const preloadedImages = [
   //   "/images/aawaaz_cau.png",
@@ -267,6 +268,10 @@ const App = () => {
           <Cult />
         </>
       ),
+    },
+    {
+      path: "contactus",
+      element: <ContactUs />,
     },
     {
       path: "schedule",
