@@ -25,17 +25,17 @@ const ContactUs = () => {
       <LandingPageNav />
       <div className="flex-grow flex flex-col mt-8">
         {/* font-youmurdererbb */}
-        <h1 className="text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-punishment text-center">
+        <h1 className="text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-miso uppercase text-center">
           Contact Us
         </h1>
 
-        <div className="flex flex-col text-white justify-center font-miso my-4 md:my-6 lg:my-8">
-          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <div className="flex flex-col lg:flex-row items-center text-white justify-center font-miso my-4 md:my-6 lg:my-8">
+          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl p-4">
             Mail us at
           </h1>
           <a
             href="mailto:iConclave@iiitp.ac.in"
-            className="flex gap-4 justify-center items-center p-4"
+            className="flex gap-4 justify-center items-center px-4"
           >
             <BiLogoGmail className="text-3xl sm:text-5xl lg:text-7xl" />
             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
@@ -45,7 +45,7 @@ const ContactUs = () => {
         </div>
 
         <div className="flex flex-col text-white justify-center">
-          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-miso">
+          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-miso">
             Follow us on
           </h1>
           <div className="flex justify-evenly p-4 sm:p-8">
@@ -78,17 +78,19 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-14 py-10 lg:py-16">
-          {CoreMember.map((member) => (
-            <Card
-              key={member.name}
-              name={member.name.toUpperCase()}
-              designation={member.designation.toUpperCase()}
-              X={member.github}
-              linkedin={member.linkedin}
-              insta={member.insta}
-            />
-          ))}
+        <div className="flex justify-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-14 py-10 lg:py-16">
+            {CoreMember.map((member) => (
+              <Card
+                key={member.name}
+                name={member.name.toUpperCase()}
+                designation={member.designation.toUpperCase()}
+                X={member.github}
+                linkedin={member.linkedin}
+                insta={member.insta}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
