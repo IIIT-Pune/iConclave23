@@ -21,7 +21,7 @@ const SponsorsMobile = () => {
           <div className="grid p-5 gap-5 lg:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center">
             <SponsorCard
               logo="nexussponsor1.png"
-              name="DevFolio"
+              name="Devfolio"
               website="#"
               partner="Gold Sponsor"
             />
@@ -38,16 +38,16 @@ const SponsorsMobile = () => {
               partner="Silver Sponsor"
             />
             <SponsorCard
-              logo="nexussponsor4.png"
-              name="Pune DAO"
-              website="#"
-              partner="Silver Sponsor"
-            />
-            <SponsorCard
               logo="nexussponsor5.png"
               name="Rariko"
               website="#"
               partner="Silver Sponsor"
+            />
+            <SponsorCard
+              logo="nexussponsor4.png"
+              name="Pune DAO"
+              website="#"
+              partner="Community Partner"
             />
             <SponsorCard
               logo="Unstop.png"
@@ -101,7 +101,7 @@ const SponsorsMobile = () => {
               logo="ALCHERINGAIITG.png"
               name="ALCHERINGA IITG"
               website="#"
-              partner="Talent Showcase Partner"
+              partner="Dreaming Partner"
             />
           </div>
         </div>
