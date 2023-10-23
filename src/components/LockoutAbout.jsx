@@ -31,15 +31,25 @@ const LockoutAbout = () => {
             battle of wits like no other.
           </p>
           <p>
-            Race to Solve: In this high-stakes competition, participants race to
-            solve a series of challenging problems. The clock is ticking, and
-            every second counts. Are you quick enough to outsmart your opponent?
+            <span className="font-bold text-xl sm:text-2xl lg:text-4xl">
+              Race to Solve:
+            </span>
+            <p>
+              In this high-stakes competition, participants race to solve a
+              series of challenging problems. The clock is ticking, and every
+              second counts. Are you quick enough to outsmart your opponent?
+            </p>
           </p>
           <p>
-            Point-Based Scoring: The rules are simple but the competition is
-            fierce. The first person to successfully solve a problem earns
-            points for that particular challenge. Accumulate points to claim
-            victory and prove your intellectual prowess.
+            <span className="font-bold text-xl sm:text-2xl lg:text-4xl">
+              Point-Based Scoring:
+            </span>
+            <p>
+              The rules are simple but the competition is fierce. The first
+              person to successfully solve a problem earns points for that
+              particular challenge. Accumulate points to claim victory and prove
+              your intellectual prowess.
+            </p>
           </p>
         </div>
         <div className="text-center text-white mb-20">

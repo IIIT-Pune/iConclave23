@@ -7,7 +7,7 @@ const SponsorsMobile = () => {
     <div
       className="min-h-screen flex flex-col bg-no-repeat"
       style={{
-        background: "url(/images/longpost6.png)",
+        background: "url(/images/longpost4.png)",
         backgroundPosition: "center center",
         backgroundSize: "cover",
       }}
