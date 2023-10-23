@@ -271,7 +271,17 @@ const App = () => {
     },
     {
       path: "contactus",
-      element: <ContactUs />,
+      element: (
+        <>
+          {" "}
+          {showLoader2 && (
+            <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
+              <img src={Loader} className="w-[60%]" />
+            </div>
+          )}
+          <ContactUs />
+        </>
+      ),
     },
     {
       path: "schedule",
