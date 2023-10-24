@@ -5,12 +5,6 @@ import { CoreMember } from "../assets/coremember";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
-// import {
-//   FaTwitter,
-//   FaInstagram,
-//   BiLogoGmail,
-//   FaLinkedin,
-// } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
@@ -23,9 +17,9 @@ const ContactUs = () => {
       }}
     >
       <LandingPageNav />
-      <div className="flex-grow flex flex-col mt-8">
+      <div className="flex-grow flex flex-col justify-center gap-8 mt-8">
         {/* font-youmurdererbb */}
-        <h1 className="text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-miso uppercase text-center">
+        <h1 className="text-gray-300 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-Horrors uppercase text-center">
           Contact Us
         </h1>
 
@@ -56,7 +50,9 @@ const ContactUs = () => {
               className="flex flex-col justify-center gap-2 font-miso items-center"
             >
               <FaXTwitter className="text-3xl sm:text-5xl lg:text-7xl" />
-              <p className="text-3xl hidden sm:block">iconclave_iiitp</p>
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+                iconclave_iiitp
+              </p>
             </a>
             <a
               href="https://www.instagram.com/iconclave_iiitp/"
@@ -64,21 +60,23 @@ const ContactUs = () => {
               id="instagram"
               className="flex flex-col justify-center gap-2 font-miso items-center"
             >
-              <FaInstagram className="text-3xl sm:text-5xl lg:text-7xl" />
-              <p className="text-3xl hidden sm:block">iconclave_iiitp</p>
+              <FaInstagram className="text-3xl sm:text-5xl md:text-7xl" />
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+                iconclave_iiitp
+              </p>
             </a>
-            <a
+            {/* <a
               target="_blank"
               id="linkedin"
               className="flex flex-col justify-center gap-2 font-miso items-center"
             >
               <FaLinkedinIn className="text-3xl sm:text-5xl lg:text-7xl" />
               <p className="text-3xl hidden sm:block">iconclave_iiitp</p>
-            </a>
+            </a> */}
           </div>
         </div>
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-14 py-10 lg:py-16">
             {CoreMember.map((member) => (
               <Card
@@ -91,7 +89,7 @@ const ContactUs = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Footer textColor={"white"} />
