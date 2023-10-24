@@ -14,7 +14,7 @@ const Schedule = () => {
         // location: "CR 9",
       },
       {
-        time: "11:00 PM - 1:30 PM",
+        time: "11:00 AM - 1:30 PM",
         event: "cognition",
         // location: "CR 9",
       },
@@ -56,7 +56,7 @@ const Schedule = () => {
         // location: "CAMPUS",
       },
       {
-        time: "10:30 AM - 11:00 AM",
+        time: "10:30 AM - 2:00 AM",
         event: "Aawaz-e-aawam",
         // location: "PARKING",
       },
@@ -107,7 +107,6 @@ const Schedule = () => {
         event: "cultural night",
         // location: "PARKING",
       },
-      // Add more events for Day 3 here
     ],
   ];
 
