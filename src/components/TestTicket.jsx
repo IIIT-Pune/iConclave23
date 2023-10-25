@@ -60,6 +60,7 @@ const TestTicket = () => {
     // Set the user's display name to the 'name' state when the user is available
     if (user && user.displayName) {
       setName(user.displayName);
+      setEmail(user.email);
     }
   }, [user]);
 
@@ -115,7 +116,7 @@ const TestTicket = () => {
     toPng(ref.current, { cacheBust: true })
       .then((dataUrl) => {
         const link = document.createElement("a");
-        link.download = "my-image-name.png";
+        link.download = `iConclave-ticket-${selectedEvent}.png`;
         link.href = dataUrl;
         link.click();
         setName("");
@@ -147,21 +148,26 @@ const TestTicket = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center">
+    <div className="flex justify-center items-center my-8">
       <div className="bg-gray-600 bg-opacity-[0.35] p-8 rounded-3xl text-white">
-        <h2 className="text-3xl lg:text-5xl text-gray-200 text-center font-miso">
+        <h2 className="text-5xl text-gray-200 text-center font-miso">
           iConclave Ticket
         </h2>
-        <div className="flex flex-col lg:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-5 my-10 mx-5"
           >
             <label htmlFor="name">Name</label>
             {user ? (
-              <div className="flex justify-between">
+              <div className="flex items-center gap-4 justify-between">
                 <p>{name}</p>
-                <button onClick={handleSignOut}>Sign out</button>
+                <button
+                  className="px-2 py-2 bg-gray-400 bg-opacity-[0.4] text-base uppercase rounded-lg hover:bg-red-500"
+                  onClick={handleSignOut}
+                >
+                  Sign out
+                </button>
               </div>
             ) : (
               <button
@@ -216,18 +222,21 @@ const TestTicket = () => {
                       className="flex flex-col justify-center items-center bg-black rounded-2xl bg-opacity-[0.3] p-5"
                       ref={ref}
                     >
+                      <h1 className="text-3xl text-white bg-opacity-[0.3] font-miso uppercase text-black rounded-lg mb-2 px-5 py-2">
+                        iConclave 23
+                      </h1>
                       <QRCode
                         size={192}
                         value={qrCodeValue}
                         className="border-8 rounded-xl"
                       />
                       <h1 className="text-3xl bg-gray-200 bg-opacity-[0.3] font-miso uppercase text-black rounded-lg mt-5 px-5 py-2">
-                        Scan Me
+                        {selectedEvent}
                       </h1>
                     </div>
                     <button
                       onClick={onButtonClick}
-                      className="mt-2 px-5 py-2 bg-gray-400 bg-opacity-[0.3] uppercase rounded-lg hover:bg-red-500"
+                      className="mt-4 px-5 py-2 bg-gray-400 bg-opacity-[0.3] uppercase rounded-lg hover:bg-red-500"
                     >
                       Download QR Code
                     </button>
