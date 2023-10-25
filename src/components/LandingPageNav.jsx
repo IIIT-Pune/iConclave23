@@ -49,6 +49,10 @@ const FFNav = () => {
               <li className="hover:border-b-2 pb-1 ">
                 <a href="/contactus">CONTACT US</a>
               </li>
+
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/register">REGISTER</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -121,6 +125,10 @@ const FFNav = () => {
 
               <li className="hover:border-b-2 pb-1 ">
                 <a href="/contactus">CONTACT US</a>
+              </li>
+
+              <li className="hover:border-b-2 pb-1 ">
+                <a href="/register">REGISTER</a>
               </li>
             </ul>
           </div>
