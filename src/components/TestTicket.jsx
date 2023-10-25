@@ -1,20 +1,17 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useRef, useState, useCallback, useEffect } from "react";
 import { db } from "../config/firebase";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import { addDoc, collection, getDoc, getDocs } from "firebase/firestore";
 import QRCode from "react-qr-code";
 import { toPng } from "html-to-image";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import { auth } from "../config/firebase";
-import { FcGoogle } from "react-icons/fc";
 
 const TestTicket = () => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [college, setCollege] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  //   const [event, setEvent] = useState("");
-  const [selectedEvent, setSelectedEvent] = useState("Spectators"); // Default event
+  const [selectedEvent, setSelectedEvent] = useState("Spectators");
   const [qrCodeValue, setQRCodeValue] = useState("");
   const [existingData, setExistingData] = useState([]);
   const [isDataAlreadyExists, setIsDataAlreadyExists] = useState(false);
@@ -36,7 +33,6 @@ const TestTicket = () => {
   ];
 
   useEffect(() => {
-    // Fetch existing data from Firebase only when user is signed in
     const fetchData = async () => {
       if (user) {
         const qrcoderef = collection(db, "ticket");
@@ -56,30 +52,37 @@ const TestTicket = () => {
     }
   }, [user]);
 
-  useEffect(() => {
-    // Set the user's display name to the 'name' state when the user is available
-    if (user && user.displayName) {
-      setName(user.displayName);
-      setEmail(user.email);
+  const validateForm = () => {
+    // Initialize an object to store validation errors
+    const errors = {};
+
+    // Name validation
+    if (name.trim() === "") {
+      errors.name = "Name is required";
     }
-  }, [user]);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    // College validation
+    if (college.trim() === "") {
+      errors.college = "College is required";
+    }
 
-    const newData = {
-      name,
-      email,
-      college,
-      phoneNumber,
-      event: selectedEvent, // Include the selected event
-    };
+    // Phone number validation
+    const phoneRegex = /^[0-9]{10}$/; // Change this regex as needed
+    if (!phoneRegex.test(phoneNumber)) {
+      errors.phoneNumber = "Phone number is invalid";
+    }
 
     // Check if the new data already exists in the database
+    const newData = {
+      name,
+      college,
+      phoneNumber,
+      event: selectedEvent,
+    };
+
     const isDataAlreadyExists = existingData.some((record) => {
       return (
         record.name === newData.name &&
-        record.email === newData.email &&
         record.college === newData.college &&
         record.phoneNumber === newData.phoneNumber &&
         record.event === newData.event
@@ -87,23 +90,47 @@ const TestTicket = () => {
     });
 
     if (isDataAlreadyExists) {
-      setIsDataAlreadyExists(true);
-    } else {
-      // Save the data to Firebase
-      const qrcoderef = collection(db, "ticket");
-      await addDoc(qrcoderef, newData);
-
-      // Set the QR code value
-      const qrData = JSON.stringify(newData);
-      setQRCodeValue(qrData);
-
-      // Reset the form
-      setName("");
-      setEmail("");
-      setCollege("");
-      setPhoneNumber("");
-      setIsDataAlreadyExists(false);
+      errors.exists = "Data already exists in the database";
     }
+
+    // Check if there are any errors
+    if (Object.keys(errors).length === 0) {
+      return { isValid: true, errors: {} };
+    } else {
+      return { isValid: false, errors };
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { isValid, errors } = validateForm();
+
+    if (!isValid) {
+      setIsDataAlreadyExists(false);
+      alert(
+        "Please fix the following errors:\n" + Object.values(errors).join("\n")
+      );
+      return;
+    }
+
+    const newData = {
+      name,
+      college,
+      phoneNumber,
+      event: selectedEvent,
+    };
+
+    const qrcoderef = collection(db, "ticket");
+    const docRef = await addDoc(qrcoderef, newData);
+    const addedDocSnapshot = await getDoc(docRef);
+    const qrData = `https://iconclave.iiitp.ac.in/showuser/${addedDocSnapshot.id}`;
+    setQRCodeValue(qrData);
+    setName("");
+    setCollege("");
+    setPhoneNumber("");
+    setIsDataAlreadyExists(false);
+
   };
 
   const ref = useRef(null);
@@ -120,7 +147,6 @@ const TestTicket = () => {
         link.href = dataUrl;
         link.click();
         setName("");
-        setEmail("");
         setCollege("");
         setPhoneNumber("");
       })
@@ -128,24 +154,6 @@ const TestTicket = () => {
         console.log(err);
       });
   }, [ref]);
-
-  const handleGoogleSignIn = async () => {
-    const provider = new GoogleAuthProvider();
-    try {
-      await signInWithPopup(auth, provider);
-    } catch (error) {
-      console.error(error);
-    }
-    window.location.reload();
-  };
-
-  const handleSignOut = async () => {
-    try {
-      await signOut(auth);
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   return (
     <div className="flex justify-center items-center my-8">
@@ -159,25 +167,18 @@ const TestTicket = () => {
             className="flex flex-col gap-5 my-10 mx-5"
           >
             <label htmlFor="name">Name</label>
+            <input
+              className="text-base text-black py-1 pl-2 rounded-md"
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
             {user ? (
               <div className="flex items-center gap-4 justify-between">
                 <p>{name}</p>
-                <button
-                  className="px-2 py-2 bg-gray-400 bg-opacity-[0.4] text-base uppercase rounded-lg hover:bg-red-500"
-                  onClick={handleSignOut}
-                >
-                  Sign out
-                </button>
               </div>
-            ) : (
-              <button
-                className="rounded-lg bg-white flex justify-evenly items-center text-black px-5 py-2 text-lg"
-                onClick={handleGoogleSignIn}
-              >
-                <FcGoogle className="inline-block mr-2" />
-                Sign in with Google
-              </button>
-            )}
+            ) : null}
             <label htmlFor="college">College</label>
             <input
               className="text-base text-black py-1 pl-2 rounded-md"
@@ -193,6 +194,7 @@ const TestTicket = () => {
               placeholder="Phone Number"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
+              maxLength={10}
             />
             <label htmlFor="event">Event</label>
             <select
@@ -222,7 +224,7 @@ const TestTicket = () => {
                       className="flex flex-col justify-center items-center bg-black rounded-2xl bg-opacity-[0.3] p-5"
                       ref={ref}
                     >
-                      <h1 className="text-3xl text-white bg-opacity-[0.3] font-miso uppercase text-black rounded-lg mb-2 px-5 py-2">
+                      <h1 className="text-3xl text-white bg-opacity-[0.3] font-miso uppercase rounded-lg mb-2 px-5 py-2">
                         iConclave 23
                       </h1>
                       <QRCode
@@ -236,7 +238,7 @@ const TestTicket = () => {
                     </div>
                     <button
                       onClick={onButtonClick}
-                      className="mt-4 px-5 py-2 bg-gray-400 bg-opacity-[0.3] uppercase rounded-lg hover:bg-red-500"
+                      className="mt-4 px-5 py-2 bg-gray-400 bg-opacity-[0.3] uppercase rounded-lg hover-bg-red-500"
                     >
                       Download QR Code
                     </button>

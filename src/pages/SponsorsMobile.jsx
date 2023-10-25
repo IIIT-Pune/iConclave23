@@ -97,6 +97,12 @@ const SponsorsMobile = () => {
               website="https://www.time4education.com/"
               partner="Education Partner"
             />
+              <SponsorCard
+                logo="wetnjoy.png"
+                name="WetnJoy"
+                website="https://www.lonavala.wetnjoy.in/"
+                partner="Recreational Partner"
+              />
             <SponsorCard
               logo="ALCHERINGAIITG.png"
               name="ALCHERINGA'24 IITG"

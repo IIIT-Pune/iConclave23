@@ -2,9 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Loader from "/images/loader.gif";
 import Infinity from "./pages/Infinity";
-import About from "./pages/About";
 import CultNight from "./pages/CultNight";
-import Sponsor from "./pages/Sponsor";
 import Tech from "./pages/Tech";
 import Cult from "./pages/Cult";
 import Nexus from "./pages/Nexus";
@@ -33,6 +31,7 @@ import AboutMobile from "./pages/AboutMobile";
 import Schedule from "./pages/Schedule";
 import ContactUs from "./pages/ContactUs";
 import Register from "./pages/Register";
+import ShowUser from "./components/ShowUser";
 
 const preloadedImages = [
   //   "/images/aawaaz_cau.png",
@@ -301,6 +300,10 @@ const App = () => {
     {
       path: "register",
       element: <Register />,
+    },
+    {
+      path: "showuser/:docId",
+      element: <ShowUser />,
     },
     {
       path: "tech/nexus",
