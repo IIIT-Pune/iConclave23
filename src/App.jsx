@@ -32,6 +32,7 @@ import SponsorsMobile from "./pages/SponsorsMobile";
 import AboutMobile from "./pages/AboutMobile";
 import Schedule from "./pages/Schedule";
 import ContactUs from "./pages/ContactUs";
+import Register from "./pages/Register";
 
 const preloadedImages = [
   //   "/images/aawaaz_cau.png",
@@ -296,6 +297,10 @@ const App = () => {
           <Schedule />
         </>
       ),
+    },
+    {
+      path: "register",
+      element: <Register />,
     },
     {
       path: "tech/nexus",
