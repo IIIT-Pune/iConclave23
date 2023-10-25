@@ -22,25 +22,25 @@ const SponsorsMobile = () => {
             <SponsorCard
               logo="nexussponsor1.png"
               name="Devfolio"
-              website="#"
+              website="https://devfolio.co"
               partner="Gold Sponsor"
             />
             <SponsorCard
               logo="nexussponsor2.png"
               name="Polygon"
-              website="#"
+              website="https://polygon.technology"
               partner="Gold Sponsor"
             />
             <SponsorCard
               logo="nexussponsor3.png"
               name="Replit"
-              website="#"
+              website="https://replit.com/"
               partner="Silver Sponsor"
             />
             <SponsorCard
               logo="nexussponsor5.png"
               name="Rariko"
-              website="#"
+              website="https://www.rariko.io/"
               partner="Silver Sponsor"
             />
             <SponsorCard
@@ -52,55 +52,55 @@ const SponsorsMobile = () => {
             <SponsorCard
               logo="Unstop.png"
               name="Unstop"
-              website="#"
+              website="https://unstop.com/"
               partner="Event Partner"
             />
             <SponsorCard
               logo="Ed_Times.png"
               name="ED Times"
-              website="#"
+              website="https://edtimes.in/"
               partner="Online Media Partner"
             />
             <SponsorCard
               logo="India_College_Fest.png"
               name="India College Fest"
-              website="#"
+              website="https://indiacollegefest.com/"
               partner="Online Media Partner"
             />
             <SponsorCard
               logo="IHONK.png"
               name="It Happens only in Kota"
-              website="#"
+              website="https://www.ihoik.com/"
               partner="Online Media Partner"
             />
             <SponsorCard
               logo="Campus_Times_Pune.png"
               name="Campus Times Pune"
-              website="#"
+              website="https://www.campustimespune.com/"
               partner="Youth Partner"
             />
             <SponsorCard
               logo="Plum_Body_Lovin.png"
               name="Plum Body Lovin"
-              website="#"
+              website="https://plumgoodness.com/"
               partner="Body Product Partner"
             />
             <SponsorCard
               logo="Tarkashastra.png"
               name="Tarkashastra"
-              website="#"
+              website="https://tarkashastra.co.in/"
               partner="Education Partner"
             />
             <SponsorCard
               logo="TIME_Institute.png"
               name="T.I.M.E"
-              website="#"
+              website="https://www.time4education.com/"
               partner="Education Partner"
             />
             <SponsorCard
               logo="ALCHERINGAIITG.png"
               name="ALCHERINGA'24 IITG"
-              website="#"
+              website="https://www.alcheringa.in/"
               partner="Dreaming Partner"
             />
           </div>
