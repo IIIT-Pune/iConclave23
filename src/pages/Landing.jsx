@@ -45,7 +45,7 @@ const Landing = () => {
       <div className="flex flex-col flex-grow  justify-center items-center pb-8">
         <div className="flex flex-col justify-center items-center mb-56 gap-4 sm:gap-0">
           <img src="./images/IClogo.png" alt="Logo" className="w-72 sm:w-128" />
-          <div className="text-white font-miso flex flex-col sm:flex-row gap-4 sm:gap-8 text-4xl md:text-6xl">
+          <div className="text-gray-200 font-miso flex flex-col sm:flex-row gap-4 sm:gap-8 text-4xl md:text-5xl">
             <div className="border-2 bg-orange-600 border-white px-4 py-2 text-center rounded-2xl">
               <a href="/tech">
                 <EventButton type="TECHNICAL" />
