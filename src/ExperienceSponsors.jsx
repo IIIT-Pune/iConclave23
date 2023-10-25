@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { Html, OrbitControls } from "@react-three/drei";
+import  { useEffect } from "react";
+import { OrbitControls } from "@react-three/drei";
 import { Perf } from "r3f-perf";
-import { Debug, Physics } from "@react-three/rapier";
+import {  Physics } from "@react-three/rapier";
 import { useControls } from "leva"; // Import useControls
 import { useThree } from "@react-three/fiber";
 import Floor from "./Floor.jsx";
@@ -12,7 +12,7 @@ import Fog from "./Fog.jsx";
 // import Logo from './Logo.jsx';
 import Boundings from "./Boundings.jsx";
 import Cylinder from "./Cylinder.jsx";
-import BackgroundTextAbout from "./BackgroundTextAbout.jsx"
+// import BackgroundTextAbout from "./BackgroundTextAbout.jsx"
 
 
 export default function Experience() {
