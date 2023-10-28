@@ -97,17 +97,23 @@ const SponsorsMobile = () => {
               website="https://www.time4education.com/"
               partner="Education Partner"
             />
-              <SponsorCard
-                logo="wetnjoy.png"
-                name="WetnJoy"
-                website="https://www.lonavala.wetnjoy.in/"
-                partner="Recreational Partner"
-              />
+            <SponsorCard
+              logo="wetnjoy.png"
+              name="WetnJoy"
+              website="https://www.lonavala.wetnjoy.in/"
+              partner="Recreational Partner"
+            />
             <SponsorCard
               logo="ALCHERINGAIITG.png"
               name="ALCHERINGA'24 IITG"
               website="https://www.alcheringa.in/"
               partner="Dreaming Partner"
+            />
+            <SponsorCard
+              logo="Replus.png"
+              name="Replus Engitech Pvt Ltd"
+              website="https://replusengitech.com/"
+              partner="Silver Sponsor"
             />
           </div>
         </div>
