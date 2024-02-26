@@ -12,7 +12,7 @@ import Anurag from "./pages/Anurag";
 import Rofies1 from "./pages/Rofies1";
 import Infinityteam from "./components/Infinityteam";
 import Infinitypastevent from "./components/Infinitypastevent";
-import Bitlegion from "./components/bitlegion";
+import Bitlegion from "./components/Bitlegion";
 import InfinityHalloffame from "./components/InfinityHalloffame";
 import Cognition from "./pages/Cognition";
 import AawazEAawam from "./pages/AawazEAawam";
